@@ -1,0 +1,37 @@
+{
+  "name": "LokiKit",
+  "version": "0.0.1",
+  "summary": "A library used to add loki functionality to the messenger",
+  "description": "A library used to add loki functionality to the messenger",
+  "homepage": "https://loki.network/",
+  "license": "GPLv3",
+  "source": {
+    "path": "."
+  },
+  "authors": {
+    "Loki Network": "team@loki.network"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "src/**/*.{h,m,mm,swift}",
+  "dependencies": {
+    "Curve25519Kit": [
+
+    ],
+    "CryptoSwift": [
+
+    ],
+    "SignalCoreKit": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "LokiKitTests/**/*.{h,m,swift}"
+    }
+  ]
+}

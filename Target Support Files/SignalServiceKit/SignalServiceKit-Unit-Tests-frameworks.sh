@@ -158,8 +158,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SignalCoreKit/SignalCoreKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SignalMetadataKit/SignalMetadataKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LokiKit/LokiKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HKDFKit/HKDFKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework"
 fi
 if [[ "$CONFIGURATION" == "App Store Release" ]]; then
@@ -178,8 +180,10 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SignalCoreKit/SignalCoreKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SignalMetadataKit/SignalMetadataKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LokiKit/LokiKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HKDFKit/HKDFKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -1,6 +1,0 @@
-framework module LokiKit {
-  umbrella header "LokiKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -33,6 +33,9 @@
     "CocoaLumberjack": [
 
     ],
+    "CryptoSwift": [
+
+    ],
     "AFNetworking": [
 
     ],
@@ -67,9 +70,6 @@
 
     ],
     "SignalMetadataKit": [
-
-    ],
-    "LokiKit": [
 
     ],
     "PromiseKit": [

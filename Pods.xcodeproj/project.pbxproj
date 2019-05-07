@@ -230,6 +230,7 @@
 		2410777C227FBA97003DF3D2 /* english.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24107778227FBA96003DF3D2 /* english.txt */; };
 		2410777D227FBA97003DF3D2 /* spanish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24107779227FBA96003DF3D2 /* spanish.txt */; };
 		2460E13DA0308D4FDAE9E952829574C0 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B13679F0B5EC21DDC6DCD416C867FD /* YYAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17790022E316902C6D267D453F942156 /* HKDFKit.framework */; };
 		250BC880C9F17A12A4B3AB9DC812BCAD /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D176DAF2DEE55AA9F798F7A870170812 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2540D6C02A89559BF3F0A780924DB99B /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA756EAC26C5011617BB99C07A8FDB5 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2774,6 +2775,7 @@
 		243FEB470864C8ADDF5B8B8A47659146 /* YapCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapCache.m; path = YapDatabase/Utilities/YapCache.m; sourceTree = "<group>"; };
 		244335996CCA4A799D0EAE3847EB456B /* TSGroupModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSGroupModel.m; sourceTree = "<group>"; };
 		2454AFAE9B97824BD765545F0610C4C3 /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
+		24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackSessionCipher.swift; sourceTree = "<group>"; };
 		247B6DEF35B939FEAE6A03879C9A8E7D /* OWSSwiftUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OWSSwiftUtils.swift; path = SignalCoreKit/src/OWSSwiftUtils.swift; sourceTree = "<group>"; };
 		248003639C39E617A9CA8338B466961C /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
 		249EA485BC5EFF8EAB952F252090FD09 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
@@ -7056,6 +7058,7 @@
 				6AC09678951E8DFC11542E1CCE104C09 /* ProofOfWork.swift */,
 				B858E39F22810AC400C1722C /* SignalMessage.swift */,
 				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
+				24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */,
 			);
 			name = Loki;
 			path = SignalServiceKit/src/Loki;
@@ -9961,6 +9964,7 @@
 				FFCF286E902684D4192311A486EBAD2D /* OWSMessageManager.m in Sources */,
 				83AE8364B1B500F77555FD550D81629F /* OWSMessageReceiver.m in Sources */,
 				63FFD3D6F4F3C92DB21D9DA58C1AF212 /* OWSMessageSend.swift in Sources */,
+				24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */,
 				BFD543BF472B6DEAF44AD598A3221634 /* OWSMessageSender.m in Sources */,
 				7331D93B4EAB3785050E73D65185094C /* OWSMessageServiceParams.m in Sources */,
 				D352004F62DACA7EEA91717B66E5D6B0 /* OWSMessageUtils.m in Sources */,

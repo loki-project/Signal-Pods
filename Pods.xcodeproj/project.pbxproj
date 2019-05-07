@@ -1081,6 +1081,8 @@
 		B78A982D78CE7D7CFF7184EE2C5CCA33 /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007D28EE656C24638DD3DA107ACB0EE /* UInt8+Extension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7B414C0BC6A44903E4A6CA5931622E5 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB8CD2DC265106B946E272CCF93B8AC /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B858E39E22810AB000C1722C /* LokiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiMessage.swift */; };
+		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
 		B8724E61A3AD30041105BE9B81ECA8EE /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E712003773648E289F8F0EB7D1B30A /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8865B0DCADA39B48C09CE3B126A1543 /* YapDatabaseAutoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E000CE55E932D18221B6FB33A55A3 /* YapDatabaseAutoView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8A1DBCAB4BDC7658C82E8C4C5B2AF79 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CBBCCB4088BD5B4FA340464E76B717 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3676,6 +3678,8 @@
 		B7AD0C2E629794D31907CDD37DF00A87 /* ProfileManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ProfileManagerProtocol.h; sourceTree = "<group>"; };
 		B7D1C03328D573100AA09DA36CF2AB90 /* OWSSyncContactsMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSSyncContactsMessage.m; sourceTree = "<group>"; };
 		B841BB7F5C79D0282674332579A7F56A /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		B858E39D22810AB000C1722C /* LokiMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiMessage.swift; sourceTree = "<group>"; };
+		B858E39F22810AC400C1722C /* SignalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
 		B859F07321807BA293EDC25A7E690A3F /* OWSUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSUploadOperation.m; sourceTree = "<group>"; };
 		B873CF70341E3ACCCD093C98E40359E6 /* AxolotlKit-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AxolotlKit-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
 		B8A39BFDCA5C4E9369DE34C5F0EAB949 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
@@ -7044,8 +7048,10 @@
 				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
 				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
+				B858E39D22810AB000C1722C /* LokiMessage.swift */,
 				32EAD65B1FACED711EE57BEDE539D941 /* LokiMessagingAPI.swift */,
 				6AC09678951E8DFC11542E1CCE104C09 /* ProofOfWork.swift */,
+				B858E39F22810AC400C1722C /* SignalMessage.swift */,
 				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
 			);
 			name = Loki;
@@ -9924,6 +9930,7 @@
 				ED29D381358F470CED6329CCB7BE3170 /* OWSFailedMessagesJob.m in Sources */,
 				28D113817B80A65DA41692A80DEA7D17 /* OWSFakeCallMessageHandler.m in Sources */,
 				B4D06628ABDCF147C95B7F0A7721926D /* OWSFakeContactsUpdater.m in Sources */,
+				B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */,
 				5D8F1B24588BC9179E176E105259235F /* OWSFakeMessageSender.m in Sources */,
 				A60893E7C14B5BFEBCEF877FA271BF6C /* OWSFakeNetworkManager.m in Sources */,
 				00488183C003E8A64345D8EAFE88164B /* OWSFakeProfileManager.m in Sources */,
@@ -9949,6 +9956,7 @@
 				7331D93B4EAB3785050E73D65185094C /* OWSMessageServiceParams.m in Sources */,
 				D352004F62DACA7EEA91717B66E5D6B0 /* OWSMessageUtils.m in Sources */,
 				D709B5C1CB076562030CC85B12149FA2 /* OWSMockSyncManager.swift in Sources */,
+				B858E39E22810AB000C1722C /* LokiMessage.swift in Sources */,
 				E9FF0ED10DE8B4B1FC0811015A0AE9F8 /* OWSOperation.m in Sources */,
 				90AD51284FE815B65E8F79FA2B77C711 /* OWSOutgoingCallMessage.m in Sources */,
 				28E74B4E6E2FE57253AB3A9134668281 /* OWSOutgoingNullMessage.m in Sources */,

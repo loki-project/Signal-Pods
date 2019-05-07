@@ -1083,6 +1083,7 @@
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B858E39E22810AB000C1722C /* LokiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiMessage.swift */; };
 		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
+		B858E3A222812F0B00C1722C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E3A122812F0B00C1722C /* JSON.swift */; };
 		B8724E61A3AD30041105BE9B81ECA8EE /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E712003773648E289F8F0EB7D1B30A /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8865B0DCADA39B48C09CE3B126A1543 /* YapDatabaseAutoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E000CE55E932D18221B6FB33A55A3 /* YapDatabaseAutoView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8A1DBCAB4BDC7658C82E8C4C5B2AF79 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CBBCCB4088BD5B4FA340464E76B717 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3247,7 +3248,7 @@
 		702AD13E5565A46BFDE7C9D4724111D4 /* AxolotlKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AxolotlKit.xcconfig; sourceTree = "<group>"; };
 		703E3B5F85738DCEF3BF8A187A6F6C0B /* OWSOutgoingReceiptManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSOutgoingReceiptManager.h; sourceTree = "<group>"; };
 		7043CA58B5A924F86F9722783548FEA7 /* OWSDisappearingMessagesJob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesJob.m; sourceTree = "<group>"; };
-		70497C3E43A19B7B142955698BDBF1E7 /* SignalServiceKit-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SignalServiceKit-Unit-Tests"; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70497C3E43A19B7B142955698BDBF1E7 /* SignalServiceKit-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70640B6239561B43220679820B88A2BA /* YapDatabaseViewTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewTypes.m; path = YapDatabase/Extensions/AutoView/YapDatabaseViewTypes.m; sourceTree = "<group>"; };
 		712748F5ABB979EFA0BEFDB945ADAFF6 /* TSContactThreadTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSContactThreadTest.m; sourceTree = "<group>"; };
 		7156F2E4E754FCF68BE4021611D6B45C /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
@@ -3680,6 +3681,7 @@
 		B841BB7F5C79D0282674332579A7F56A /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
 		B858E39D22810AB000C1722C /* LokiMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiMessage.swift; sourceTree = "<group>"; };
 		B858E39F22810AC400C1722C /* SignalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
+		B858E3A122812F0B00C1722C /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		B859F07321807BA293EDC25A7E690A3F /* OWSUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSUploadOperation.m; sourceTree = "<group>"; };
 		B873CF70341E3ACCCD093C98E40359E6 /* AxolotlKit-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AxolotlKit-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
 		B8A39BFDCA5C4E9369DE34C5F0EAB949 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
@@ -4677,7 +4679,7 @@
 				81E8EC56E5E17CF6809A519AE24BD67B /* SignalMetadataKit.framework */,
 				2B26B9106C437F297A9ED4472469F65B /* SignalMetadataKit-Unit-Tests */,
 				04F003579EC9D6CA9E6E8B68BCAB68D1 /* SignalServiceKit.framework */,
-				70497C3E43A19B7B142955698BDBF1E7 /* SignalServiceKit-Unit-Tests */,
+				70497C3E43A19B7B142955698BDBF1E7 /* SignalServiceKit-Unit-Tests.xctest */,
 				6C192E1183339952ACB2A335AA226C7E /* SQLCipher.framework */,
 				9B56521C25A6A60D17D78D33FAC5672B /* SSZipArchive.framework */,
 				EA5835295409D56166AF8F8EF9FFDB39 /* Starscream.framework */,
@@ -7048,6 +7050,7 @@
 				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
 				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
+				B858E3A122812F0B00C1722C /* JSON.swift */,
 				B858E39D22810AB000C1722C /* LokiMessage.swift */,
 				32EAD65B1FACED711EE57BEDE539D941 /* LokiMessagingAPI.swift */,
 				6AC09678951E8DFC11542E1CCE104C09 /* ProofOfWork.swift */,
@@ -8435,7 +8438,7 @@
 			);
 			name = "SignalServiceKit-Unit-Tests";
 			productName = "SignalServiceKit-Unit-Tests";
-			productReference = 70497C3E43A19B7B142955698BDBF1E7 /* SignalServiceKit-Unit-Tests */;
+			productReference = 70497C3E43A19B7B142955698BDBF1E7 /* SignalServiceKit-Unit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F9C2DA0BADF4F69559F0AA5BB4FC1E06 /* HKDFKit-Unit-Tests */ = {
@@ -8509,6 +8512,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					2C37A63BCEE15E2B9E8FB9A18C9671FF = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -9493,6 +9501,7 @@
 				F4538F6EE63F7F97EDF852E28FC91038 /* UIButton+AFNetworking.m in Sources */,
 				587F858DAA1FAAB3D14FEF1BBA18C58A /* UIImageView+AFNetworking.m in Sources */,
 				863506E6F2C7015A6432CCDBCFD10040 /* UIProgressView+AFNetworking.m in Sources */,
+				B858E3A222812F0B00C1722C /* JSON.swift in Sources */,
 				986B70D8C31511D2AB2AD32A3C312091 /* UIRefreshControl+AFNetworking.m in Sources */,
 				E25BD05756A102344FB2DCEC0675AB60 /* UIWebView+AFNetworking.m in Sources */,
 			);
@@ -11094,6 +11103,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E02CCB7FDD2502FEA7EC72B8ECA7D8D8 /* SignalServiceKit.unit.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -11551,6 +11561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E02CCB7FDD2502FEA7EC72B8ECA7D8D8 /* SignalServiceKit.unit.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -11922,6 +11933,7 @@
 			baseConfigurationReference = B28AB0376AB95B8975A285836B73F905 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -11942,6 +11954,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -12133,6 +12146,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E02CCB7FDD2502FEA7EC72B8ECA7D8D8 /* SignalServiceKit.unit.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -12716,6 +12730,7 @@
 			baseConfigurationReference = B28AB0376AB95B8975A285836B73F905 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -13425,6 +13440,7 @@
 			baseConfigurationReference = B28AB0376AB95B8975A285836B73F905 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

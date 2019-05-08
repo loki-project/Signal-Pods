@@ -7052,13 +7052,13 @@
 				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
 				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
+				24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */,
 				B858E3A122812F0B00C1722C /* JSON.swift */,
 				32EAD65B1FACED711EE57BEDE539D941 /* LokiAPI.swift */,
 				B858E39D22810AB000C1722C /* LokiMessage.swift */,
 				6AC09678951E8DFC11542E1CCE104C09 /* ProofOfWork.swift */,
 				B858E39F22810AC400C1722C /* SignalMessage.swift */,
 				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
-				24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */,
 			);
 			name = Loki;
 			path = SignalServiceKit/src/Loki;

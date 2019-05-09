@@ -229,6 +229,8 @@
 		2410777B227FBA97003DF3D2 /* portuguese.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24107777227FBA96003DF3D2 /* portuguese.txt */; };
 		2410777C227FBA97003DF3D2 /* english.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24107778227FBA96003DF3D2 /* english.txt */; };
 		2410777D227FBA97003DF3D2 /* spanish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24107779227FBA96003DF3D2 /* spanish.txt */; };
+		242FBCB82283BDFF0072F946 /* OWSFriendRequestMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 242FBCB62283BDFF0072F946 /* OWSFriendRequestMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		242FBCB92283BDFF0072F946 /* OWSFriendRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 242FBCB72283BDFF0072F946 /* OWSFriendRequestMessage.m */; };
 		2460E13DA0308D4FDAE9E952829574C0 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B13679F0B5EC21DDC6DCD416C867FD /* YYAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17790022E316902C6D267D453F942156 /* HKDFKit.framework */; };
@@ -2772,6 +2774,8 @@
 		24107779227FBA96003DF3D2 /* spanish.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spanish.txt; sourceTree = "<group>"; };
 		24171FD0669AF0C14D62F2FCE0D37981 /* mz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz.h; path = SSZipArchive/minizip/mz.h; sourceTree = "<group>"; };
 		242610BF4A1FA88A82D8CEE8F796D988 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		242FBCB62283BDFF0072F946 /* OWSFriendRequestMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSFriendRequestMessage.h; sourceTree = "<group>"; };
+		242FBCB72283BDFF0072F946 /* OWSFriendRequestMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSFriendRequestMessage.m; sourceTree = "<group>"; };
 		243FEB470864C8ADDF5B8B8A47659146 /* YapCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapCache.m; path = YapDatabase/Utilities/YapCache.m; sourceTree = "<group>"; };
 		244335996CCA4A799D0EAE3847EB456B /* TSGroupModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSGroupModel.m; sourceTree = "<group>"; };
 		2454AFAE9B97824BD765545F0610C4C3 /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
@@ -4629,6 +4633,54 @@
 				C5F0387D539CE0D4CBF0577DB20B9816 /* YapDatabaseViewTransaction.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		242FBCB12283B66E0072F946 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				242FBCB62283BDFF0072F946 /* OWSFriendRequestMessage.h */,
+				242FBCB72283BDFF0072F946 /* OWSFriendRequestMessage.m */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		242FBCBA2283C49A0072F946 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				B858E3A122812F0B00C1722C /* JSON.swift */,
+				32EAD65B1FACED711EE57BEDE539D941 /* LokiAPI.swift */,
+				B858E39D22810AB000C1722C /* LokiMessage.swift */,
+				B858E39F22810AC400C1722C /* SignalMessage.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		242FBCBB2283C4DB0072F946 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */,
+				6AC09678951E8DFC11542E1CCE104C09 /* ProofOfWork.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		242FBCBC2283C5190072F946 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7248D49C1859585B53577D19796F5E00 /* BuildConfiguration.swift */,
+				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		242FBCBD2283C5290072F946 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
+				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
+				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		269716333A95D85C81AA0A310C8C933A /* Support Files */ = {
@@ -7048,17 +7100,11 @@
 		FCCF3D479F591FDB2277EB631316E126 /* Loki */ = {
 			isa = PBXGroup;
 			children = (
-				7248D49C1859585B53577D19796F5E00 /* BuildConfiguration.swift */,
-				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
-				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
-				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
-				24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */,
-				B858E3A122812F0B00C1722C /* JSON.swift */,
-				32EAD65B1FACED711EE57BEDE539D941 /* LokiAPI.swift */,
-				B858E39D22810AB000C1722C /* LokiMessage.swift */,
-				6AC09678951E8DFC11542E1CCE104C09 /* ProofOfWork.swift */,
-				B858E39F22810AC400C1722C /* SignalMessage.swift */,
-				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
+				242FBCBA2283C49A0072F946 /* Api */,
+				242FBCBB2283C4DB0072F946 /* Crypto */,
+				242FBCBD2283C5290072F946 /* Extensions */,
+				242FBCB12283B66E0072F946 /* Messages */,
+				242FBCBC2283C5190072F946 /* Util */,
 			);
 			name = Loki;
 			path = SignalServiceKit/src/Loki;
@@ -7411,6 +7457,7 @@
 				0300F574ED81FC246152E777EAFA3469 /* OWSStorage+Subclass.h in Headers */,
 				A89E2CB3E6D590A07148BB09EA08621B /* OWSStorage.h in Headers */,
 				1CA4E8BC13A5D560FAD577575830A907 /* OWSSyncConfigurationMessage.h in Headers */,
+				242FBCB82283BDFF0072F946 /* OWSFriendRequestMessage.h in Headers */,
 				C18762F30080A1E1BF525445F6A18435 /* OWSSyncContactsMessage.h in Headers */,
 				384CBAD74280AD6FAC4DB3C1DEA0D832 /* OWSSyncGroupsMessage.h in Headers */,
 				B3740E459629F94A7EE184028FC5550F /* OWSSyncGroupsRequestMessage.h in Headers */,
@@ -9874,6 +9921,7 @@
 				B1242D010F1044F534D22FB5279A3C2A /* Contact.m in Sources */,
 				431FF9D6BB923E88FF7EE7F5E2312FCF /* ContactDiscoveryService.m in Sources */,
 				05CEEA3D7E509687F184E43F60FBAC32 /* ContactsUpdater.m in Sources */,
+				242FBCB92283BDFF0072F946 /* OWSFriendRequestMessage.m in Sources */,
 				1FCA3CBDF2294821447E169A64DF58A3 /* ContentProxy.swift in Sources */,
 				163D08408E16F46B3BCAFBDB74937E70 /* CreatePreKeysOperation.swift in Sources */,
 				452DC88E41547BA426E52DBEC194FA0A /* DataSource.m in Sources */,

@@ -177,6 +177,9 @@
 #import "SSKAsserts.h"
 #import "UIImage+OWS.h"
 
+// Loki classes
+#import "OWSFriendRequestMessage.h"
+
 FOUNDATION_EXPORT double SignalServiceKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char SignalServiceKitVersionString[];
 

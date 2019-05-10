@@ -4646,7 +4646,7 @@
 			path = Messages;
 			sourceTree = "<group>";
 		};
-		242FBCBA2283C49A0072F946 /* Api */ = {
+		242FBCBA2283C49A0072F946 /* API */ = {
 			isa = PBXGroup;
 			children = (
 				B858E3A122812F0B00C1722C /* JSON.swift */,
@@ -4655,7 +4655,7 @@
 				24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */,
 				B858E39F22810AC400C1722C /* SignalMessage.swift */,
 			);
-			path = Api;
+			path = API;
 			sourceTree = "<group>";
 		};
 		242FBCBB2283C4DB0072F946 /* Crypto */ = {
@@ -4667,13 +4667,13 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
-		242FBCBC2283C5190072F946 /* Util */ = {
+		242FBCBC2283C5190072F946 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				7248D49C1859585B53577D19796F5E00 /* BuildConfiguration.swift */,
 				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
 			);
-			path = Util;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		242FBCBD2283C5290072F946 /* Extensions */ = {
@@ -6386,11 +6386,11 @@
 		B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */ = {
 			isa = PBXGroup;
 			children = (
+				153B26A19A0EB2A770CA65312C6F708D /* Mnemonic.swift */,
 				24107778227FBA96003DF3D2 /* english.txt */,
 				24107776227FBA96003DF3D2 /* japanese.txt */,
 				24107777227FBA96003DF3D2 /* portuguese.txt */,
 				24107779227FBA96003DF3D2 /* spanish.txt */,
-				153B26A19A0EB2A770CA65312C6F708D /* Mnemonic.swift */,
 			);
 			path = Mnemonic;
 			sourceTree = "<group>";
@@ -7103,11 +7103,11 @@
 		FCCF3D479F591FDB2277EB631316E126 /* Loki */ = {
 			isa = PBXGroup;
 			children = (
-				242FBCBA2283C49A0072F946 /* Api */,
+				242FBCBA2283C49A0072F946 /* API */,
 				242FBCBB2283C4DB0072F946 /* Crypto */,
 				242FBCBD2283C5290072F946 /* Extensions */,
 				242FBCB12283B66E0072F946 /* Messages */,
-				242FBCBC2283C5190072F946 /* Util */,
+				242FBCBC2283C5190072F946 /* Utilities */,
 			);
 			name = Loki;
 			path = SignalServiceKit/src/Loki;

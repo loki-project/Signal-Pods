@@ -234,6 +234,7 @@
 		2460E13DA0308D4FDAE9E952829574C0 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B13679F0B5EC21DDC6DCD416C867FD /* YYAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17790022E316902C6D267D453F942156 /* HKDFKit.framework */; };
+		24D830EB228511EF004D7EB3 /* LokiAPI+Wrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */; };
 		250BC880C9F17A12A4B3AB9DC812BCAD /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D176DAF2DEE55AA9F798F7A870170812 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2540D6C02A89559BF3F0A780924DB99B /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA756EAC26C5011617BB99C07A8FDB5 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		254716A2BD721A3E5DC396F8F3829C08 /* OWSReadReceiptsForLinkedDevicesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353FB0C857D6FBC99DEA9A7B33C4DFF /* OWSReadReceiptsForLinkedDevicesMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1084,7 +1085,7 @@
 		B78A982D78CE7D7CFF7184EE2C5CCA33 /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007D28EE656C24638DD3DA107ACB0EE /* UInt8+Extension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7B414C0BC6A44903E4A6CA5931622E5 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB8CD2DC265106B946E272CCF93B8AC /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B858E39E22810AB000C1722C /* LokiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiMessage.swift */; };
+		B858E39E22810AB000C1722C /* LokiAPI+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiAPI+Message.swift */; };
 		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
 		B858E3A222812F0B00C1722C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E3A122812F0B00C1722C /* JSON.swift */; };
 		B8724E61A3AD30041105BE9B81ECA8EE /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E712003773648E289F8F0EB7D1B30A /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2784,6 +2785,7 @@
 		248003639C39E617A9CA8338B466961C /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
 		249EA485BC5EFF8EAB952F252090FD09 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
 		24CA6A3A5DBA72C6CA0CDF75D480F45B /* YapProxyObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapProxyObject.h; path = YapDatabase/Utilities/YapProxyObject.h; sourceTree = "<group>"; };
+		24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Wrapping.swift"; sourceTree = "<group>"; };
 		257B6D60B136B1BAE7274D85B44F807E /* TSErrorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSErrorMessage.h; sourceTree = "<group>"; };
 		2586D8BB344AF1CD7CA981D06E6956FE /* YYFrameImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFrameImage.m; path = YYImage/YYFrameImage.m; sourceTree = "<group>"; };
 		25886397ADA68E9F23C8CDA45350DDAF /* OWSMessageReceiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSMessageReceiver.m; sourceTree = "<group>"; };
@@ -3685,7 +3687,7 @@
 		B7AD0C2E629794D31907CDD37DF00A87 /* ProfileManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ProfileManagerProtocol.h; sourceTree = "<group>"; };
 		B7D1C03328D573100AA09DA36CF2AB90 /* OWSSyncContactsMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSSyncContactsMessage.m; sourceTree = "<group>"; };
 		B841BB7F5C79D0282674332579A7F56A /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
-		B858E39D22810AB000C1722C /* LokiMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiMessage.swift; sourceTree = "<group>"; };
+		B858E39D22810AB000C1722C /* LokiAPI+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Message.swift"; sourceTree = "<group>"; };
 		B858E39F22810AC400C1722C /* SignalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
 		B858E3A122812F0B00C1722C /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		B859F07321807BA293EDC25A7E690A3F /* OWSUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSUploadOperation.m; sourceTree = "<group>"; };
@@ -4649,7 +4651,8 @@
 			children = (
 				B858E3A122812F0B00C1722C /* JSON.swift */,
 				32EAD65B1FACED711EE57BEDE539D941 /* LokiAPI.swift */,
-				B858E39D22810AB000C1722C /* LokiMessage.swift */,
+				B858E39D22810AB000C1722C /* LokiAPI+Message.swift */,
+				24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */,
 				B858E39F22810AC400C1722C /* SignalMessage.swift */,
 			);
 			path = Api;
@@ -10017,8 +10020,9 @@
 				7331D93B4EAB3785050E73D65185094C /* OWSMessageServiceParams.m in Sources */,
 				D352004F62DACA7EEA91717B66E5D6B0 /* OWSMessageUtils.m in Sources */,
 				D709B5C1CB076562030CC85B12149FA2 /* OWSMockSyncManager.swift in Sources */,
-				B858E39E22810AB000C1722C /* LokiMessage.swift in Sources */,
+				B858E39E22810AB000C1722C /* LokiAPI+Message.swift in Sources */,
 				E9FF0ED10DE8B4B1FC0811015A0AE9F8 /* OWSOperation.m in Sources */,
+				24D830EB228511EF004D7EB3 /* LokiAPI+Wrapping.swift in Sources */,
 				90AD51284FE815B65E8F79FA2B77C711 /* OWSOutgoingCallMessage.m in Sources */,
 				28E74B4E6E2FE57253AB3A9134668281 /* OWSOutgoingNullMessage.m in Sources */,
 				D4AE4487B298F99873BD69928D28B847 /* OWSOutgoingReceiptManager.m in Sources */,

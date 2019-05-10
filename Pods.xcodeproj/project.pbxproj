@@ -235,6 +235,8 @@
 		24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17790022E316902C6D267D453F942156 /* HKDFKit.framework */; };
 		24D830EB228511EF004D7EB3 /* LokiAPI+Wrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */; };
+		24D8310222853B88004D7EB3 /* OWSPrimaryStorage+Loki.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24D8310322853B88004D7EB3 /* OWSPrimaryStorage+Loki.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D8310122853B88004D7EB3 /* OWSPrimaryStorage+Loki.m */; };
 		250BC880C9F17A12A4B3AB9DC812BCAD /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D176DAF2DEE55AA9F798F7A870170812 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2540D6C02A89559BF3F0A780924DB99B /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA756EAC26C5011617BB99C07A8FDB5 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		254716A2BD721A3E5DC396F8F3829C08 /* OWSReadReceiptsForLinkedDevicesMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353FB0C857D6FBC99DEA9A7B33C4DFF /* OWSReadReceiptsForLinkedDevicesMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -2786,6 +2788,8 @@
 		249EA485BC5EFF8EAB952F252090FD09 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
 		24CA6A3A5DBA72C6CA0CDF75D480F45B /* YapProxyObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapProxyObject.h; path = YapDatabase/Utilities/YapProxyObject.h; sourceTree = "<group>"; };
 		24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Wrapping.swift"; sourceTree = "<group>"; };
+		24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OWSPrimaryStorage+Loki.h"; sourceTree = "<group>"; };
+		24D8310122853B88004D7EB3 /* OWSPrimaryStorage+Loki.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OWSPrimaryStorage+Loki.m"; sourceTree = "<group>"; };
 		257B6D60B136B1BAE7274D85B44F807E /* TSErrorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSErrorMessage.h; sourceTree = "<group>"; };
 		2586D8BB344AF1CD7CA981D06E6956FE /* YYFrameImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFrameImage.m; path = YYImage/YYFrameImage.m; sourceTree = "<group>"; };
 		25886397ADA68E9F23C8CDA45350DDAF /* OWSMessageReceiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSMessageReceiver.m; sourceTree = "<group>"; };
@@ -4682,6 +4686,8 @@
 				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
 				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
+				24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */,
+				24D8310122853B88004D7EB3 /* OWSPrimaryStorage+Loki.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -7384,6 +7390,7 @@
 				38FAC4D2F8E85F808C50F60177D4D36C /* OWSBackupFragment.h in Headers */,
 				8ECC3AA39A04424264084024B28078F9 /* OWSBatchMessageProcessor.h in Headers */,
 				3D0DEE39AD9B1138B93FC96C17B1C76F /* OWSBlockedPhoneNumbersMessage.h in Headers */,
+				24D8310222853B88004D7EB3 /* OWSPrimaryStorage+Loki.h in Headers */,
 				274F53A433A720E708CB78737861972F /* OWSBlockingManager.h in Headers */,
 				A76B4A7039C7C1D3E977A0746A5F999E /* OWSCallMessageHandler.h in Headers */,
 				AF188C7BF11DC88F9F84104F0572FC0C /* OWSCensorshipConfiguration.h in Headers */,
@@ -9956,6 +9963,7 @@
 				609EF5B48806E513564B8CA177F2FA9E /* NSString+SSK.m in Sources */,
 				20335A9AC31032CA264E3815FEAA8BC1 /* NSTimer+OWS.m in Sources */,
 				570B3C410B8CF25C945F152248B01F15 /* NSURLSessionDataTask+StatusCode.m in Sources */,
+				24D8310322853B88004D7EB3 /* OWSPrimaryStorage+Loki.m in Sources */,
 				AA202DBBF661279CB70C5E57049E1637 /* NSUserDefaults+OWS.m in Sources */,
 				26F1BBA9AAF44F181E35EC9376B3AD3A /* OutageDetection.swift in Sources */,
 				C22A3EE0C0A06692457F45B3B9796453 /* OWS2FAManager.m in Sources */,

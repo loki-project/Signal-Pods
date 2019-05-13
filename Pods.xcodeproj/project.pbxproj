@@ -232,6 +232,7 @@
 		242FBCB82283BDFF0072F946 /* OWSFriendRequestMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 242FBCB62283BDFF0072F946 /* OWSFriendRequestMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		242FBCB92283BDFF0072F946 /* OWSFriendRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 242FBCB72283BDFF0072F946 /* OWSFriendRequestMessage.m */; };
 		2460E13DA0308D4FDAE9E952829574C0 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B13679F0B5EC21DDC6DCD416C867FD /* YYAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		246DA99A2288E8F0009F3874 /* SSKProtoPrekeyBundleMessage+PreKeyBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DA9982288E873009F3874 /* SSKProtoPrekeyBundleMessage+PreKeyBundle.swift */; };
 		24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17790022E316902C6D267D453F942156 /* HKDFKit.framework */; };
 		24D830EB228511EF004D7EB3 /* LokiAPI+Wrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */; };
@@ -2782,6 +2783,7 @@
 		243FEB470864C8ADDF5B8B8A47659146 /* YapCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapCache.m; path = YapDatabase/Utilities/YapCache.m; sourceTree = "<group>"; };
 		244335996CCA4A799D0EAE3847EB456B /* TSGroupModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSGroupModel.m; sourceTree = "<group>"; };
 		2454AFAE9B97824BD765545F0610C4C3 /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
+		246DA9982288E873009F3874 /* SSKProtoPrekeyBundleMessage+PreKeyBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SSKProtoPrekeyBundleMessage+PreKeyBundle.swift"; sourceTree = "<group>"; };
 		24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackSessionCipher.swift; sourceTree = "<group>"; };
 		247B6DEF35B939FEAE6A03879C9A8E7D /* OWSSwiftUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OWSSwiftUtils.swift; path = SignalCoreKit/src/OWSSwiftUtils.swift; sourceTree = "<group>"; };
 		248003639C39E617A9CA8338B466961C /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
@@ -4688,6 +4690,7 @@
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
 				24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */,
 				24D8310122853B88004D7EB3 /* OWSPrimaryStorage+Loki.m */,
+				246DA9982288E873009F3874 /* SSKProtoPrekeyBundleMessage+PreKeyBundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -10022,6 +10025,7 @@
 				21D58556BE005B97789B70BE2D3462B3 /* OWSMessageHandler.m in Sources */,
 				FFCF286E902684D4192311A486EBAD2D /* OWSMessageManager.m in Sources */,
 				83AE8364B1B500F77555FD550D81629F /* OWSMessageReceiver.m in Sources */,
+				246DA99A2288E8F0009F3874 /* SSKProtoPrekeyBundleMessage+PreKeyBundle.swift in Sources */,
 				63FFD3D6F4F3C92DB21D9DA58C1AF212 /* OWSMessageSend.swift in Sources */,
 				24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */,
 				BFD543BF472B6DEAF44AD598A3221634 /* OWSMessageSender.m in Sources */,

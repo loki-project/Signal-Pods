@@ -1090,6 +1090,8 @@
 		B7272AED44CCBD7675AE9893299F4126 /* YapDatabaseCloudCoreOperationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A5048DFAB1A0E23736D62E95E18B8F96 /* YapDatabaseCloudCoreOperationPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B78A982D78CE7D7CFF7184EE2C5CCA33 /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5007D28EE656C24638DD3DA107ACB0EE /* UInt8+Extension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7B414C0BC6A44903E4A6CA5931622E5 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB8CD2DC265106B946E272CCF93B8AC /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B808B5E3228E3EE000004C20 /* OWSEphemeralMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B808B5E2228E3EC500004C20 /* OWSEphemeralMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B808B5E5228E3EFA00004C20 /* OWSEphemeralMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E4228E3EFA00004C20 /* OWSEphemeralMessage.m */; };
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B858E39E22810AB000C1722C /* LokiAPI+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiAPI+Message.swift */; };
 		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
@@ -3699,6 +3701,8 @@
 		B7A955803C0CBDDE286DB3EBFACBE3A1 /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/CryptoSwift/Cryptor.swift; sourceTree = "<group>"; };
 		B7AD0C2E629794D31907CDD37DF00A87 /* ProfileManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ProfileManagerProtocol.h; sourceTree = "<group>"; };
 		B7D1C03328D573100AA09DA36CF2AB90 /* OWSSyncContactsMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSSyncContactsMessage.m; sourceTree = "<group>"; };
+		B808B5E2228E3EC500004C20 /* OWSEphemeralMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSEphemeralMessage.h; sourceTree = "<group>"; };
+		B808B5E4228E3EFA00004C20 /* OWSEphemeralMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSEphemeralMessage.m; sourceTree = "<group>"; };
 		B841BB7F5C79D0282674332579A7F56A /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
 		B858E39D22810AB000C1722C /* LokiAPI+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Message.swift"; sourceTree = "<group>"; };
 		B858E39F22810AC400C1722C /* SignalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
@@ -4653,6 +4657,8 @@
 		242FBCB12283B66E0072F946 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				B808B5E2228E3EC500004C20 /* OWSEphemeralMessage.h */,
+				B808B5E4228E3EFA00004C20 /* OWSEphemeralMessage.m */,
 				242FBCB62283BDFF0072F946 /* OWSFriendRequestMessage.h */,
 				242FBCB72283BDFF0072F946 /* OWSFriendRequestMessage.m */,
 			);
@@ -7503,6 +7509,7 @@
 				D6839E2638A9F0AF4CF5074899F7292D /* PhoneNumberUtil.h in Headers */,
 				5EE0C7FA13B3D9336DE0F1ED22C5A6D3 /* PreKeyBundle+jsonDict.h in Headers */,
 				03C1CE5DDD89061DD77008AB3A7E0549 /* ProfileManagerProtocol.h in Headers */,
+				B808B5E3228E3EE000004C20 /* OWSEphemeralMessage.h in Headers */,
 				1E55C3D0EEAB0DE258BBBD828668B5FC /* ProtoUtils.h in Headers */,
 				746459199F0E6AD4E5511E3BAC2FBA37 /* SignalAccount.h in Headers */,
 				1F14C861E424FFA8A29D3FD149533596 /* SignalRecipient.h in Headers */,
@@ -10018,6 +10025,7 @@
 				9295A61AB1ACBB643A92C23444CC8034 /* OWSDisappearingMessagesConfigurationMessage.m in Sources */,
 				17AA8338E2BF7BA84D95F120A8183F03 /* OWSDisappearingMessagesFinder.m in Sources */,
 				96A5A1568CE83FCCC723E1FDB6027317 /* OWSDisappearingMessagesJob.m in Sources */,
+				B808B5E5228E3EFA00004C20 /* OWSEphemeralMessage.m in Sources */,
 				EB37AFFAF837C8F2F9F6AE1A34192726 /* OWSDispatch.m in Sources */,
 				6EA301B539ECA44CD14135972F164DD5 /* OWSDynamicOutgoingMessage.m in Sources */,
 				ABB164A6C604CE9419E3E537C07B4748 /* OWSEndSessionMessage.m in Sources */,

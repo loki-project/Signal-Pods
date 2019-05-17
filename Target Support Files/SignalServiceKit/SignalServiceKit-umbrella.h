@@ -178,6 +178,7 @@
 #import "UIImage+OWS.h"
 
 // Loki classes
+#import "OWSEphemeralMessage.h"
 #import "OWSFriendRequestMessage.h"
 
 FOUNDATION_EXPORT double SignalServiceKitVersionNumber;

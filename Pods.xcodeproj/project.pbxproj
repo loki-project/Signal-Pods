@@ -1161,6 +1161,8 @@
 		C2DB5447918C5092AF5585C3D4B800A4 /* YapDatabaseCloudCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E97A3A3753F619AD6AD01218368E12 /* YapDatabaseCloudCore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C32B7F37ACB53783270A4712F339B7A1 /* YapDatabaseSecondaryIndexTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 720578E331729E59B04193BE852F7F25 /* YapDatabaseSecondaryIndexTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3EC9322A4FB94AD0D0E156C91620A02 /* OWSProfileKeyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA467EFD4C9E60EEAB6CD3FFA7570216 /* OWSProfileKeyMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C3F98935228E80ED00CC68E2 /* NSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F98932228E7FF700CC68E2 /* NSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F98936228E80F200CC68E2 /* NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F98933228E800700CC68E2 /* NSObject.m */; };
 		C43E17498E60215C68906AC7A2DD2A71 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC81594F7D847B9E85EC61A966E419D /* TSMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C47302D8C6BE2203EEF83605FE8D88D5 /* OWSMediaGalleryFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB512AB36DD391669E10098411945403 /* OWSMediaGalleryFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4AC8749895501FA3CB96DD40B617985 /* YapDatabaseRTreeIndexConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8C8ECA7D4B50784368625567D9DA2E /* YapDatabaseRTreeIndexConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3778,6 +3780,8 @@
 		C3700120D84A14CF05CC74DA2A5223E9 /* OWSPrimaryStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSPrimaryStorage.h; sourceTree = "<group>"; };
 		C39BD03075699A775865FEFE0E2FD3B8 /* OWSThumbnailService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OWSThumbnailService.swift; sourceTree = "<group>"; };
 		C3AED2D2CC266A027115707822BD1E06 /* YapDatabaseLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseLogging.h; path = YapDatabase/Internal/YapDatabaseLogging.h; sourceTree = "<group>"; };
+		C3F98932228E7FF700CC68E2 /* NSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject.h; sourceTree = "<group>"; };
+		C3F98933228E800700CC68E2 /* NSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject.m; sourceTree = "<group>"; };
 		C43A077D928F391FA2CBD55F4D1861C1 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
 		C4E88928CE526935EEE16B40641F8380 /* SSKEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKEnvironment.h; path = SignalServiceKit/src/SSKEnvironment.h; sourceTree = "<group>"; };
 		C4FE8F42143B338F7FDB000F728D3FBB /* DoubleFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleFormatter.swift; path = Sources/SwiftProtobuf/DoubleFormatter.swift; sourceTree = "<group>"; };
@@ -4702,6 +4706,8 @@
 				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
 				B808B5E6228E540500004C20 /* Notification.swift */,
+				C3F98932228E7FF700CC68E2 /* NSObject.h */,
+				C3F98933228E800700CC68E2 /* NSObject.m */,
 				24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */,
 				24D8310122853B88004D7EB3 /* OWSPrimaryStorage+Loki.m */,
 				24E58257228A88620044E4DB /* SessionCipher+Loki.h */,
@@ -7420,6 +7426,7 @@
 				3D0DEE39AD9B1138B93FC96C17B1C76F /* OWSBlockedPhoneNumbersMessage.h in Headers */,
 				24D8310222853B88004D7EB3 /* OWSPrimaryStorage+Loki.h in Headers */,
 				274F53A433A720E708CB78737861972F /* OWSBlockingManager.h in Headers */,
+				C3F98935228E80ED00CC68E2 /* NSObject.h in Headers */,
 				A76B4A7039C7C1D3E977A0746A5F999E /* OWSCallMessageHandler.h in Headers */,
 				AF188C7BF11DC88F9F84104F0572FC0C /* OWSCensorshipConfiguration.h in Headers */,
 				64BA87925667A9E18BBF626F6C920BD7 /* OWSChunkedOutputStream.h in Headers */,
@@ -10116,6 +10123,7 @@
 				E452C5D10882907DC57538999B2F6991 /* ReverseDispatchQueue.swift in Sources */,
 				B08BB576D48A81626169370932C4CBBD /* RotateSignedKeyOperation.swift in Sources */,
 				4C411563B835DB0F32C444692BA7F81A /* SignalAccount.m in Sources */,
+				C3F98936228E80F200CC68E2 /* NSObject.m in Sources */,
 				1E841DF044DAF5B43099FCFBE23C5C7D /* SignalIOS.pb.swift in Sources */,
 				7474F7BE1A5F2E213944E094758CF552 /* SignalIOSProto.swift in Sources */,
 				260B5BDB4E514AFA5956C8E635DBA804 /* SignalRecipient.m in Sources */,

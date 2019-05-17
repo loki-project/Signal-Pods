@@ -1092,6 +1092,7 @@
 		B7B414C0BC6A44903E4A6CA5931622E5 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB8CD2DC265106B946E272CCF93B8AC /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B808B5E3228E3EE000004C20 /* OWSEphemeralMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B808B5E2228E3EC500004C20 /* OWSEphemeralMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B808B5E5228E3EFA00004C20 /* OWSEphemeralMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E4228E3EFA00004C20 /* OWSEphemeralMessage.m */; };
+		B808B5E7228E540500004C20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E6228E540500004C20 /* Notification.swift */; };
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B858E39E22810AB000C1722C /* LokiAPI+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiAPI+Message.swift */; };
 		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
@@ -3703,6 +3704,7 @@
 		B7D1C03328D573100AA09DA36CF2AB90 /* OWSSyncContactsMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSSyncContactsMessage.m; sourceTree = "<group>"; };
 		B808B5E2228E3EC500004C20 /* OWSEphemeralMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWSEphemeralMessage.h; sourceTree = "<group>"; };
 		B808B5E4228E3EFA00004C20 /* OWSEphemeralMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWSEphemeralMessage.m; sourceTree = "<group>"; };
+		B808B5E6228E540500004C20 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B841BB7F5C79D0282674332579A7F56A /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
 		B858E39D22810AB000C1722C /* LokiAPI+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Message.swift"; sourceTree = "<group>"; };
 		B858E39F22810AC400C1722C /* SignalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
@@ -4701,6 +4703,7 @@
 				EAB411AC3080EFEFE2DF705CC4639D63 /* ECKeyPair.h */,
 				DE8F9D9A31327421DCF892DBEFFCFBF8 /* ECKeyPair.m */,
 				CCBF64A5CD65D97835BEDB8862DF5BE1 /* ECKeyPair.swift */,
+				B808B5E6228E540500004C20 /* Notification.swift */,
 				24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */,
 				24D8310122853B88004D7EB3 /* OWSPrimaryStorage+Loki.m */,
 				246DA9982288E873009F3874 /* SSKProtoPrekeyBundleMessage.swift */,
@@ -9579,6 +9582,7 @@
 			files = (
 				72F58299ED9B5A05F6F8A361F62A6113 /* AFAutoPurgingImageCache.m in Sources */,
 				8AFC7A630CAB2A426772D835A9392EE0 /* AFHTTPSessionManager.m in Sources */,
+				B808B5E7228E540500004C20 /* Notification.swift in Sources */,
 				1FE3482415CB9E353F5BE9D8D414AA1A /* AFImageDownloader.m in Sources */,
 				9249EEF96143995ABAA0B53D3D83CE51 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				CCAEF2831BD13498E659052012849EA7 /* AFNetworking-dummy.m in Sources */,

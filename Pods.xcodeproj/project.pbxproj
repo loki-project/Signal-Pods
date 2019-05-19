@@ -234,6 +234,8 @@
 		2460E13DA0308D4FDAE9E952829574C0 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B13679F0B5EC21DDC6DCD416C867FD /* YYAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		246DA99A2288E8F0009F3874 /* SSKProtoPrekeyBundleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246DA9982288E873009F3874 /* SSKProtoPrekeyBundleMessage.swift */; };
 		24788E5D228121F0007FFFDC /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */; };
+		248A9310228E6EE000B5C036 /* FriendRequestExpireJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248A930F228E6EE000B5C036 /* FriendRequestExpireJob.swift */; };
+		248A9314228E7EC200B5C036 /* FriendRequestExpireMessageFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248A9313228E7EC200B5C036 /* FriendRequestExpireMessageFinder.swift */; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17790022E316902C6D267D453F942156 /* HKDFKit.framework */; };
 		24D830EB228511EF004D7EB3 /* LokiAPI+Wrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */; };
 		24D8310222853B88004D7EB3 /* OWSPrimaryStorage+Loki.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D8310022853B88004D7EB3 /* OWSPrimaryStorage+Loki.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2793,6 +2795,8 @@
 		24788E5C228121F0007FFFDC /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackSessionCipher.swift; sourceTree = "<group>"; };
 		247B6DEF35B939FEAE6A03879C9A8E7D /* OWSSwiftUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OWSSwiftUtils.swift; path = SignalCoreKit/src/OWSSwiftUtils.swift; sourceTree = "<group>"; };
 		248003639C39E617A9CA8338B466961C /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
+		248A930F228E6EE000B5C036 /* FriendRequestExpireJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestExpireJob.swift; sourceTree = "<group>"; };
+		248A9313228E7EC200B5C036 /* FriendRequestExpireMessageFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestExpireMessageFinder.swift; sourceTree = "<group>"; };
 		249EA485BC5EFF8EAB952F252090FD09 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
 		24CA6A3A5DBA72C6CA0CDF75D480F45B /* YapProxyObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapProxyObject.h; path = YapDatabase/Utilities/YapProxyObject.h; sourceTree = "<group>"; };
 		24D830EA228511EF004D7EB3 /* LokiAPI+Wrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Wrapping.swift"; sourceTree = "<group>"; };
@@ -4691,6 +4695,8 @@
 			children = (
 				7248D49C1859585B53577D19796F5E00 /* BuildConfiguration.swift */,
 				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
+				248A930F228E6EE000B5C036 /* FriendRequestExpireJob.swift */,
+				248A9313228E7EC200B5C036 /* FriendRequestExpireMessageFinder.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -10109,6 +10115,7 @@
 				9D2F96160616B1F76302205FA08CBA02 /* Promise+retainUntilComplete.swift in Sources */,
 				15562CB270644351B4845726C0429818 /* ProofOfWork.swift in Sources */,
 				1A72AF3C7A3054E4793D6E4D6DBF8115 /* ProtoUtils.m in Sources */,
+				248A9310228E6EE000B5C036 /* FriendRequestExpireJob.swift in Sources */,
 				039DC75E700C9A1D78AC06FD5BAD7CCA /* Provisioning.pb.swift in Sources */,
 				FC03DE5F4E0A1AB7CAACB02B3FF37329 /* ProvisioningProto.swift in Sources */,
 				8D0648D375F13CC7040B92BA2336B20D /* ProxiedContentDownloader.swift in Sources */,
@@ -10124,6 +10131,7 @@
 				505205186E7490F7A320A6EF762A476A /* SignalServiceKit-dummy.m in Sources */,
 				75F79242064E7C482DC6209E8E9FEE52 /* SignalServiceProfile.swift in Sources */,
 				292AF5D84CF940D43BD11C5A810F3AE7 /* SSKEnvironment.m in Sources */,
+				248A9314228E7EC200B5C036 /* FriendRequestExpireMessageFinder.swift in Sources */,
 				AA682EBB752187B15077EFACA72B40D1 /* SSKIncrementingIdFinder.swift in Sources */,
 				ACB203F973FB9BC06B150235D8C0A45D /* SSKJobRecord.m in Sources */,
 				193E352676B6720EA842DCF37CD1F114 /* SSKKeychainStorage.swift in Sources */,

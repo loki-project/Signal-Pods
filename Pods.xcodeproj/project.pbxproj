@@ -1091,7 +1091,7 @@
 		B7B414C0BC6A44903E4A6CA5931622E5 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB8CD2DC265106B946E272CCF93B8AC /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B808B5E3228E3EE000004C20 /* OWSEphemeralMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B808B5E2228E3EC500004C20 /* OWSEphemeralMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B808B5E5228E3EFA00004C20 /* OWSEphemeralMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E4228E3EFA00004C20 /* OWSEphemeralMessage.m */; };
-		B808B5E7228E540500004C20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E6228E540500004C20 /* Notification.swift */; };
+		B828156D2292277A00E3885A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E6228E540500004C20 /* Notification.swift */; };
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B858E39E22810AB000C1722C /* LokiAPI+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiAPI+Message.swift */; };
 		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
@@ -9586,7 +9586,6 @@
 			files = (
 				72F58299ED9B5A05F6F8A361F62A6113 /* AFAutoPurgingImageCache.m in Sources */,
 				8AFC7A630CAB2A426772D835A9392EE0 /* AFHTTPSessionManager.m in Sources */,
-				B808B5E7228E540500004C20 /* Notification.swift in Sources */,
 				1FE3482415CB9E353F5BE9D8D414AA1A /* AFImageDownloader.m in Sources */,
 				9249EEF96143995ABAA0B53D3D83CE51 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				CCAEF2831BD13498E659052012849EA7 /* AFNetworking-dummy.m in Sources */,
@@ -10086,6 +10085,7 @@
 				C3EC9322A4FB94AD0D0E156C91620A02 /* OWSProfileKeyMessage.m in Sources */,
 				B3AF2E851745A985433ABA39973AD84E /* OWSProvisioningCipher.m in Sources */,
 				866BC54259CD4CE192D4E3241EC7945D /* OWSProvisioningMessage.m in Sources */,
+				B828156D2292277A00E3885A /* Notification.swift in Sources */,
 				23395179715B76AFC8968AE22201B468 /* OWSReadReceiptManager.m in Sources */,
 				254716A2BD721A3E5DC396F8F3829C08 /* OWSReadReceiptsForLinkedDevicesMessage.m in Sources */,
 				CEE1E14704A879E0C71CFBD9A3BB8E43 /* OWSReceiptsForSenderMessage.m in Sources */,

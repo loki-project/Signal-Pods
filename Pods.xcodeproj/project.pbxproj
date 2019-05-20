@@ -4698,9 +4698,9 @@
 			isa = PBXGroup;
 			children = (
 				7248D49C1859585B53577D19796F5E00 /* BuildConfiguration.swift */,
-				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
 				248A930F228E6EE000B5C036 /* FriendRequestExpireJob.swift */,
 				248A9313228E7EC200B5C036 /* FriendRequestExpireMessageFinder.swift */,
+				B308AC252AEFCB17D68F0EB868E4144F /* Mnemonic */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

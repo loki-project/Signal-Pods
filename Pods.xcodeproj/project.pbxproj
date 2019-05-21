@@ -1094,6 +1094,7 @@
 		B808B5E3228E3EE000004C20 /* LKEphemeralMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B808B5E2228E3EC500004C20 /* LKEphemeralMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B808B5E5228E3EFA00004C20 /* LKEphemeralMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E4228E3EFA00004C20 /* LKEphemeralMessage.m */; };
 		B828156D2292277A00E3885A /* Notification+FriendRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B808B5E6228E540500004C20 /* Notification+FriendRequestStatus.swift */; };
+		B82815702293D24A00E3885A /* Promise+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B828156E2293D23A00E3885A /* Promise+Hashable.swift */; };
 		B82EEF0EFD0A66C2D32D03A5F49C3695 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53F9B691BDD6CF73A64436E4B5DE10B /* Catchable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B858E39E22810AB000C1722C /* LokiAPI+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39D22810AB000C1722C /* LokiAPI+Message.swift */; };
 		B858E3A022810AC500C1722C /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858E39F22810AC400C1722C /* SignalMessage.swift */; };
@@ -3709,6 +3710,7 @@
 		B808B5E2228E3EC500004C20 /* LKEphemeralMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKEphemeralMessage.h; sourceTree = "<group>"; };
 		B808B5E4228E3EFA00004C20 /* LKEphemeralMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKEphemeralMessage.m; sourceTree = "<group>"; };
 		B808B5E6228E540500004C20 /* Notification+FriendRequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+FriendRequestStatus.swift"; sourceTree = "<group>"; };
+		B828156E2293D23A00E3885A /* Promise+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Hashable.swift"; sourceTree = "<group>"; };
 		B841BB7F5C79D0282674332579A7F56A /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
 		B858E39D22810AB000C1722C /* LokiAPI+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Message.swift"; sourceTree = "<group>"; };
 		B858E39F22810AC400C1722C /* SignalMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
@@ -4712,6 +4714,7 @@
 				7248D49C1859585B53577D19796F5E00 /* BuildConfiguration.swift */,
 				C3F98932228E7FF700CC68E2 /* NSObject+Casting.h */,
 				C3F98933228E800700CC68E2 /* NSObject+Casting.m */,
+				B828156E2293D23A00E3885A /* Promise+Hashable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -10117,6 +10120,7 @@
 				248A9310228E6EE000B5C036 /* FriendRequestExpirationJob.swift in Sources */,
 				039DC75E700C9A1D78AC06FD5BAD7CCA /* Provisioning.pb.swift in Sources */,
 				FC03DE5F4E0A1AB7CAACB02B3FF37329 /* ProvisioningProto.swift in Sources */,
+				B82815702293D24A00E3885A /* Promise+Hashable.swift in Sources */,
 				8D0648D375F13CC7040B92BA2336B20D /* ProxiedContentDownloader.swift in Sources */,
 				210D2A11C72B175564539EBA7435B250 /* ReachabilityManager.swift in Sources */,
 				E452C5D10882907DC57538999B2F6991 /* ReverseDispatchQueue.swift in Sources */,

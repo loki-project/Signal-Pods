@@ -39,6 +39,11 @@
 #import "OWSRecordTranscriptJob.h"
 #import "OWSVerificationStateSyncMessage.h"
 #import "ECKeyPair+Loki.h"
+#import "OWSPrimaryStorage+Loki.h"
+#import "SessionCipher+Loki.h"
+#import "LKEphemeralMessage.h"
+#import "LKFriendRequestMessage.h"
+#import "NSObject+Casting.h"
 #import "OWSAttachmentDownloads.h"
 #import "TSAttachment.h"
 #import "TSAttachmentPointer.h"
@@ -176,10 +181,6 @@
 #import "OWSSyncManagerProtocol.h"
 #import "SSKAsserts.h"
 #import "UIImage+OWS.h"
-
-// Loki classes
-#import "LKEphemeralMessage.h"
-#import "LKFriendRequestMessage.h"
 
 FOUNDATION_EXPORT double SignalServiceKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char SignalServiceKitVersionString[];

@@ -104,6 +104,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/english.txt"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/japanese.txt"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/portuguese.txt"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/spanish.txt"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
 if [[ "$CONFIGURATION" == "App Store Release" ]]; then
@@ -119,6 +123,10 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/english.txt"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/japanese.txt"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/portuguese.txt"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/spanish.txt"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
 

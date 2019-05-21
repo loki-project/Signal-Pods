@@ -24,7 +24,8 @@
     "OTHER_CFLAGS": "$(inherited) -DSQLITE_HAS_CODEC"
   },
   "resources": [
-    "SignalServiceKit/Resources/Certificates/*"
+    "SignalServiceKit/Resources/Certificates/*",
+    "SignalServiceKit/src/Loki/Mnemonic/*.txt"
   ],
   "dependencies": {
     "Curve25519Kit": [

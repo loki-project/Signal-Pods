@@ -180,6 +180,7 @@
 // Loki classes
 #import "LKEphemeralMessage.h"
 #import "LKFriendRequestMessage.h"
+#import "OWSPrimaryStorage+Loki.h"
 
 FOUNDATION_EXPORT double SignalServiceKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char SignalServiceKitVersionString[];

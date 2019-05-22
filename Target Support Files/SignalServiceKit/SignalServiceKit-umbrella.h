@@ -41,6 +41,7 @@
 #import "ECKeyPair+Loki.h"
 #import "OWSPrimaryStorage+Loki.h"
 #import "SessionCipher+Loki.h"
+#import "LKAddressMessage.h"
 #import "LKEphemeralMessage.h"
 #import "LKFriendRequestMessage.h"
 #import "NSObject+Casting.h"

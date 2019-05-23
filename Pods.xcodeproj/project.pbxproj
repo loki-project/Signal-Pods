@@ -1104,6 +1104,8 @@
 		B7C66EE6E66D83D22095FFC840E1D4AB /* YapMutationStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D4521EBA8D5C620D1A932CF6706A1473 /* YapMutationStack.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B802104C0EB6DE0D25CDC904FCEC914A /* ProfileManagerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = ED733C42B9D5FD7A00E098FEC302881F /* ProfileManagerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B83C12A92295166C00E611C1 /* LokiAPI+SwarmAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C12A72295165200E611C1 /* LokiAPI+SwarmAPI.swift */; };
+		B83C12AC2296336300E611C1 /* LokiAPI+TargetWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C12AA2296333900E611C1 /* LokiAPI+TargetWrapper.swift */; };
+		B83C12AF2296375800E611C1 /* LokiAPI+Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C12AD2296373200E611C1 /* LokiAPI+Target.swift */; };
 		B8577B0C00FB15203478D426ED922ED6 /* YapDirtyDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = CA92F5369F368DAC5629738856BB405E /* YapDirtyDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8724E61A3AD30041105BE9B81ECA8EE /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3932484160610D99649A4DBE96CD424 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B886E1D4879E9C69398E3A98365A6FD4 /* TSErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D511C0726A587B0DC6D50162683052 /* TSErrorMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3771,6 +3773,8 @@
 		B7E205F5B914FE862F534DC1EB34D0B3 /* YapDatabaseCloudKitTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudKitTransaction.m; path = YapDatabase/Extensions/CloudKit/YapDatabaseCloudKitTransaction.m; sourceTree = "<group>"; };
 		B7FBEBB401566A937A69FC98EAE45A20 /* YapDatabaseCloudCorePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCorePrivate.h; path = YapDatabase/Extensions/CloudCore/Internal/YapDatabaseCloudCorePrivate.h; sourceTree = "<group>"; };
 		B83C12A72295165200E611C1 /* LokiAPI+SwarmAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+SwarmAPI.swift"; sourceTree = "<group>"; };
+		B83C12AA2296333900E611C1 /* LokiAPI+TargetWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+TargetWrapper.swift"; sourceTree = "<group>"; };
+		B83C12AD2296373200E611C1 /* LokiAPI+Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Target.swift"; sourceTree = "<group>"; };
 		B8890AB25024DB92E376B85D5389A5DB /* PreKeyStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreKeyStore.h; path = AxolotlKit/Classes/State/PreKeyStore.h; sourceTree = "<group>"; };
 		B8C8E06A72D9D00C18F9228D59EB3E56 /* TSPreKeyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSPreKeyManager.h; sourceTree = "<group>"; };
 		B8CEA08A473FAD9AE79885F48F0724E5 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
@@ -5808,6 +5812,8 @@
 				61063D09735510C59F98AB31D3815FBF /* LokiAPI.swift */,
 				B83C12A72295165200E611C1 /* LokiAPI+SwarmAPI.swift */,
 				FD583919822BC84A34860DA27EE21083 /* LokiAPI+Message.swift */,
+				B83C12AD2296373200E611C1 /* LokiAPI+Target.swift */,
+				B83C12AA2296333900E611C1 /* LokiAPI+TargetWrapper.swift */,
 				B1A831A220E674530C8AE864F9D0FD18 /* LokiMessageWrapper.swift */,
 				3719A7068236DC8CC70361EAF1E50FC2 /* LokiP2PMessageHandler.swift */,
 				85B6FA76A42EB853D8E5B6667E33FE9E /* SignalMessage.swift */,
@@ -10163,6 +10169,7 @@
 				903EE015AC4D7AE54B41C1B6EAA69B0B /* FeatureFlags.swift in Sources */,
 				29B4CF13879B3947060DB8B50F8FCB95 /* Fingerprint.pb.swift in Sources */,
 				26F9ECE8C9EC07EDF5AEF1550EA39F5F /* FingerprintProto.swift in Sources */,
+				B83C12AC2296336300E611C1 /* LokiAPI+TargetWrapper.swift in Sources */,
 				032ECACA6F7B48B85B2030F8E2219A94 /* FriendRequestExpirationJob.swift in Sources */,
 				AA3BC982DF29048A5A9D3B3257A1194C /* FriendRequestExpirationMessageFinder.swift in Sources */,
 				A5AFF6DE6E4A850044A0B68F51B16A90 /* FullTextSearchFinder.swift in Sources */,
@@ -10285,6 +10292,7 @@
 				7036A3AF664685CB630C3A45E34ECA2D /* OWSSyncConfigurationMessage.m in Sources */,
 				579EC80558BF02FA113AD7A4F1EF280C /* OWSSyncContactsMessage.m in Sources */,
 				3B745E0CA606CA5D01749FA53E514F17 /* OWSSyncGroupsMessage.m in Sources */,
+				B83C12AF2296375800E611C1 /* LokiAPI+Target.swift in Sources */,
 				1A900B360FD50BE5DCE17CFCBA06D2F2 /* OWSSyncGroupsRequestMessage.m in Sources */,
 				F75F6FFEDB5AB7CD6C7B7EB783CAD6DF /* OWSThumbnailService.swift in Sources */,
 				ED383CDE472E44BE84C5AE2EB036A2F5 /* OWSUDManager.swift in Sources */,

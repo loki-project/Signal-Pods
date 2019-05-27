@@ -671,7 +671,6 @@
 		75D9B72E82427026447FD31A27A2D30B /* SignalCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC61E7D21C626598C740FE0F90886CD /* SignalCoreKit-dummy.m */; };
 		76079D134D622A52DCF6EC9F351B7B8B /* LKEphemeralMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C1143D820076B14022BB3AA3D106B5 /* LKEphemeralMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		766D8764A8CD2FFD9C6E26AF578400F2 /* SSKPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E3094E64427705E8C0097A2CD35B4 /* SSKPreferences.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		771EA2C8E7E8E57D65812D60DDB57200 /* Promise+Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350559544661F583678AEE799E03BD3 /* Promise+Wrap.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7730749A7CDF9DC21DD88FACC6E91CEF /* BinaryEncodingSizeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4655A5332A21010DEECCA16A4C857458 /* BinaryEncodingSizeVisitor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		774C05573CC988093E56AC3C2D084AD1 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E919E92F5ED016E75189AD84EE010EA /* AES+Foundation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7754FD003683C5075ED6587C344BA572 /* SMKUDAccessKeyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F1B55C7215850A47AE0F3A00B2D24 /* SMKUDAccessKeyTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3559,7 +3558,6 @@
 		91B1A9559F3395A108EAC75E3AA5601C /* OWSDisappearingMessagesConfigurationMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationMessage.m; sourceTree = "<group>"; };
 		920051D0433536749B34CA1AFF4EA5D5 /* YapDatabaseViewState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewState.h; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewState.h; sourceTree = "<group>"; };
 		930616BEC0BF31255DCED2934AD42344 /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
-		9350559544661F583678AEE799E03BD3 /* Promise+Wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+Wrap.swift"; sourceTree = "<group>"; };
 		9352D80CE5306F06D19FA8822A21D457 /* YapDatabaseCloudCoreOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudCoreOperation.m; path = YapDatabase/Extensions/CloudCore/Utilities/Operations/YapDatabaseCloudCoreOperation.m; sourceTree = "<group>"; };
 		935EE09BD93F7F0D817C57891C02F562 /* JSONEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingError.swift; path = Sources/SwiftProtobuf/JSONEncodingError.swift; sourceTree = "<group>"; };
 		93840563A1C20996A2477576435C5097 /* PhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
@@ -6788,7 +6786,6 @@
 				7D65EA7F59B4ACF4841171298179CE05 /* NSObject+Casting.m */,
 				0D1C8016F00B60B665A8306FD59879E3 /* Promise+Hashable.swift */,
 				B8D92281229B609A006CA024 /* Promise+Retrying.swift */,
-				9350559544661F583678AEE799E03BD3 /* Promise+Wrap.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -10163,7 +10160,6 @@
 				46FCC1EBB0026FE543EE8E4C267DBE38 /* PreKeyRefreshOperation.swift in Sources */,
 				C5D7126DB8DA03615363FAB5F8C23093 /* Promise+Hashable.swift in Sources */,
 				87F4DDAC40699261ABC3BDB6D0A4A528 /* Promise+retainUntilComplete.swift in Sources */,
-				771EA2C8E7E8E57D65812D60DDB57200 /* Promise+Wrap.swift in Sources */,
 				AF6859B809C87ABFD36B83F9355EDB41 /* ProofOfWork.swift in Sources */,
 				7A5192A0D4CD8CDDC7E226AB527E1879 /* ProtoUtils.m in Sources */,
 				D95DCF587BEE3BC5118D54B9EC5E75C3 /* Provisioning.pb.swift in Sources */,

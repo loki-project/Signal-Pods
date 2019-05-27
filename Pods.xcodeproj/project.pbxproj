@@ -1089,6 +1089,8 @@
 		B8724E61A3AD30041105BE9B81ECA8EE /* NSDictionary+MTLMappingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B3932484160610D99649A4DBE96CD424 /* NSDictionary+MTLMappingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8A1DBCAB4BDC7658C82E8C4C5B2AF79 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3809BB77EF94E3FE8E65D21477E6 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8A3203803A6D1CAD56434CA6429461F /* OWSUnidentifiedDelivery.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83770485052F5DA8CD51F96AE732E278 /* OWSUnidentifiedDelivery.pb.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8D92280229B608B006CA024 /* AnyPromise+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D9227F229B608B006CA024 /* AnyPromise+Conversion.swift */; };
+		B8D92282229B609A006CA024 /* Promise+Retrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D92281229B609A006CA024 /* Promise+Retrying.swift */; };
 		B92D990EB299C9AF81F5B5B79F3C7AE2 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E0CF2E38A4A0848CBF9404D288AA7D /* CryptoSwift.framework */; };
 		B9627FE00863EA3054236D4049991D1F /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 3355C95FB82CEC7DDAA5763CC475B982 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B99E1AEE656F7DA86D5CDDDA2280896F /* Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AFDE8A9C646F5D6C1C1DF1A293BAA4 /* Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3790,6 +3792,8 @@
 		B8890AB25024DB92E376B85D5389A5DB /* PreKeyStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreKeyStore.h; path = AxolotlKit/Classes/State/PreKeyStore.h; sourceTree = "<group>"; };
 		B8C8E06A72D9D00C18F9228D59EB3E56 /* TSPreKeyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSPreKeyManager.h; sourceTree = "<group>"; };
 		B8CEA08A473FAD9AE79885F48F0724E5 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
+		B8D9227F229B608B006CA024 /* AnyPromise+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnyPromise+Conversion.swift"; sourceTree = "<group>"; };
+		B8D92281229B609A006CA024 /* Promise+Retrying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Retrying.swift"; sourceTree = "<group>"; };
 		B8EB2EECF2C8BE8ED75D5EF104544144 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		B8ED631B2BCC4E1C8C70195DC4B24B51 /* PreKeyWhisperMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreKeyWhisperMessage.h; path = AxolotlKit/Classes/CipherMessage/PreKeyWhisperMessage.h; sourceTree = "<group>"; };
 		B8F2259C1B0AB68DEA3B1C1B41A85495 /* OWSIdentityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSIdentityManager.h; sourceTree = "<group>"; };
@@ -6778,10 +6782,12 @@
 		C14C8980DA2A4BD3AE3DDB4A0C7F3367 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B8D9227F229B608B006CA024 /* AnyPromise+Conversion.swift */,
 				4A2A2BB02CFB1C215AAFA59CD280839E /* BuildConfiguration.swift */,
 				4F5EE05823A5AEFF82B1015209621F81 /* NSObject+Casting.h */,
 				7D65EA7F59B4ACF4841171298179CE05 /* NSObject+Casting.m */,
 				0D1C8016F00B60B665A8306FD59879E3 /* Promise+Hashable.swift */,
+				B8D92281229B609A006CA024 /* Promise+Retrying.swift */,
 				9350559544661F583678AEE799E03BD3 /* Promise+Wrap.swift */,
 			);
 			path = Utilities;
@@ -10066,6 +10072,7 @@
 				CCBE2FF11F0219FE73059A76D3BE1562 /* OWSChunkedOutputStream.m in Sources */,
 				28B5046A7ECE36E9AD7F98468337FE16 /* OWSContact.m in Sources */,
 				566BD418FE8EFD7F1097183FA8014772 /* OWSContactDiscoveryOperation.swift in Sources */,
+				B8D92282229B609A006CA024 /* Promise+Retrying.swift in Sources */,
 				36EB1239B6FF3F649C92EE622BCC028D /* OWSContactsOutputStream.m in Sources */,
 				7EB598ED554B04F981DC49A0FA5F3BA0 /* OWSCountryMetadata.m in Sources */,
 				52121CF2FC83675A00044A19DCDB3F35 /* OWSDevice.m in Sources */,
@@ -10224,6 +10231,7 @@
 				ECEA5917D45121CAB788B2897BA8239E /* WebSocketResources.pb.swift in Sources */,
 				4F35248A2A15506EFE39777B8F853A67 /* YapDatabase+Promise.swift in Sources */,
 				E24CF90E3773B6E01BF371A19DE0D847 /* YapDatabaseConnection+OWS.m in Sources */,
+				B8D92280229B608B006CA024 /* AnyPromise+Conversion.swift in Sources */,
 				0F9A017FD7D2E99F913B98F5A77B01BB /* YapDatabaseTransaction+OWS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

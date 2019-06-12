@@ -6383,7 +6383,7 @@
 			name = RTreeIndex;
 			sourceTree = "<group>";
 		};
-		A8DBACD21AE609AB93B60713593EA720 /* Messages */ = {
+		A8DBACD21AE609AB93B60713593EA720 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
 				F4221DD6111F6663519A3EEE20EB2FAB /* FriendRequestExpirationJob.swift */,
@@ -6394,10 +6394,11 @@
 				6C96FE38CACC2C0F5749D228BCE6AF9B /* LKEphemeralMessage.m */,
 				554758EDC4BDE69B95060554FA26D387 /* LKFriendRequestMessage.h */,
 				E3657CC34B165DD3B2D60231AE7AAA25 /* LKFriendRequestMessage.m */,
+				590C06689BA42EEDFF8629514BDC9004 /* LokiMessageWrapper.swift */,
 				8C15B61C7C424AF5B9EF93A1CD74DED9 /* Notification+FriendRequestStatus.swift */,
 				7CAB6984D7955CF6D8582B7AEEE9CF49 /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 			);
-			path = Messages;
+			path = Messaging;
 			sourceTree = "<group>";
 		};
 		A9611C110462268217190743A2FE22CF /* API */ = {
@@ -7053,7 +7054,7 @@
 			children = (
 				FB89527F6C329CF26FD5F370897BC65F /* API */,
 				D78B0995EDD90CAAC2FC89AB04D54D9B /* Crypto */,
-				A8DBACD21AE609AB93B60713593EA720 /* Messages */,
+				A8DBACD21AE609AB93B60713593EA720 /* Messaging */,
 				C14C8980DA2A4BD3AE3DDB4A0C7F3367 /* Utilities */,
 			);
 			name = Loki;
@@ -7314,10 +7315,9 @@
 				C5229D00DD828B71BA19526550AC2E4B /* LokiAPI.swift */,
 				72CE235EFB28D0201DE8E76FC6B5B9A9 /* LokiAPI+Convenience.swift */,
 				E47C56BD476BF224965FA17145C2DCAA /* LokiAPI+Message.swift */,
-				9DC5A15680CC950F712ED661CA45E435 /* LokiP2PManager.swift */,
 				8286195177B950579592D061A3828CEB /* LokiAPI+SwarmAPI.swift */,
 				66753DD5177411EA4E3A04677744BF3D /* LokiAPITarget.swift */,
-				590C06689BA42EEDFF8629514BDC9004 /* LokiMessageWrapper.swift */,
+				9DC5A15680CC950F712ED661CA45E435 /* LokiP2PManager.swift */,
 				522C75D9B445C6A27D97388F3AEB5541 /* LokiP2PMessageHandler.swift */,
 				B8AAB9FA229BADAE0075EA92 /* Notification+OnlineStatus.swift */,
 				AB45CF7781E877724F14B19CDD434AF6 /* SignalMessage.swift */,

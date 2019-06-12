@@ -220,10 +220,9 @@
 		239EBBE65BE624D6F2083BACB2408498 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F00E9DBDDC6184A06C6D2636CD599B /* HMAC.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		23E820B7913A01049D0BA9321B3466AD /* YapDatabaseFilteredViewTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CA3AB2608B0BFBC5B6573138B8D034 /* YapDatabaseFilteredViewTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		241E6F35451220E545BCB0E13D8A5522 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC855108881913BAE497C1A67824870 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		243D4BB222AF47DE0014DE37 /* LokiAPI+Polling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D4BB122AF47DE0014DE37 /* LokiAPI+Polling.swift */; };
+		243D4BB222AF47DE0014DE37 /* LokiAPI+LongPolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D4BB122AF47DE0014DE37 /* LokiAPI+LongPolling.swift */; };
 		243DE267B3EC1A21FB6E3CF92CE82F2A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E75AB0614CDEEC020E3CD5AE0DE32 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2451AE3DECBEA80FF19C89828C2C1591 /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2EA20FD713BE8DCC0CB4F325AA5CD6 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2453A9DC22B098A700B1AA75 /* LokiAPI+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453A9DB22B098A700B1AA75 /* LokiAPI+Request.swift */; };
 		24AC180501BB1E181703B5C54957FB5F /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A998582A1064C5CA4EDE594EAC7D1A3B /* Thenable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24AE77E7EA8834B87F7188C443251AF2 /* HKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D132DC0ECF8C44B87F4D3A00C575B55B /* HKDFKit.framework */; };
 		24F8F88E22B0836900F66039 /* Notification+Loki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F8F88D22B0836900F66039 /* Notification+Loki.swift */; };
@@ -2866,9 +2865,8 @@
 		23AFDE8A9C646F5D6C1C1DF1A293BAA4 /* Mantle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-umbrella.h"; sourceTree = "<group>"; };
 		23CA0530713514162A55A5BBEC6D688F /* curve_sigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curve_sigs.h; path = Sources/ed25519/additions/curve_sigs.h; sourceTree = "<group>"; };
 		23DB3784A31CE304D4D79CF5E093CE46 /* CDSSigningCertificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDSSigningCertificate.m; sourceTree = "<group>"; };
-		243D4BB122AF47DE0014DE37 /* LokiAPI+Polling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Polling.swift"; sourceTree = "<group>"; };
+		243D4BB122AF47DE0014DE37 /* LokiAPI+LongPolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+LongPolling.swift"; sourceTree = "<group>"; };
 		24423855A2C6BACFFD44B69A83FCC3AC /* YapDatabaseFilteredViewPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseFilteredViewPrivate.h; path = YapDatabase/Extensions/FilteredView/Internal/YapDatabaseFilteredViewPrivate.h; sourceTree = "<group>"; };
-		2453A9DB22B098A700B1AA75 /* LokiAPI+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LokiAPI+Request.swift"; sourceTree = "<group>"; };
 		24880DC8569D42565E23DC62D1112DF0 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		24A3A81624773B61B06E53C73F33FB23 /* YapDatabaseSearchResultsViewConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSearchResultsViewConnection.m; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchResultsViewConnection.m; sourceTree = "<group>"; };
 		24B21A6286446C9FAE78BE45C085E3BE /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
@@ -6784,11 +6782,11 @@
 			children = (
 				B8D9227F229B608B006CA024 /* AnyPromise+Conversion.swift */,
 				4A2A2BB02CFB1C215AAFA59CD280839E /* BuildConfiguration.swift */,
+				24F8F88D22B0836900F66039 /* Notification+Loki.swift */,
 				4F5EE05823A5AEFF82B1015209621F81 /* NSObject+Casting.h */,
 				7D65EA7F59B4ACF4841171298179CE05 /* NSObject+Casting.m */,
 				0D1C8016F00B60B665A8306FD59879E3 /* Promise+Hashable.swift */,
 				B8D92281229B609A006CA024 /* Promise+Retrying.swift */,
-				24F8F88D22B0836900F66039 /* Notification+Loki.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -7315,12 +7313,11 @@
 			children = (
 				D77D5B009FE63F413EC1931428871F1E /* JSON.swift */,
 				C5229D00DD828B71BA19526550AC2E4B /* LokiAPI.swift */,
-				72CE235EFB28D0201DE8E76FC6B5B9A9 /* LokiAPI+Convenience.swift */,
-				E47C56BD476BF224965FA17145C2DCAA /* LokiAPI+Message.swift */,
-				243D4BB122AF47DE0014DE37 /* LokiAPI+Polling.swift */,
-				2453A9DB22B098A700B1AA75 /* LokiAPI+Request.swift */,
-				8286195177B950579592D061A3828CEB /* LokiAPI+SwarmAPI.swift */,
 				66753DD5177411EA4E3A04677744BF3D /* LokiAPITarget.swift */,
+				72CE235EFB28D0201DE8E76FC6B5B9A9 /* LokiAPI+Convenience.swift */,
+				243D4BB122AF47DE0014DE37 /* LokiAPI+LongPolling.swift */,
+				E47C56BD476BF224965FA17145C2DCAA /* LokiAPI+Message.swift */,
+				8286195177B950579592D061A3828CEB /* LokiAPI+SwarmAPI.swift */,
 				9DC5A15680CC950F712ED661CA45E435 /* LokiP2PManager.swift */,
 				522C75D9B445C6A27D97388F3AEB5541 /* LokiP2PMessageHandler.swift */,
 				AB45CF7781E877724F14B19CDD434AF6 /* SignalMessage.swift */,
@@ -10070,7 +10067,7 @@
 				E4A125B238850CFAF541B0A22FE55A57 /* OWSBackgroundTask.m in Sources */,
 				D3C06412D4D1AFC53FDDDB8D9161F142 /* OWSBackupFragment.m in Sources */,
 				1DA713FD5D82F672A66305A1804EF1E8 /* OWSBatchMessageProcessor.m in Sources */,
-				243D4BB222AF47DE0014DE37 /* LokiAPI+Polling.swift in Sources */,
+				243D4BB222AF47DE0014DE37 /* LokiAPI+LongPolling.swift in Sources */,
 				F279755C0B700C99245B1471196275D4 /* OWSBlockedPhoneNumbersMessage.m in Sources */,
 				CC280C3A1B8C94F64CB87EEDEB5074E2 /* OWSBlockingManager.m in Sources */,
 				AA0C6C7CB67D9FA266EAC8F2E0BCA3BE /* OWSCensorshipConfiguration.m in Sources */,
@@ -10135,7 +10132,6 @@
 				640F87FC3B31A91C55F18556C4C21616 /* OWSPrimaryStorage+PreKeyStore.m in Sources */,
 				4723A8053A9B3298075C0C9F95C0BCCE /* OWSPrimaryStorage+SessionStore.m in Sources */,
 				0738317A7FB0F198E7600DE39E939787 /* OWSPrimaryStorage+SignedPreKeyStore.m in Sources */,
-				2453A9DC22B098A700B1AA75 /* LokiAPI+Request.swift in Sources */,
 				83B18812E0D546967927BA8DA60851A4 /* OWSPrimaryStorage.m in Sources */,
 				C685086E321EA6069F59AABD6A20D208 /* OWSProfileKeyMessage.m in Sources */,
 				5CB8A8EFF7B10D1B948BE3E1E825E43E /* OWSProvisioningCipher.m in Sources */,

@@ -3,7 +3,7 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_CFLAGS = $(inherited) -DSQLITE_HAS_CODEC
 OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "AFNetworking" -framework "AxolotlKit" -framework "CocoaLumberjack" -framework "CoreGraphics" -framework "CoreTelephony" -framework "CryptoSwift" -framework "Curve25519Kit" -framework "Foundation" -framework "HKDFKit" -framework "Mantle" -framework "MobileCoreServices" -framework "PromiseKit" -framework "Reachability" -framework "SAMKeychain" -framework "SQLCipher" -framework "Security" -framework "SignalCoreKit" -framework "SignalMetadataKit" -framework "SignalServiceKit" -framework "Starscream" -framework "SwiftProtobuf" -framework "SystemConfiguration" -framework "UIKit" -framework "YapDatabase" -framework "libPhoneNumber_iOS" -framework "openssl"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -suppress-warnings
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

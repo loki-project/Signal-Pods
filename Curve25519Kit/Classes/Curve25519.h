@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return curve25519 key pair.
  */
 + (ECKeyPair *)generateKeyPair;
++ (ECKeyPair *)generateKeyPairFromSeed:(NSData *)seed;
 
 @end
 

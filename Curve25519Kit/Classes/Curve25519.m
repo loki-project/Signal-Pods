@@ -71,9 +71,15 @@ extern int curve25519_sign(unsigned char *signature_out, /* 64 bytes */
 
 + (ECKeyPair *)generateKeyPair
 {
+    NSData *seed = [Randomness generateRandomBytes:ECCKeyLength];
+    return [Curve25519 generateKeyPairFromSeed:seed];
+}
+
++ (ECKeyPair *)generateKeyPairFromSeed:(NSData *)seed
+{
     // Generate key pair as described in
     // https://code.google.com/p/curve25519-donna/
-    NSMutableData *privateKey = [[Randomness generateRandomBytes:ECCKeyLength] mutableCopy];
+    NSMutableData *privateKey = [seed mutableCopy];
     uint8_t *privateKeyBytes = privateKey.mutableBytes;
     privateKeyBytes[0] &= 248;
     privateKeyBytes[31] &= 127;

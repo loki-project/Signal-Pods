@@ -130,6 +130,11 @@ extern int curve25519_sign(unsigned char *signature_out, /* 64 bytes */
     return [ECKeyPair generateKeyPair];
 }
 
++ (ECKeyPair *)generateKeyPairFromSeed:(NSData *)seed
+{
+    return [ECKeyPair generateKeyPairFromSeed:seed];
+}
+
 + (NSData *)throws_generateSharedSecretFromPublicKey:(NSData *)theirPublicKey andKeyPair:(ECKeyPair *)keyPair
 {
     if (!keyPair) {

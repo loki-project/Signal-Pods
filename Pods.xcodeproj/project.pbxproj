@@ -4398,6 +4398,7 @@
 		01D0635B4329E390F408DA7D7839E14A /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				2447B780230E20A9007FDEDE /* DiffieHellman.swift */,
 				F0AB3D222ECA4936A5C83320198FF118 /* ECKeyPair+Loki.h */,
 				3CC4704232FA99C2B169C710DF4E3CEB /* ECKeyPair+Loki.m */,
 				6C0508E70BA150F975FFFD2B428953B5 /* ECKeyPair+Loki.swift */,
@@ -4408,7 +4409,6 @@
 				50E1521C8CC6001EB0FC99747B2FF11C /* ProofOfWork.swift */,
 				2FCB1D5D2FF3288E2B0C3D26F16248B4 /* SessionCipher+Loki.h */,
 				61894B22CBC17AB137055BAEB2E20E8B /* SessionCipher+Loki.m */,
-				2447B780230E20A9007FDEDE /* DiffieHellman.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";

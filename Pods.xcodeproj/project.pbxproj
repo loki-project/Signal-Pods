@@ -1110,6 +1110,7 @@
 		B7DEF6DF959273B40C644ED414BF237C /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = EB735B2F5C52E80B8A42DD5E7C0D6E1C /* ge_msub.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7E72C95394151D46A52BBAEE30EC654 /* TSDatabaseSecondaryIndexes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9906C084969B5651F9FC66098C1B63 /* TSDatabaseSecondaryIndexes.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7FC56FC7C142A79E9BBC17F080CDD7F /* SPK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = CC71D140B010C8C1EFEAA4B7E68C414C /* SPK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B82584952314C2A9001B41CB /* LokiGroupChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82584942314C2A9001B41CB /* LokiGroupChat.swift */; };
 		B82714D6E9CC8E49E69B8CF7A03BA7EA /* curve_sigs.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA1FAB12F879444950F34FE61BFCC94 /* curve_sigs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B828EE521CA671F6DBDC2C83F7C33103 /* AES-CBC.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FBD33B18C8C4A94492D9CCEECC81AF /* AES-CBC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B83C2C0CBFCDB4493BD3BE1773C0E45A /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA154889FC6D289DD3F2FA9040419DA /* SAMKeychain-dummy.m */; };
@@ -3608,6 +3609,7 @@
 		B7D96DA6C985B75B2507B1F29B4B5195 /* YapDatabaseFullTextSearchConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFullTextSearchConnection.m; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchConnection.m; sourceTree = "<group>"; };
 		B806F15167A7F8C42EDF93A9A3BAD877 /* Pods-SignalMessaging.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalMessaging.app store release.xcconfig"; sourceTree = "<group>"; };
 		B82425108A82B58263EF899F12902469 /* YapDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManager.m; path = YapDatabase/Internal/YapDatabaseManager.m; sourceTree = "<group>"; };
+		B82584942314C2A9001B41CB /* LokiGroupChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiGroupChat.swift; sourceTree = "<group>"; };
 		B84D9D91487D7BEF475426E15F528663 /* Pods-Signal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Signal-dummy.m"; sourceTree = "<group>"; };
 		B8788B3D78DF0B5CA7681E418D6540C9 /* OWSMessageServiceParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMessageServiceParams.h; sourceTree = "<group>"; };
 		B878FC8F7E44A8507F6C6D40CBFB294E /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
@@ -5452,6 +5454,7 @@
 				FA7CA7ECD53167485EFAA6264A41982A /* LokiAPI+LongPolling.swift */,
 				B8B1F2077C68D647A146D80CAA8E54E9 /* LokiAPI+SwarmAPI.swift */,
 				9F793C389EBD835CDB7E31FA9BBA7BBD /* LokiAPITarget.swift */,
+				B82584942314C2A9001B41CB /* LokiGroupChat.swift */,
 				32CF221E24CD85360CA801BC4C66D0C8 /* LokiGroupChatAPI.swift */,
 				504F8F479C1CD1306CE7F58D0AB4753F /* LokiGroupMessage.swift */,
 				98E6715555FF9CCF587E4E1536B9D2E5 /* LokiMessage.swift */,
@@ -8699,6 +8702,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					0130B3724283586C0E9D2A112D4F2AA1 = {
+						LastSwiftMigration = 1030;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -10169,6 +10177,7 @@
 			files = (
 				2A497283F46845D9AB924401BF9B1492 /* AFAutoPurgingImageCache.m in Sources */,
 				64769DA6344D059C294CD7CB8586CAC6 /* AFHTTPSessionManager.m in Sources */,
+				B82584952314C2A9001B41CB /* LokiGroupChat.swift in Sources */,
 				7AC4CDAC04F146D2ED473DB0814C00C1 /* AFImageDownloader.m in Sources */,
 				3770EAF40BF7754F27FBBF8BE92EB108 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				BD758C4E4FD09EC0A7835EB94EB4700C /* AFNetworking-dummy.m in Sources */,
@@ -11404,6 +11413,7 @@
 			baseConfigurationReference = CF955938309D7BE61AE227E1C3E502CA /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -11501,6 +11511,7 @@
 			baseConfigurationReference = CF955938309D7BE61AE227E1C3E502CA /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -11521,6 +11532,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -11880,6 +11892,7 @@
 			baseConfigurationReference = CF955938309D7BE61AE227E1C3E502CA /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

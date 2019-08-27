@@ -232,6 +232,7 @@
 		2447B781230E20AA007FDEDE /* DiffieHellman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447B780230E20A9007FDEDE /* DiffieHellman.swift */; };
 		2452B6806D3B615903D1696D8C7962EF /* YapDatabaseAutoViewTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0D01FD00B358C16E2BBF1754C474D4 /* YapDatabaseAutoViewTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2479CC5BC0AC183C92B7C702C797CDA6 /* LokiAPI+LongPolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CA7ECD53167485EFAA6264A41982A /* LokiAPI+LongPolling.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24BC89D42314C7CE00D3A2C6 /* LokiGroupChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82584942314C2A9001B41CB /* LokiGroupChat.swift */; };
 		24ED0439ACCC7D91FA6061006AF12ACA /* NSData+keyVersionByte.h in Headers */ = {isa = PBXBuildFile; fileRef = 5669D39B618731F221500A007CEFBCEA /* NSData+keyVersionByte.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25051FCCB050777B60A8C25D36261511 /* YapDatabaseCloudKitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B536C7662EEEAD527EFB39C0E3C0FE /* YapDatabaseCloudKitTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2551DB13C4245778E76ED66918775E81 /* Google_Protobuf_Any+Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09AF9C6BD7B9913D981EA5EDE547CD3 /* Google_Protobuf_Any+Registry.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1110,7 +1111,6 @@
 		B7DEF6DF959273B40C644ED414BF237C /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = EB735B2F5C52E80B8A42DD5E7C0D6E1C /* ge_msub.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7E72C95394151D46A52BBAEE30EC654 /* TSDatabaseSecondaryIndexes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9906C084969B5651F9FC66098C1B63 /* TSDatabaseSecondaryIndexes.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7FC56FC7C142A79E9BBC17F080CDD7F /* SPK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = CC71D140B010C8C1EFEAA4B7E68C414C /* SPK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B82584952314C2A9001B41CB /* LokiGroupChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82584942314C2A9001B41CB /* LokiGroupChat.swift */; };
 		B82714D6E9CC8E49E69B8CF7A03BA7EA /* curve_sigs.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA1FAB12F879444950F34FE61BFCC94 /* curve_sigs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B828EE521CA671F6DBDC2C83F7C33103 /* AES-CBC.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FBD33B18C8C4A94492D9CCEECC81AF /* AES-CBC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B83C2C0CBFCDB4493BD3BE1773C0E45A /* SAMKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA154889FC6D289DD3F2FA9040419DA /* SAMKeychain-dummy.m */; };
@@ -10014,6 +10014,7 @@
 				33ED43415C05D38538E3FE170F5C29A3 /* OWSCountryMetadata.m in Sources */,
 				C48D2D7FDCB0AA2570907DE4941F7959 /* OWSDevice.m in Sources */,
 				2E7305B71F611BF47C2EAD36EB8C60AB /* OWSDeviceProvisioner.m in Sources */,
+				24BC89D42314C7CE00D3A2C6 /* LokiGroupChat.swift in Sources */,
 				145494C30B4E7D85BC8D0A76633EC011 /* OWSDeviceProvisioningCodeService.m in Sources */,
 				BFCD9C358500365FBFDCB05F730FD21A /* OWSDeviceProvisioningService.m in Sources */,
 				0D0D179B8B1DF6B4759CE20625D0F744 /* OWSDevicesService.m in Sources */,
@@ -10177,7 +10178,6 @@
 			files = (
 				2A497283F46845D9AB924401BF9B1492 /* AFAutoPurgingImageCache.m in Sources */,
 				64769DA6344D059C294CD7CB8586CAC6 /* AFHTTPSessionManager.m in Sources */,
-				B82584952314C2A9001B41CB /* LokiGroupChat.swift in Sources */,
 				7AC4CDAC04F146D2ED473DB0814C00C1 /* AFImageDownloader.m in Sources */,
 				3770EAF40BF7754F27FBBF8BE92EB108 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				BD758C4E4FD09EC0A7835EB94EB4700C /* AFNetworking-dummy.m in Sources */,

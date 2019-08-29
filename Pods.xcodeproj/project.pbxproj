@@ -1254,6 +1254,7 @@
 		C2E0FCA77F0BA1D13822EF0FD37E653D /* YDBCKAttachRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F53883A9C0B50879DEACEED273DEDF /* YDBCKAttachRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C2F88958A6D05EA4D8EDB6FB58F3F171 /* YapDatabaseFullTextSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 576EE3A5A8CA447F801A0C6CE9A095DE /* YapDatabaseFullTextSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C30DE6C01B9DDC1CA9C8EBA7F4EC1C52 /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2185C6A4437005160A573547870F419 /* SwiftProtobuf-dummy.m */; };
+		C3231133231788BF00327D76 /* LokiLongPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32311312317885500327D76 /* LokiLongPoller.swift */; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFEB0C6809C09F005B5F1A668E2F1E7 /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3C8D4784EDE7B3F6434C8186D935704 /* YapWhitelistBlacklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4663E2D8A9827A1637B41C4466866848 /* YapWhitelistBlacklist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FAF345B9D19E4F44F520E27952C177 /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4085,6 +4086,7 @@
 		C245E678F229EB28EAD39D4EAB404183 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24A755CD4F385BF7438D0E40B9A5534 /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
 		C31E395325F8B0157ED322DD2DDA3987 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		C32311312317885500327D76 /* LokiLongPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiLongPoller.swift; sourceTree = "<group>"; };
 		C366DEE60275BDC2FD46F22D77324676 /* Date + codingStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date + codingStrategy.swift"; path = "Sources/FeedKit/Extensions/Date + codingStrategy.swift"; sourceTree = "<group>"; };
 		C3BE238CBD79AEB87914AB66776D7851 /* RSSFeed + mapCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RSSFeed + mapCharacters.swift"; path = "Sources/FeedKit/Models/RSS/RSSFeed + mapCharacters.swift"; sourceTree = "<group>"; };
 		C3F0ACCE93BE391ADF8BC18C772DB39A /* OWSStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSStorage.h; sourceTree = "<group>"; };
@@ -5438,6 +5440,7 @@
 				CA728E7D4A89A2B704BC3DFA6227C113 /* LokiGroupChat.swift */,
 				6E3BDD35A7BD9A38A53C4B19464054E6 /* LokiGroupChatAPI.swift */,
 				CCB97D8E31107F3876EB82D027C6F45D /* LokiGroupMessage.swift */,
+				C32311312317885500327D76 /* LokiLongPoller.swift */,
 				3F1E8805A94BA6EAFC339DC1F9B2AE90 /* LokiMessage.swift */,
 				69BC5C6308B6F0FAE9829D094DE46226 /* LokiP2PAPI.swift */,
 				B825849D23150140001B41CB /* LokiRSSFeed.swift */,
@@ -10360,6 +10363,7 @@
 				A0D192F0AFC1935721EE657943A33DC6 /* OWSDeviceProvisioningService.m in Sources */,
 				4992DCAF9473344A8FBDEF5B33E13EA0 /* OWSDevicesService.m in Sources */,
 				3FD0D7EFE09B3F6796D9AC6BA339E9DC /* OWSDisappearingConfigurationUpdateInfoMessage.m in Sources */,
+				C3231133231788BF00327D76 /* LokiLongPoller.swift in Sources */,
 				132E301C652C91936CC94353410CCDE5 /* OWSDisappearingMessagesConfiguration.m in Sources */,
 				6532EE86B3556E672C3E3DE62B9517A6 /* OWSDisappearingMessagesConfigurationMessage.m in Sources */,
 				FC61C324D6BB143FCF09FFD2CE14DFC2 /* OWSDisappearingMessagesFinder.m in Sources */,

@@ -6214,8 +6214,8 @@
 				28ABD9DA14F5FC0BCE6C6829C4993175 /* LKFriendRequestMessage.h */,
 				9D32275EFD0D5A37386B82B079AC8A9A /* LKFriendRequestMessage.m */,
 				71567C6A9219A4CD027922810DA039C4 /* LokiMessageWrapper.swift */,
-				4627FC9FDF55DCA38DA94B6000651F59 /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 				24DB03702326244500A8EE86 /* SSKProtoEnvelope+Loki.swift */,
+				4627FC9FDF55DCA38DA94B6000651F59 /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";

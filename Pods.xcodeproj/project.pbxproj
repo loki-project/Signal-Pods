@@ -145,7 +145,6 @@
 		13F288C1A2F75C5880940EB78A51AF8E /* FIRLoggerLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 909AA9F52F39D6ED63F1DA1AD6EBE54A /* FIRLoggerLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13FB9AB59042FDE2237EBFEF44BD2E83 /* OWSDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = B54A8ED68F92CDC468946A4099BC8884 /* OWSDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13FE927B1AA88C9A24EDDD5C74CDC5BC /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C064BA00A9451620EF2C9C19B0094BC /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14156DCD377ED016E10EACB390B30F42 /* ECKeyPair+Loki.h in Headers */ = {isa = PBXBuildFile; fileRef = 473A92AA934A498ABE0404B25DE23608 /* ECKeyPair+Loki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		142B89334F9231D9DCC76D0E9D2C4196 /* TSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72F67D71B04B05A0832BAAE271C994 /* TSThread.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1460DDB858DC85B49DF470E5B607AC8C /* OWSUDManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A917D2EE595D5F8EE8ACF5846B6F95 /* OWSUDManagerTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1485419823BD6BD8347A49CB6F17378D /* YapDatabaseSecondaryIndexOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FBADF097D5C6143D4C04C32ECB9C36 /* YapDatabaseSecondaryIndexOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -863,7 +862,6 @@
 		74BC7533F756699DD21CF14A4ADD77E2 /* fe_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 274AFA2F9D97D25B114D493F9E00465B /* fe_1.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		74E27D4EB449D5EF6361AC339C221676 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA91A07BAD3A48C730F89C7A64B011 /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		752E898CD280FB7BEE9225332068F7C3 /* SignalCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C77FAC54752FAC36C415B8789696499 /* SignalCoreKit.framework */; };
-		7552C614C4F44B37DD2AB2FC151DBB95 /* ECKeyPair+Loki.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C403D8CB6BDDEE578F3BAB7C2FB26 /* ECKeyPair+Loki.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		757916ADB577B9C2226977F2C8C692AD /* MessageKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B72AC44122309F003046F5431DA5 /* MessageKeys.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		75C058667261976ABD35C8BC1FF9682E /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990668860C5123436EC2DE915847403 /* AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		75ED0F535B18775727448B10DE384BD8 /* SignalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37495E4BDB0068CDA70D65393D0D3E97 /* SignalMessage.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3555,7 +3553,6 @@
 		4728A409C6CF96EBA3FD9C4AF3577253 /* TSInvalidIdentityKeyErrorMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSInvalidIdentityKeyErrorMessage.m; sourceTree = "<group>"; };
 		472E92DE4CBC57FFB35EBD4FDFA22D49 /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
 		4736A6E19D2C3F74A6EBD33BAAD7E8F5 /* OWSAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSAnalytics.m; sourceTree = "<group>"; };
-		473A92AA934A498ABE0404B25DE23608 /* ECKeyPair+Loki.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECKeyPair+Loki.h"; sourceTree = "<group>"; };
 		475AA7CF65EAC0FAECB18CBF9D512C40 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
 		476451FB00D63DCBE21B0089674BF453 /* NSObject+OWS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OWS.m"; path = "SignalCoreKit/src/NSObject+OWS.m"; sourceTree = "<group>"; };
 		4769D817DCD5D6A1F66AE9F8809E8B80 /* YapManyToManyCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapManyToManyCache.m; path = YapDatabase/Extensions/CloudCore/Utilities/YapManyToManyCache.m; sourceTree = "<group>"; };
@@ -4388,7 +4385,6 @@
 		ADD4B81C336557015F1BFF9D4624A0F1 /* YapDatabaseViewState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewState.m; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewState.m; sourceTree = "<group>"; };
 		ADEF4EB6A92AB6B5FE07017FE6DF6A9B /* SignalIOSProto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalIOSProto.swift; sourceTree = "<group>"; };
 		AE008D05F201104E810673D7E10FC78C /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		AE0C403D8CB6BDDEE578F3BAB7C2FB26 /* ECKeyPair+Loki.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ECKeyPair+Loki.m"; sourceTree = "<group>"; };
 		AE416FF6BD918EABCBDB38BF3329C2CF /* SwiftProtobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-prefix.pch"; sourceTree = "<group>"; };
 		AE78772260CAF64408E0D85F51B4B002 /* MPEnumDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPEnumDescription.m; path = Mixpanel/MPEnumDescription.m; sourceTree = "<group>"; };
 		AE8073F0A0FABC5630F7A73C8CECD635 /* SignalCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5829,8 +5825,6 @@
 			isa = PBXGroup;
 			children = (
 				1DE0FD1354C021B0F74684975F75D57D /* DiffieHellman.swift */,
-				473A92AA934A498ABE0404B25DE23608 /* ECKeyPair+Loki.h */,
-				AE0C403D8CB6BDDEE578F3BAB7C2FB26 /* ECKeyPair+Loki.m */,
 				D2CE2285CE37606D884826292C4AC837 /* ECKeyPair+Loki.swift */,
 				1069D6B5284154A0A4B13003C2A2B17E /* FallbackSessionCipher.swift */,
 				776C5D9E96109FA1E2CA170512019DBF /* Mnemonic.swift */,
@@ -9246,7 +9240,6 @@
 				2E6E129118B5E87C826D81088F19CD76 /* ContactsManagerProtocol.h in Headers */,
 				35A4B93E8064FC8E433597E87A429D6F /* ContactsUpdater.h in Headers */,
 				70962685A031489F3BC14ECEA69A813A /* DataSource.h in Headers */,
-				14156DCD377ED016E10EACB390B30F42 /* ECKeyPair+Loki.h in Headers */,
 				C9D7B1D0C4E83D4F7C0C7EB1DD870AB2 /* FunctionalUtil.h in Headers */,
 				DBA458656BCDE3D6A3227CB4929E2CC3 /* LKAddressMessage.h in Headers */,
 				CA2F8C6B3409660661C26BCF26525553 /* LKEphemeralMessage.h in Headers */,
@@ -11691,7 +11684,6 @@
 				73BB1E4436C2B85D022F96E8339D1C3B /* DeviceNames.swift in Sources */,
 				570F117C4F4AC0FD55421C16FFAB7411 /* Dictionary+Description.swift in Sources */,
 				B01AE498A26D4C7084E812008806CAE5 /* DiffieHellman.swift in Sources */,
-				7552C614C4F44B37DD2AB2FC151DBB95 /* ECKeyPair+Loki.m in Sources */,
 				7CFA40E862BA0E5479919EF2EFBB6B07 /* ECKeyPair+Loki.swift in Sources */,
 				6C08ADBCC4081F549C1D8C28C8A4D0D7 /* Factories.swift in Sources */,
 				3B5ED0FEC6011BDDDF778D8CEEF67833 /* FakeContactsManager.swift in Sources */,

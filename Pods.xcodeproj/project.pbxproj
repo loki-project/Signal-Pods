@@ -261,9 +261,9 @@
 		241D18F47174C58213B8B02D3679A46F /* OWSDisappearingMessagesConfigurationMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D19AA2281BB83BD77FA4BC5CC50D196 /* OWSDisappearingMessagesConfigurationMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2422E6544DDD635C289F152CF5F3650A /* GoogleUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00A0F1F040487DD5EFAFAFDF99D90 /* GoogleUtilities-dummy.m */; };
 		2429D5FEBE097C4E4F205BB5DA5D2909 /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7193905C2F9BA2C320AA11927D7974 /* crypto_hash_sha512.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		242D1C072330B0A3006664EA /* PairingAuthorisationsIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D1C062330B0A3006664EA /* PairingAuthorisationsIndex.swift */; };
-		242D1C092330B2D2006664EA /* LokiPairingAuthorisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D1C082330B2D2006664EA /* LokiPairingAuthorisation.swift */; };
-		242D1C0F2331B11E006664EA /* OWSPrimaryStorage+Multidevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D1C0E2331B11E006664EA /* OWSPrimaryStorage+Multidevice.swift */; };
+		242D1C152331EB8C006664EA /* LokiPairingAuthorisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D1C112331EB8C006664EA /* LokiPairingAuthorisation.swift */; };
+		242D1C172331EB8C006664EA /* OWSPrimaryStorage+Multidevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D1C122331EB8C006664EA /* OWSPrimaryStorage+Multidevice.swift */; };
+		242D1C192331EB8C006664EA /* PairingAuthorisationsIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D1C132331EB8C006664EA /* PairingAuthorisationsIndex.swift */; };
 		242E861FAF2EF2FFF2D9CB57513CF0C2 /* NSData+keyVersionByte.m in Sources */ = {isa = PBXBuildFile; fileRef = 057851606DFB504A8902A8411912DD51 /* NSData+keyVersionByte.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24312470BB5FA7F3E8529A39D62303A0 /* MPDismissKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 774ED3C43467FCA99777398754FC984D /* MPDismissKeyboard.png */; };
 		24B12418879A85551F31BEF591424957 /* MPDesignerTrackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCBDA2637DA192214876F68752F8EE6 /* MPDesignerTrackMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3057,7 +3057,7 @@
 		04B2F4EBD3F27160E416BD1160DF859F /* RSSFeedItemGUID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemGUID.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItemGUID.swift; sourceTree = "<group>"; };
 		04BC28D8BF8D283B793EDE978C5C3CD1 /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Array+Foundation.swift"; sourceTree = "<group>"; };
 		04E98D9FDC82DCF36B76A184166911CD /* OWSCountryMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSCountryMetadata.h; sourceTree = "<group>"; };
-		0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SignalServiceKit-Unit-Tests"; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0530A251639A2A59ACE90878F6100E5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		053130E0FAFD628505108947C74A51B2 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
 		055B69F58658F38C4423C4CDB4B3830F /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
@@ -3302,9 +3302,9 @@
 		23518BDA07CDE324DF381D6F6340FF41 /* ge_p3_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ge_p3_to_p2.c; path = Sources/ed25519/ge_p3_to_p2.c; sourceTree = "<group>"; };
 		2351B4AC2EF917051BB04345BB140BF0 /* WhisperMessageSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhisperMessageSerialization.m; path = AxolotlKitTests/WhisperMessageSerialization.m; sourceTree = "<group>"; };
 		239D4B61973B594C9405AB23828683D7 /* YapDatabaseViewRangeOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewRangeOptions.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewRangeOptions.h; sourceTree = "<group>"; };
-		242D1C062330B0A3006664EA /* PairingAuthorisationsIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingAuthorisationsIndex.swift; sourceTree = "<group>"; };
-		242D1C082330B2D2006664EA /* LokiPairingAuthorisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPairingAuthorisation.swift; sourceTree = "<group>"; };
-		242D1C0E2331B11E006664EA /* OWSPrimaryStorage+Multidevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OWSPrimaryStorage+Multidevice.swift"; sourceTree = "<group>"; };
+		242D1C112331EB8C006664EA /* LokiPairingAuthorisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiPairingAuthorisation.swift; sourceTree = "<group>"; };
+		242D1C122331EB8C006664EA /* OWSPrimaryStorage+Multidevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OWSPrimaryStorage+Multidevice.swift"; sourceTree = "<group>"; };
+		242D1C132331EB8C006664EA /* PairingAuthorisationsIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairingAuthorisationsIndex.swift; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		243AB39BA8DEB501EB1429C77F309526 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		2471F454EA95632E7872AF57A0D84A1C /* MediaPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaPlayer.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaPlayer.swift; sourceTree = "<group>"; };
@@ -5928,12 +5928,12 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		242D1C0523308795006664EA /* Multidevice */ = {
+		242D1C102331EB8C006664EA /* Multidevice */ = {
 			isa = PBXGroup;
 			children = (
-				242D1C062330B0A3006664EA /* PairingAuthorisationsIndex.swift */,
-				242D1C082330B2D2006664EA /* LokiPairingAuthorisation.swift */,
-				242D1C0E2331B11E006664EA /* OWSPrimaryStorage+Multidevice.swift */,
+				242D1C112331EB8C006664EA /* LokiPairingAuthorisation.swift */,
+				242D1C122331EB8C006664EA /* OWSPrimaryStorage+Multidevice.swift */,
+				242D1C132331EB8C006664EA /* PairingAuthorisationsIndex.swift */,
 			);
 			path = Multidevice;
 			sourceTree = "<group>";
@@ -7711,7 +7711,7 @@
 				9FB7FB36EBB80CAFFA6E90EA8A20E06D /* API */,
 				189A3D497987F6B4C6B93584A644F804 /* Crypto */,
 				3C6710D6E8745E4F7D7A75D7B20C755A /* Messaging */,
-				242D1C0523308795006664EA /* Multidevice */,
+				242D1C102331EB8C006664EA /* Multidevice */,
 				7C2E4CF5859C91EAA054A68B9FF83E8A /* Utilities */,
 			);
 			name = Loki;
@@ -7798,7 +7798,7 @@
 				65D22897B43DBC799B88200CA375ACF2 /* SignalMetadataKit.framework */,
 				5AD3507E34C0BF326842AEF7D4214501 /* SignalMetadataKit-Unit-Tests */,
 				20B35C380CDD0D042713D16F2ED238B2 /* SignalServiceKit.framework */,
-				0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests */,
+				0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests.xctest */,
 				92F8CE06EE06A877F2D16277EA351B1A /* SQLCipher.framework */,
 				DFB14F048F1CE67D457D4674F8CA5C01 /* SSZipArchive.framework */,
 				6883AAF5FC404F5DECFC680FAD73C402 /* Starscream.framework */,
@@ -9649,7 +9649,7 @@
 			);
 			name = "SignalServiceKit-Unit-Tests";
 			productName = "SignalServiceKit-Unit-Tests";
-			productReference = 0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests */;
+			productReference = 0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2A52F930E1C3719EB6B4BB97D04119F0 /* SwiftProtobuf */ = {
@@ -11708,7 +11708,6 @@
 				85A8A758773D69C98015F06050D338EC /* FeatureFlags.swift in Sources */,
 				0ACA843EDFD51BCA8A5B421BCDB40B5E /* Fingerprint.pb.swift in Sources */,
 				6955F4B7485E390AAC3D8AADDCF4F4C0 /* FingerprintProto.swift in Sources */,
-				242D1C092330B2D2006664EA /* LokiPairingAuthorisation.swift in Sources */,
 				1C7E3ECBD3F68667AA6EFD18B535D529 /* FriendRequestExpirationJob.swift in Sources */,
 				797009823B1B161BD5266F39B150EA23 /* FriendRequestExpirationMessageFinder.swift in Sources */,
 				C5C49A600D98206AB2E19392845F4C2A /* FullTextSearchFinder.swift in Sources */,
@@ -11786,7 +11785,7 @@
 				54A388EC2F1E39FF48EFCEBDD2B04832 /* OWSFakeContactsUpdater.m in Sources */,
 				43FDDA80EBE7ABAC72596427000EA93C /* OWSFakeMessageSender.m in Sources */,
 				FBC85F40ED26FF0BDA011E1FB59B2192 /* OWSFakeNetworkManager.m in Sources */,
-				242D1C072330B0A3006664EA /* PairingAuthorisationsIndex.swift in Sources */,
+				242D1C192331EB8C006664EA /* PairingAuthorisationsIndex.swift in Sources */,
 				10526D1FDF134F4AFCDB691398F8CD73 /* OWSFakeProfileManager.m in Sources */,
 				9FB67C58961080B8FAAC5429EFE68A83 /* OWSFileSystem.m in Sources */,
 				F80875FB7664137B188D4F591696EC6A /* OWSFingerprint.m in Sources */,
@@ -11810,7 +11809,6 @@
 				5589AB4DFBF505B01A119B834A8094FE /* OWSMessageServiceParams.m in Sources */,
 				24DB03712326244500A8EE86 /* SSKProtoEnvelope+Loki.swift in Sources */,
 				86D556BFD73FC9A4FFDEEDDA69FCFAFA /* OWSMessageUtils.m in Sources */,
-				242D1C0F2331B11E006664EA /* OWSPrimaryStorage+Multidevice.swift in Sources */,
 				29CE7F38EF00073771DD1FCBF67E9C39 /* OWSMockSyncManager.swift in Sources */,
 				EB0860DA8024B4E97FE561EE62D03F70 /* OWSOperation.m in Sources */,
 				120D98A415B4529548FE3B67A80FFB7D /* OWSOutgoingCallMessage.m in Sources */,
@@ -11849,6 +11847,7 @@
 				817F433A28349541C0C0DF2C82BB6158 /* OWSUploadOperation.m in Sources */,
 				73B3D53713AB0D83CAD9ED2574F41A22 /* OWSVerificationStateChangeMessage.m in Sources */,
 				5AFB4E3F9E1162B54B2929035BF40119 /* OWSVerificationStateSyncMessage.m in Sources */,
+				242D1C152331EB8C006664EA /* LokiPairingAuthorisation.swift in Sources */,
 				12242B4BB6F0B8E30BBB3FF0F9753900 /* OWSWebSocket.m in Sources */,
 				A04B6AD88B21C9D9D099E19BBC9CC5D8 /* ParamParser.swift in Sources */,
 				A6A31436E2B0015057220F41653E286B /* PhoneNumber.m in Sources */,
@@ -11906,6 +11905,7 @@
 				EEA50AB32B15184286E98D3A2F23E4A8 /* TSInteraction.m in Sources */,
 				4077F28D0A36CCDAA546ED522A7D514C /* TSInvalidIdentityKeyErrorMessage.m in Sources */,
 				A0C4BAF283E87E77309119F0153F74AA /* TSInvalidIdentityKeyReceivingErrorMessage.m in Sources */,
+				242D1C172331EB8C006664EA /* OWSPrimaryStorage+Multidevice.swift in Sources */,
 				EDC285EC377193F748E39FD981353466 /* TSInvalidIdentityKeySendingErrorMessage.m in Sources */,
 				DB411F987471820CDD2F060D59057B58 /* TSMessage.m in Sources */,
 				7F3D30EE625924A55E50AAE7BDF8455A /* TSNetworkManager.m in Sources */,

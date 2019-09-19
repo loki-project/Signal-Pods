@@ -1430,6 +1430,7 @@
 		C31AB318CBA0AE33A8A304C78B5A9126 /* ProfileManagerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2560AE4DEAD481546B1C405A083F8D /* ProfileManagerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C341253490681AC64B847D2EC8DD40A9 /* OWSRecordTranscriptJob.m in Sources */ = {isa = PBXBuildFile; fileRef = A563010796922CE197DDA39B7FA69C6A /* OWSRecordTranscriptJob.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF3C0C116AB1B3FA1CF504B706EF8C /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C345E57F2332FB7A00573102 /* LokiDeviceLinkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C345E57D2332F93500573102 /* LokiDeviceLinkingAPI.swift */; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = FEFBCDFEE8472B3A922315EAFE800A7C /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C400F1B9E82A8AB0851A6AAD2254542D /* TSOutgoingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBE49F1FBF9C688A5FD49524C61BE46 /* TSOutgoingMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E2267FF211268713FD3270AD817B7D /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3054,7 +3055,7 @@
 		04B2F4EBD3F27160E416BD1160DF859F /* RSSFeedItemGUID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemGUID.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItemGUID.swift; sourceTree = "<group>"; };
 		04BC28D8BF8D283B793EDE978C5C3CD1 /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Array+Foundation.swift"; sourceTree = "<group>"; };
 		04E98D9FDC82DCF36B76A184166911CD /* OWSCountryMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSCountryMetadata.h; sourceTree = "<group>"; };
-		0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SignalServiceKit-Unit-Tests"; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0530A251639A2A59ACE90878F6100E5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		053130E0FAFD628505108947C74A51B2 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
 		055B69F58658F38C4423C4CDB4B3830F /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
@@ -4552,6 +4553,7 @@
 		C2FF4571F73E5F2E5C23D277BD271795 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C305AF31863BE9894367BE2A2FD1D882 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32EC1607F7FFB33F8457C6410CC88F3 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		C345E57D2332F93500573102 /* LokiDeviceLinkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiDeviceLinkingAPI.swift; sourceTree = "<group>"; };
 		C3567AABBD7579D3059EB4886249241B /* MPArrowLeft.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = MPArrowLeft.png; path = Mixpanel/Images/MPArrowLeft.png; sourceTree = "<group>"; };
 		C35A8701DCF95A781D5124F5AF7C115A /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
 		C376E9C43596A0EA1C63CEDF1E40B1B9 /* YapWhitelistBlacklist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapWhitelistBlacklist.h; path = YapDatabase/Utilities/YapWhitelistBlacklist.h; sourceTree = "<group>"; };
@@ -7455,6 +7457,7 @@
 				A4105CBE7FD99F067F3BDC845EFF5B26 /* LokiAPI.swift */,
 				B7CF7432728FB97EB7554686392DA6CB /* LokiAPI+SwarmAPI.swift */,
 				BF51D8E8B0A93A43154140A80E921DBF /* LokiAPITarget.swift */,
+				C345E57D2332F93500573102 /* LokiDeviceLinkingAPI.swift */,
 				9F73E62E92A43E82129E1AE09A1285B7 /* LokiGroupChat.swift */,
 				C0C70C933216F91E88BF4C64CEAA6707 /* LokiGroupChatAPI.swift */,
 				81BCB7FC4CA62A2C432A57BC0894BD94 /* LokiGroupMessage.swift */,
@@ -7781,7 +7784,7 @@
 				65D22897B43DBC799B88200CA375ACF2 /* SignalMetadataKit.framework */,
 				5AD3507E34C0BF326842AEF7D4214501 /* SignalMetadataKit-Unit-Tests */,
 				20B35C380CDD0D042713D16F2ED238B2 /* SignalServiceKit.framework */,
-				0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests */,
+				0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests.xctest */,
 				92F8CE06EE06A877F2D16277EA351B1A /* SQLCipher.framework */,
 				DFB14F048F1CE67D457D4674F8CA5C01 /* SSZipArchive.framework */,
 				6883AAF5FC404F5DECFC680FAD73C402 /* Starscream.framework */,
@@ -9632,7 +9635,7 @@
 			);
 			name = "SignalServiceKit-Unit-Tests";
 			productName = "SignalServiceKit-Unit-Tests";
-			productReference = 0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests */;
+			productReference = 0520B9E5EC598426329B60D28A6B7229 /* SignalServiceKit-Unit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2A52F930E1C3719EB6B4BB97D04119F0 /* SwiftProtobuf */ = {
@@ -10402,6 +10405,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					CE33B6750794D443498A98ED3243676B = {
+						LastSwiftMigration = 1030;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -11808,6 +11816,7 @@
 				B8919C0F7B7FBA3C84A478B63172EB43 /* OWSProfileKeyMessage.m in Sources */,
 				CA0650DBB978B40EC64FAC8ED8F6E9F4 /* OWSProvisioningCipher.m in Sources */,
 				C1C810BEDB1F01036E2AF39A4FA52D6F /* OWSProvisioningMessage.m in Sources */,
+				C345E57F2332FB7A00573102 /* LokiDeviceLinkingAPI.swift in Sources */,
 				0958AFD5F53AB9BA78A77DDC6F4B056C /* OWSReadReceiptManager.m in Sources */,
 				EF78899B00231D81ABFA08CBB9A7BFF0 /* OWSReadReceiptsForLinkedDevicesMessage.m in Sources */,
 				9077D04D61D3DD8978108E79D70493BA /* OWSReceiptsForSenderMessage.m in Sources */,
@@ -13403,6 +13412,7 @@
 			baseConfigurationReference = 1CBD2223326A3652112C37378EAD130E /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -14475,6 +14485,7 @@
 			baseConfigurationReference = 1CBD2223326A3652112C37378EAD130E /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -14495,6 +14506,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -14861,6 +14873,7 @@
 			baseConfigurationReference = 1CBD2223326A3652112C37378EAD130E /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

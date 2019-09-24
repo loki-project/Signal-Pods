@@ -1367,6 +1367,7 @@
 		B894D06C2339C4AA00B4D94D /* LKDeviceLinkingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B894D06B2339C4AA00B4D94D /* LKDeviceLinkingMessage.m */; };
 		B894D06D2339C89700B4D94D /* LKDeviceLinkingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B894D06A2339C49C00B4D94D /* LKDeviceLinkingMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B894D06F2339D2D100B4D94D /* Notification+DeviceLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B894D06E2339D2D100B4D94D /* Notification+DeviceLinking.swift */; };
+		B894D0732339E24500B4D94D /* DeviceLinkingUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B894D0722339E24500B4D94D /* DeviceLinkingUtilities.swift */; };
 		B89CF41476E039C2F8087F1384F63C55 /* SMKServerCertificateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB38CF52513826F210AF20593D3C322 /* SMKServerCertificateTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8A1AA4C2895B3618DC19CAD78678F50 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC380103360B006A43CE49CB17663CA3 /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8A27C292AAE238B2DBCB9CC88776F1E /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5A30EA4F3E294FB669738117513DB1 /* CocoaLumberjack.framework */; };
@@ -4531,6 +4532,7 @@
 		B894D06A2339C49C00B4D94D /* LKDeviceLinkingMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKDeviceLinkingMessage.h; sourceTree = "<group>"; };
 		B894D06B2339C4AA00B4D94D /* LKDeviceLinkingMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDeviceLinkingMessage.m; sourceTree = "<group>"; };
 		B894D06E2339D2D100B4D94D /* Notification+DeviceLinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+DeviceLinking.swift"; sourceTree = "<group>"; };
+		B894D0722339E24500B4D94D /* DeviceLinkingUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLinkingUtilities.swift; sourceTree = "<group>"; };
 		B89ED78F6254D2201FFDCE0189950775 /* TypingIndicators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypingIndicators.swift; sourceTree = "<group>"; };
 		B8C78AAD1F568CA778641282FAF246DF /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
 		B8EDE8C06AB9F3F2618186E96323F69B /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
@@ -8453,6 +8455,7 @@
 				CF8A2692BC49924DFC387FD75346F231 /* DeviceLink.swift */,
 				89C08716DA805EEC0F53A8BC9C19E9F5 /* DeviceLinkingSession.swift */,
 				C51F951D2D8985607F9619E506DCB276 /* DeviceLinkingSessionDelegate.swift */,
+				B894D0722339E24500B4D94D /* DeviceLinkingUtilities.swift */,
 				B894D06E2339D2D100B4D94D /* Notification+DeviceLinking.swift */,
 			);
 			path = "Multi Device";
@@ -11862,6 +11865,7 @@
 				C92EE05CFFA824E22101E877D69C8E67 /* OWSOperation.m in Sources */,
 				AFF686DCAE133A1CBD6749A6B394DC16 /* OWSOutgoingCallMessage.m in Sources */,
 				D6F8B60D9D40CB645E1FD8221C46CC45 /* OWSOutgoingNullMessage.m in Sources */,
+				B894D0732339E24500B4D94D /* DeviceLinkingUtilities.swift in Sources */,
 				AFBDF0EC9F57E6497233FCF766635148 /* OWSOutgoingReceiptManager.m in Sources */,
 				BA7D1B7E45F46E4E6DB4A75F1E473456 /* OWSOutgoingSentMessageTranscript.m in Sources */,
 				DA5E401DCD2F04D5663763AC853EFAD4 /* OWSOutgoingSyncMessage.m in Sources */,

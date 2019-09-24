@@ -42,6 +42,7 @@
 #import "OWSPrimaryStorage+Loki.h"
 #import "LKAddressMessage.h"
 #import "LKEphemeralMessage.h"
+#import "LKDeviceLinkingMessage.h"
 #import "LKFriendRequestMessage.h"
 #import "NSObject+Casting.h"
 #import "OWSAttachmentDownloads.h"

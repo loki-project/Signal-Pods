@@ -1364,6 +1364,8 @@
 		B86207AAA78C6A0EDEE958F361D8E66A /* SerializationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80C7744A1C153B661CB756B0BD8B02 /* SerializationUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B86EF6E08FDEC67E200B9CB968E3814D /* OWSMessageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65251D44152FBF514FC8EF738A09600D /* OWSMessageUtils.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B87FAD6ED22494493E4ACC9AB7677BBA /* RKCK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B5647D0E5902D8CB1C5D7834FD800 /* RKCK.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B894D06C2339C4AA00B4D94D /* LKDeviceLinkingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B894D06B2339C4AA00B4D94D /* LKDeviceLinkingMessage.m */; };
+		B894D06D2339C89700B4D94D /* LKDeviceLinkingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B894D06A2339C49C00B4D94D /* LKDeviceLinkingMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B89CF41476E039C2F8087F1384F63C55 /* SMKServerCertificateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB38CF52513826F210AF20593D3C322 /* SMKServerCertificateTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8A1AA4C2895B3618DC19CAD78678F50 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC380103360B006A43CE49CB17663CA3 /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8A27C292AAE238B2DBCB9CC88776F1E /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5A30EA4F3E294FB669738117513DB1 /* CocoaLumberjack.framework */; };
@@ -4525,6 +4527,8 @@
 		B7E4943B73F67431B39E4C6AE4B32338 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		B83DD43EF620BA41060C51E1FD58ED67 /* MPABTestDesignerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPABTestDesignerConnection.h; path = Mixpanel/MPABTestDesignerConnection.h; sourceTree = "<group>"; };
 		B872926A970BB17428586D40A2A609C2 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		B894D06A2339C49C00B4D94D /* LKDeviceLinkingMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKDeviceLinkingMessage.h; sourceTree = "<group>"; };
+		B894D06B2339C4AA00B4D94D /* LKDeviceLinkingMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDeviceLinkingMessage.m; sourceTree = "<group>"; };
 		B89ED78F6254D2201FFDCE0189950775 /* TypingIndicators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypingIndicators.swift; sourceTree = "<group>"; };
 		B8C78AAD1F568CA778641282FAF246DF /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
 		B8EDE8C06AB9F3F2618186E96323F69B /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
@@ -6017,6 +6021,8 @@
 				A101CAB7EFF7FF519B5FD9F97F06D599 /* FriendRequestExpirationMessageFinder.swift */,
 				F492AD37AFD4E76E41BD01FD260F044E /* LKAddressMessage.h */,
 				6A03ADEB2A932B874C47A6E1045351D5 /* LKAddressMessage.m */,
+				B894D06A2339C49C00B4D94D /* LKDeviceLinkingMessage.h */,
+				B894D06B2339C4AA00B4D94D /* LKDeviceLinkingMessage.m */,
 				4C87025201D83F8E4A440B3297EC2FA2 /* LKEphemeralMessage.h */,
 				D6F8CEBB2AEFA97E82AE55066C478885 /* LKEphemeralMessage.m */,
 				B05AA837926F82CDBFD4CA75FFBC6C8A /* LKFriendRequestMessage.h */,
@@ -9392,6 +9398,7 @@
 				AE55D021EEF947554A61B65D4B0A5343 /* OWSFingerprintBuilder.h in Headers */,
 				B96E1F707A30B4C4A344A427DD25C718 /* OWSGroupsOutputStream.h in Headers */,
 				B043129C185596E7349FA38DFF95E6A1 /* OWSHTTPSecurityPolicy.h in Headers */,
+				B894D06D2339C89700B4D94D /* LKDeviceLinkingMessage.h in Headers */,
 				194AD6D6F1DE8E4EABADBEFF24EF31A2 /* OWSIdentityManager.h in Headers */,
 				EBCCDDF5D4F5714D4711CC0AED41AB4E /* OWSIncomingMessageFinder.h in Headers */,
 				3181F3E08C59FC862BC2492C990E3648 /* OWSIncomingSentMessageTranscript.h in Headers */,
@@ -11784,6 +11791,7 @@
 				30CD9FAB9D6B994C5F9F94CFE02EE352 /* NSObject+Casting.m in Sources */,
 				7BB622E892D73527B6B516A2F2696C41 /* NSRegularExpression+SSK.swift in Sources */,
 				22E916384868E11678E735047AAEB1B8 /* NSString+SSK.m in Sources */,
+				B894D06C2339C4AA00B4D94D /* LKDeviceLinkingMessage.m in Sources */,
 				FC949FA1930BA43B47FD7C9085F8FC2D /* NSTimer+OWS.m in Sources */,
 				908B74F897327C02E916E6FEA43096E4 /* NSURLSessionDataTask+StatusCode.m in Sources */,
 				D239E606717BB34DE26AC0028417A7E9 /* NSUserDefaults+OWS.m in Sources */,

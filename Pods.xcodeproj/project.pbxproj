@@ -1453,6 +1453,7 @@
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02F7287361A60DF9E2FAB07957334D /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C94462D57E54B323DB7DCEDB32276FD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3DA95A8B23DFB4133B3AF750E9BF1FF /* YapDatabaseSecondaryIndexPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAF5631C18C199B4D5CAAFC7EA16921 /* YapDatabaseSecondaryIndexPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C3EDE292233C2C3F00F4BB41 /* String+Trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EDE291233C2C3E00F4BB41 /* String+Trimming.swift */; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 360A59ECEB39AD524120236175BFC85B /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4701AD9798DAB082C0D0EE682DA2612 /* NBPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE41FAC27E67BF9026AE4555135BFA3 /* NBPhoneNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C4A5ECEE2A3729EF96AA45E08FFE8732 /* RootKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EBABB9DA5ED2E5FFCAF0B4797F38B /* RootKey.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4620,6 +4621,7 @@
 		C36A63A36C6972362C7250D600DC6E0C /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
 		C39FEA7A7C57AB665D2503A3692AB7DE /* ECPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECPrivateKey.swift; path = SignalMetadataKit/src/ECPrivateKey.swift; sourceTree = "<group>"; };
 		C3DF7A813092575E89F1439952A57CE0 /* OWSDataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OWSDataParser.swift; path = SignalCoreKit/src/OWSDataParser.swift; sourceTree = "<group>"; };
+		C3EDE291233C2C3E00F4BB41 /* String+Trimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trimming.swift"; sourceTree = "<group>"; };
 		C41A4ABF15031B475BA4F86B972DA7B6 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
 		C45F32F33EB934B6599BEFFBBE30F206 /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GULLoggerLevel.h; sourceTree = "<group>"; };
 		C479472D147777A9051B14914B952C94 /* fe_1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fe_1.c; path = Sources/ed25519/fe_1.c; sourceTree = "<group>"; };
@@ -7345,6 +7347,7 @@
 				CCDFECB85E26F50E12CC49758F61A6E9 /* NSObject+Casting.m */,
 				4BA30BEC40D8D61D25E038689FAA7C77 /* Promise+Hashable.swift */,
 				F18DE2BD6E39624CC8340E8684B73BDA /* Promise+Retrying.swift */,
+				C3EDE291233C2C3E00F4BB41 /* String+Trimming.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -11962,6 +11965,7 @@
 				6420B47AE8DF601C84336BDB2B62F090 /* TSNetworkManager.m in Sources */,
 				4F35557E46351AE85CF5384B7CC88B0D /* TSOutgoingMessage.m in Sources */,
 				12DEB225AD513EA1EA77197E4EE22370 /* TSPreKeyManager.m in Sources */,
+				C3EDE292233C2C3F00F4BB41 /* String+Trimming.swift in Sources */,
 				4A9EFAAFF07E189BB934128497E4880C /* TSQuotedMessage.m in Sources */,
 				AEA78EDBF96B628CC680BFEFA24C08A7 /* TSRequest.m in Sources */,
 				AA2185BF4A2FB540B045B15804E57780 /* TSSocketManager.m in Sources */,

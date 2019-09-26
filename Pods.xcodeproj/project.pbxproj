@@ -1452,6 +1452,7 @@
 		C30DE6C01B9DDC1CA9C8EBA7F4EC1C52 /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D7449932DDACCB373B11CC696F2BD1 /* SwiftProtobuf-dummy.m */; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02F7287361A60DF9E2FAB07957334D /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C94462D57E54B323DB7DCEDB32276FD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3898ED3233C470B007205A8 /* LokiDotNetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3898ED1233C46E1007205A8 /* LokiDotNetAPI.swift */; };
 		C3DA95A8B23DFB4133B3AF750E9BF1FF /* YapDatabaseSecondaryIndexPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAF5631C18C199B4D5CAAFC7EA16921 /* YapDatabaseSecondaryIndexPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C3EDE292233C2C3F00F4BB41 /* String+Trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EDE291233C2C3E00F4BB41 /* String+Trimming.swift */; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 360A59ECEB39AD524120236175BFC85B /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3652,7 +3653,7 @@
 		4B4FBEA230E2D880E1078A9C43CE3A6A /* SignalServiceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalServiceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5065FEB8998FDD64B3BD80B9A7784D /* TSNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSNetworkManager.h; sourceTree = "<group>"; };
 		4B5B11350C88A92B1F76FBA2FDEDC310 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
-		4B639D15D7DB016B8B6733104853E8F2 /* SignalServiceKit-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SignalServiceKit-Unit-Tests"; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B639D15D7DB016B8B6733104853E8F2 /* SignalServiceKit-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B65C2CABD17B8C737220AE964BD2902 /* YapDatabaseSecondaryIndexOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexOptions.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexOptions.h; sourceTree = "<group>"; };
 		4B8474B276B567C8967369A38FD80E4B /* base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base.h; path = Sources/ed25519/base.h; sourceTree = "<group>"; };
 		4BA30BEC40D8D61D25E038689FAA7C77 /* Promise+Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+Hashable.swift"; sourceTree = "<group>"; };
@@ -4619,6 +4620,7 @@
 		C348C215407BFA782CD043D7EC5C3C74 /* MPABTestDesignerDeviceInfoResponseMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPABTestDesignerDeviceInfoResponseMessage.m; path = Mixpanel/MPABTestDesignerDeviceInfoResponseMessage.m; sourceTree = "<group>"; };
 		C35C7BAA28E45B7F13B102BFC08C1CA2 /* ContentNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentNamespace.swift; path = Sources/FeedKit/Models/Namespaces/Content/ContentNamespace.swift; sourceTree = "<group>"; };
 		C36A63A36C6972362C7250D600DC6E0C /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
+		C3898ED1233C46E1007205A8 /* LokiDotNetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiDotNetAPI.swift; sourceTree = "<group>"; };
 		C39FEA7A7C57AB665D2503A3692AB7DE /* ECPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECPrivateKey.swift; path = SignalMetadataKit/src/ECPrivateKey.swift; sourceTree = "<group>"; };
 		C3DF7A813092575E89F1439952A57CE0 /* OWSDataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OWSDataParser.swift; path = SignalCoreKit/src/OWSDataParser.swift; sourceTree = "<group>"; };
 		C3EDE291233C2C3E00F4BB41 /* String+Trimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trimming.swift"; sourceTree = "<group>"; };
@@ -7108,7 +7110,7 @@
 				CD4C728D55E4E4F53A69481147A91265 /* SignalMetadataKit.framework */,
 				F7C46FDB50C6859809613C165670A49D /* SignalMetadataKit-Unit-Tests */,
 				189513971C028D4C692017FA06540CC7 /* SignalServiceKit.framework */,
-				4B639D15D7DB016B8B6733104853E8F2 /* SignalServiceKit-Unit-Tests */,
+				4B639D15D7DB016B8B6733104853E8F2 /* SignalServiceKit-Unit-Tests.xctest */,
 				527B8AFA5BF05CDD16009D062B7F2890 /* SQLCipher.framework */,
 				97F9383E8E49E37F334A452754C0A443 /* SSZipArchive.framework */,
 				92B445CCF852EB15E00D6FB1417B75D6 /* Starscream.framework */,
@@ -8489,6 +8491,7 @@
 				061444C49349E39E61CE41FE3E8BDDD0 /* LokiAPI.swift */,
 				8A2E4C9B59B6EE79012F32D821740BF3 /* LokiAPI+SwarmAPI.swift */,
 				A0647FEFCB18C51E09934CABC4B305C7 /* LokiAPITarget.swift */,
+				C3898ED1233C46E1007205A8 /* LokiDotNetAPI.swift */,
 				7B7EF46D26F4EAC73AE30E0206EAF658 /* LokiMessage.swift */,
 				D2EF62E69BFC26828070ABFA278CDC53 /* LokiP2PAPI.swift */,
 				80D921DB2C2EF2122A9ED51F88D7BD91 /* LokiStorageAPI.swift */,
@@ -9909,7 +9912,7 @@
 			);
 			name = "SignalServiceKit-Unit-Tests";
 			productName = "SignalServiceKit-Unit-Tests";
-			productReference = 4B639D15D7DB016B8B6733104853E8F2 /* SignalServiceKit-Unit-Tests */;
+			productReference = 4B639D15D7DB016B8B6733104853E8F2 /* SignalServiceKit-Unit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2A52F930E1C3719EB6B4BB97D04119F0 /* SwiftProtobuf */ = {
@@ -10662,6 +10665,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					CE33B6750794D443498A98ED3243676B = {
+						LastSwiftMigration = 1100;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -11842,6 +11850,7 @@
 				D243E1B49CEA9010EC1BED090057527A /* OWSFakeProfileManager.m in Sources */,
 				C4F88B425F7C6AD658656F49D6A6FD3C /* OWSFileSystem.m in Sources */,
 				E4B6A15E1D170853A64C1E5ADFC56326 /* OWSFingerprint.m in Sources */,
+				C3898ED3233C470B007205A8 /* LokiDotNetAPI.swift in Sources */,
 				6BEDA4EE340C86A4036A353733937EAE /* OWSFingerprintBuilder.m in Sources */,
 				B34C81C27689BB9CB1C64E2D80736EC7 /* OWSGroupsOutputStream.m in Sources */,
 				6C7D5456E804BAC78D39CAC60520549F /* OWSHTTPSecurityPolicy.m in Sources */,
@@ -13733,6 +13742,7 @@
 			baseConfigurationReference = B2E33CE94D29591377DA890BD4A7FBE1 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -14569,6 +14579,7 @@
 			baseConfigurationReference = B2E33CE94D29591377DA890BD4A7FBE1 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -14589,6 +14600,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -15159,6 +15171,7 @@
 			baseConfigurationReference = B2E33CE94D29591377DA890BD4A7FBE1 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

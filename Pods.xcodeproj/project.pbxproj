@@ -1374,6 +1374,8 @@
 		B8B371C5FD26663BB083051B6AB4CC32 /* YapDatabaseRTreeIndexTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FDAB485F0D964595DF5BE1E5B19A /* YapDatabaseRTreeIndexTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8BBFE4ABF525C775920B88089A5A3E2 /* MixpanelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCD9070CF0B2970F2205E7162CC6D /* MixpanelGroup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8CA3B05021A714FDA74442F2841C7B1 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E4943B73F67431B39E4C6AE4B32338 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8FA3B6F23418C9700B7742A /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FA3B6E23418C9700B7742A /* NSArray+Functional.m */; };
+		B8FA3B7023418C9C00B7742A /* NSArray+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FA3B6D23418C7D00B7742A /* NSArray+Functional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9057DDAA357AFAC5E51136532B48C7D /* DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 77750FA582ABA84BC1356FABC26B95D7 /* DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B95270CDCB459D853CE9FAC11DCE7644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A3B5F625D05D1A8083E728A75AB1F4 /* Foundation.framework */; };
 		B9536B45AB023E160A9B394D98686681 /* MPABTestDesignerSnapshotResponseMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F57CCE363E5AF3A5B8112FDE8052B775 /* MPABTestDesignerSnapshotResponseMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -4537,6 +4539,8 @@
 		B8C78AAD1F568CA778641282FAF246DF /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
 		B8EDE8C06AB9F3F2618186E96323F69B /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
 		B8F4724D678B888409F99C631C513A86 /* TSPrefix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSPrefix.h; path = SignalServiceKit/src/TSPrefix.h; sourceTree = "<group>"; };
+		B8FA3B6D23418C7D00B7742A /* NSArray+Functional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
+		B8FA3B6E23418C9700B7742A /* NSArray+Functional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
 		B8FAE4D85AD230D3631D629AABC13CFA /* PreKeyWhisperMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreKeyWhisperMessage.h; path = AxolotlKit/Classes/CipherMessage/PreKeyWhisperMessage.h; sourceTree = "<group>"; };
 		B90A07195E4567EFCA6CC55EC644688C /* YapDatabaseSearchResultsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSearchResultsView.m; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchResultsView.m; sourceTree = "<group>"; };
 		B913EED8D8D4891203EDD472DB9AC1FE /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = "OpenSSL-iOS/bin/openssl.framework"; sourceTree = "<group>"; };
@@ -7345,6 +7349,8 @@
 				09D3FFA0AFF551A5054622C39AFD3107 /* Dictionary+Description.swift */,
 				AB982F0D1FD9DF94CDB5C13C220B688F /* JSON.swift */,
 				A1FCF74B7BBFFB19854F9777A1F591DA /* Notification+Loki.swift */,
+				B8FA3B6D23418C7D00B7742A /* NSArray+Functional.h */,
+				B8FA3B6E23418C9700B7742A /* NSArray+Functional.m */,
 				90BDF4DC471526D8F9EFAED5A9E49797 /* NSObject+Casting.h */,
 				CCDFECB85E26F50E12CC49758F61A6E9 /* NSObject+Casting.m */,
 				4BA30BEC40D8D61D25E038689FAA7C77 /* Promise+Hashable.swift */,
@@ -9376,6 +9382,7 @@
 				52FE96B15296A34699FCB0C002F96AEA /* OWSBlockingManager.h in Headers */,
 				91145CD28DFAFD041EF8E16DCACA118E /* OWSCallMessageHandler.h in Headers */,
 				20E3EAB8914E53C8BE3C29FC746A5926 /* OWSCensorshipConfiguration.h in Headers */,
+				B8FA3B7023418C9C00B7742A /* NSArray+Functional.h in Headers */,
 				CA2C8FD1C0CDF65B4F66864A42989D99 /* OWSChunkedOutputStream.h in Headers */,
 				606E9353C10DE54C2C1BCCEE79B364C7 /* OWSContact+Private.h in Headers */,
 				33AFFF1F35E1F19AEF29350FDEB0400F /* OWSContact.h in Headers */,
@@ -11891,6 +11898,7 @@
 				919AE3E8B4E78C31CF2C2579AAF5FEE8 /* OWSProvisioningMessage.m in Sources */,
 				ABB71B1A8E215F0C858AB1D596C26D7F /* OWSReadReceiptManager.m in Sources */,
 				8329A97C7165B4F3AF5E1A5FF239F8F6 /* OWSReadReceiptsForLinkedDevicesMessage.m in Sources */,
+				B8FA3B6F23418C9700B7742A /* NSArray+Functional.m in Sources */,
 				0641BB6D8EB5EA5C00066EF8DA173F6B /* OWSReceiptsForSenderMessage.m in Sources */,
 				FA7D9A6DF81A20A827F459B2A988C424 /* OWSRecipientIdentity.m in Sources */,
 				5639230AD40C679887D71219EDBAD68A /* OWSRecordTranscriptJob.m in Sources */,

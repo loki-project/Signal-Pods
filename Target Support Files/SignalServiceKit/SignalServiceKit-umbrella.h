@@ -44,6 +44,7 @@
 #import "LKEphemeralMessage.h"
 #import "LKDeviceLinkMessage.h"
 #import "LKFriendRequestMessage.h"
+#import "NSArray+Functional.h"
 #import "NSObject+Casting.h"
 #import "OWSAttachmentDownloads.h"
 #import "TSAttachment.h"

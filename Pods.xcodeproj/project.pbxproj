@@ -1372,6 +1372,7 @@
 		B8A27C292AAE238B2DBCB9CC88776F1E /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5A30EA4F3E294FB669738117513DB1 /* CocoaLumberjack.framework */; };
 		B8AE3D27449ED17030A9BC8A178FD5DC /* SSKJobRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D895993AA330C6C537FC65267B4EBF6 /* SSKJobRecord.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8B371C5FD26663BB083051B6AB4CC32 /* YapDatabaseRTreeIndexTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B0FDAB485F0D964595DF5BE1E5B19A /* YapDatabaseRTreeIndexTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8B453852344447C00863660 /* LokiDatabaseUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B453842344447C00863660 /* LokiDatabaseUtilities.swift */; };
 		B8BBFE4ABF525C775920B88089A5A3E2 /* MixpanelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCD9070CF0B2970F2205E7162CC6D /* MixpanelGroup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8CA3B05021A714FDA74442F2841C7B1 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E4943B73F67431B39E4C6AE4B32338 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8FA3B6F23418C9700B7742A /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FA3B6E23418C9700B7742A /* NSArray+Functional.m */; };
@@ -4536,6 +4537,7 @@
 		B894D06B2339C4AA00B4D94D /* LKDeviceLinkMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDeviceLinkMessage.m; sourceTree = "<group>"; };
 		B894D0722339E24500B4D94D /* DeviceLinkingUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLinkingUtilities.swift; sourceTree = "<group>"; };
 		B89ED78F6254D2201FFDCE0189950775 /* TypingIndicators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypingIndicators.swift; sourceTree = "<group>"; };
+		B8B453842344447C00863660 /* LokiDatabaseUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiDatabaseUtilities.swift; sourceTree = "<group>"; };
 		B8C78AAD1F568CA778641282FAF246DF /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
 		B8EDE8C06AB9F3F2618186E96323F69B /* RSSFeedItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItem.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItem.swift; sourceTree = "<group>"; };
 		B8F4724D678B888409F99C631C513A86 /* TSPrefix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSPrefix.h; path = SignalServiceKit/src/TSPrefix.h; sourceTree = "<group>"; };
@@ -8604,6 +8606,7 @@
 				AF0AA96E5DF7A45FA89AA15286FFC45E /* OWSPrimaryStorage+Loki.m */,
 				BF82307DCD7910A2127D1D6A8EE276FE /* OWSPrimaryStorage+Loki.swift */,
 				9D26D99F0A065EA46C64D1A56ADB5125 /* DeviceLinkIndex.swift */,
+				B8B453842344447C00863660 /* LokiDatabaseUtilities.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -11952,6 +11955,7 @@
 				814D7D46F1A5A125A619EE19CA8AE2D7 /* SSKKeychainStorage.swift in Sources */,
 				A22049067BE95D0F780B7674B9011907 /* SSKMessageSenderJobRecord.m in Sources */,
 				B48A145F6ADF40ABB4248FD5573F5918 /* SSKPreferences.swift in Sources */,
+				B8B453852344447C00863660 /* LokiDatabaseUtilities.swift in Sources */,
 				88DA92F7C72141B06A273B43CC774F04 /* SSKProto.swift in Sources */,
 				74EED05C1A57FC45E24C10879C9D7BC9 /* SSKProtoEnvelope+Loki.swift in Sources */,
 				2453D245952DF5D9DA995E4D3B5E30FF /* SSKProtoPrekeyBundleMessage+Loki.swift in Sources */,

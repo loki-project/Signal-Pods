@@ -268,6 +268,9 @@
 		24AD8E31FDFD451A14E10052DC06EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A3B5F625D05D1A8083E728A75AB1F4 /* Foundation.framework */; };
 		24B12418879A85551F31BEF591424957 /* MPDesignerTrackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1522A166F80FA00EBCC4B618004CC6 /* MPDesignerTrackMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24B1C75419F30ABAC3A0EC57745C704D /* fe_cmov.c in Sources */ = {isa = PBXBuildFile; fileRef = 2290520DD3FA01A8024A9BE27D4F6E9E /* fe_cmov.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24BD2603234D5F040008EB0A /* LokiGroupChatPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD2602234D5F040008EB0A /* LokiGroupChatPoller.swift */; };
+		24BD2605234D5F590008EB0A /* LokiPublicChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD2604234D5F590008EB0A /* LokiPublicChatManager.swift */; };
+		24BD2607234D67880008EB0A /* LokiChannelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD2606234D67880008EB0A /* LokiChannelInfo.swift */; };
 		24DFC6463CE03814A6EA97422E10A333 /* TSErrorMessage_privateConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B06FC04CBB666660C4D253BF4547825 /* TSErrorMessage_privateConstructor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		253A75BD22C817235B25E9F221FCE1AF /* OWSMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3255AF0944F19DC87FC74897AA8CB141 /* OWSMessageReceiver.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2567BE31AFE05DD403B6B2AE553986D3 /* AtomFeedAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8F0B5EC9CBCBDDDFF44B7858B7F24 /* AtomFeedAuthor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3328,6 +3331,9 @@
 		2452B4F65545E02738D311EF03EA6BB2 /* TSOutgoingMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSOutgoingMessage.h; sourceTree = "<group>"; };
 		247D825B1837D96A6C97C9E6FA0EE29F /* OWSMediaGalleryFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMediaGalleryFinder.h; sourceTree = "<group>"; };
 		24AFECA4B88CD4BA4097B7006561DD62 /* AxolotlExceptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AxolotlExceptions.h; path = AxolotlKit/Classes/AxolotlExceptions.h; sourceTree = "<group>"; };
+		24BD2602234D5F040008EB0A /* LokiGroupChatPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiGroupChatPoller.swift; sourceTree = "<group>"; };
+		24BD2604234D5F590008EB0A /* LokiPublicChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPublicChatManager.swift; sourceTree = "<group>"; };
+		24BD2606234D67880008EB0A /* LokiChannelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiChannelInfo.swift; sourceTree = "<group>"; };
 		24E59A0AB638C2BC4D5B59982C21CDDF /* MPEnumDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPEnumDescription.m; path = Mixpanel/MPEnumDescription.m; sourceTree = "<group>"; };
 		24F7A1AB24FBB019BAEF7F631ED22BE8 /* YapDatabaseAutoViewConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseAutoViewConnection.h; path = YapDatabase/Extensions/AutoView/YapDatabaseAutoViewConnection.h; sourceTree = "<group>"; };
 		250EBB042EECCD16228E98E3BDBB1C20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -6949,6 +6955,9 @@
 				69AAA796BB93BB0C945489A714B90501 /* LokiGroupChatAPI.swift */,
 				CF415E5DA1D2B6D643FC6568ECBD0FC9 /* LokiGroupMessage.swift */,
 				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
+				24BD2602234D5F040008EB0A /* LokiGroupChatPoller.swift */,
+				24BD2604234D5F590008EB0A /* LokiPublicChatManager.swift */,
+				24BD2606234D67880008EB0A /* LokiChannelInfo.swift */,
 			);
 			path = "Group Chat";
 			sourceTree = "<group>";
@@ -11348,6 +11357,7 @@
 				F497AE543EFD43019ACDFF02412EC253 /* NSArray+OWS.m in Sources */,
 				2F06060928BB4B568FF606B27928E37D /* NSData+Image.m in Sources */,
 				5FB300EC5041E8F0EF2D2AC2197BCF86 /* NSError+MessageSending.m in Sources */,
+				24BD2607234D67880008EB0A /* LokiChannelInfo.swift in Sources */,
 				E82A2F726269C767CC8DB2CC00106B37 /* NSNotificationCenter+OWS.m in Sources */,
 				809905843236A7E3543BFFD0F6A51117 /* NSObject+Casting.m in Sources */,
 				4336F01AED689AC97E80BCF92FE1F36E /* NSRegularExpression+SSK.swift in Sources */,
@@ -11450,6 +11460,7 @@
 				97D381A3DD030994638C1AB450A9138B /* OWSSyncGroupsMessage.m in Sources */,
 				8AE1E9C64E779D53353D4BF6D7F616A1 /* OWSSyncGroupsRequestMessage.m in Sources */,
 				007CA7457B96A82EBFB6FA2475FB740B /* OWSThumbnailService.swift in Sources */,
+				24BD2603234D5F040008EB0A /* LokiGroupChatPoller.swift in Sources */,
 				ACE7340166D219185AEA5DB9A55807AD /* OWSUDManager.swift in Sources */,
 				74DCA50C4745F730CBD5AB38FF93A1BE /* OWSUnknownContactBlockOfferMessage.m in Sources */,
 				4F06A37B8252221A8EC3F754C52C01E5 /* OWSUploadOperation.m in Sources */,
@@ -11517,6 +11528,7 @@
 				87640B970C79BB8D2F46FCEB94688706 /* TSInvalidIdentityKeySendingErrorMessage.m in Sources */,
 				13D467CD8FE3D16251F82F545AA6563D /* TSMessage.m in Sources */,
 				90A85B160010CB035FD881E9A6A55574 /* TSNetworkManager.m in Sources */,
+				24BD2605234D5F590008EB0A /* LokiPublicChatManager.swift in Sources */,
 				05AB30875FCC8F8D189650356BB50769 /* TSOutgoingMessage.m in Sources */,
 				22F42A66AB93100D76A0BB67094FD740 /* TSPreKeyManager.m in Sources */,
 				6CB76CAD67A561DA601534A7515A888B /* TSQuotedMessage.m in Sources */,

@@ -1393,6 +1393,7 @@
 		B80499CBB73CE621BA5BFC828DB9E0DF /* NSArray+NBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1621CB931F7847DDFD881735025A7EE9 /* NSArray+NBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B82325E9CA9FCCE7A0587F71ABF5CA06 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD9BE088CC4AC69FA73F2D9E5C389B /* NVActivityIndicatorAnimationAudioEqualizer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B82B984D8D7C2D357F5EC2FE0613C912 /* FIRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D221B808A11B5F85DD171182C0917C /* FIRLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B84664F723503DC20083A1CD /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84664F623503DC20083A1CD /* Mention.swift */; };
 		B8575E39F8B440ED18AC885753713527 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811083E74CF6B3759C094310BF3B3882 /* NVActivityIndicatorAnimationSquareSpin.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B86207AAA78C6A0EDEE958F361D8E66A /* SerializationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B1926EB07CE2F9AAE32787A0DB2D0B9C /* SerializationUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B87FAD6ED22494493E4ACC9AB7677BBA /* RKCK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA1C5787FEFD053469BC9B027A9211F /* RKCK.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4484,6 +4485,7 @@
 		B789DBE75A1E3C180186183BBEE35CD7 /* MPNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPNotification.m; path = Mixpanel/MPNotification.m; sourceTree = "<group>"; };
 		B7B8051B090015C6EA162F1C909966AE /* YapDatabaseHooks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseHooks.m; path = YapDatabase/Extensions/Hooks/YapDatabaseHooks.m; sourceTree = "<group>"; };
 		B7CDE370E6369E02629CAD329D738C51 /* Promise+retainUntilComplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+retainUntilComplete.swift"; sourceTree = "<group>"; };
+		B84664F623503DC20083A1CD /* Mention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
 		B84A1ABC3D99E9B5F3C347C65AA3D531 /* _MPTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _MPTweakBindObserver.m; path = Mixpanel/_MPTweakBindObserver.m; sourceTree = "<group>"; };
 		B852516AF7D26B40AEBAD3A04BB8AFF2 /* ProtoNameProviding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtoNameProviding.swift; path = Sources/SwiftProtobuf/ProtoNameProviding.swift; sourceTree = "<group>"; };
 		B861B29148FC0A8686B417433E30FC05 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
@@ -8760,6 +8762,7 @@
 				6B27BB235DA5AECC554338FB2C37443A /* LKFriendRequestMessage.h */,
 				863FB1F8B6B9127EC3BC80D78517EE83 /* LKFriendRequestMessage.m */,
 				7C2B481A4818B01F4C1FAB84B6007C12 /* LokiMessageWrapper.swift */,
+				B84664F623503DC20083A1CD /* Mention.swift */,
 				E1A8E15237373781359E0058C77AB08C /* SSKProtoEnvelope+Loki.swift */,
 				45551FE74253365FC930D32C2CF5C2E1 /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 			);
@@ -11454,6 +11457,7 @@
 				74DCA50C4745F730CBD5AB38FF93A1BE /* OWSUnknownContactBlockOfferMessage.m in Sources */,
 				4F06A37B8252221A8EC3F754C52C01E5 /* OWSUploadOperation.m in Sources */,
 				D4E184F864ED503C29AD1D15C197C253 /* OWSVerificationStateChangeMessage.m in Sources */,
+				B84664F723503DC20083A1CD /* Mention.swift in Sources */,
 				6CBAC6C21F8838BD10F580145A822E47 /* OWSVerificationStateSyncMessage.m in Sources */,
 				B8ABCE2F0E53081130C22DB0701A44AD /* OWSWebSocket.m in Sources */,
 				132D2D3991E6319E0C2742B7655F3C5B /* ParamParser.swift in Sources */,

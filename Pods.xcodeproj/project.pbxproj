@@ -136,7 +136,7 @@
 		13EB78D27FAE3E53E2CB353CE469D87C /* SSKJobRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E30EB3A506B6E6B8C0895C78A79AA8 /* SSKJobRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F288C1A2F75C5880940EB78A51AF8E /* FIRLoggerLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB5DAC71BFD22977C0326608DA53F7E /* FIRLoggerLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140B56343ED09016DE6F645929916E22 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C3C87CCE1133918B55AE3C9F3FEB57 /* SQLCipher-dummy.m */; };
-		14137CF3FA83F818073B541E3AF1A57C /* LongPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791216839C1A221B858C6AEBBCB20EC6 /* LongPoller.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14137CF3FA83F818073B541E3AF1A57C /* LokiLongPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		142672BAE03194B2EE09F22133460805 /* LokiStorageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F9BDB2D15AE4F4ED5EA1C7390ABEB /* LokiStorageAPI.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		146040F21335DE74CE61654966877FE6 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81C24381001835613A5D58E2F26E86 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1460DDB858DC85B49DF470E5B607AC8C /* OWSUDManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CC16DEFC6F6C72E69ACF6078E8FF0 /* OWSUDManagerTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -268,7 +268,7 @@
 		24AD8E31FDFD451A14E10052DC06EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A3B5F625D05D1A8083E728A75AB1F4 /* Foundation.framework */; };
 		24B12418879A85551F31BEF591424957 /* MPDesignerTrackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1522A166F80FA00EBCC4B618004CC6 /* MPDesignerTrackMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24B1C75419F30ABAC3A0EC57745C704D /* fe_cmov.c in Sources */ = {isa = PBXBuildFile; fileRef = 2290520DD3FA01A8024A9BE27D4F6E9E /* fe_cmov.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		24BD2603234D5F040008EB0A /* PublicChatPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD2602234D5F040008EB0A /* PublicChatPoller.swift */; };
+		24BD2603234D5F040008EB0A /* LokiPublicChatPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD2602234D5F040008EB0A /* LokiPublicChatPoller.swift */; };
 		24BD2605234D5F590008EB0A /* LokiPublicChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD2604234D5F590008EB0A /* LokiPublicChatManager.swift */; };
 		24DFC6463CE03814A6EA97422E10A333 /* TSErrorMessage_privateConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B06FC04CBB666660C4D253BF4547825 /* TSErrorMessage_privateConstructor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		253A75BD22C817235B25E9F221FCE1AF /* OWSMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3255AF0944F19DC87FC74897AA8CB141 /* OWSMessageReceiver.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3333,7 +3333,7 @@
 		2452B4F65545E02738D311EF03EA6BB2 /* TSOutgoingMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSOutgoingMessage.h; sourceTree = "<group>"; };
 		247D825B1837D96A6C97C9E6FA0EE29F /* OWSMediaGalleryFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMediaGalleryFinder.h; sourceTree = "<group>"; };
 		24AFECA4B88CD4BA4097B7006561DD62 /* AxolotlExceptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AxolotlExceptions.h; path = AxolotlKit/Classes/AxolotlExceptions.h; sourceTree = "<group>"; };
-		24BD2602234D5F040008EB0A /* PublicChatPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicChatPoller.swift; sourceTree = "<group>"; };
+		24BD2602234D5F040008EB0A /* LokiPublicChatPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPublicChatPoller.swift; sourceTree = "<group>"; };
 		24BD2604234D5F590008EB0A /* LokiPublicChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPublicChatManager.swift; sourceTree = "<group>"; };
 		24E59A0AB638C2BC4D5B59982C21CDDF /* MPEnumDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPEnumDescription.m; path = Mixpanel/MPEnumDescription.m; sourceTree = "<group>"; };
 		24F7A1AB24FBB019BAEF7F631ED22BE8 /* YapDatabaseAutoViewConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseAutoViewConnection.h; path = YapDatabase/Extensions/AutoView/YapDatabaseAutoViewConnection.h; sourceTree = "<group>"; };
@@ -4002,7 +4002,7 @@
 		78EEBB60F1D37AD0EA30622D4CF70601 /* MPObjectSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPObjectSelector.m; path = Mixpanel/MPObjectSelector.m; sourceTree = "<group>"; };
 		78FDDFF63CE39DD7DCC4C7BB61CBF2A8 /* MPApplicationStateSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPApplicationStateSerializer.m; path = Mixpanel/MPApplicationStateSerializer.m; sourceTree = "<group>"; };
 		790FA1FC83A24DCF5EE7633E580E2DBB /* WhisperTextProtocol.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperTextProtocol.pb.swift; path = AxolotlKit/Classes/Protos/WhisperTextProtocol.pb.swift; sourceTree = "<group>"; };
-		791216839C1A221B858C6AEBBCB20EC6 /* LongPoller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LongPoller.swift; sourceTree = "<group>"; };
+		791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiLongPoller.swift; sourceTree = "<group>"; };
 		7929DDC1131D4CB9B41A0157903FD9C5 /* SignalServiceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalServiceKit-dummy.m"; sourceTree = "<group>"; };
 		79C38A0DE6A638AFB2CD80EA8AA95827 /* Threading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Threading.h; path = SignalCoreKit/src/Threading.h; sourceTree = "<group>"; };
 		79F36B88C3DAE8F29460CF5361F635FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -6123,8 +6123,9 @@
 				4C59F97D3B831CF5F8ABBF60177C812D /* LokiDotNetAPI.swift */,
 				D91998C895C41ACE4419BB00A5819678 /* LokiMessage.swift */,
 				38D3258760341C2F323FC2DB2615B6A3 /* LokiP2PAPI.swift */,
+				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
 				743F9BDB2D15AE4F4ED5EA1C7390ABEB /* LokiStorageAPI.swift */,
-				791216839C1A221B858C6AEBBCB20EC6 /* LongPoller.swift */,
+				791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */,
 				C60FEF1B80024333892B1CF3EBCF80FC /* SignalMessage.swift */,
 				88076A64A0FD642E4BED9D25F1606C56 /* Public Chat */,
 				D274A9098162A732D5D460579C7E50E1 /* Multi Device */,
@@ -6960,8 +6961,7 @@
 				69AAA796BB93BB0C945489A714B90501 /* LokiPublicChatAPI.swift */,
 				B8BFFF362355339800102A27 /* LokiPublicChatInfo.swift */,
 				CF415E5DA1D2B6D643FC6568ECBD0FC9 /* LokiPublicChatMessage.swift */,
-				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
-				24BD2602234D5F040008EB0A /* PublicChatPoller.swift */,
+				24BD2602234D5F040008EB0A /* LokiPublicChatPoller.swift */,
 				24BD2604234D5F590008EB0A /* LokiPublicChatManager.swift */,
 			);
 			path = "Public Chat";
@@ -11349,7 +11349,7 @@
 				2C745083E492193AB9AD48ED05EA3ACF /* LokiP2PAPI.swift in Sources */,
 				0186D4F65A238B9A27B9BD4B02923F96 /* LokiRSSFeed.swift in Sources */,
 				142672BAE03194B2EE09F22133460805 /* LokiStorageAPI.swift in Sources */,
-				14137CF3FA83F818073B541E3AF1A57C /* LongPoller.swift in Sources */,
+				14137CF3FA83F818073B541E3AF1A57C /* LokiLongPoller.swift in Sources */,
 				FD39A901AAE6F8E059B008FB7F54A7A6 /* LRUCache.swift in Sources */,
 				E919169678225F9912BA500185EB61EA /* MessageSender+Promise.swift in Sources */,
 				1798267353AE4ADDCC1FB33AD0868915 /* MessageSenderJobQueue.swift in Sources */,
@@ -11467,7 +11467,7 @@
 				97D381A3DD030994638C1AB450A9138B /* OWSSyncGroupsMessage.m in Sources */,
 				8AE1E9C64E779D53353D4BF6D7F616A1 /* OWSSyncGroupsRequestMessage.m in Sources */,
 				007CA7457B96A82EBFB6FA2475FB740B /* OWSThumbnailService.swift in Sources */,
-				24BD2603234D5F040008EB0A /* PublicChatPoller.swift in Sources */,
+				24BD2603234D5F040008EB0A /* LokiPublicChatPoller.swift in Sources */,
 				ACE7340166D219185AEA5DB9A55807AD /* OWSUDManager.swift in Sources */,
 				74DCA50C4745F730CBD5AB38FF93A1BE /* OWSUnknownContactBlockOfferMessage.m in Sources */,
 				4F06A37B8252221A8EC3F754C52C01E5 /* OWSUploadOperation.m in Sources */,

@@ -69,6 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
         _deviceId = deviceId;
         _sessionStore = sessionStore;
         _identityKeyStore = identityKeyStore;
+        _prekeyStore = preKeyStore;
         _sessionBuilder = [[SessionBuilder alloc] initWithSessionStore:sessionStore
                                                            preKeyStore:preKeyStore
                                                      signedPreKeyStore:signedPreKeyStore

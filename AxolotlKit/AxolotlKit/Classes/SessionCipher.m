@@ -219,7 +219,7 @@ NS_ASSUME_NONNULL_BEGIN
 
     // If there was an unsigned PreKey
     if (unsignedPreKeyId >= 0) {
-        [self.prekeyStore removePreKey:unsignedPreKeyId];
+        [self.prekeyStore removePreKey:unsignedPreKeyId protocolContext:protocolContext];
     }
     
     return plaintext;

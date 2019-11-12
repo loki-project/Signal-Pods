@@ -1407,6 +1407,7 @@
 		B8BFFF372355339800102A27 /* LokiPublicChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BFFF362355339800102A27 /* LokiPublicChatInfo.swift */; };
 		B8CA3B05021A714FDA74442F2841C7B1 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DE69FD9CB297463FDFEB15C9EBE04 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8D29C02A23D444A08C548FF3D838B45 /* YapDatabaseManualViewPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEEC0DBB30E34AD1F8C8987C12C540B /* YapDatabaseManualViewPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B8D92A97237A322C0024119B /* ContactParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D92A95237A2F610024119B /* ContactParser.swift */; };
 		B8DE20102345C4F60069EB06 /* NSSet+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = B8DE200F2345C4F60069EB06 /* NSSet+Functional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8DE20122345C5280069EB06 /* NSSet+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DE20112345C5280069EB06 /* NSSet+Functional.m */; };
 		B8EA8341174AEF3A5DF52870AECACFB6 /* YapDatabaseAutoViewTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD4746722076FAEECFEC2FDC0F7B1CB /* YapDatabaseAutoViewTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4189,7 +4190,7 @@
 		909E86550FD958133D8CC622FC8AA8BE /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS/PKCS5.swift; sourceTree = "<group>"; };
 		90A36B551DAF2FC8F3A12767E83FA3AF /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
 		90BEEC1F2D72352DB249FC38535CB29C /* Pods-SignalMessaging-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalMessaging-resources.sh"; sourceTree = "<group>"; };
-		9113553455F8AAEB26F0399130813085 /* SignalServiceKit-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SignalServiceKit-Unit-Tests"; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9113553455F8AAEB26F0399130813085 /* SignalServiceKit-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignalServiceKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91574B5B0CD0AF89B4C01C27633DA0E6 /* SCKSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCKSwiftTests.swift; path = SignalCoreKitTests/src/SCKSwiftTests.swift; sourceTree = "<group>"; };
 		9160F575F1959D09B48815657E008362 /* YDBCKChangeSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKChangeSet.h; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKChangeSet.h; sourceTree = "<group>"; };
 		918169CBE0878917BC81780A849257D1 /* YapDatabaseManualViewConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManualViewConnection.m; path = YapDatabase/Extensions/ManualView/YapDatabaseManualViewConnection.m; sourceTree = "<group>"; };
@@ -4500,6 +4501,7 @@
 		B89ED78F6254D2201FFDCE0189950775 /* TypingIndicators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypingIndicators.swift; sourceTree = "<group>"; };
 		B8A5599123544407009B5F68 /* DisplayNameUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNameUtilities.swift; sourceTree = "<group>"; };
 		B8BFFF362355339800102A27 /* LokiPublicChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPublicChatInfo.swift; sourceTree = "<group>"; };
+		B8D92A95237A2F610024119B /* ContactParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactParser.swift; sourceTree = "<group>"; };
 		B8DD96F38BCE76C1D10A2B4A6203B841 /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
 		B8DE200F2345C4F60069EB06 /* NSSet+Functional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSet+Functional.h"; sourceTree = "<group>"; };
 		B8DE20112345C5280069EB06 /* NSSet+Functional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Functional.m"; sourceTree = "<group>"; };
@@ -5924,7 +5926,7 @@
 				B433DF7CEDCC1965316A09EF9CE6D728 /* SignalMetadataKit.framework */,
 				D138038E11C2DA0FFEA3DCF86CA49BA8 /* SignalMetadataKit-Unit-Tests */,
 				359F720D8AEA1089BCA448A8951FA4BF /* SignalServiceKit.framework */,
-				9113553455F8AAEB26F0399130813085 /* SignalServiceKit-Unit-Tests */,
+				9113553455F8AAEB26F0399130813085 /* SignalServiceKit-Unit-Tests.xctest */,
 				4768AA9276A5ADAE9C94C57FEA63AB54 /* SQLCipher.framework */,
 				47F9408EF983C44BE5BA243E7419A4B6 /* SSZipArchive.framework */,
 				2C650F10B17EC65CDD202C2E09A610E3 /* Starscream.framework */,
@@ -8762,6 +8764,7 @@
 		F524083750F13B9C6214706599F98045 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				B8D92A95237A2F610024119B /* ContactParser.swift */,
 				BBD1652892E287CA62F0C79C090E318C /* FriendRequestExpirationJob.swift */,
 				85EC3435C861717279A6142988132FD3 /* FriendRequestExpirationMessageFinder.swift */,
 				75ABB359C23CF329F3B96B8B898A994F /* LKAddressMessage.h */,
@@ -9846,7 +9849,7 @@
 			);
 			name = "SignalServiceKit-Unit-Tests";
 			productName = "SignalServiceKit-Unit-Tests";
-			productReference = 9113553455F8AAEB26F0399130813085 /* SignalServiceKit-Unit-Tests */;
+			productReference = 9113553455F8AAEB26F0399130813085 /* SignalServiceKit-Unit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2A52F930E1C3719EB6B4BB97D04119F0 /* SwiftProtobuf */ = {
@@ -10577,6 +10580,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					CE33B6750794D443498A98ED3243676B = {
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -11451,6 +11459,7 @@
 				BDB4234BCAE13A3E561F28D3825BF894 /* OWSProvisioningCipher.m in Sources */,
 				B5EB2B20063F978693769953A20AE4D2 /* OWSProvisioningMessage.m in Sources */,
 				596F006A10512BC8691A91A97E4E00E8 /* OWSReadReceiptManager.m in Sources */,
+				B8D92A97237A322C0024119B /* ContactParser.swift in Sources */,
 				B8A5599223544407009B5F68 /* DisplayNameUtilities.swift in Sources */,
 				E31B3BD9A9E95B7DCA2E8367569F35C1 /* OWSReadReceiptsForLinkedDevicesMessage.m in Sources */,
 				9176C23C091464CE4116A58CEAA9D761 /* OWSReceiptsForSenderMessage.m in Sources */,
@@ -13611,6 +13620,7 @@
 			baseConfigurationReference = 6F8ED8164FFB8D62C1AEBD5CB68090E5 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -14514,6 +14524,7 @@
 			baseConfigurationReference = 6F8ED8164FFB8D62C1AEBD5CB68090E5 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -14534,6 +14545,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -15132,6 +15144,7 @@
 			baseConfigurationReference = 6F8ED8164FFB8D62C1AEBD5CB68090E5 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

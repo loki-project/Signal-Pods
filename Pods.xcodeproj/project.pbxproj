@@ -1490,6 +1490,8 @@
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F86BD15E742F2F1FC127D187395E51 /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F3611177EC5C2F42EBF376EB06ED73AD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C380926143D609433202A7937F2E7502 /* TSGroupThread.m in Sources */ = {isa = PBXBuildFile; fileRef = CA51D22F889D900B62A901241336CCCA /* TSGroupThread.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C38D75882385E6E10047AF0B /* LKUnlinkDeviceMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C38D75892385E6E10047AF0B /* LKUnlinkDeviceMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87B989657BF344031280E8B9295F3C /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4454B4D47C68B5474C1325145C7B9FE /* OWSAttachmentDownloads.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD0300C14BF0876A5CB5C4F88D6DD3 /* OWSAttachmentDownloads.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C46F713417828F97201D8E745C369D47 /* CDSSigningCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA73AB49B75E99B11DD622A4470F816 /* CDSSigningCertificate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4594,6 +4596,8 @@
 		C3245A8F4C106048AD3BFA0D704A69CE /* Curve25519KitSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve25519KitSwiftTests.swift; path = BuildTests/BuildTestsTests/Curve25519KitSwiftTests.swift; sourceTree = "<group>"; };
 		C32B22C1146F4D40B78E1600F0F77A32 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
 		C369DCE9B771AA4A1C7B40DFFA3C4DCB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUnlinkDeviceMessage.h; sourceTree = "<group>"; };
+		C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUnlinkDeviceMessage.m; sourceTree = "<group>"; };
 		C392555180DEC38836CA183AC9D5B7EB /* MPTakeoverNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPTakeoverNotification.h; path = Mixpanel/MPTakeoverNotification.h; sourceTree = "<group>"; };
 		C3A2127511F52A3C2A5AF8A8E763C81E /* LKEphemeralMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LKEphemeralMessage.m; sourceTree = "<group>"; };
 		C3C685BEAACC9CA9712EB060669F8049 /* Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -8775,6 +8779,8 @@
 				C3A2127511F52A3C2A5AF8A8E763C81E /* LKEphemeralMessage.m */,
 				6B27BB235DA5AECC554338FB2C37443A /* LKFriendRequestMessage.h */,
 				863FB1F8B6B9127EC3BC80D78517EE83 /* LKFriendRequestMessage.m */,
+				C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */,
+				C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */,
 				7C2B481A4818B01F4C1FAB84B6007C12 /* LokiMessageWrapper.swift */,
 				B84664F623503DC20083A1CD /* Mention.swift */,
 				D5FA8CDEB9FEC9499EA4C76A594A56C5 /* Notification+Loki.swift */,
@@ -9360,6 +9366,7 @@
 				C2DB42203DE6BF04B7EA68371209A4DE /* OWSSyncManagerProtocol.h in Headers */,
 				C9FD808AE571F525CD9BB3D2DC48CFEF /* OWSUnknownContactBlockOfferMessage.h in Headers */,
 				76CF8EE294BF2AC8E1659E329D5079FA /* OWSUploadOperation.h in Headers */,
+				C38D75882385E6E10047AF0B /* LKUnlinkDeviceMessage.h in Headers */,
 				976FC42D9048BF87BDFC15D105162EDE /* OWSVerificationStateChangeMessage.h in Headers */,
 				24161512E245CEC8A4C72C1BF3B2B18F /* OWSVerificationStateSyncMessage.h in Headers */,
 				15A695C7573474117A6582F2306F7617 /* OWSWebSocket.h in Headers */,
@@ -11490,6 +11497,7 @@
 				5BC582C60FC8A826EA42C4DE37801C83 /* PreKeyBundle+jsonDict.m in Sources */,
 				10B519B04C205F62FA1DB1B8FDA1816F /* PreKeyRefreshOperation.swift in Sources */,
 				8A97D7473595748C49422817583D046D /* Promise+Hashable.swift in Sources */,
+				C38D75892385E6E10047AF0B /* LKUnlinkDeviceMessage.m in Sources */,
 				A97451653B7206CE92D10989C8A4715A /* Promise+retainUntilComplete.swift in Sources */,
 				27480123F5C0A8F8163EEF3BA6AB3A70 /* Promise+Retrying.swift in Sources */,
 				DEC190D13BD45A267CBE769B8C3AF932 /* ProofOfWork.swift in Sources */,

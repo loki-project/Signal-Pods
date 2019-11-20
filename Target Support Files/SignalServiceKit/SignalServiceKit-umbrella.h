@@ -42,6 +42,7 @@
 #import "OWSPrimaryStorage+Loki.h"
 #import "LKAddressMessage.h"
 #import "LKDeviceLinkMessage.h"
+#import "LKUnlinkDeviceMessage.h"
 #import "LKEphemeralMessage.h"
 #import "LKFriendRequestMessage.h"
 #import "NSArray+Functional.h"

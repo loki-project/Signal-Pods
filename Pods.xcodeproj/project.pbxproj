@@ -1393,6 +1393,7 @@
 		B7B23F3CBB7651D512CAB17BBFDF66B3 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277F108EBAFAB2BA89E7E0FEB24925 /* String+FoundationExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7D920DACC47B97DAA84BC6FE1454BA2 /* GULLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E434C592B54E2DF1DC7676313BE1D0C6 /* GULLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B80499CBB73CE621BA5BFC828DB9E0DF /* NSArray+NBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1621CB931F7847DDFD881735025A7EE9 /* NSArray+NBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B80CAF38238CE728002003AF /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CAF37238CE728002003AF /* Debugging.swift */; };
 		B82325E9CA9FCCE7A0587F71ABF5CA06 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD9BE088CC4AC69FA73F2D9E5C389B /* NVActivityIndicatorAnimationAudioEqualizer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B82B984D8D7C2D357F5EC2FE0613C912 /* FIRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D221B808A11B5F85DD171182C0917C /* FIRLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B84664F723503DC20083A1CD /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84664F623503DC20083A1CD /* Mention.swift */; };
@@ -4494,6 +4495,7 @@
 		B789DBE75A1E3C180186183BBEE35CD7 /* MPNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPNotification.m; path = Mixpanel/MPNotification.m; sourceTree = "<group>"; };
 		B7B8051B090015C6EA162F1C909966AE /* YapDatabaseHooks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseHooks.m; path = YapDatabase/Extensions/Hooks/YapDatabaseHooks.m; sourceTree = "<group>"; };
 		B7CDE370E6369E02629CAD329D738C51 /* Promise+retainUntilComplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+retainUntilComplete.swift"; sourceTree = "<group>"; };
+		B80CAF37238CE728002003AF /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 		B84664F623503DC20083A1CD /* Mention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
 		B84A1ABC3D99E9B5F3C347C65AA3D531 /* _MPTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _MPTweakBindObserver.m; path = Mixpanel/_MPTweakBindObserver.m; sourceTree = "<group>"; };
 		B852516AF7D26B40AEBAD3A04BB8AFF2 /* ProtoNameProviding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtoNameProviding.swift; path = Sources/SwiftProtobuf/ProtoNameProviding.swift; sourceTree = "<group>"; };
@@ -6876,6 +6878,7 @@
 				054DF4656589C4A910113887F947739D /* Analytics.swift */,
 				EAA4BC192E94555E9C6052010862AC05 /* AnyPromise+Conversion.swift */,
 				BBDE26F203538540E34A1F0EDA65A045 /* BuildConfiguration.swift */,
+				B80CAF37238CE728002003AF /* Debugging.swift */,
 				BEA4786B46B2EFE10958D9BC0BE5EA56 /* Dictionary+Description.swift */,
 				B8A5599123544407009B5F68 /* DisplayNameUtilities.swift */,
 				D0A4EBD783794E77D7C42F65B9E17C51 /* JSON.swift */,
@@ -11419,6 +11422,7 @@
 				E4307098751CBECC7BBDF36D408B76DC /* OWSDynamicOutgoingMessage.m in Sources */,
 				C307B3348ADB7C586CA17C20FD084D1A /* OWSEndSessionMessage.m in Sources */,
 				0BE3A8BCDE4C1F719151C1176D4F3CF8 /* OWSError.m in Sources */,
+				B80CAF38238CE728002003AF /* Debugging.swift in Sources */,
 				31A94568F6477CEA038B127764C3E683 /* OWSFailedAttachmentDownloadsJob.m in Sources */,
 				2647F69DDD6B3170D35365815FAC6A73 /* OWSFailedMessagesJob.m in Sources */,
 				6CD39DBDD745666BE283CD646CEA0399 /* OWSFakeCallMessageHandler.m in Sources */,

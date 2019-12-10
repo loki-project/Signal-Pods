@@ -256,6 +256,8 @@
 		23B33F256339F733BC4E2946E9F6000D /* YapDatabaseFilteredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0096EDF167D6A9055EFF48264BEE21 /* YapDatabaseFilteredView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		23C0EFE19C8F2957211EDB18CEE61199 /* Ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 063FEEC160187DC6B8DCCB8567F233C8 /* Ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23C4DB95E3AED20043FE11D7B58D2487 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF46EC4B81F9F8309B740DE7F506127A /* NVActivityIndicatorView-dummy.m */; };
+		2400888B239F1FDC00305217 /* LKSessionRestoreMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 24008889239F1FDC00305217 /* LKSessionRestoreMessage.h */; };
+		2400888C239F1FDC00305217 /* LKSessionRestoreMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2400888A239F1FDC00305217 /* LKSessionRestoreMessage.m */; };
 		24161512E245CEC8A4C72C1BF3B2B18F /* OWSVerificationStateSyncMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 537052C162AD069D1415E05713C9EF94 /* OWSVerificationStateSyncMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2422E6544DDD635C289F152CF5F3650A /* GoogleUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4373E95FA8F9CBC760FCF854A510D6 /* GoogleUtilities-dummy.m */; };
 		2429D5FEBE097C4E4F205BB5DA5D2909 /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = C58C5BBC37000149164845A1F5990C8C /* crypto_hash_sha512.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -3331,6 +3333,8 @@
 		23B10BBE78DFD83CD88FA08A9B3179E5 /* OWSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSError.h; sourceTree = "<group>"; };
 		23BDD2DF8DC7C8AA4509CB97B8FE4202 /* YDBCKRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKRecord.h; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKRecord.h; sourceTree = "<group>"; };
 		23BE798271C6533CDDFFC8030BD58671 /* SessionBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SessionBuilder.m; path = AxolotlKit/Classes/Sessions/SessionBuilder.m; sourceTree = "<group>"; };
+		24008889239F1FDC00305217 /* LKSessionRestoreMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKSessionRestoreMessage.h; sourceTree = "<group>"; };
+		2400888A239F1FDC00305217 /* LKSessionRestoreMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKSessionRestoreMessage.m; sourceTree = "<group>"; };
 		241F9EA2DF08CF77476696D3DF7C14F1 /* MPTweakInline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPTweakInline.h; path = Mixpanel/MPTweakInline.h; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		243AB39BA8DEB501EB1429C77F309526 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
@@ -8782,6 +8786,8 @@
 				C3A2127511F52A3C2A5AF8A8E763C81E /* LKEphemeralMessage.m */,
 				6B27BB235DA5AECC554338FB2C37443A /* LKFriendRequestMessage.h */,
 				863FB1F8B6B9127EC3BC80D78517EE83 /* LKFriendRequestMessage.m */,
+				24008889239F1FDC00305217 /* LKSessionRestoreMessage.h */,
+				2400888A239F1FDC00305217 /* LKSessionRestoreMessage.m */,
 				C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */,
 				C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */,
 				7C2B481A4818B01F4C1FAB84B6007C12 /* LokiMessageWrapper.swift */,
@@ -9263,6 +9269,7 @@
 				C8DA0DD97B420B8E96A3D040D2920306 /* LKDeviceLinkMessage.h in Headers */,
 				49C388F13023FC015BFA1CBE54BD96FD /* LKEphemeralMessage.h in Headers */,
 				6EDA64AB9EC8C4D2D0B547F2B1E4E56B /* LKFriendRequestMessage.h in Headers */,
+				2400888B239F1FDC00305217 /* LKSessionRestoreMessage.h in Headers */,
 				768FFF06AC7B39DFDB27675FEBB27A2A /* MIMETypeUtil.h in Headers */,
 				CFF2687B6D7544E3CEECC4BD6587734B /* MockSSKEnvironment.h in Headers */,
 				1E095D3A77245795EA86AEB69AC9B382 /* NotificationsProtocol.h in Headers */,
@@ -11333,6 +11340,7 @@
 				72B2CA3FD684A5388C99C7DDFD2C566B /* DeviceLinkIndex.swift in Sources */,
 				73BC51C90748105A5DEC6A1CEC4CEA3A /* DeviceLinkingSession.swift in Sources */,
 				FB390B9644351362440E3E9A9B3CDB4D /* DeviceLinkingSessionDelegate.swift in Sources */,
+				2400888C239F1FDC00305217 /* LKSessionRestoreMessage.m in Sources */,
 				DA556FE88D4FEF7EF93290656FB6F933 /* DeviceLinkingUtilities.swift in Sources */,
 				A6BB58DE6A8A778BD98DDA4BF67BAEC9 /* DeviceNames.swift in Sources */,
 				3E6A838A7146E80991F21882319096A5 /* Dictionary+Description.swift in Sources */,

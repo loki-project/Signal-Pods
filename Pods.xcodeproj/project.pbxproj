@@ -263,6 +263,8 @@
 		24312470BB5FA7F3E8529A39D62303A0 /* MPDismissKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ED42058E5D33A27E9B16E968AA519CBA /* MPDismissKeyboard.png */; };
 		24348C6D1A77BCC1D0D755C9776E0148 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105A6FEFC45DE9C8B89ED32FE6A7C501 /* Security.framework */; };
 		244F819B1468FB1A47B9971EF383C91C /* SSKIncrementingIdFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D729334D37225EFDF079AB7448A31 /* SSKIncrementingIdFinder.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2456A47E23D903E900ED339A /* LokiSnodeProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456A47C23D903E900ED339A /* LokiSnodeProxy.swift */; };
+		2456A47F23D903E900ED339A /* LokiHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2456A47D23D903E900ED339A /* LokiHttpClient.swift */; };
 		248F79B2CAA71B8141AC9D9FA5538AF2 /* OWSHTTPSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FB52E74AD2BEA8D3472F5936630845 /* OWSHTTPSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24A0B5596CE7413B6013478C7937DF3B /* OWSFingerprintBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 85729F4F35B966FDEF9344C1C2EBDBF5 /* OWSFingerprintBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24AD8E31FDFD451A14E10052DC06EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A3B5F625D05D1A8083E728A75AB1F4 /* Foundation.framework */; };
@@ -3335,6 +3337,8 @@
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		243AB39BA8DEB501EB1429C77F309526 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		2452B4F65545E02738D311EF03EA6BB2 /* TSOutgoingMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSOutgoingMessage.h; sourceTree = "<group>"; };
+		2456A47C23D903E900ED339A /* LokiSnodeProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiSnodeProxy.swift; sourceTree = "<group>"; };
+		2456A47D23D903E900ED339A /* LokiHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiHttpClient.swift; sourceTree = "<group>"; };
 		247D825B1837D96A6C97C9E6FA0EE29F /* OWSMediaGalleryFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMediaGalleryFinder.h; sourceTree = "<group>"; };
 		24AFECA4B88CD4BA4097B7006561DD62 /* AxolotlExceptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AxolotlExceptions.h; path = AxolotlKit/Classes/AxolotlExceptions.h; sourceTree = "<group>"; };
 		24BD2602234D5F040008EB0A /* LokiPublicChatPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPublicChatPoller.swift; sourceTree = "<group>"; };
@@ -6090,6 +6094,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2456A47B23D903E900ED339A /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				2456A47D23D903E900ED339A /* LokiHttpClient.swift */,
+				2456A47C23D903E900ED339A /* LokiSnodeProxy.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		25A8CDB8752DBA70512C958C79A1C795 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -6135,6 +6148,7 @@
 				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
 				743F9BDB2D15AE4F4ED5EA1C7390ABEB /* LokiStorageAPI.swift */,
 				C60FEF1B80024333892B1CF3EBCF80FC /* SignalMessage.swift */,
+				2456A47B23D903E900ED339A /* Clients */,
 				88076A64A0FD642E4BED9D25F1606C56 /* Public Chat */,
 				D274A9098162A732D5D460579C7E50E1 /* Multi Device */,
 			);
@@ -11378,6 +11392,7 @@
 				2B2068E74F510B26E31AA4E0033AA240 /* NoopNotificationsManager.swift in Sources */,
 				8C760824A40B60A753CA29C486BE83FB /* Notification+Loki.swift in Sources */,
 				DC7B08EDB42422920B17670A33A3EE36 /* NSArray+Functional.m in Sources */,
+				2456A47E23D903E900ED339A /* LokiSnodeProxy.swift in Sources */,
 				F497AE543EFD43019ACDFF02412EC253 /* NSArray+OWS.m in Sources */,
 				B8BFFF372355339800102A27 /* LokiPublicChatInfo.swift in Sources */,
 				2F06060928BB4B568FF606B27928E37D /* NSData+Image.m in Sources */,
@@ -11459,6 +11474,7 @@
 				D98190E41FEDD6A6BECD09DD34EBF2F0 /* OWSOutgoingSentMessageTranscript.m in Sources */,
 				9B8C853CA389FA67CE5EED933A524ACF /* OWSOutgoingSyncMessage.m in Sources */,
 				46F313052AF0240685E7FF102D72CBB7 /* OWSPrimaryStorage+Calling.m in Sources */,
+				2456A47F23D903E900ED339A /* LokiHttpClient.swift in Sources */,
 				1476960A681A73B48F1F720660194B28 /* OWSPrimaryStorage+keyFromIntLong.m in Sources */,
 				74BB7743FEED15A6BF9E7170CEE5BC85 /* OWSPrimaryStorage+Loki.m in Sources */,
 				8407481CF5AADD3BB74FD69F648A8B05 /* OWSPrimaryStorage+Loki.swift in Sources */,

@@ -1398,7 +1398,7 @@
 		B82B984D8D7C2D357F5EC2FE0613C912 /* FIRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D221B808A11B5F85DD171182C0917C /* FIRLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B836BFCB23DA6B50002C86A0 /* LKSessionRestoreMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B836BFC923DA6B4F002C86A0 /* LKSessionRestoreMessage.h */; };
 		B836BFCC23DA6B50002C86A0 /* LKSessionRestoreMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B836BFCA23DA6B4F002C86A0 /* LKSessionRestoreMessage.m */; };
-		B836BFCF23DA944F002C86A0 /* LokiHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836BFCD23DA944F002C86A0 /* LokiHttpClient.swift */; };
+		B836BFCF23DA944F002C86A0 /* LokiHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836BFCD23DA944F002C86A0 /* LokiHTTPClient.swift */; };
 		B836BFD023DA944F002C86A0 /* LokiSnodeProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */; };
 		B84664F723503DC20083A1CD /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84664F623503DC20083A1CD /* Mention.swift */; };
 		B8575E39F8B440ED18AC885753713527 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811083E74CF6B3759C094310BF3B3882 /* NVActivityIndicatorAnimationSquareSpin.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4502,7 +4502,7 @@
 		B80CAF37238CE728002003AF /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 		B836BFC923DA6B4F002C86A0 /* LKSessionRestoreMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRestoreMessage.h; sourceTree = "<group>"; };
 		B836BFCA23DA6B4F002C86A0 /* LKSessionRestoreMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSessionRestoreMessage.m; sourceTree = "<group>"; };
-		B836BFCD23DA944F002C86A0 /* LokiHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiHttpClient.swift; sourceTree = "<group>"; };
+		B836BFCD23DA944F002C86A0 /* LokiHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiHTTPClient.swift; sourceTree = "<group>"; };
 		B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiSnodeProxy.swift; sourceTree = "<group>"; };
 		B84664F623503DC20083A1CD /* Mention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
 		B84A1ABC3D99E9B5F3C347C65AA3D531 /* _MPTweakBindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _MPTweakBindObserver.m; path = Mixpanel/_MPTweakBindObserver.m; sourceTree = "<group>"; };
@@ -6137,7 +6137,7 @@
 				3D08194AD12F0A23EDEB22601DB0B593 /* LokiAPITarget.swift */,
 				1A98145231184259283BC98403B4431B /* LokiAPI+SwarmAPI.swift */,
 				4C59F97D3B831CF5F8ABBF60177C812D /* LokiDotNetAPI.swift */,
-				B836BFCD23DA944F002C86A0 /* LokiHttpClient.swift */,
+				B836BFCD23DA944F002C86A0 /* LokiHTTPClient.swift */,
 				791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */,
 				D91998C895C41ACE4419BB00A5819678 /* LokiMessage.swift */,
 				38D3258760341C2F323FC2DB2615B6A3 /* LokiP2PAPI.swift */,
@@ -11474,7 +11474,7 @@
 				D98190E41FEDD6A6BECD09DD34EBF2F0 /* OWSOutgoingSentMessageTranscript.m in Sources */,
 				9B8C853CA389FA67CE5EED933A524ACF /* OWSOutgoingSyncMessage.m in Sources */,
 				46F313052AF0240685E7FF102D72CBB7 /* OWSPrimaryStorage+Calling.m in Sources */,
-				B836BFCF23DA944F002C86A0 /* LokiHttpClient.swift in Sources */,
+				B836BFCF23DA944F002C86A0 /* LokiHTTPClient.swift in Sources */,
 				1476960A681A73B48F1F720660194B28 /* OWSPrimaryStorage+keyFromIntLong.m in Sources */,
 				74BB7743FEED15A6BF9E7170CEE5BC85 /* OWSPrimaryStorage+Loki.m in Sources */,
 				8407481CF5AADD3BB74FD69F648A8B05 /* OWSPrimaryStorage+Loki.swift in Sources */,

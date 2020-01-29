@@ -939,6 +939,10 @@
 		7B4BC195EA1F01AFAACFDA1E46462DF2 /* Google_Protobuf_Wrappers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FDB090722B49D0728C605B50666B7E /* Google_Protobuf_Wrappers+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7B9968DA504DDEF410CF6C7A61ED63D6 /* TSInvalidIdentityKeySendingErrorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 83490240E3369FFAB4451EE971C77D49 /* TSInvalidIdentityKeySendingErrorMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BC75B419A0F57A6AE74E71C32C8AB11 /* OWSOutgoingSyncMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F349C2A1DF8CAB0626493509DEBA88 /* OWSOutgoingSyncMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BD4836B23E0FD7B0007F1BA /* LKGroupUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4836923E0FD7A0007F1BA /* LKGroupUtilities.m */; };
+		7BD4836C23E0FD7B0007F1BA /* LKGroupUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD4836A23E0FD7A0007F1BA /* LKGroupUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BD4836F23E0FECA0007F1BA /* LKSessionRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4836D23E0FECA0007F1BA /* LKSessionRequestMessage.m */; };
+		7BD4837023E0FECA0007F1BA /* LKSessionRequestMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD4836E23E0FECA0007F1BA /* LKSessionRequestMessage.h */; };
 		7BD8BD67ED5976F0C8C0C856803426F8 /* YapDatabaseLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEDAA84C1E8D2AE4B3BCCE5560B45C8 /* YapDatabaseLogging.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7BFA00E0925B9DD2825A6DD4B17B4054 /* YapDatabaseSecondaryIndexConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A90CF0E33F7005E4018B5D407E34F67 /* YapDatabaseSecondaryIndexConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7C249A262E7B59862776D6D691D852AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A3B5F625D05D1A8083E728A75AB1F4 /* Foundation.framework */; };
@@ -4029,6 +4033,10 @@
 		7B78468425550A60EE166E6B8AEE0B11 /* YapDatabaseViewChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewChange.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewChange.h; sourceTree = "<group>"; };
 		7B8E856EC2F9A34AFABA6856E8478B19 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
 		7BC2D0573F3D2FFBF57D032AB589649D /* SyndicationNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyndicationNamespace.swift; path = Sources/FeedKit/Models/Namespaces/Syndication/SyndicationNamespace.swift; sourceTree = "<group>"; };
+		7BD4836923E0FD7A0007F1BA /* LKGroupUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKGroupUtilities.m; sourceTree = "<group>"; };
+		7BD4836A23E0FD7A0007F1BA /* LKGroupUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKGroupUtilities.h; sourceTree = "<group>"; };
+		7BD4836D23E0FECA0007F1BA /* LKSessionRequestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSessionRequestMessage.m; sourceTree = "<group>"; };
+		7BD4836E23E0FECA0007F1BA /* LKSessionRequestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRequestMessage.h; sourceTree = "<group>"; };
 		7BDC536E8C3A0398A5B80E40B44D7D60 /* OWSAttachmentDownloads.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSAttachmentDownloads.h; sourceTree = "<group>"; };
 		7BE55430C152C3ADF41767DA9AB14673 /* Pods-Signal.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Signal.app store release.xcconfig"; sourceTree = "<group>"; };
 		7BF03B4D763F3B38B29ABE708B92F9CE /* crypto_int64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_int64.h; path = Sources/ed25519/nacl_includes/crypto_int64.h; sourceTree = "<group>"; };
@@ -6885,6 +6893,8 @@
 		802C36E4FA217375694F86F17DF73906 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7BD4836A23E0FD7A0007F1BA /* LKGroupUtilities.h */,
+				7BD4836923E0FD7A0007F1BA /* LKGroupUtilities.m */,
 				054DF4656589C4A910113887F947739D /* Analytics.swift */,
 				EAA4BC192E94555E9C6052010862AC05 /* AnyPromise+Conversion.swift */,
 				BBDE26F203538540E34A1F0EDA65A045 /* BuildConfiguration.swift */,
@@ -8781,6 +8791,8 @@
 		F524083750F13B9C6214706599F98045 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				7BD4836E23E0FECA0007F1BA /* LKSessionRequestMessage.h */,
+				7BD4836D23E0FECA0007F1BA /* LKSessionRequestMessage.m */,
 				B8D92A95237A2F610024119B /* ContactParser.swift */,
 				BBD1652892E287CA62F0C79C090E318C /* FriendRequestExpirationJob.swift */,
 				85EC3435C861717279A6142988132FD3 /* FriendRequestExpirationMessageFinder.swift */,
@@ -9260,6 +9272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFA746848B110F47E98DF9ECBE0F865 /* AppContext.h in Headers */,
+				7BD4837023E0FECA0007F1BA /* LKSessionRequestMessage.h in Headers */,
 				ADB395D602D57725297B03B227868811 /* AppReadiness.h in Headers */,
 				CCF80FD728B05B7ACDDCF95A169EDE51 /* AppVersion.h in Headers */,
 				B5A56E318D0D4A05BCECBE27D4A38E09 /* ByteParser.h in Headers */,
@@ -9434,6 +9447,7 @@
 				0E970EE8CCE5BAD637B454F4E9E88193 /* TSThread.h in Headers */,
 				D7535A497AB5BD715CB0DA661DC7FB11 /* TSYapDatabaseObject.h in Headers */,
 				798F032AC1D1899F9A44C24AEBCE43C1 /* UIImage+OWS.h in Headers */,
+				7BD4836C23E0FD7B0007F1BA /* LKGroupUtilities.h in Headers */,
 				4A6A7AF4BADCEAB96927CAAF2D30C3EF /* YapDatabaseConnection+OWS.h in Headers */,
 				A4EB77E2B93A56BD09404BC6838C3A4C /* YapDatabaseTransaction+OWS.h in Headers */,
 			);
@@ -11477,6 +11491,7 @@
 				B836BFCF23DA944F002C86A0 /* LokiHTTPClient.swift in Sources */,
 				1476960A681A73B48F1F720660194B28 /* OWSPrimaryStorage+keyFromIntLong.m in Sources */,
 				74BB7743FEED15A6BF9E7170CEE5BC85 /* OWSPrimaryStorage+Loki.m in Sources */,
+				7BD4836F23E0FECA0007F1BA /* LKSessionRequestMessage.m in Sources */,
 				8407481CF5AADD3BB74FD69F648A8B05 /* OWSPrimaryStorage+Loki.swift in Sources */,
 				7A4AF9958CE5DEE0890B293E798DB530 /* OWSPrimaryStorage+PreKeyStore.m in Sources */,
 				BF0F4FEAA4E302C5D7207224073D2628 /* OWSPrimaryStorage+SessionStore.m in Sources */,
@@ -11501,6 +11516,7 @@
 				050A26C196DF4BDF04091FF4029251DF /* OWSSyncConfigurationMessage.m in Sources */,
 				8F20B6BC2DEEC9A4E08602729107AA4E /* OWSSyncContactsMessage.m in Sources */,
 				97D381A3DD030994638C1AB450A9138B /* OWSSyncGroupsMessage.m in Sources */,
+				7BD4836B23E0FD7B0007F1BA /* LKGroupUtilities.m in Sources */,
 				8AE1E9C64E779D53353D4BF6D7F616A1 /* OWSSyncGroupsRequestMessage.m in Sources */,
 				007CA7457B96A82EBFB6FA2475FB740B /* OWSThumbnailService.swift in Sources */,
 				24BD2603234D5F040008EB0A /* LokiPublicChatPoller.swift in Sources */,

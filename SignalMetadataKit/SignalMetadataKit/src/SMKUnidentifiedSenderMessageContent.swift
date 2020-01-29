@@ -7,6 +7,7 @@ import Foundation
 @objc public enum SMKMessageType: Int {
     case whisper
     case prekey
+    case lokiFriendRequest
 }
 
 // See:
@@ -51,6 +52,8 @@ import Foundation
         case .whisper:
             builderType = .message
         case .prekey:
+            builderType = .prekeyMessage
+        case .lokiFriendRequest:
             builderType = .prekeyMessage
         }
 

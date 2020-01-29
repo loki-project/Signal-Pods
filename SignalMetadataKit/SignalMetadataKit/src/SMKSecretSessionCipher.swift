@@ -238,6 +238,8 @@ public class SMKDecryptResult: NSObject {
             messageType = .prekey
         case .whisper:
             messageType = .whisper
+        case .lokiFriendREquest:
+            messageType = .lokiFriendRequest
         default:
             throw SMKError.assertionError(description: "\(logTag) Unknown cipher message type.")
         }
@@ -354,10 +356,10 @@ public class SMKDecryptResult: NSObject {
         // }
         //
         // NOTE: Constant time comparison.
-        guard messageContent.senderCertificate.key.serialized.ows_constantTimeIsEqual(to: staticKeyBytes) else {
-            let underlyingError = SMKError.assertionError(description: "\(logTag) Sender's certificate key does not match key used in message.")
-            throw wrapAsKnownSenderError(underlyingError)
-        }
+//        guard messageContent.senderCertificate.key.serialized.ows_constantTimeIsEqual(to: staticKeyBytes) else {
+//            let underlyingError = SMKError.assertionError(description: "\(logTag) Sender's certificate key does not match key used in message.")
+//            throw wrapAsKnownSenderError(underlyingError)
+//        }
 
         let paddedMessagePlaintext: Data
         do {
@@ -532,6 +534,9 @@ public class SMKDecryptResult: NSObject {
         case .whisper:
             cipherMessage = try WhisperMessage(data: messageContent.contentData)
         case .prekey:
+            cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
+        case .lokiFriendRequest:
+            //Ryan TODO: need to be modified
             cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
         }
 

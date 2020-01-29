@@ -39,33 +39,38 @@ public enum SMKCertificateError: Error {
 //    public void validate(SenderCertificate certificate, long validationTime) throws InvalidCertificateException {
     @objc public func throwswrapped_validate(senderCertificate: SMKSenderCertificate, validationTime: UInt64) throws {
 //    try {
+      if (senderCertificate.senderRecipientId.isEmpty || senderCertificate.senderDeviceId == 0) {
+        let error = SMKCertificateError.invalidCertificate(description: "Missing field.")
+        Logger.error("\(error)")
+        throw error
+      }
 //    ServerCertificate serverCertificate = certificate.getSigner();
-        let serverCertificate = senderCertificate.signer
+//        let serverCertificate = senderCertificate.signer
 
 //    validate(serverCertificate);
-        try throwswrapped_validate(serverCertificate: serverCertificate)
+//        try throwswrapped_validate(serverCertificate: serverCertificate)
 
 //    if (!Curve.verifySignature(serverCertificate.getKey(), certificate.getCertificate(), certificate.getSignature())) {
 //    throw new InvalidCertificateException("Signature failed");
 //    }
-        let certificateData = try senderCertificate.toProto().certificate
-        guard try Ed25519.verifySignature(senderCertificate.signatureData,
-                                          publicKey: serverCertificate.key.keyData,
-                                          data: certificateData) else {
-            Logger.error("Sender certificate signature verification failed.")
-            let error = SMKCertificateError.invalidCertificate(description: "Sender certificate signature verification failed.")
-            Logger.error("\(error)")
-            throw error
-        }
+//        let certificateData = try senderCertificate.toProto().certificate
+//        guard try Ed25519.verifySignature(senderCertificate.signatureData,
+//                                          publicKey: serverCertificate.key.keyData,
+//                                          data: certificateData) else {
+//            Logger.error("Sender certificate signature verification failed.")
+//            let error = SMKCertificateError.invalidCertificate(description: "Sender certificate signature verification failed.")
+//            Logger.error("\(error)")
+//            throw error
+//        }
 
 //    if (validationTime > certificate.getExpiration()) {
 //    throw new InvalidCertificateException("Certificate is expired");
 //    }
-        guard validationTime <= senderCertificate.expirationTimestamp else {
-            let error = SMKCertificateError.invalidCertificate(description: "Certficate is expired.")
-            Logger.error("\(error)")
-            throw error
-        }
+//        guard validationTime <= senderCertificate.expirationTimestamp else {
+//            let error = SMKCertificateError.invalidCertificate(description: "Certficate is expired.")
+//            Logger.error("\(error)")
+//            throw error
+//        }
 
 //    } catch (InvalidKeyException e) {
 //    throw new InvalidCertificateException(e);

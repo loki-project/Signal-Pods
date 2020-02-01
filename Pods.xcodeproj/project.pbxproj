@@ -1542,7 +1542,6 @@
 		C9102BD9BDA0227507CF4E610469A022 /* String + toDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09EE135EE9313BBC1CAD139B99076BF /* String + toDuration.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C912ED17F3FC66A8C325095E604531C4 /* MPTakeoverNotificationViewController~iphoneportrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153CD8CCCC36B4A2E35E2C041A3985CD /* MPTakeoverNotificationViewController~iphoneportrait.xib */; };
 		C95091F013A9EDF44119A729667F04CA /* YapBidirectionalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2AAE08AC0472347EBB91C85F1A588E /* YapBidirectionalCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C991217ACCFF92AA0685C7751E62BCD6 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF4656589C4A910113887F947739D /* Analytics.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C9FC4D9FB78264FB3CD77C53F9D86C9A /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29715EA23EDAB97C21E54FB39075CDF6 /* PKCS7.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C9FD808AE571F525CD9BB3D2DC48CFEF /* OWSUnknownContactBlockOfferMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 00EC95A831D5366E2527ACC9A38264AA /* OWSUnknownContactBlockOfferMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA199FF977E1FDC0CA33A726EC6D290C /* FIRConfigurationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFA09E63F660B9CEA117B6DE85145F1 /* FIRConfigurationInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -3108,7 +3107,6 @@
 		04B2729E21E8136DED182E9CE4B70425 /* DateSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateSpec.swift; path = Sources/FeedKit/Dates/DateSpec.swift; sourceTree = "<group>"; };
 		04FC1C7C9C1CE2691B73A0FF0FA11580 /* YapDatabaseRelationshipTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRelationshipTransaction.m; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipTransaction.m; sourceTree = "<group>"; };
 		051B644C948743ABACDE31C915B8142C /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		054DF4656589C4A910113887F947739D /* Analytics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		055B252DC7EC3D798AF50B4406A51D41 /* OWSUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSUploadOperation.m; sourceTree = "<group>"; };
 		056F3B498A2DD85B1485CDE3A2AC47AC /* UIViewController+AutomaticTracks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AutomaticTracks.m"; path = "Mixpanel/UIViewController+AutomaticTracks.m"; sourceTree = "<group>"; };
 		057677C8FBD4470768FBCB39C3EC00E5 /* MPUIControlBinding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPUIControlBinding.m; path = Mixpanel/MPUIControlBinding.m; sourceTree = "<group>"; };
@@ -6897,7 +6895,6 @@
 		802C36E4FA217375694F86F17DF73906 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				054DF4656589C4A910113887F947739D /* Analytics.swift */,
 				EAA4BC192E94555E9C6052010862AC05 /* AnyPromise+Conversion.swift */,
 				BBDE26F203538540E34A1F0EDA65A045 /* BuildConfiguration.swift */,
 				B80CAF37238CE728002003AF /* Debugging.swift */,
@@ -11347,7 +11344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DE7DC974A8D6C8ED6CBDE912394404 /* AccountServiceClient.swift in Sources */,
-				C991217ACCFF92AA0685C7751E62BCD6 /* Analytics.swift in Sources */,
 				301F583A0174EC0F0CE03294181007ED /* AnyPromise+Conversion.swift in Sources */,
 				C192AA99FDE616B29346CCA80FFB18A3 /* AppContext.m in Sources */,
 				5AE0899D18CF03B8DDF02D6828CC441C /* AppReadiness.m in Sources */,

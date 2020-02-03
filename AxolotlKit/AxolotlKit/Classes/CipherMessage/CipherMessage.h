@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, CipherMessageType) {
-    CipherMessageType_Prekey = 0,
-    CipherMessageType_Whisper,
+    CipherMessageType_Prekey = 1,
+    CipherMessageType_Whisper = 2,
+    CipherMessageType_LokiFriendRequest = 3,
 };
 
 @protocol CipherMessage <NSObject>

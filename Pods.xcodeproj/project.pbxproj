@@ -1403,6 +1403,7 @@
 		B84664F723503DC20083A1CD /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84664F623503DC20083A1CD /* Mention.swift */; };
 		B8575E39F8B440ED18AC885753713527 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811083E74CF6B3759C094310BF3B3882 /* NVActivityIndicatorAnimationSquareSpin.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B86207AAA78C6A0EDEE958F361D8E66A /* SerializationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B1926EB07CE2F9AAE32787A0DB2D0B9C /* SerializationUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B86F994623E7B675005D9FE9 /* LokiRSSFeedProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */; };
 		B87FAD6ED22494493E4ACC9AB7677BBA /* RKCK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA1C5787FEFD053469BC9B027A9211F /* RKCK.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B88847BF23E2A5E9009836D2 /* LKGroupUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B88847BD23E2A5E9009836D2 /* LKGroupUtilities.m */; };
 		B88847C023E2A5E9009836D2 /* LKGroupUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B88847BE23E2A5E9009836D2 /* LKGroupUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4515,6 +4516,7 @@
 		B861B29148FC0A8686B417433E30FC05 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
 		B86370BD1964415A19C65F4A837F0B1E /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
 		B86D736B84AB8403597F7293B21A1280 /* PreKeyBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreKeyBundle.h; path = AxolotlKit/Classes/Prekeys/PreKeyBundle.h; sourceTree = "<group>"; };
+		B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiRSSFeedProxy.swift; sourceTree = "<group>"; };
 		B88847BD23E2A5E9009836D2 /* LKGroupUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKGroupUtilities.m; sourceTree = "<group>"; };
 		B88847BE23E2A5E9009836D2 /* LKGroupUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKGroupUtilities.h; sourceTree = "<group>"; };
 		B88847C123E2A66B009836D2 /* LKSessionRequestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRequestMessage.h; sourceTree = "<group>"; };
@@ -6155,6 +6157,7 @@
 				D91998C895C41ACE4419BB00A5819678 /* LokiMessage.swift */,
 				38D3258760341C2F323FC2DB2615B6A3 /* LokiP2PAPI.swift */,
 				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
+				B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */,
 				B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */,
 				743F9BDB2D15AE4F4ED5EA1C7390ABEB /* LokiStorageAPI.swift */,
 				C60FEF1B80024333892B1CF3EBCF80FC /* SignalMessage.swift */,
@@ -11421,6 +11424,7 @@
 				4336F01AED689AC97E80BCF92FE1F36E /* NSRegularExpression+SSK.swift in Sources */,
 				466B3DEA126A45054020A3748EBF32FB /* NSString+SSK.m in Sources */,
 				EA8A4AB7262746E4EC2CBCF7F9947D4C /* NSTimer+OWS.m in Sources */,
+				B86F994623E7B675005D9FE9 /* LokiRSSFeedProxy.swift in Sources */,
 				AF82228BF86E1E21E98BA4A1D7E94FB3 /* NSURLSessionDataTask+StatusCode.m in Sources */,
 				A715AC7589528425C32DD7ED5C9311CD /* NSUserDefaults+OWS.m in Sources */,
 				87EBB36906A431BB54DE0B6A00E8A96A /* OutageDetection.swift in Sources */,

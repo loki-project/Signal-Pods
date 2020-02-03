@@ -1500,6 +1500,7 @@
 		C30DE6C01B9DDC1CA9C8EBA7F4EC1C52 /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C96FD8BD0ACDEFCEC97DE49B09A47E /* SwiftProtobuf-dummy.m */; };
 		C3254C187B6586E7B2A22524C6359919 /* OWSDeviceProvisioningService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BBA174BEF1030442B563E74167215D /* OWSDeviceProvisioningService.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F86BD15E742F2F1FC127D187395E51 /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351BF2023E81A1E0041D98F /* Data+Streaming.swift */; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F3611177EC5C2F42EBF376EB06ED73AD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C380926143D609433202A7937F2E7502 /* TSGroupThread.m in Sources */ = {isa = PBXBuildFile; fileRef = CA51D22F889D900B62A901241336CCCA /* TSGroupThread.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C38D75882385E6E10047AF0B /* LKUnlinkDeviceMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4618,6 +4619,7 @@
 		C2EB50A528AD30979162839AA96BA8B4 /* JSONDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingOptions.swift; path = Sources/SwiftProtobuf/JSONDecodingOptions.swift; sourceTree = "<group>"; };
 		C3245A8F4C106048AD3BFA0D704A69CE /* Curve25519KitSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve25519KitSwiftTests.swift; path = BuildTests/BuildTestsTests/Curve25519KitSwiftTests.swift; sourceTree = "<group>"; };
 		C32B22C1146F4D40B78E1600F0F77A32 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
+		C351BF2023E81A1E0041D98F /* Data+Streaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Streaming.swift"; sourceTree = "<group>"; };
 		C369DCE9B771AA4A1C7B40DFFA3C4DCB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUnlinkDeviceMessage.h; sourceTree = "<group>"; };
 		C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUnlinkDeviceMessage.m; sourceTree = "<group>"; };
@@ -6903,6 +6905,7 @@
 			children = (
 				EAA4BC192E94555E9C6052010862AC05 /* AnyPromise+Conversion.swift */,
 				BBDE26F203538540E34A1F0EDA65A045 /* BuildConfiguration.swift */,
+				C351BF2023E81A1E0041D98F /* Data+Streaming.swift */,
 				B80CAF37238CE728002003AF /* Debugging.swift */,
 				BEA4786B46B2EFE10958D9BC0BE5EA56 /* Dictionary+Description.swift */,
 				B8A5599123544407009B5F68 /* DisplayNameUtilities.swift */,
@@ -11553,6 +11556,7 @@
 				599E37B951DFA0B0C58C57AFBF8C5F94 /* ProvisioningProto.swift in Sources */,
 				445134DE1801F86C793FFBC6A255768B /* ProxiedContentDownloader.swift in Sources */,
 				3CF456E570C62BE4C3B88240E1390CBF /* ReachabilityManager.swift in Sources */,
+				C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */,
 				EB8CFAF8EA9C4CE3E635CEA1425773D7 /* ReverseDispatchQueue.swift in Sources */,
 				6F28BA82FA7EAB6D1F73F01286AA0442 /* RotateSignedKeyOperation.swift in Sources */,
 				319B5D7BEF08667B76B726D966F2D16E /* SessionCipher+Loki.m in Sources */,

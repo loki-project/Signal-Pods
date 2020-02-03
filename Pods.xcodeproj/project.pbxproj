@@ -4040,12 +4040,10 @@
 		7B78468425550A60EE166E6B8AEE0B11 /* YapDatabaseViewChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewChange.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewChange.h; sourceTree = "<group>"; };
 		7B8E856EC2F9A34AFABA6856E8478B19 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
 		7BC2D0573F3D2FFBF57D032AB589649D /* SyndicationNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyndicationNamespace.swift; path = Sources/FeedKit/Models/Namespaces/Syndication/SyndicationNamespace.swift; sourceTree = "<group>"; };
-		7BD4836923E0FD7A0007F1BA /* LKGroupUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKGroupUtilities.m; sourceTree = "<group>"; };
-		7BD4836A23E0FD7A0007F1BA /* LKGroupUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKGroupUtilities.h; sourceTree = "<group>"; };
 		7BD4836D23E0FECA0007F1BA /* LKSessionRequestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSessionRequestMessage.m; sourceTree = "<group>"; };
 		7BD4836E23E0FECA0007F1BA /* LKSessionRequestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRequestMessage.h; sourceTree = "<group>"; };
-		7BD4838623E2A1740007F1BA /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FallbackSessionCipher.swift; path = SignalMetadataKit/src/FallbackSessionCipher.swift; sourceTree = "<group>"; };
-		7BD4838723E2A1740007F1BA /* DiffieHellman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiffieHellman.swift; path = SignalMetadataKit/src/DiffieHellman.swift; sourceTree = "<group>"; };
+		7BD4838623E2A1740007F1BA /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallbackSessionCipher.swift; sourceTree = "<group>"; };
+		7BD4838723E2A1740007F1BA /* DiffieHellman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffieHellman.swift; sourceTree = "<group>"; };
 		7BD4838E23E3B39D0007F1BA /* LokiFriendRequestMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LokiFriendRequestMessage.h; path = AxolotlKit/Classes/CipherMessage/LokiFriendRequestMessage.h; sourceTree = "<group>"; };
 		7BD4838F23E3B39D0007F1BA /* LokiFriendRequestMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LokiFriendRequestMessage.m; path = AxolotlKit/Classes/CipherMessage/LokiFriendRequestMessage.m; sourceTree = "<group>"; };
 		7BDC536E8C3A0398A5B80E40B44D7D60 /* OWSAttachmentDownloads.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSAttachmentDownloads.h; sourceTree = "<group>"; };
@@ -5738,8 +5736,7 @@
 		13036EACEC510F0170A65B495596FEF8 /* SignalMetadataKit */ = {
 			isa = PBXGroup;
 			children = (
-				7BD4838723E2A1740007F1BA /* DiffieHellman.swift */,
-				7BD4838623E2A1740007F1BA /* FallbackSessionCipher.swift */,
+				B8E0BA5223E8DF6500A60168 /* Loki */,
 				FE057F396BEF9C563941FA95CBF10B5A /* ECPrivateKey.swift */,
 				BEF3E023E39D7061D467BC7D198A548E /* ECPublicKey.swift */,
 				72174990EDC07CF015EDCEE4355BAD9E /* NSData+messagePadding.h */,
@@ -7838,6 +7835,15 @@
 				3C52903585FD4D902256A87A79D49EE0 /* Extensions */,
 			);
 			name = SQLCipher;
+			sourceTree = "<group>";
+		};
+		B8E0BA5223E8DF6500A60168 /* Loki */ = {
+			isa = PBXGroup;
+			children = (
+				7BD4838723E2A1740007F1BA /* DiffieHellman.swift */,
+				7BD4838623E2A1740007F1BA /* FallbackSessionCipher.swift */,
+			);
+			path = Loki;
 			sourceTree = "<group>";
 		};
 		B938F01F6E17B0F95D94CA4535CE5243 /* Resources */ = {

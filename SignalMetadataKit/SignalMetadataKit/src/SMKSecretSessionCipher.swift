@@ -173,7 +173,6 @@ public class SMKDecryptResult: NSObject {
             let cipher = FallBackSessionCipherMeta(recipientId: recipientId, privateKey: privateKey)
             encryptedMessage = LokiFriendRequestMessage.init(_throws_with: cipher.encrypt(message: paddedPlaintext)!)
         } else {
-            // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
             let cipher = SessionCipher(sessionStore: sessionStore,
                                        preKeyStore: preKeyStore,
                                        signedPreKeyStore: signedPreKeyStore,
@@ -181,7 +180,6 @@ public class SMKDecryptResult: NSObject {
                                        recipientId: recipientId,
                                        deviceId: deviceId)
 
-            // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
             encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
         }
 

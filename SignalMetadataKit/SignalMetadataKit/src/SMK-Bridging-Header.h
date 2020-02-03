@@ -8,3 +8,5 @@
 #import <SignalCoreKit/NSObject+OWS.h>
 #import <SignalCoreKit/OWSAsserts.h>
 #import <HKDFKit/HKDFKit.h>
+#import "NSData+messagePadding.h"
+#import <AxolotlKit/LokiFriendRequestMessage.h>

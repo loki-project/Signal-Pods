@@ -37,6 +37,8 @@ import Foundation
             messageType = .prekey
         case .message:
             messageType = .whisper
+        case .lokiFriendRequest:
+            messageType = .lokiFriendRequest
         }
 
         let contentData = proto.content
@@ -54,7 +56,7 @@ import Foundation
         case .prekey:
             builderType = .prekeyMessage
         case .lokiFriendRequest:
-            builderType = .prekeyMessage
+            builderType = .lokiFriendRequest
         }
 
         let builder = SMKProtoUnidentifiedSenderMessageMessage.builder(type: builderType,

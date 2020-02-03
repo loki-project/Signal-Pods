@@ -289,6 +289,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
       typealias RawValue = Int
       case prekeyMessage // = 1
       case message // = 2
+      case lokiFriendRequest // = 3
 
       init() {
         self = .prekeyMessage
@@ -298,6 +299,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
         switch rawValue {
         case 1: self = .prekeyMessage
         case 2: self = .message
+        case 3: self = .lokiFriendRequest
         default: return nil
         }
       }
@@ -306,6 +308,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
         switch self {
         case .prekeyMessage: return 1
         case .message: return 2
+        case .lokiFriendRequest: return 3
         }
       }
 

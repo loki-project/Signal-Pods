@@ -158,24 +158,32 @@ public class SMKDecryptResult: NSObject {
                                           deviceId: Int32,
                                           paddedPlaintext: Data,
                                           senderCertificate: SMKSenderCertificate,
-                                          protocolContext: Any?) throws -> Data {
+                                          protocolContext: Any?,
+                                          isFriendRequest: Bool) throws -> Data {
         guard recipientId.count > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid recipientId")
         }
         guard deviceId > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid deviceId")
         }
+        
+        var encryptedMessage: CipherMessage
+        if (isFriendRequest) {
+            let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
+            let cipher = FallBackSessionCipherMeta(recipientId: recipientId, privateKey: privateKey)
+            encryptedMessage = LokiFriendRequestMessage.init(_throws_with: cipher.encrypt(message: paddedPlaintext)!)
+        } else {
+            // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
+            let cipher = SessionCipher(sessionStore: sessionStore,
+                                       preKeyStore: preKeyStore,
+                                       signedPreKeyStore: signedPreKeyStore,
+                                       identityKeyStore: identityStore,
+                                       recipientId: recipientId,
+                                       deviceId: deviceId)
 
-        // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
-        let cipher = SessionCipher(sessionStore: sessionStore,
-                                   preKeyStore: preKeyStore,
-                                   signedPreKeyStore: signedPreKeyStore,
-                                   identityKeyStore: identityStore,
-                                   recipientId: recipientId,
-                                   deviceId: deviceId)
-
-        // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
-        let encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
+            // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
+            encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
+        }
 
         guard let encryptedMessageData = encryptedMessage.serialized() else {
             throw SMKError.assertionError(description: "\(logTag) Could not serialize encrypted message.")
@@ -187,7 +195,7 @@ public class SMKDecryptResult: NSObject {
         }
 
         // ECPublicKey theirIdentity = signalProtocolStore.getIdentity(destinationAddress).getPublicKey();
-        guard let theirIdentityKeyData = identityStore.identityKey(forRecipientId: recipientId, protocolContext: protocolContext) else {
+        guard let theirIdentityKeyData = Data.data(fromHex: recipientId.substring(from: recipientId.index(recipientId.startIndex, offsetBy: 2))) else {
             throw SMKError.assertionError(description: "\(logTag) Missing their public identity key.")
         }
         // NOTE: we don't use ECPublicKey(serializedKeyData) since the
@@ -238,7 +246,7 @@ public class SMKDecryptResult: NSObject {
             messageType = .prekey
         case .whisper:
             messageType = .whisper
-        case .lokiFriendREquest:
+        case .lokiFriendRequest:
             messageType = .lokiFriendRequest
         default:
             throw SMKError.assertionError(description: "\(logTag) Unknown cipher message type.")
@@ -536,8 +544,10 @@ public class SMKDecryptResult: NSObject {
         case .prekey:
             cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
         case .lokiFriendRequest:
-            //Ryan TODO: need to be modified
-            cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
+            let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
+            let cipher = FallBackSessionCipherMeta(recipientId: senderRecipientId, privateKey: privateKey)
+            let plaintextData = try cipher.decrypt(message: messageContent.contentData)!
+            return plaintextData
         }
 
         let cipher = SessionCipher(sessionStore: sessionStore,

@@ -1414,7 +1414,7 @@
 		B88847C323E2A66C009836D2 /* LKSessionRequestMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B88847C123E2A66B009836D2 /* LKSessionRequestMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B88847C423E2A66C009836D2 /* LKSessionRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B88847C223E2A66C009836D2 /* LKSessionRequestMessage.m */; };
 		B88847C723E39039009836D2 /* GroupUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88847C523E39038009836D2 /* GroupUtilities.swift */; };
-		B88847C823E39039009836D2 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88847C623E39039009836D2 /* General.swift */; };
+		B88847C823E39039009836D2 /* GeneralUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88847C623E39039009836D2 /* GeneralUtilities.swift */; };
 		B89CF41476E039C2F8087F1384F63C55 /* SMKServerCertificateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E39D121D057ADE54A028CFA9F17C102 /* SMKServerCertificateTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8A1AA4C2895B3618DC19CAD78678F50 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB94A9B593057F885764996C43732C8 /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8A5599223544407009B5F68 /* DisplayNameUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5599123544407009B5F68 /* DisplayNameUtilities.swift */; };
@@ -4533,7 +4533,7 @@
 		B88847C123E2A66B009836D2 /* LKSessionRequestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRequestMessage.h; sourceTree = "<group>"; };
 		B88847C223E2A66C009836D2 /* LKSessionRequestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSessionRequestMessage.m; sourceTree = "<group>"; };
 		B88847C523E39038009836D2 /* GroupUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupUtilities.swift; sourceTree = "<group>"; };
-		B88847C623E39039009836D2 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		B88847C623E39039009836D2 /* GeneralUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtilities.swift; sourceTree = "<group>"; };
 		B89ED78F6254D2201FFDCE0189950775 /* TypingIndicators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypingIndicators.swift; sourceTree = "<group>"; };
 		B8A5599123544407009B5F68 /* DisplayNameUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNameUtilities.swift; sourceTree = "<group>"; };
 		B8BFFF362355339800102A27 /* LokiPublicChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiPublicChatInfo.swift; sourceTree = "<group>"; };
@@ -6920,7 +6920,7 @@
 				B80CAF37238CE728002003AF /* Debugging.swift */,
 				BEA4786B46B2EFE10958D9BC0BE5EA56 /* Dictionary+Description.swift */,
 				B8A5599123544407009B5F68 /* DisplayNameUtilities.swift */,
-				B88847C623E39039009836D2 /* General.swift */,
+				B88847C623E39039009836D2 /* GeneralUtilities.swift */,
 				B88847C523E39038009836D2 /* GroupUtilities.swift */,
 				D0A4EBD783794E77D7C42F65B9E17C51 /* JSON.swift */,
 				B88847BE23E2A5E9009836D2 /* LKGroupUtilities.h */,
@@ -11422,7 +11422,7 @@
 				45772EE5467D7089788F3344B6455E5B /* LokiAPI.swift in Sources */,
 				5BDEBE657CF70F4C277B95A1B16CC45A /* LokiAPITarget.swift in Sources */,
 				B9A54174A1F390A96008232A66C99BFA /* LokiDatabaseUtilities.swift in Sources */,
-				B88847C823E39039009836D2 /* General.swift in Sources */,
+				B88847C823E39039009836D2 /* GeneralUtilities.swift in Sources */,
 				6476E4492CD132288A96E63B96235FAA /* LokiDotNetAPI.swift in Sources */,
 				6B55A85A8BFD949A07E6B53CE4FDB5D4 /* LokiPublicChat.swift in Sources */,
 				BA2F457A4E4B157EE3613EAF9F52CE77 /* LokiPublicChatAPI.swift in Sources */,

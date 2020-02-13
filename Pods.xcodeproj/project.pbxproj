@@ -6169,7 +6169,6 @@
 				B836BFCD23DA944F002C86A0 /* LokiHTTPClient.swift */,
 				791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */,
 				D91998C895C41ACE4419BB00A5819678 /* LokiMessage.swift */,
-				38D3258760341C2F323FC2DB2615B6A3 /* LokiP2PAPI.swift */,
 				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
 				B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */,
 				B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */,
@@ -7480,6 +7479,7 @@
 				9854A63F4031035A658F9832DD20CD7B /* Crypto */,
 				CC2F7BC5B324DDABC4CD73C34161F9B0 /* Database */,
 				F524083750F13B9C6214706599F98045 /* Messaging */,
+				B8AAA37323F5193400928D04 /* Shelved */,
 				802C36E4FA217375694F86F17DF73906 /* Utilities */,
 			);
 			name = Loki;
@@ -7835,6 +7835,14 @@
 				3C52903585FD4D902256A87A79D49EE0 /* Extensions */,
 			);
 			name = SQLCipher;
+			sourceTree = "<group>";
+		};
+		B8AAA37323F5193400928D04 /* Shelved */ = {
+			isa = PBXGroup;
+			children = (
+				38D3258760341C2F323FC2DB2615B6A3 /* LokiP2PAPI.swift */,
+			);
+			path = Shelved;
 			sourceTree = "<group>";
 		};
 		B8E0BA5223E8DF6500A60168 /* Loki */ = {

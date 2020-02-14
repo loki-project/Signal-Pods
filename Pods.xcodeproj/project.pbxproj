@@ -1472,7 +1472,6 @@
 		BF0F4FEAA4E302C5D7207224073D2628 /* OWSPrimaryStorage+SessionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D267792FFA792E3094C3ACF922126087 /* OWSPrimaryStorage+SessionStore.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BF1CD81A9AFED74C750407B96C66DD13 /* YapDatabaseCloudKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FD5F070103F916B59ABD68B487F03AF /* YapDatabaseCloudKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF3F63CFA38E899DAF27959FCB990E4C /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C667126D7E5553E9F7010846A00A7 /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BF6A747F4A0D58E1757E09B698621315 /* DiffieHellman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5E108760F7BD5D199E84FF56F768F0 /* DiffieHellman.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BF7CFA036964D18F2000F3380DBA6EB8 /* MTLModel+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A8769D2968E6D38F6ED26AA2013DA16A /* MTLModel+NSCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFB488C6E656F8CAF196AB2DB0A82042 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DD51353BE4AEEA7ED81B8032CDAD3 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BFBA2D00CA004A68EA09939C2774EBE4 /* OWSMessageSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C3E333845DE3289BAF4AC0321A5690C /* OWSMessageSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1902,7 +1901,6 @@
 		FAB20B80A0BCFB3741D7459F2980C93C /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B21D5C2F67E0CBED4A40FCD6199310 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC5E1B1A6683709B1B8004911CB0983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A3B5F625D05D1A8083E728A75AB1F4 /* Foundation.framework */; };
 		FB390B9644351362440E3E9A9B3CDB4D /* DeviceLinkingSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579FF5B44E8E7E20CBB9468D07F50366 /* DeviceLinkingSessionDelegate.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FB4B4FD1B31411A466BA453618810CED /* FallbackSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF895FF6AA4836A56B240661B4FB235 /* FallbackSessionCipher.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB9F204734EDAC28C884AF010E55F109 /* Message+BinaryAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D895465103C4562A19C158BAB2439C17 /* Message+BinaryAdditions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FBA07E150C5E76A385B0D73BC6C7F59D /* PreKeyWhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E7CA316BE641E9F63A5FA9AD10A5CB /* PreKeyWhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FBA1FB3172D9E952CA3EC3141D495078 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A91052BDE50CF8C04DC521D7020BE3 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3288,7 +3286,6 @@
 		1B789076D03430EDF905884E6B0EA378 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
 		1B9A457A6F21B2C3CB8DFA791F75E61A /* AES-CBC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AES-CBC.m"; path = "AxolotlKit/Classes/Crypto/AES-CBC.m"; sourceTree = "<group>"; };
 		1BEC36268F5FFA97712E3D79B62B77D1 /* YapDatabaseFullTextSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFullTextSearch.m; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearch.m; sourceTree = "<group>"; };
-		1C5E108760F7BD5D199E84FF56F768F0 /* DiffieHellman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DiffieHellman.swift; sourceTree = "<group>"; };
 		1C9764A733B69C180D08242EEC70BAC9 /* OWSPrimaryStorage+PreKeyStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OWSPrimaryStorage+PreKeyStore.m"; sourceTree = "<group>"; };
 		1C9E3F8D7ACBBDC9E7CD3ED4EB0D7D87 /* OWSDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDevice.m; sourceTree = "<group>"; };
 		1CA0E28DDF139EFBD2ADB0DFE21AFF84 /* NSDictionary+YapDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YapDatabase.m"; path = "YapDatabase/Internal/NSDictionary+YapDatabase.m"; sourceTree = "<group>"; };
@@ -4582,7 +4579,6 @@
 		BCA7045DEA2EC642674191F098EFBB47 /* SignalMetadataKit-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalMetadataKit-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
 		BCBAF0C6A1EECFAACC6345B7060332AE /* YapDatabaseConnectionProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseConnectionProxy.h; path = YapDatabase/Extensions/ConnectionProxy/YapDatabaseConnectionProxy.h; sourceTree = "<group>"; };
 		BCBC545974A74E8CCF036D1DC7AF20B0 /* SignalIOSProto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalIOSProto.swift; sourceTree = "<group>"; };
-		BCF895FF6AA4836A56B240661B4FB235 /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FallbackSessionCipher.swift; sourceTree = "<group>"; };
 		BD2C0BAB9722F2B8FD74C997E180FD78 /* YapReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapReachability.m; path = YapDatabase/Extensions/ActionManager/Utilities/YapReachability.m; sourceTree = "<group>"; };
 		BD35BC46E0F1F93D3010FCF8493E72E6 /* base2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base2.h; path = Sources/ed25519/base2.h; sourceTree = "<group>"; };
 		BD95A03089CD678033A8C1FE1E64ED10 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
@@ -7329,9 +7325,7 @@
 		9854A63F4031035A658F9832DD20CD7B /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				1C5E108760F7BD5D199E84FF56F768F0 /* DiffieHellman.swift */,
 				C62258203BD3D1E7809A574F1A576A52 /* ECKeyPair+Loki.swift */,
-				BCF895FF6AA4836A56B240661B4FB235 /* FallbackSessionCipher.swift */,
 				2B16464D9FF3CA817BE7FC886AAB14FF /* Mnemonic.swift */,
 				2A6673F52A4EBEE444F8C414602E0B29 /* ProofOfWork.swift */,
 				6A17B79EE262502B80599450C4C30496 /* SessionCipher+Loki.h */,
@@ -11408,11 +11402,9 @@
 				DA556FE88D4FEF7EF93290656FB6F933 /* DeviceLinkingUtilities.swift in Sources */,
 				A6BB58DE6A8A778BD98DDA4BF67BAEC9 /* DeviceNames.swift in Sources */,
 				3E6A838A7146E80991F21882319096A5 /* Dictionary+Description.swift in Sources */,
-				BF6A747F4A0D58E1757E09B698621315 /* DiffieHellman.swift in Sources */,
 				1DDF198EF59412225F38B7E32A3F1B59 /* ECKeyPair+Loki.swift in Sources */,
 				EB1B77D9DB77468491FD249093B971D9 /* Factories.swift in Sources */,
 				30EDE7D61AD80D551FA1B0A473B13CF3 /* FakeContactsManager.swift in Sources */,
-				FB4B4FD1B31411A466BA453618810CED /* FallbackSessionCipher.swift in Sources */,
 				5571201BEE9721AB69F17B02C2558DC6 /* FeatureFlags.swift in Sources */,
 				BD4185E1DC3790A5E6F70158717A4448 /* Fingerprint.pb.swift in Sources */,
 				62E6DEC59322D1713D23B923E9AFE2CA /* FingerprintProto.swift in Sources */,

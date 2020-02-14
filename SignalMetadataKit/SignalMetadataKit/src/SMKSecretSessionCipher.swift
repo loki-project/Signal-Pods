@@ -170,7 +170,7 @@ public class SMKDecryptResult: NSObject {
         var encryptedMessage: CipherMessage
         if (isFriendRequest) {
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
-            let cipher = FallBackSessionCipherMeta(recipientId: recipientId, privateKey: privateKey)
+            let cipher = FallBackSessionCipher(recipientId: recipientId, privateKey: privateKey)
             encryptedMessage = LokiFriendRequestMessage.init(_throws_with: cipher.encrypt(message: paddedPlaintext)!)
         } else {
             let cipher = SessionCipher(sessionStore: sessionStore,
@@ -543,7 +543,7 @@ public class SMKDecryptResult: NSObject {
             cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
         case .lokiFriendRequest:
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
-            let cipher = FallBackSessionCipherMeta(recipientId: senderRecipientId, privateKey: privateKey)
+            let cipher = FallBackSessionCipher(recipientId: senderRecipientId, privateKey: privateKey)
             let plaintextData = try cipher.decrypt(message: messageContent.contentData)!
             return plaintextData
         }

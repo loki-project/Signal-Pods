@@ -258,6 +258,9 @@
 		23C4DB95E3AED20043FE11D7B58D2487 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF46EC4B81F9F8309B740DE7F506127A /* NVActivityIndicatorView-dummy.m */; };
 		24161512E245CEC8A4C72C1BF3B2B18F /* OWSVerificationStateSyncMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 537052C162AD069D1415E05713C9EF94 /* OWSVerificationStateSyncMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2422E6544DDD635C289F152CF5F3650A /* GoogleUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4373E95FA8F9CBC760FCF854A510D6 /* GoogleUtilities-dummy.m */; };
+		2423FD3E23F65E5E00902D5B /* LokiServiceCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423FD3D23F65E5E00902D5B /* LokiServiceCipher.swift */; };
+		2423FD4023F9F36000902D5B /* SessionResetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423FD3F23F9F36000902D5B /* SessionResetProtocol.swift */; };
+		2423FD4223F9F88700902D5B /* SessionResetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423FD4123F9F88700902D5B /* SessionResetStatus.swift */; };
 		2429D5FEBE097C4E4F205BB5DA5D2909 /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = C58C5BBC37000149164845A1F5990C8C /* crypto_hash_sha512.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		242E861FAF2EF2FFF2D9CB57513CF0C2 /* NSData+keyVersionByte.m in Sources */ = {isa = PBXBuildFile; fileRef = F18406DF6FEFCD6740B429AD8083F582 /* NSData+keyVersionByte.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		24312470BB5FA7F3E8529A39D62303A0 /* MPDismissKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ED42058E5D33A27E9B16E968AA519CBA /* MPDismissKeyboard.png */; };
@@ -364,7 +367,6 @@
 		3140EECF0A88934107EBBFF6355D5FB0 /* Curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA5305AE80EC015BD691C479DE3E813 /* Curve25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3145124C9185AB2DC88287D67DE2FA35 /* OWSOutgoingSentMessageTranscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBB84FB7DDF05C2CFFC0D2DAE29E31E /* OWSOutgoingSentMessageTranscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		315F88AFF175F88ACEF0EC669C5872AA /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7067D34A454B3ABD4DC0ED22E5332F /* DataSource.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		319B5D7BEF08667B76B726D966F2D16E /* SessionCipher+Loki.m in Sources */ = {isa = PBXBuildFile; fileRef = C18C242491E3FE8B02BE1B8753298125 /* SessionCipher+Loki.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		31A0C2C70140EE8EF75AC69792B723EF /* spanish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31A210D252F971DCC2494BF2AEA3B89D /* spanish.txt */; };
 		31A94568F6477CEA038B127764C3E683 /* OWSFailedAttachmentDownloadsJob.m in Sources */ = {isa = PBXBuildFile; fileRef = F21A1FABB90A9D6576F59395F04EEDA6 /* OWSFailedAttachmentDownloadsJob.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		31C2DFB35C5310E1B45167EAE25A4123 /* OWSSignalAddressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A3AE9FC7B6A99365552840C3696B36 /* OWSSignalAddressTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1298,7 +1300,6 @@
 		AB669E3B2071594787795751DAA5E935 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FC75A0B803F785F2F845CB0BB92E79 /* Contact.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AB845E1669CECBD279E3A290F84214EB /* YapDatabaseExtensionConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B3064C3639239244B59421B33505A66A /* YapDatabaseExtensionConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB9B7B36FD390D2462B5EEC84F21C419 /* YapDatabaseAtomic.h in Headers */ = {isa = PBXBuildFile; fileRef = 3665C83E2BC951E808844D5D5127A911 /* YapDatabaseAtomic.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		ABA638C2259F92C513506BB0A8E805FA /* SessionCipher+Loki.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A17B79EE262502B80599450C4C30496 /* SessionCipher+Loki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABBC5DAF846C3A0A1E047751E49098E1 /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A084BB5B7918E183171397E030FEC6 /* NVActivityIndicatorPresenter.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		ABE912E2AF390FDFF9D6FEC546093D1F /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 0266D34A40994A7157C87D94B25BB98E /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC05E31094319FFFCB6FB87B1FB59C2A /* MediaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B66D0B5B5862E56B319A26993D6C1 /* MediaScene.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -3344,6 +3345,9 @@
 		23BDD2DF8DC7C8AA4509CB97B8FE4202 /* YDBCKRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKRecord.h; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKRecord.h; sourceTree = "<group>"; };
 		23BE798271C6533CDDFFC8030BD58671 /* SessionBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SessionBuilder.m; path = AxolotlKit/Classes/Sessions/SessionBuilder.m; sourceTree = "<group>"; };
 		241F9EA2DF08CF77476696D3DF7C14F1 /* MPTweakInline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPTweakInline.h; path = Mixpanel/MPTweakInline.h; sourceTree = "<group>"; };
+		2423FD3D23F65E5E00902D5B /* LokiServiceCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiServiceCipher.swift; sourceTree = "<group>"; };
+		2423FD3F23F9F36000902D5B /* SessionResetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResetProtocol.swift; sourceTree = "<group>"; };
+		2423FD4123F9F88700902D5B /* SessionResetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResetStatus.swift; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		243AB39BA8DEB501EB1429C77F309526 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		2452B4F65545E02738D311EF03EA6BB2 /* TSOutgoingMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSOutgoingMessage.h; sourceTree = "<group>"; };
@@ -3897,7 +3901,6 @@
 		69AAA796BB93BB0C945489A714B90501 /* LokiPublicChatAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiPublicChatAPI.swift; sourceTree = "<group>"; };
 		69E984A4C42480CAAA0E6ADE5A639707 /* FIROptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIROptions.m; path = Firebase/Core/FIROptions.m; sourceTree = "<group>"; };
 		69EAE0F0336196EBF27A6850A48EBDF0 /* Pods-SignalShareExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalShareExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6A17B79EE262502B80599450C4C30496 /* SessionCipher+Loki.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SessionCipher+Loki.h"; sourceTree = "<group>"; };
 		6A23EC8E756954BD37915003B8EE6FE5 /* YapDatabaseSecondaryIndexOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexOptions.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexOptions.h; sourceTree = "<group>"; };
 		6A2CA8657E84B799EE520270B21EDF15 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
 		6A4C74A4E92B39C3FCC7AB5567F5C68F /* OWSAddToProfileWhitelistOfferMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSAddToProfileWhitelistOfferMessage.m; sourceTree = "<group>"; };
@@ -4610,7 +4613,6 @@
 		C0ED22839210D72A8F8D99A82A3F9D0C /* RSSFeedItemGUID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemGUID.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItemGUID.swift; sourceTree = "<group>"; };
 		C0F3CC1A9F7A785E32701E6AF9EADBAA /* ge_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ge_sub.c; path = Sources/ed25519/ge_sub.c; sourceTree = "<group>"; };
 		C183AC3082FF95B2724CA1893F6F5339 /* MPNSNumberToCGFloatValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPNSNumberToCGFloatValueTransformer.m; path = Mixpanel/MPNSNumberToCGFloatValueTransformer.m; sourceTree = "<group>"; };
-		C18C242491E3FE8B02BE1B8753298125 /* SessionCipher+Loki.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SessionCipher+Loki.m"; sourceTree = "<group>"; };
 		C1A661E4114A7DC1561866D784EE9ECE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		C1AE7D8D4F6807C805C419EFD6D8940B /* YDBCKAttachRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKAttachRequest.h; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKAttachRequest.h; sourceTree = "<group>"; };
 		C1B323ECE7200B6E638DC553E6474D2A /* SignalCoreKit-Unit-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SignalCoreKit-Unit-Tests-resources.sh"; sourceTree = "<group>"; };
@@ -7328,8 +7330,6 @@
 				C62258203BD3D1E7809A574F1A576A52 /* ECKeyPair+Loki.swift */,
 				2B16464D9FF3CA817BE7FC886AAB14FF /* Mnemonic.swift */,
 				2A6673F52A4EBEE444F8C414602E0B29 /* ProofOfWork.swift */,
-				6A17B79EE262502B80599450C4C30496 /* SessionCipher+Loki.h */,
-				C18C242491E3FE8B02BE1B8753298125 /* SessionCipher+Loki.m */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -7844,6 +7844,9 @@
 			children = (
 				7BD4838723E2A1740007F1BA /* DiffieHellman.swift */,
 				7BD4838623E2A1740007F1BA /* FallbackSessionCipher.swift */,
+				2423FD3D23F65E5E00902D5B /* LokiServiceCipher.swift */,
+				2423FD3F23F9F36000902D5B /* SessionResetProtocol.swift */,
+				2423FD4123F9F88700902D5B /* SessionResetStatus.swift */,
 			);
 			path = Loki;
 			sourceTree = "<group>";
@@ -9444,7 +9447,6 @@
 				B176F37448A223F21E29D8FE617AF415 /* PreKeyBundle+jsonDict.h in Headers */,
 				3E35A80A52C4173F44E28C5DDE40FE63 /* ProfileManagerProtocol.h in Headers */,
 				C4D7D5AA7C96EF784FDF9B33B2A14114 /* ProtoUtils.h in Headers */,
-				ABA638C2259F92C513506BB0A8E805FA /* SessionCipher+Loki.h in Headers */,
 				4857BAEDCC799D53FD85DE75CF71CAA2 /* SignalAccount.h in Headers */,
 				6CD3107B50D965BC208D63E25907372C /* SignalRecipient.h in Headers */,
 				094D1D138C7AF31A7A97B727F9CDBC8A /* SignalServiceKit-umbrella.h in Headers */,
@@ -11584,7 +11586,6 @@
 				C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */,
 				EB8CFAF8EA9C4CE3E635CEA1425773D7 /* ReverseDispatchQueue.swift in Sources */,
 				6F28BA82FA7EAB6D1F73F01286AA0442 /* RotateSignedKeyOperation.swift in Sources */,
-				319B5D7BEF08667B76B726D966F2D16E /* SessionCipher+Loki.m in Sources */,
 				BFB488C6E656F8CAF196AB2DB0A82042 /* SignalAccount.m in Sources */,
 				7D64D14C2DAE59C4DCAF172496A0334D /* SignalIOS.pb.swift in Sources */,
 				669BFBECA6B7ADC675747096C3AB6341 /* SignalIOSProto.swift in Sources */,
@@ -12377,6 +12378,9 @@
 				101B95BBF83A387B0B8653B6BE749596 /* NSData+messagePadding.m in Sources */,
 				3C724EB9831D344D200692A1A0D6B31A /* OWSUnidentifiedDelivery.pb.swift in Sources */,
 				E8708F4068797FA14513CCBBD857EFFC /* SignalMetadataKit-dummy.m in Sources */,
+				2423FD3E23F65E5E00902D5B /* LokiServiceCipher.swift in Sources */,
+				2423FD4223F9F88700902D5B /* SessionResetStatus.swift in Sources */,
+				2423FD4023F9F36000902D5B /* SessionResetProtocol.swift in Sources */,
 				D734B425CEBC4268D46CDD1CBD2D67E7 /* SMKCertificateValidator.swift in Sources */,
 				7BD4838923E2A1750007F1BA /* DiffieHellman.swift in Sources */,
 				4BE9C5DFFFE07F1A186797AD6019F6C4 /* SMKError.swift in Sources */,

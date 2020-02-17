@@ -132,21 +132,30 @@ public class SMKDecryptResult: NSObject {
 
     private let kSMKSecretSessionCipherMacLength: UInt = 10
 
+    private let sessionReset: SessionResetProtocol?
     private let sessionStore: SessionStore
     private let preKeyStore: PreKeyStore
     private let signedPreKeyStore: SignedPreKeyStore
     private let identityStore: IdentityKeyStore
 
     // public SecretSessionCipher(SignalProtocolStore signalProtocolStore) {
-    @objc public init(sessionStore: SessionStore,
+    @objc public init(sessionReset: SessionResetProtocol?,
+                      sessionStore: SessionStore,
                       preKeyStore: PreKeyStore,
                       signedPreKeyStore: SignedPreKeyStore,
                       identityStore: IdentityKeyStore) throws {
-
+        self.sessionReset = sessionReset
         self.sessionStore = sessionStore
         self.preKeyStore = preKeyStore
         self.signedPreKeyStore = signedPreKeyStore
         self.identityStore = identityStore
+    }
+
+    @objc convenience public init(sessionStore: SessionStore,
+                                  preKeyStore: PreKeyStore,
+                                  signedPreKeyStore: SignedPreKeyStore,
+                                  identityStore: IdentityKeyStore) throws {
+        try self.init(sessionReset: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore)
     }
 
     // MARK: - Public
@@ -170,7 +179,7 @@ public class SMKDecryptResult: NSObject {
         var encryptedMessage: CipherMessage
         if (isFriendRequest) {
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
-            let cipher = FallBackSessionCipherMeta(recipientId: recipientId, privateKey: privateKey)
+            let cipher = FallBackSessionCipher(recipientId: recipientId, privateKey: privateKey)
             encryptedMessage = LokiFriendRequestMessage.init(_throws_with: cipher.encrypt(message: paddedPlaintext)!)
         } else {
             let cipher = SessionCipher(sessionStore: sessionStore,
@@ -543,17 +552,22 @@ public class SMKDecryptResult: NSObject {
             cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
         case .lokiFriendRequest:
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
-            let cipher = FallBackSessionCipherMeta(recipientId: senderRecipientId, privateKey: privateKey)
+            let cipher = FallBackSessionCipher(recipientId: senderRecipientId, privateKey: privateKey)
             let plaintextData = try cipher.decrypt(message: messageContent.contentData)!
             return plaintextData
         }
 
-        let cipher = SessionCipher(sessionStore: sessionStore,
-                                   preKeyStore: preKeyStore,
-                                   signedPreKeyStore: signedPreKeyStore,
-                                   identityKeyStore: identityStore,
-                                   recipientId: senderRecipientId,
-                                   deviceId: Int32(senderDeviceId))
+        guard let sessionReset = sessionReset else {
+            throw SMKError.assertionError(description: "\(logTag) Session reset protocol has not been passed.")
+        }
+
+        let cipher = LokiSessionCipher(sessionReset: sessionReset,
+                                       sessionStore: sessionStore,
+                                       preKeyStore: preKeyStore,
+                                       signedPreKeyStore: signedPreKeyStore,
+                                       identityKeyStore: identityStore,
+                                       recipientId: senderRecipientId,
+                                       deviceId: Int32(senderDeviceId))
 
         let plaintextData = try cipher.decrypt(cipherMessage, protocolContext: protocolContext)
         return plaintextData

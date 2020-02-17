@@ -21,7 +21,7 @@ private extension String {
 }
 
 /// A fallback session cipher which uses the the recipient's public key to encrypt data.
-@objc public final class FallBackSessionCipherMeta : NSObject {
+@objc public final class FallBackSessionCipher : NSObject {
     /// The hex encoded public key of the recipient.
     private let recipientId: String
     private let privateKey: Data?

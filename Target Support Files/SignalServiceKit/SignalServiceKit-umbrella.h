@@ -38,7 +38,6 @@
 #import "OWSReceiptsForSenderMessage.h"
 #import "OWSRecordTranscriptJob.h"
 #import "OWSVerificationStateSyncMessage.h"
-#import "SessionCipher+Loki.h"
 #import "OWSPrimaryStorage+Loki.h"
 #import "LKAddressMessage.h"
 #import "LKDeviceLinkMessage.h"

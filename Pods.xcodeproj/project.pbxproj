@@ -1398,7 +1398,7 @@
 		B7B23F3CBB7651D512CAB17BBFDF66B3 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA277F108EBAFAB2BA89E7E0FEB24925 /* String+FoundationExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B7D920DACC47B97DAA84BC6FE1454BA2 /* GULLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E434C592B54E2DF1DC7676313BE1D0C6 /* GULLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B80499CBB73CE621BA5BFC828DB9E0DF /* NSArray+NBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1621CB931F7847DDFD881735025A7EE9 /* NSArray+NBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B80CA42523FA378700F28211 /* LokiSessionReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CA42423FA378600F28211 /* LokiSessionReset.swift */; };
+		B80CA42523FA378700F28211 /* LokiSessionResetImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CA42423FA378600F28211 /* LokiSessionResetImplementation.swift */; };
 		B80CAF38238CE728002003AF /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CAF37238CE728002003AF /* Debugging.swift */; };
 		B82325E9CA9FCCE7A0587F71ABF5CA06 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD9BE088CC4AC69FA73F2D9E5C389B /* NVActivityIndicatorAnimationAudioEqualizer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B82B984D8D7C2D357F5EC2FE0613C912 /* FIRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D221B808A11B5F85DD171182C0917C /* FIRLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4517,7 +4517,7 @@
 		B789DBE75A1E3C180186183BBEE35CD7 /* MPNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPNotification.m; path = Mixpanel/MPNotification.m; sourceTree = "<group>"; };
 		B7B8051B090015C6EA162F1C909966AE /* YapDatabaseHooks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseHooks.m; path = YapDatabase/Extensions/Hooks/YapDatabaseHooks.m; sourceTree = "<group>"; };
 		B7CDE370E6369E02629CAD329D738C51 /* Promise+retainUntilComplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+retainUntilComplete.swift"; sourceTree = "<group>"; };
-		B80CA42423FA378600F28211 /* LokiSessionReset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiSessionReset.swift; sourceTree = "<group>"; };
+		B80CA42423FA378600F28211 /* LokiSessionResetImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiSessionResetImplementation.swift; sourceTree = "<group>"; };
 		B80CAF37238CE728002003AF /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 		B836BFC923DA6B4F002C86A0 /* LKSessionRestoreMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRestoreMessage.h; sourceTree = "<group>"; };
 		B836BFCA23DA6B4F002C86A0 /* LKSessionRestoreMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSessionRestoreMessage.m; sourceTree = "<group>"; };
@@ -8214,7 +8214,7 @@
 			children = (
 				3097DE003D80C0F81C1E4592902601CC /* DeviceLinkIndex.swift */,
 				C86EF8D9E74885F62A88D8871ECF2B00 /* LokiDatabaseUtilities.swift */,
-				B80CA42423FA378600F28211 /* LokiSessionReset.swift */,
+				B80CA42423FA378600F28211 /* LokiSessionResetImplementation.swift */,
 				2CE4EF549F4DA9C3E7B4A76913C6C6B4 /* OWSPrimaryStorage+Loki.h */,
 				83EEB7ADA8AE57E0C5BC66A44D733B61 /* OWSPrimaryStorage+Loki.m */,
 				1619E7AFB3D5987F998D3EE5077C5D90 /* OWSPrimaryStorage+Loki.swift */,
@@ -11583,7 +11583,7 @@
 				DEC190D13BD45A267CBE769B8C3AF932 /* ProofOfWork.swift in Sources */,
 				FA12111A49719828EC6CD807335748F4 /* ProtoUtils.m in Sources */,
 				1C3935C913EBBFFD42F8287B8C8A6FEE /* Provisioning.pb.swift in Sources */,
-				B80CA42523FA378700F28211 /* LokiSessionReset.swift in Sources */,
+				B80CA42523FA378700F28211 /* LokiSessionResetImplementation.swift in Sources */,
 				599E37B951DFA0B0C58C57AFBF8C5F94 /* ProvisioningProto.swift in Sources */,
 				445134DE1801F86C793FFBC6A255768B /* ProxiedContentDownloader.swift in Sources */,
 				3CF456E570C62BE4C3B88240E1390CBF /* ReachabilityManager.swift in Sources */,

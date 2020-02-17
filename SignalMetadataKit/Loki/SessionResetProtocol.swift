@@ -1,6 +1,7 @@
 
 @objc(LKSessionResetProtocol)
 public protocol SessionResetProtocol {
-    func verifyFriendRequestAcceptPreKey(for recipientId: String, whisperMessage: CipherMessage, protocolContext: Any?) throws
-    func getSessionResetStatus(for recipientId: String, protocolContext: Any?) -> SessionResetStatus
+    
+    func validatePreKeyForFriendRequestAcceptance(for recipientID: String, whisperMessage: CipherMessage, protocolContext: Any?) throws
+    func getSessionResetStatus(for recipientID: String, protocolContext: Any?) -> SessionResetStatus
 }

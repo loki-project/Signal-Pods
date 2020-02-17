@@ -132,19 +132,19 @@ public class SMKDecryptResult: NSObject {
 
     private let kSMKSecretSessionCipherMacLength: UInt = 10
 
-    private let sessionReset: SessionResetProtocol?
+    private let sessionResetImplementation: SessionResetProtocol?
     private let sessionStore: SessionStore
     private let preKeyStore: PreKeyStore
     private let signedPreKeyStore: SignedPreKeyStore
     private let identityStore: IdentityKeyStore
 
     // public SecretSessionCipher(SignalProtocolStore signalProtocolStore) {
-    @objc public init(sessionReset: SessionResetProtocol?,
+    @objc public init(sessionResetImplementation: SessionResetProtocol?,
                       sessionStore: SessionStore,
                       preKeyStore: PreKeyStore,
                       signedPreKeyStore: SignedPreKeyStore,
                       identityStore: IdentityKeyStore) throws {
-        self.sessionReset = sessionReset
+        self.sessionResetImplementation = sessionResetImplementation
         self.sessionStore = sessionStore
         self.preKeyStore = preKeyStore
         self.signedPreKeyStore = signedPreKeyStore
@@ -155,7 +155,7 @@ public class SMKDecryptResult: NSObject {
                                   preKeyStore: PreKeyStore,
                                   signedPreKeyStore: SignedPreKeyStore,
                                   identityStore: IdentityKeyStore) throws {
-        try self.init(sessionReset: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore)
+        try self.init(sessionResetImplementation: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore)
     }
 
     // MARK: - Public
@@ -557,17 +557,17 @@ public class SMKDecryptResult: NSObject {
             return plaintextData
         }
 
-        guard let sessionReset = sessionReset else {
-            throw SMKError.assertionError(description: "\(logTag) Session reset protocol has not been passed.")
+        guard let sessionResetImplementation = sessionResetImplementation else {
+            throw SMKError.assertionError(description: "\(logTag) Missing session reset protocol implementation.")
         }
 
-        let cipher = LokiSessionCipher(sessionReset: sessionReset,
+        let cipher = LokiSessionCipher(sessionResetImplementation: sessionResetImplementation,
                                        sessionStore: sessionStore,
                                        preKeyStore: preKeyStore,
                                        signedPreKeyStore: signedPreKeyStore,
                                        identityKeyStore: identityStore,
-                                       recipientId: senderRecipientId,
-                                       deviceId: Int32(senderDeviceId))
+                                       recipientID: senderRecipientId,
+                                       deviceID: Int32(senderDeviceId))
 
         let plaintextData = try cipher.decrypt(cipherMessage, protocolContext: protocolContext)
         return plaintextData

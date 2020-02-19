@@ -1399,6 +1399,7 @@
 		B7D920DACC47B97DAA84BC6FE1454BA2 /* GULLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E434C592B54E2DF1DC7676313BE1D0C6 /* GULLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B80499CBB73CE621BA5BFC828DB9E0DF /* NSArray+NBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1621CB931F7847DDFD881735025A7EE9 /* NSArray+NBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B80CA42523FA378700F28211 /* LokiSessionResetImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CA42423FA378600F28211 /* LokiSessionResetImplementation.swift */; };
+		B80CA43123FCFBBB00F28211 /* LKUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CA43023FCFBBB00F28211 /* LKUserDefaults.swift */; };
 		B80CAF38238CE728002003AF /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CAF37238CE728002003AF /* Debugging.swift */; };
 		B82325E9CA9FCCE7A0587F71ABF5CA06 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD9BE088CC4AC69FA73F2D9E5C389B /* NVActivityIndicatorAnimationAudioEqualizer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B82B984D8D7C2D357F5EC2FE0613C912 /* FIRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D221B808A11B5F85DD171182C0917C /* FIRLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4518,6 +4519,7 @@
 		B7B8051B090015C6EA162F1C909966AE /* YapDatabaseHooks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseHooks.m; path = YapDatabase/Extensions/Hooks/YapDatabaseHooks.m; sourceTree = "<group>"; };
 		B7CDE370E6369E02629CAD329D738C51 /* Promise+retainUntilComplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+retainUntilComplete.swift"; sourceTree = "<group>"; };
 		B80CA42423FA378600F28211 /* LokiSessionResetImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiSessionResetImplementation.swift; sourceTree = "<group>"; };
+		B80CA43023FCFBBB00F28211 /* LKUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKUserDefaults.swift; sourceTree = "<group>"; };
 		B80CAF37238CE728002003AF /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
 		B836BFC923DA6B4F002C86A0 /* LKSessionRestoreMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSessionRestoreMessage.h; sourceTree = "<group>"; };
 		B836BFCA23DA6B4F002C86A0 /* LKSessionRestoreMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSessionRestoreMessage.m; sourceTree = "<group>"; };
@@ -6924,6 +6926,7 @@
 				D0A4EBD783794E77D7C42F65B9E17C51 /* JSON.swift */,
 				B88847BE23E2A5E9009836D2 /* LKGroupUtilities.h */,
 				B88847BD23E2A5E9009836D2 /* LKGroupUtilities.m */,
+				B80CA43023FCFBBB00F28211 /* LKUserDefaults.swift */,
 				F612848EF622A9A33BA2880617A6BC63 /* NSArray+Functional.h */,
 				D192BE6A79A1E1AC490E7F23DD1BAD33 /* NSArray+Functional.m */,
 				B8DE200F2345C4F60069EB06 /* NSSet+Functional.h */,
@@ -11590,6 +11593,7 @@
 				C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */,
 				EB8CFAF8EA9C4CE3E635CEA1425773D7 /* ReverseDispatchQueue.swift in Sources */,
 				6F28BA82FA7EAB6D1F73F01286AA0442 /* RotateSignedKeyOperation.swift in Sources */,
+				B80CA43123FCFBBB00F28211 /* LKUserDefaults.swift in Sources */,
 				BFB488C6E656F8CAF196AB2DB0A82042 /* SignalAccount.m in Sources */,
 				7D64D14C2DAE59C4DCAF172496A0334D /* SignalIOS.pb.swift in Sources */,
 				669BFBECA6B7ADC675747096C3AB6341 /* SignalIOSProto.swift in Sources */,

@@ -6173,7 +6173,7 @@
 				B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */,
 				B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */,
 				C60FEF1B80024333892B1CF3EBCF80FC /* SignalMessage.swift */,
-				88076A64A0FD642E4BED9D25F1606C56 /* Public Chat */,
+				88076A64A0FD642E4BED9D25F1606C56 /* Public Chats */,
 				D274A9098162A732D5D460579C7E50E1 /* Multi Device */,
 			);
 			path = API;
@@ -7004,7 +7004,7 @@
 			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
-		88076A64A0FD642E4BED9D25F1606C56 /* Public Chat */ = {
+		88076A64A0FD642E4BED9D25F1606C56 /* Public Chats */ = {
 			isa = PBXGroup;
 			children = (
 				079289A25823AFD98CBCDC9BC69FCE91 /* LokiPublicChat.swift */,
@@ -7014,7 +7014,7 @@
 				CF415E5DA1D2B6D643FC6568ECBD0FC9 /* LokiPublicChatMessage.swift */,
 				24BD2602234D5F040008EB0A /* LokiPublicChatPoller.swift */,
 			);
-			path = "Public Chat";
+			path = "Public Chats";
 			sourceTree = "<group>";
 		};
 		8890AC1C2BBF6A2D74B209A8B890B34F /* Support Files */ = {

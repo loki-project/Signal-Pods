@@ -1505,6 +1505,7 @@
 		C307B3348ADB7C586CA17C20FD084D1A /* OWSEndSessionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A3AB72EEAA730293EFE742281ACC3C /* OWSEndSessionMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C30DE6C01B9DDC1CA9C8EBA7F4EC1C52 /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C96FD8BD0ACDEFCEC97DE49B09A47E /* SwiftProtobuf-dummy.m */; };
 		C3254C187B6586E7B2A22524C6359919 /* OWSDeviceProvisioningService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BBA174BEF1030442B563E74167215D /* OWSDeviceProvisioningService.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C32A5B882408B5F600A1BA52 /* GroupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32A5B872408B5F600A1BA52 /* GroupParser.swift */; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F86BD15E742F2F1FC127D187395E51 /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351BF2023E81A1E0041D98F /* Data+Streaming.swift */; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F3611177EC5C2F42EBF376EB06ED73AD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4630,6 +4631,7 @@
 		C2B434B6844A101FF33473073AED0A24 /* LRUCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
 		C2EB50A528AD30979162839AA96BA8B4 /* JSONDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingOptions.swift; path = Sources/SwiftProtobuf/JSONDecodingOptions.swift; sourceTree = "<group>"; };
 		C3245A8F4C106048AD3BFA0D704A69CE /* Curve25519KitSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve25519KitSwiftTests.swift; path = BuildTests/BuildTestsTests/Curve25519KitSwiftTests.swift; sourceTree = "<group>"; };
+		C32A5B872408B5F600A1BA52 /* GroupParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupParser.swift; sourceTree = "<group>"; };
 		C32B22C1146F4D40B78E1600F0F77A32 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
 		C351BF2023E81A1E0041D98F /* Data+Streaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Streaming.swift"; sourceTree = "<group>"; };
 		C369DCE9B771AA4A1C7B40DFFA3C4DCB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
@@ -8842,6 +8844,7 @@
 				B8D92A95237A2F610024119B /* ContactParser.swift */,
 				BBD1652892E287CA62F0C79C090E318C /* FriendRequestExpirationJob.swift */,
 				85EC3435C861717279A6142988132FD3 /* FriendRequestExpirationMessageFinder.swift */,
+				C32A5B872408B5F600A1BA52 /* GroupParser.swift */,
 				75ABB359C23CF329F3B96B8B898A994F /* LKAddressMessage.h */,
 				DC577FDED102C748176633980C2D714E /* LKAddressMessage.m */,
 				F24671AB2FD9BBB651769D905F507409 /* LKDeviceLinkMessage.h */,
@@ -11465,6 +11468,7 @@
 				A715AC7589528425C32DD7ED5C9311CD /* NSUserDefaults+OWS.m in Sources */,
 				87EBB36906A431BB54DE0B6A00E8A96A /* OutageDetection.swift in Sources */,
 				56E8A00FA1B24984F009DD38F425C049 /* OWS2FAManager.m in Sources */,
+				C32A5B882408B5F600A1BA52 /* GroupParser.swift in Sources */,
 				2FC5E67EC7B600F871B06ED01C08E20F /* OWSAddToContactsOfferMessage.m in Sources */,
 				CC14EE96D6B93FE9063CE29987AE5BC2 /* OWSAddToProfileWhitelistOfferMessage.m in Sources */,
 				261F394B59B3D2CA19B72A9CBFEE3DDC /* OWSAnalytics.m in Sources */,

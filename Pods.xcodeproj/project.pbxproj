@@ -1506,6 +1506,8 @@
 		C30DE6C01B9DDC1CA9C8EBA7F4EC1C52 /* SwiftProtobuf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C96FD8BD0ACDEFCEC97DE49B09A47E /* SwiftProtobuf-dummy.m */; };
 		C3254C187B6586E7B2A22524C6359919 /* OWSDeviceProvisioningService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BBA174BEF1030442B563E74167215D /* OWSDeviceProvisioningService.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C32A5B882408B5F600A1BA52 /* GroupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32A5B872408B5F600A1BA52 /* GroupParser.swift */; };
+		C32A5B8B2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C32A5B892408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32A5B8C2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A5B8A2408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.m */; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F86BD15E742F2F1FC127D187395E51 /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351BF2023E81A1E0041D98F /* Data+Streaming.swift */; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F3611177EC5C2F42EBF376EB06ED73AD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4632,6 +4634,8 @@
 		C2EB50A528AD30979162839AA96BA8B4 /* JSONDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingOptions.swift; path = Sources/SwiftProtobuf/JSONDecodingOptions.swift; sourceTree = "<group>"; };
 		C3245A8F4C106048AD3BFA0D704A69CE /* Curve25519KitSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve25519KitSwiftTests.swift; path = BuildTests/BuildTestsTests/Curve25519KitSwiftTests.swift; sourceTree = "<group>"; };
 		C32A5B872408B5F600A1BA52 /* GroupParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupParser.swift; sourceTree = "<group>"; };
+		C32A5B892408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSyncOpenGroupsMessage.h; sourceTree = "<group>"; };
+		C32A5B8A2408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSyncOpenGroupsMessage.m; sourceTree = "<group>"; };
 		C32B22C1146F4D40B78E1600F0F77A32 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
 		C351BF2023E81A1E0041D98F /* Data+Streaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Streaming.swift"; sourceTree = "<group>"; };
 		C369DCE9B771AA4A1C7B40DFFA3C4DCB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
@@ -8857,6 +8861,8 @@
 				B88847C223E2A66C009836D2 /* LKSessionRequestMessage.m */,
 				B836BFC923DA6B4F002C86A0 /* LKSessionRestoreMessage.h */,
 				B836BFCA23DA6B4F002C86A0 /* LKSessionRestoreMessage.m */,
+				C32A5B892408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.h */,
+				C32A5B8A2408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.m */,
 				C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */,
 				C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */,
 				7C2B481A4818B01F4C1FAB84B6007C12 /* LokiMessageWrapper.swift */,
@@ -9381,6 +9387,7 @@
 				AED530237F60F180E1533CD8CA46BAF8 /* OWSDisappearingMessagesConfigurationMessage.h in Headers */,
 				005358F249D0FF85D084F159F5278D17 /* OWSDisappearingMessagesFinder.h in Headers */,
 				E98B10866D222F5700BBF54A1E96F1B4 /* OWSDisappearingMessagesJob.h in Headers */,
+				C32A5B8B2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.h in Headers */,
 				72A86626C5DC00D43706C26390F02CBC /* OWSDispatch.h in Headers */,
 				67ABDBF3214D63DDD8DA2A225CF8769A /* OWSDynamicOutgoingMessage.h in Headers */,
 				1692D648F57F02C7277A6259ABB487A1 /* OWSEndSessionMessage.h in Headers */,
@@ -11659,6 +11666,7 @@
 				36A0BD907D4444C3FE372897CBC40CBC /* WebSocketResources.pb.swift in Sources */,
 				DCA5DC83CBF203BEB7D7B9BCB6DBA556 /* YapDatabase+Promise.swift in Sources */,
 				4D4EDBB980A8CFCD2CAC1ECA692D06D3 /* YapDatabaseConnection+OWS.m in Sources */,
+				C32A5B8C2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.m in Sources */,
 				2E29EB1F0E65088C8E5141C06484CCE2 /* YapDatabaseTransaction+OWS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

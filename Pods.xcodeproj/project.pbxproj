@@ -136,7 +136,7 @@
 		13EB78D27FAE3E53E2CB353CE469D87C /* SSKJobRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E30EB3A506B6E6B8C0895C78A79AA8 /* SSKJobRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F288C1A2F75C5880940EB78A51AF8E /* FIRLoggerLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB5DAC71BFD22977C0326608DA53F7E /* FIRLoggerLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140B56343ED09016DE6F645929916E22 /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C3C87CCE1133918B55AE3C9F3FEB57 /* SQLCipher-dummy.m */; };
-		14137CF3FA83F818073B541E3AF1A57C /* LokiLongPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		14137CF3FA83F818073B541E3AF1A57C /* LokiPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791216839C1A221B858C6AEBBCB20EC6 /* LokiPoller.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		142672BAE03194B2EE09F22133460805 /* LokiFileServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F9BDB2D15AE4F4ED5EA1C7390ABEB /* LokiFileServerAPI.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		146040F21335DE74CE61654966877FE6 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81C24381001835613A5D58E2F26E86 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1460DDB858DC85B49DF470E5B607AC8C /* OWSUDManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CC16DEFC6F6C72E69ACF6078E8FF0 /* OWSUDManagerTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4026,7 +4026,7 @@
 		78EEBB60F1D37AD0EA30622D4CF70601 /* MPObjectSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPObjectSelector.m; path = Mixpanel/MPObjectSelector.m; sourceTree = "<group>"; };
 		78FDDFF63CE39DD7DCC4C7BB61CBF2A8 /* MPApplicationStateSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MPApplicationStateSerializer.m; path = Mixpanel/MPApplicationStateSerializer.m; sourceTree = "<group>"; };
 		790FA1FC83A24DCF5EE7633E580E2DBB /* WhisperTextProtocol.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperTextProtocol.pb.swift; path = AxolotlKit/Classes/Protos/WhisperTextProtocol.pb.swift; sourceTree = "<group>"; };
-		791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiLongPoller.swift; sourceTree = "<group>"; };
+		791216839C1A221B858C6AEBBCB20EC6 /* LokiPoller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiPoller.swift; sourceTree = "<group>"; };
 		7929DDC1131D4CB9B41A0157903FD9C5 /* SignalServiceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalServiceKit-dummy.m"; sourceTree = "<group>"; };
 		79C38A0DE6A638AFB2CD80EA8AA95827 /* Threading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Threading.h; path = SignalCoreKit/src/Threading.h; sourceTree = "<group>"; };
 		79F36B88C3DAE8F29460CF5361F635FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -6175,8 +6175,8 @@
 				743F9BDB2D15AE4F4ED5EA1C7390ABEB /* LokiFileServerAPI.swift */,
 				C3BADCE023E6380900B304DE /* LokiFileServerProxy.swift */,
 				B836BFCD23DA944F002C86A0 /* LokiHTTPClient.swift */,
-				791216839C1A221B858C6AEBBCB20EC6 /* LokiLongPoller.swift */,
 				D91998C895C41ACE4419BB00A5819678 /* LokiMessage.swift */,
+				791216839C1A221B858C6AEBBCB20EC6 /* LokiPoller.swift */,
 				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
 				B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */,
 				B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */,
@@ -11450,7 +11450,7 @@
 				2C745083E492193AB9AD48ED05EA3ACF /* LokiP2PAPI.swift in Sources */,
 				0186D4F65A238B9A27B9BD4B02923F96 /* LokiRSSFeed.swift in Sources */,
 				142672BAE03194B2EE09F22133460805 /* LokiFileServerAPI.swift in Sources */,
-				14137CF3FA83F818073B541E3AF1A57C /* LokiLongPoller.swift in Sources */,
+				14137CF3FA83F818073B541E3AF1A57C /* LokiPoller.swift in Sources */,
 				FD39A901AAE6F8E059B008FB7F54A7A6 /* LRUCache.swift in Sources */,
 				E919169678225F9912BA500185EB61EA /* MessageSender+Promise.swift in Sources */,
 				1798267353AE4ADDCC1FB33AD0868915 /* MessageSenderJobQueue.swift in Sources */,

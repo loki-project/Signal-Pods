@@ -19,6 +19,7 @@ class SMKSecretSessionCipherTest: XCTestCase {
         super.tearDown()
     }
 
+    /*
 //    public void testEncryptDecrypt() throws UntrustedIdentityException, InvalidKeyException, InvalidCertificateException, InvalidProtocolBufferException, InvalidMetadataMessageException, ProtocolDuplicateMessageException, ProtocolUntrustedIdentityException, ProtocolLegacyMessageException, ProtocolInvalidKeyException, InvalidMetadataVersionException, ProtocolInvalidVersionException, ProtocolInvalidMessageException, ProtocolInvalidKeyIdException, ProtocolNoSessionException {
     func testEncryptDecrypt() {
         // NOTE: We use MockClient to ensure consistency between of our session state.
@@ -361,4 +362,5 @@ class SMKSecretSessionCipherTest: XCTestCase {
 //    bobStore.storePreKey(1, new PreKeyRecord(1, bobPreKey));
         // NOTE: These stores are taken care of in the mocks' createKey() methods above.
     }
+     */
 }

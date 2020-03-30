@@ -1510,6 +1510,7 @@
 		C32A5B8C2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A5B8A2408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.m */; };
 		C32D552C243157770032C5DE /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */; };
 		C32D552F24316BF50032C5DE /* OnionRequestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D552D2431686E0032C5DE /* OnionRequestPath.swift */; };
+		C32D553424317AA70032C5DE /* OnionRequestAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F86BD15E742F2F1FC127D187395E51 /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351BF2023E81A1E0041D98F /* Data+Streaming.swift */; };
 		C36CF1BEBFBA486B602D49B29F9B0D66 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = F3611177EC5C2F42EBF376EB06ED73AD /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4641,6 +4642,7 @@
 		C32B22C1146F4D40B78E1600F0F77A32 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
 		C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionRequestAPI.swift; sourceTree = "<group>"; };
 		C32D552D2431686E0032C5DE /* OnionRequestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionRequestPath.swift; sourceTree = "<group>"; };
+		C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionRequestAPITests.swift; sourceTree = "<group>"; };
 		C351BF2023E81A1E0041D98F /* Data+Streaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Streaming.swift"; sourceTree = "<group>"; };
 		C369DCE9B771AA4A1C7B40DFFA3C4DCB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUnlinkDeviceMessage.h; sourceTree = "<group>"; };
@@ -6184,11 +6186,10 @@
 				C493DD036C0C4FB8C6D06F604071F8ED /* LokiRSSFeed.swift */,
 				B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */,
 				B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */,
-				C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */,
-				C32D552D2431686E0032C5DE /* OnionRequestPath.swift */,
 				C60FEF1B80024333892B1CF3EBCF80FC /* SignalMessage.swift */,
 				88076A64A0FD642E4BED9D25F1606C56 /* Public Chats */,
 				D274A9098162A732D5D460579C7E50E1 /* Multi Device */,
+				C32D553124317A3A0032C5DE /* Onion Requests */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -8118,6 +8119,16 @@
 				DCA4870193EB2F703A898893DFD82BC1 /* Tests */,
 			);
 			path = HKDFKit;
+			sourceTree = "<group>";
+		};
+		C32D553124317A3A0032C5DE /* Onion Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */,
+				C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */,
+				C32D552D2431686E0032C5DE /* OnionRequestPath.swift */,
+			);
+			path = "Onion Requests";
 			sourceTree = "<group>";
 		};
 		C4A6106AE25C1C44B9D3C20A8050AD6D /* Protos */ = {
@@ -12483,6 +12494,7 @@
 				4CCEAD3214F26353934F6CC1BA9446A2 /* TSContactThreadTest.m in Sources */,
 				CA6ECEB3D4EBDBD05A2AEC034A2A6AB8 /* TSGroupThreadTest.m in Sources */,
 				7B1D7E4FD7455825B616B5816268AABE /* TSMessageStorageTests.m in Sources */,
+				C32D553424317AA70032C5DE /* OnionRequestAPITests.swift in Sources */,
 				721953F6826826A4078652F4644BECCD /* TSMessageTest.m in Sources */,
 				2E1520A6F21E4CE92850F3964A956506 /* TSOutgoingMessageTest.m in Sources */,
 				F8348727973684CB27618F5C12D3ED0B /* TSStorageIdentityKeyStoreTests.m in Sources */,

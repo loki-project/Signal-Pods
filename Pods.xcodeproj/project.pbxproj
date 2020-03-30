@@ -1509,7 +1509,6 @@
 		C32A5B8B2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C32A5B892408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C32A5B8C2408BD1E00A1BA52 /* LKSyncOpenGroupsMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A5B8A2408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.m */; };
 		C32D552C243157770032C5DE /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */; };
-		C32D552F24316BF50032C5DE /* OnionRequestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D552D2431686E0032C5DE /* OnionRequestPath.swift */; };
 		C32D553424317AA70032C5DE /* OnionRequestAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */; };
 		C345596DD6564CB8B86E569B7BD82AE8 /* MPAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F86BD15E742F2F1FC127D187395E51 /* MPAbstractABTestDesignerMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C351BF2123E81A1E0041D98F /* Data+Streaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351BF2023E81A1E0041D98F /* Data+Streaming.swift */; };
@@ -4641,7 +4640,6 @@
 		C32A5B8A2408BD1D00A1BA52 /* LKSyncOpenGroupsMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSyncOpenGroupsMessage.m; sourceTree = "<group>"; };
 		C32B22C1146F4D40B78E1600F0F77A32 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
 		C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionRequestAPI.swift; sourceTree = "<group>"; };
-		C32D552D2431686E0032C5DE /* OnionRequestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionRequestPath.swift; sourceTree = "<group>"; };
 		C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionRequestAPITests.swift; sourceTree = "<group>"; };
 		C351BF2023E81A1E0041D98F /* Data+Streaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Streaming.swift"; sourceTree = "<group>"; };
 		C369DCE9B771AA4A1C7B40DFFA3C4DCB /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
@@ -8126,7 +8124,6 @@
 			children = (
 				C32D552A2431571C0032C5DE /* OnionRequestAPI.swift */,
 				C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */,
-				C32D552D2431686E0032C5DE /* OnionRequestPath.swift */,
 			);
 			path = "Onion Requests";
 			sourceTree = "<group>";
@@ -11582,7 +11579,6 @@
 				9176C23C091464CE4116A58CEAA9D761 /* OWSReceiptsForSenderMessage.m in Sources */,
 				55BA47AD7F26C34E41EC9F08AFABBEAB /* OWSRecipientIdentity.m in Sources */,
 				85227A449706420A9E32ADFCDAEFDF51 /* OWSRecordTranscriptJob.m in Sources */,
-				C32D552F24316BF50032C5DE /* OnionRequestPath.swift in Sources */,
 				34A1D4EC71C06A7748E89B7CF8690D0A /* OWSRequestBuilder.m in Sources */,
 				6CA627DB8E1D6D0F4EB4A1A1A935C85E /* OWSRequestFactory.m in Sources */,
 				16826D432160333AD5F36B1E4C6843F1 /* OWSRequestMaker.swift in Sources */,

@@ -1518,6 +1518,7 @@
 		C380926143D609433202A7937F2E7502 /* TSGroupThread.m in Sources */ = {isa = PBXBuildFile; fileRef = CA51D22F889D900B62A901241336CCCA /* TSGroupThread.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C38D75882385E6E10047AF0B /* LKUnlinkDeviceMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D75862385E6E00047AF0B /* LKUnlinkDeviceMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C38D75892385E6E10047AF0B /* LKUnlinkDeviceMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */; };
+		C3B830F6243597DE00072C5C /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B830F5243597DE00072C5C /* HTTP.swift */; };
 		C3BADCE123E6380900B304DE /* LokiFileServerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BADCE023E6380900B304DE /* LokiFileServerProxy.swift */; };
 		C43CF814A60E4CEB7F14A24231188C11 /* SignedPrekeyRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87B989657BF344031280E8B9295F3C /* SignedPrekeyRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4454B4D47C68B5474C1325145C7B9FE /* OWSAttachmentDownloads.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AD0300C14BF0876A5CB5C4F88D6DD3 /* OWSAttachmentDownloads.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4651,6 +4652,7 @@
 		C38D75872385E6E00047AF0B /* LKUnlinkDeviceMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUnlinkDeviceMessage.m; sourceTree = "<group>"; };
 		C392555180DEC38836CA183AC9D5B7EB /* MPTakeoverNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPTakeoverNotification.h; path = Mixpanel/MPTakeoverNotification.h; sourceTree = "<group>"; };
 		C3A2127511F52A3C2A5AF8A8E763C81E /* LKEphemeralMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LKEphemeralMessage.m; sourceTree = "<group>"; };
+		C3B830F5243597DE00072C5C /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		C3BADCE023E6380900B304DE /* LokiFileServerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokiFileServerProxy.swift; sourceTree = "<group>"; };
 		C3C685BEAACC9CA9712EB060669F8049 /* Mixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E517E8372532438CE9978ACDF4E103 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
@@ -6189,6 +6191,7 @@
 				B86F994523E7B674005D9FE9 /* LokiRSSFeedProxy.swift */,
 				B836BFCE23DA944F002C86A0 /* LokiSnodeProxy.swift */,
 				C60FEF1B80024333892B1CF3EBCF80FC /* SignalMessage.swift */,
+				C3B830F4243597C200072C5C /* HTTP */,
 				88076A64A0FD642E4BED9D25F1606C56 /* Public Chats */,
 				D274A9098162A732D5D460579C7E50E1 /* Multi Device */,
 				C32D553124317A3A0032C5DE /* Onion Requests */,
@@ -8132,6 +8135,14 @@
 				C32D553224317A5E0032C5DE /* OnionRequestAPITests.swift */,
 			);
 			path = "Onion Requests";
+			sourceTree = "<group>";
+		};
+		C3B830F4243597C200072C5C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				C3B830F5243597DE00072C5C /* HTTP.swift */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 		C4A6106AE25C1C44B9D3C20A8050AD6D /* Protos */ = {
@@ -11652,6 +11663,7 @@
 				A1AA2F8FE42AC894BA5C2417329E46FD /* SwiftSingletons.swift in Sources */,
 				51B085BECDA126561581100B93C16ACC /* TestAppContext.m in Sources */,
 				966664BC86A3918E5971C734DA88A8A0 /* TestKeychainStorage.swift in Sources */,
+				C3B830F6243597DE00072C5C /* HTTP.swift in Sources */,
 				14F97AA55787D91B308D7E4804908C14 /* TSAccountManager.m in Sources */,
 				BB1F2B968ADF65D0933822DEF1C3BD29 /* TSAttachment.m in Sources */,
 				14A9CED698B5B974D2BB0A721CEFCB57 /* TSAttachmentPointer.m in Sources */,

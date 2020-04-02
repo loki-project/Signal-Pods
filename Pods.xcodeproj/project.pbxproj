@@ -13970,7 +13970,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SignalServiceKit/SignalServiceKit-Unit-Tests-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignalServiceKit/SignalServiceKit-Unit-Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "SignalServiceKit-Unit-Tests";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -14087,7 +14087,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SignalServiceKit/SignalServiceKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignalServiceKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SignalServiceKit/SignalServiceKit.modulemap";
 				PRODUCT_MODULE_NAME = SignalServiceKit;
@@ -14917,7 +14917,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SignalServiceKit/SignalServiceKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignalServiceKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SignalServiceKit/SignalServiceKit.modulemap";
 				PRODUCT_MODULE_NAME = SignalServiceKit;
@@ -15718,7 +15718,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SignalServiceKit/SignalServiceKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignalServiceKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SignalServiceKit/SignalServiceKit.modulemap";
 				PRODUCT_MODULE_NAME = SignalServiceKit;
@@ -17010,7 +17010,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SignalServiceKit/SignalServiceKit-Unit-Tests-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignalServiceKit/SignalServiceKit-Unit-Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "SignalServiceKit-Unit-Tests";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -17348,7 +17348,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SignalServiceKit/SignalServiceKit-Unit-Tests-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignalServiceKit/SignalServiceKit-Unit-Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lswiftSwiftOnoneSupport",

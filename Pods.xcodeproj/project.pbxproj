@@ -698,7 +698,6 @@
 		63218397747922FC05FB8E73DCBB2591 /* SSKBaseTestObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB55CE211590C103EB829BB300DC8B4 /* SSKBaseTestObjC.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		63324D9FE68A1A835B9F806BE0582BB7 /* XMLFeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A703D5776E5189110ABBB8E4E42D1 /* XMLFeedParser.swift */; };
 		63D228751510ACFB0D86AC97CD9637E9 /* YapDatabaseSecondaryIndexConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 57EDCD431FFE52194D3EFF74CD8AD31D /* YapDatabaseSecondaryIndexConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64018A91F127C862D25755A14EE3B303 /* SessionCipher+Loki.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7C374337A590067D7BF3721B86FB9 /* SessionCipher+Loki.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6438DB9BF2FC6DFC7AFD11F5C002B0AD /* AES-CBC.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8DDE7153448768A919F940B9EB1B00 /* AES-CBC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		643B0B23A062CB822690C14856CB26F8 /* Ed25519.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B6D00E0EDBB317292260E0394177D1 /* Ed25519.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		64433427D13E4F7B252E5134BCF0F519 /* YapActionable.h in Headers */ = {isa = PBXBuildFile; fileRef = 33ECA82A81F8AD5E4D03CB26442D84CB /* YapActionable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3236,7 +3235,6 @@
 		2F5832162EEE918DA7AE3F0172EF593B /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
 		2F7FFA9056E458C7D067F04FB4047FB5 /* AnyUnpackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyUnpackError.swift; path = Sources/SwiftProtobuf/AnyUnpackError.swift; sourceTree = "<group>"; };
 		2F8D4BAD610DD39DAF967EF66D0B2853 /* NSDate+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+OWS.h"; path = "SignalCoreKit/src/NSDate+OWS.h"; sourceTree = "<group>"; };
-		2FB7C374337A590067D7BF3721B86FB9 /* SessionCipher+Loki.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SessionCipher+Loki.m"; sourceTree = "<group>"; };
 		2FC73FA7CF4D2F4AB023760CA3A86AA1 /* MessageSenderJobRecordTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageSenderJobRecordTest.swift; sourceTree = "<group>"; };
 		2FEAA1DFA564DF996B74DBA65DD0C065 /* fe_isnonzero.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fe_isnonzero.c; path = Sources/ed25519/fe_isnonzero.c; sourceTree = "<group>"; };
 		2FED20FA96F200763A4254CDB40247B7 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
@@ -5265,6 +5263,7 @@
 				C136F2B9AF04E63DB49E8138EDFB466B /* LokiHTTPClient.swift */,
 				3D0436A92A178A2323D403D94116D408 /* LokiMessage.swift */,
 				8DBE30F4C997FF34DAC32FE3E8FE43A7 /* LokiPoller.swift */,
+				B65DF6954001BF5832CE74BD1695CAC8 /* LokiPushNotificationManager.swift */,
 				3ADD4BD86D36F8B557CA9814EF28F1C1 /* LokiRSSFeed.swift */,
 				3EDA6E22375A4E7047D3F3A97A3E2126 /* LokiRSSFeedProxy.swift */,
 				C61379087DF58E53B163272458B610A9 /* SignalMessage.swift */,
@@ -5935,7 +5934,6 @@
 				DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Loki.swift */,
 				D2975D930C7699ED9233EC497F37562F /* Mnemonic.swift */,
 				B3ADE1D8BB971F25A5C4FACC6C53F2DE /* ProofOfWork.swift */,
-				2FB7C374337A590067D7BF3721B86FB9 /* SessionCipher+Loki.m */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -6429,7 +6427,6 @@
 				247E62BBE3483EA085E2E5E3FEFA9FB7 /* LKGroupUtilities.h */,
 				BA442C528A102C864EFE110E47C6FC4E /* LKGroupUtilities.m */,
 				E6B814458829B435DE104E3A533B8974 /* LKUserDefaults.swift */,
-				B65DF6954001BF5832CE74BD1695CAC8 /* LokiPushNotificationManager.swift */,
 				3E22238F10E388A0EC3EDEF2EB2A3B83 /* Notification+Loki.swift */,
 				41D3028D9236C3BEA66988BA95E1DB12 /* NSArray+Functional.h */,
 				88AFFA8D18C392262063BB90815D1074 /* NSArray+Functional.m */,
@@ -11317,7 +11314,6 @@
 				A82D1AF61AF070DB04346A8A5862914A /* ReachabilityManager.swift in Sources */,
 				E836F081761466AF6D97481ABF5111A1 /* ReverseDispatchQueue.swift in Sources */,
 				8DDD3CF7F431B360CCF2E02E592B5D70 /* RotateSignedKeyOperation.swift in Sources */,
-				64018A91F127C862D25755A14EE3B303 /* SessionCipher+Loki.m in Sources */,
 				C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */,
 				79BABE2E7AD9634ABD45E15E234624C0 /* SignalIOS.pb.swift in Sources */,
 				175FD622A1325B4A1C5403570F0BCE08 /* SignalIOSProto.swift in Sources */,

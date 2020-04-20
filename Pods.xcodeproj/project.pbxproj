@@ -5264,13 +5264,12 @@
 				3D0436A92A178A2323D403D94116D408 /* LokiMessage.swift */,
 				8DBE30F4C997FF34DAC32FE3E8FE43A7 /* LokiPoller.swift */,
 				B65DF6954001BF5832CE74BD1695CAC8 /* LokiPushNotificationManager.swift */,
-				3ADD4BD86D36F8B557CA9814EF28F1C1 /* LokiRSSFeed.swift */,
-				3EDA6E22375A4E7047D3F3A97A3E2126 /* LokiRSSFeedProxy.swift */,
 				C61379087DF58E53B163272458B610A9 /* SignalMessage.swift */,
 				C3F8B79A243AF742008C8F3F /* HTTP */,
 				09A40D0425E65B384C52BEB8F58C2382 /* Multi Device */,
 				FECBBE5467A3FC7EDB36C525CC332521 /* Public Chats */,
 				C3F8B792243AF703008C8F3F /* Onion Requests */,
+				C3BDA7DC244D287100662159 /* Shelved */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -7610,6 +7609,15 @@
 				EACEF92F88DFC095F6F000B5200F1DB2 /* TSInvalidIdentityKeySendingErrorMessage.m */,
 			);
 			path = InvalidKeyMessages;
+			sourceTree = "<group>";
+		};
+		C3BDA7DC244D287100662159 /* Shelved */ = {
+			isa = PBXGroup;
+			children = (
+				3ADD4BD86D36F8B557CA9814EF28F1C1 /* LokiRSSFeed.swift */,
+				3EDA6E22375A4E7047D3F3A97A3E2126 /* LokiRSSFeedProxy.swift */,
+			);
+			path = Shelved;
 			sourceTree = "<group>";
 		};
 		C3F8B792243AF703008C8F3F /* Onion Requests */ = {

@@ -512,7 +512,7 @@
 		466BFCCF221C67BB530ABB4F4718552A /* Curve25519Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF57FE2E90D212F5FF0A29FF05B2EF /* Curve25519Kit.framework */; };
 		466E622C39D3DF76E93DF2FFBDD93051 /* OWSProvisioningCipherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 56001A662B89870D2298F96EA5801386 /* OWSProvisioningCipherTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		46961394488C33ECF7D1313E4F5F6BC0 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F8791EA9A747E8CB1FB5D1808571EBB /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46C09A66E73828C46381F6BA7FB4D0AB /* FriendRequestExpirationMessageFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F986FDCF574154183DB89C9FF6930A9A /* FriendRequestExpirationMessageFinder.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		46C09A66E73828C46381F6BA7FB4D0AB /* ExpiringFriendRequestFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		46C1749B0BF11C9E5F8D4774AC775D14 /* ge_scalarmult_base.c in Sources */ = {isa = PBXBuildFile; fileRef = D7534EFC29B96259F205E30FDD800A05 /* ge_scalarmult_base.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		47079599F3CDC72920DD479F02CA34B4 /* SessionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BD85F764FD2791F6D090BBBF7B929 /* SessionBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		470F586DE4733988586E6725AFC13E25 /* OWSFakeCallMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2058EDEED9E4F72616A785905617B01E /* OWSFakeCallMessageHandler.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4730,7 +4730,7 @@
 		F900395FF425B58DAF116A9DE9D2E4A0 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
 		F956853DCB6D4BEFF86FB701CA114275 /* JSONFeedAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONFeedAttachment.swift; path = Sources/FeedKit/Models/JSON/JSONFeedAttachment.swift; sourceTree = "<group>"; };
 		F961489076FECAE558AF3BB2BA7216F2 /* MIMETypeUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MIMETypeUtil.h; sourceTree = "<group>"; };
-		F986FDCF574154183DB89C9FF6930A9A /* FriendRequestExpirationMessageFinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FriendRequestExpirationMessageFinder.swift; sourceTree = "<group>"; };
+		F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpiringFriendRequestFinder.swift; sourceTree = "<group>"; };
 		FA00B810194EA376F936851B1D0F8BDD /* YapDatabaseCloudCoreOperationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreOperationPrivate.h; path = YapDatabase/Extensions/CloudCore/Internal/YapDatabaseCloudCoreOperationPrivate.h; sourceTree = "<group>"; };
 		FA0EBC63ED6DC09F2D4E1354FCDE1F9F /* AtomFeedEntryAuthor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedEntryAuthor.swift; path = Sources/FeedKit/Models/Atom/AtomFeedEntryAuthor.swift; sourceTree = "<group>"; };
 		FA2FE67FCEB4BED90C926E6D03A99907 /* HKDFKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HKDFKit.debug.xcconfig; sourceTree = "<group>"; };
@@ -8142,7 +8142,7 @@
 			children = (
 				D1B95472C3850045C2CC5A2290F6CD67 /* ContactParser.swift */,
 				883482A393D8025660DD64DEF015F798 /* FriendRequestExpirationJob.swift */,
-				F986FDCF574154183DB89C9FF6930A9A /* FriendRequestExpirationMessageFinder.swift */,
+				F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */,
 				BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */,
 				9EBBEDECDDD03B2790AFE0275C3B3CBB /* LKAddressMessage.h */,
 				3A648C023877420932A488AFF99D0A37 /* LKAddressMessage.m */,
@@ -11139,7 +11139,7 @@
 				8B27E47D5D9BF09D48CF697138FDA0AE /* Fingerprint.pb.swift in Sources */,
 				21B759A24E930BF32C173435E5AD26C1 /* FingerprintProto.swift in Sources */,
 				34846B29071E40FDA018E9C25B9EAD04 /* FriendRequestExpirationJob.swift in Sources */,
-				46C09A66E73828C46381F6BA7FB4D0AB /* FriendRequestExpirationMessageFinder.swift in Sources */,
+				46C09A66E73828C46381F6BA7FB4D0AB /* ExpiringFriendRequestFinder.swift in Sources */,
 				CA8DC75E39A3CBF19A8361967C2096E7 /* FullTextSearchFinder.swift in Sources */,
 				DAC30164EF9F1FB21D5FA38EB6C511B3 /* FunctionalUtil.m in Sources */,
 				A4A1C128E4543BE52EB96E276157D793 /* GeneralUtilities.swift in Sources */,

@@ -1375,6 +1375,7 @@
 		C30A39E072A181E2F40286B7FA00003D /* LKSessionRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
 		C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D777B171FF0D9C997847CB315446352 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3F8B797243AF71F008C8F3F /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */; };
 		C3F8B798243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B795243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift */; };
@@ -4326,6 +4327,7 @@
 		C3505F75073FFEF718C729CA4616CE35 /* TSNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSNetworkManager.h; sourceTree = "<group>"; };
 		C360129EBCE68D0E2411AE3A14703057 /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
 		C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationTest.m; sourceTree = "<group>"; };
+		C38E9230244E9D1900FF0861 /* TTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3AB64AE7DDA61470224806613DF9AD1 /* YapDatabaseCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCryptoUtils.h; path = YapDatabase/Utilities/YapDatabaseCryptoUtils.h; sourceTree = "<group>"; };
 		C3D3E2016CB12672FE771864BB8D512B /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sc_reduce.c; path = Sources/ed25519/sc_reduce.c; sourceTree = "<group>"; };
@@ -8164,6 +8166,7 @@
 				508A4DCCACCDF1CDFABD5E1CE7604323 /* Mention.swift */,
 				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
 				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
+				C38E9230244E9D1900FF0861 /* TTL.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -11106,6 +11109,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38E9231244E9D1900FF0861 /* TTL.swift in Sources */,
 				AF5BAF9EE258F950267A105FDFFD3D47 /* AccountServiceClient.swift in Sources */,
 				DD286B9356E1C928BA64C7631B2D78B7 /* AnyPromise+Conversion.swift in Sources */,
 				14D7ACADD275BF39520187EF684239CC /* AppContext.m in Sources */,

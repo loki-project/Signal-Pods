@@ -1375,7 +1375,7 @@
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
-		C38E9234244EB12800FF0861 /* X.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* X.swift */; };
+		C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* SessionProtocol.swift */; };
 		C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D777B171FF0D9C997847CB315446352 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3F8B797243AF71F008C8F3F /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */; };
 		C3F8B798243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B795243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift */; };
@@ -4328,7 +4328,7 @@
 		C360129EBCE68D0E2411AE3A14703057 /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
 		C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationTest.m; sourceTree = "<group>"; };
 		C38E9230244E9D1900FF0861 /* TTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
-		C38E9233244EB12800FF0861 /* X.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X.swift; sourceTree = "<group>"; };
+		C38E9233244EB12800FF0861 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3AB64AE7DDA61470224806613DF9AD1 /* YapDatabaseCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCryptoUtils.h; path = YapDatabase/Utilities/YapDatabaseCryptoUtils.h; sourceTree = "<group>"; };
 		C3D3E2016CB12672FE771864BB8D512B /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sc_reduce.c; path = Sources/ed25519/sc_reduce.c; sourceTree = "<group>"; };
@@ -8172,10 +8172,10 @@
 				688F5DA19B670D20E4953BC002509A64 /* LKUnlinkDeviceMessage.m */,
 				CFCA2B726BF2B46BB25CDE6ACCE82D27 /* LokiMessageWrapper.swift */,
 				508A4DCCACCDF1CDFABD5E1CE7604323 /* Mention.swift */,
+				C38E9233244EB12800FF0861 /* SessionProtocol.swift */,
 				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
 				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 				C38E9230244E9D1900FF0861 /* TTL.swift */,
-				C38E9233244EB12800FF0861 /* X.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -11231,7 +11231,7 @@
 				A60DAF84129688C2FB1285DE989C58BE /* OWSChunkedOutputStream.m in Sources */,
 				88420C68E1926E3D1C554E05A56CE765 /* OWSContact.m in Sources */,
 				737F80DB28069218397ED1B84EFF5742 /* OWSContactDiscoveryOperation.swift in Sources */,
-				C38E9234244EB12800FF0861 /* X.swift in Sources */,
+				C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */,
 				4576128EBA1771FAEF6507A93A82756C /* OWSContactsOutputStream.m in Sources */,
 				DC211998574FACE44A5B241580FE516A /* OWSCountryMetadata.m in Sources */,
 				7DA76D1EBD39D2EEA6D422DC2F4017F8 /* OWSDevice.m in Sources */,

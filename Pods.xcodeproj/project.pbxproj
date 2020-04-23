@@ -7610,6 +7610,29 @@
 			path = "Push Notifications";
 			sourceTree = "<group>";
 		};
+		C3944E3E245172700071C5AB /* Message Types */ = {
+			isa = PBXGroup;
+			children = (
+				9EBBEDECDDD03B2790AFE0275C3B3CBB /* LKAddressMessage.h */,
+				3A648C023877420932A488AFF99D0A37 /* LKAddressMessage.m */,
+				11606A4BB5FBDE6F843FB3A69879BFF5 /* LKDeviceLinkMessage.h */,
+				4DF2A66C4DFBD89F5C6162DF8444371E /* LKDeviceLinkMessage.m */,
+				7B80DCD964C784C66901CCDB85A53F5D /* LKEphemeralMessage.h */,
+				B23A801652F1688027A5ADAF7C9864F0 /* LKEphemeralMessage.m */,
+				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
+				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
+				F32697AD49F9C7D39C6123D8AC178D21 /* LKSessionRequestMessage.h */,
+				5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */,
+				049FE4B60374ED8E23974B2D8376F346 /* LKSessionRestoreMessage.h */,
+				278FF2576DD3A35ED34179FA8BD87973 /* LKSessionRestoreMessage.m */,
+				AFDD34ED7D0D02522BD07794B36D006A /* LKSyncOpenGroupsMessage.h */,
+				4AE29138EA8CE25EFEC78E3E2E94FE95 /* LKSyncOpenGroupsMessage.m */,
+				F7FF22CD5C7025AC92D2385443AE4597 /* LKUnlinkDeviceMessage.h */,
+				688F5DA19B670D20E4953BC002509A64 /* LKUnlinkDeviceMessage.m */,
+			);
+			path = "Message Types";
+			sourceTree = "<group>";
+		};
 		C3B72FB245E8BF809A609BDB33E2A43D /* InvalidKeyMessages */ = {
 			isa = PBXGroup;
 			children = (
@@ -8158,22 +8181,6 @@
 				883482A393D8025660DD64DEF015F798 /* FriendRequestExpirationJob.swift */,
 				F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */,
 				BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */,
-				9EBBEDECDDD03B2790AFE0275C3B3CBB /* LKAddressMessage.h */,
-				3A648C023877420932A488AFF99D0A37 /* LKAddressMessage.m */,
-				11606A4BB5FBDE6F843FB3A69879BFF5 /* LKDeviceLinkMessage.h */,
-				4DF2A66C4DFBD89F5C6162DF8444371E /* LKDeviceLinkMessage.m */,
-				7B80DCD964C784C66901CCDB85A53F5D /* LKEphemeralMessage.h */,
-				B23A801652F1688027A5ADAF7C9864F0 /* LKEphemeralMessage.m */,
-				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
-				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
-				F32697AD49F9C7D39C6123D8AC178D21 /* LKSessionRequestMessage.h */,
-				5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */,
-				049FE4B60374ED8E23974B2D8376F346 /* LKSessionRestoreMessage.h */,
-				278FF2576DD3A35ED34179FA8BD87973 /* LKSessionRestoreMessage.m */,
-				AFDD34ED7D0D02522BD07794B36D006A /* LKSyncOpenGroupsMessage.h */,
-				4AE29138EA8CE25EFEC78E3E2E94FE95 /* LKSyncOpenGroupsMessage.m */,
-				F7FF22CD5C7025AC92D2385443AE4597 /* LKUnlinkDeviceMessage.h */,
-				688F5DA19B670D20E4953BC002509A64 /* LKUnlinkDeviceMessage.m */,
 				CFCA2B726BF2B46BB25CDE6ACCE82D27 /* LokiMessageWrapper.swift */,
 				508A4DCCACCDF1CDFABD5E1CE7604323 /* Mention.swift */,
 				C38E9233244EB12800FF0861 /* SessionProtocol.swift */,
@@ -8182,6 +8189,7 @@
 				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
 				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 				C38E9230244E9D1900FF0861 /* TTL.swift */,
+				C3944E3E245172700071C5AB /* Message Types */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";

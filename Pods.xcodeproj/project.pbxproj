@@ -1376,6 +1376,8 @@
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
 		C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* SessionProtocol.swift */; };
+		C38E923D24510C9700FF0861 /* SessionProtocol+Sending.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E923C24510C9700FF0861 /* SessionProtocol+Sending.swift */; };
+		C38E923F24510D5C00FF0861 /* SessionProtocol+Receiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E923E24510D5C00FF0861 /* SessionProtocol+Receiving.swift */; };
 		C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D777B171FF0D9C997847CB315446352 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3F8B797243AF71F008C8F3F /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */; };
 		C3F8B798243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B795243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift */; };
@@ -4329,6 +4331,8 @@
 		C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationTest.m; sourceTree = "<group>"; };
 		C38E9230244E9D1900FF0861 /* TTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
 		C38E9233244EB12800FF0861 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
+		C38E923C24510C9700FF0861 /* SessionProtocol+Sending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionProtocol+Sending.swift"; sourceTree = "<group>"; };
+		C38E923E24510D5C00FF0861 /* SessionProtocol+Receiving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SessionProtocol+Receiving.swift"; sourceTree = "<group>"; };
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3AB64AE7DDA61470224806613DF9AD1 /* YapDatabaseCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCryptoUtils.h; path = YapDatabase/Utilities/YapDatabaseCryptoUtils.h; sourceTree = "<group>"; };
 		C3D3E2016CB12672FE771864BB8D512B /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sc_reduce.c; path = Sources/ed25519/sc_reduce.c; sourceTree = "<group>"; };
@@ -8173,6 +8177,8 @@
 				CFCA2B726BF2B46BB25CDE6ACCE82D27 /* LokiMessageWrapper.swift */,
 				508A4DCCACCDF1CDFABD5E1CE7604323 /* Mention.swift */,
 				C38E9233244EB12800FF0861 /* SessionProtocol.swift */,
+				C38E923E24510D5C00FF0861 /* SessionProtocol+Receiving.swift */,
+				C38E923C24510C9700FF0861 /* SessionProtocol+Sending.swift */,
 				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
 				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 				C38E9230244E9D1900FF0861 /* TTL.swift */,
@@ -11244,6 +11250,7 @@
 				AECC3CD72AC18CCDD6437343251B943B /* OWSDisappearingMessagesConfigurationMessage.m in Sources */,
 				5A7E5B8EA7F04564AF48F5E606C3D438 /* OWSDisappearingMessagesFinder.m in Sources */,
 				F8DB0D52D3C04253A391D4D6FEDA03DE /* OWSDisappearingMessagesJob.m in Sources */,
+				C38E923D24510C9700FF0861 /* SessionProtocol+Sending.swift in Sources */,
 				D0F3753DD3C682F57CFE5A4079EA2BD7 /* OWSDispatch.m in Sources */,
 				1B8712B00C2A4F1EC74D58FD4FC602F2 /* OWSDynamicOutgoingMessage.m in Sources */,
 				C3F8B7BB243AFC7D008C8F3F /* Array+Description.swift in Sources */,
@@ -11380,6 +11387,7 @@
 				CF4AFFFBF0A0200E61E6F560124A6A32 /* TSNetworkManager.m in Sources */,
 				1F49C5F662E5BE43C3D0925C09F9A69B /* TSOutgoingMessage.m in Sources */,
 				D0B5E759179C23911AA3E6B845F5F6F0 /* TSPreKeyManager.m in Sources */,
+				C38E923F24510D5C00FF0861 /* SessionProtocol+Receiving.swift in Sources */,
 				556F70A57F94D0DA7C29C7E80CA569A0 /* TSQuotedMessage.m in Sources */,
 				0BAC991C4FD45791BCC6E2F34D53F436 /* TSRequest.m in Sources */,
 				CB82CD0728C793FC00E19BF962868EA3 /* TSSocketManager.m in Sources */,

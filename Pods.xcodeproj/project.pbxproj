@@ -440,7 +440,6 @@
 		3BF423B3797B0AC35DC30B5AFC85AE24 /* OWSFakeCallMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5616535F6A5B2B7249885CF5A93719E3 /* OWSFakeCallMessageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C006AA9A87B254839BD93D23BABC865 /* RootKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 954DF52FA85F1749C65E082984B35C10 /* RootKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C57608F3AFCA63DFB66F0C18A709990 /* PreKeyWhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D50B9544379C6D2D8F94EF8AEB6F9 /* PreKeyWhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3CA4EB5B098626AA07F21DA5DAB589DB /* PhoneNumberUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4467B744AF79CC90DC3F95710C42E6FD /* PhoneNumberUtilTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3CB16C3F6AD3C6325EE6F2D67C065765 /* YapDatabaseViewMappings.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D8012A125BE7E1753CCB60CB80DA57 /* YapDatabaseViewMappings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D07D30812D01C37A4F68463A87ABAFF /* AppReadiness.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AC020EC2F11C3484AA34741B355FFA /* AppReadiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D0CB041F0FA027C7124ED9A952D1A37 /* OWSVerificationStateSyncMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 028141731D97F3A50F7A19F97E921B18 /* OWSVerificationStateSyncMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -553,7 +552,6 @@
 		4CD5291628C8A7EDFF407F9F95F46CE4 /* YapDatabaseFilteredViewTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B816066D65C63F793A3DD11126479A8 /* YapDatabaseFilteredViewTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CD59495C77C9972FDEDCA1855CEAF6B /* OWSVerificationStateChangeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E45203A931F0325322D4346C96CED68 /* OWSVerificationStateChangeMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CEB5E8A94FF87EB359A9C9C0DB8F3B7 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C5ACF7B224521B53DB572126DAC487 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4D2BE8B655615BBEBA7475EFEC0DCC03 /* OWSAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DA025ECDA3FE585668E8B6C34DB8D /* OWSAnalyticsTests.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4D3066DE3F75945D25C228FEE69201EE /* YapDatabaseConnectionState.m in Sources */ = {isa = PBXBuildFile; fileRef = 312D5D15AA9ED75E660CB557FD1C36D3 /* YapDatabaseConnectionState.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4D475894E0F478E1E4B1B9DDC8023C83 /* YapDatabaseConnectionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = FDF390AE169066D2C5C2D32709E1604E /* YapDatabaseConnectionProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D5AB6B1D64809B337E37747E883DBF4 /* Google_Protobuf_FieldMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB1890C2944EDCE92F17746680405 /* Google_Protobuf_FieldMask+Extensions.swift */; };
@@ -608,7 +606,6 @@
 		543B29D0C585FCA2ECC51B130E2BCA6A /* Threading.m in Sources */ = {isa = PBXBuildFile; fileRef = C23E1C09D675F109956B1602FC63EF0F /* Threading.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		544373F86F6EEB004A185CDA6B334EE0 /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = E176C2F476DD319BDA84BE44D78FBF73 /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		545C75FD0E79A9F6661A39E82DB0233A /* YapDatabaseQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 32711706360E3D4A5752429D0B495C7F /* YapDatabaseQuery.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		54690B35CD187FC177289D4D16C3A8F1 /* PhoneNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC342086B61EC0FB2758AC941A1B327F /* PhoneNumberTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		546D29C339C680939F73B04D370A4FA8 /* JSONDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF351E0F6D34473FCE80A960368F3D5A /* JSONDecodingOptions.swift */; };
 		54B1DC0B6D56537AC5AEE92E30436C59 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DCF862251E638915AA98F48C67C80F /* AssetsLibrary.framework */; };
 		55532F2B16128124B432F7321605E244 /* OWSBlockedPhoneNumbersMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 435614D81B32A9BBCAC7176A41203DE1 /* OWSBlockedPhoneNumbersMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1412,7 +1409,6 @@
 		C5D26EA0B04C8ED819E9227485F3A13B /* SSKBaseTestObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 8780032975656D7102984E6645B3710D /* SSKBaseTestObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6337901555CB19620ED38B7BD88A723 /* OWSMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FDEB3B4EB797F38F2A1F739D124230 /* OWSMessageHandler.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C646F0ED2B03FA1360E6E418E1DC4CA2 /* NSURLSessionDataTask+StatusCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 69017B591C89CAD417A5E5DC29CBB339 /* NSURLSessionDataTask+StatusCode.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C64BE4A542BD588C2AFFC25E0A635D90 /* OWSSignalAddressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D054DD94C94BA0DB6FD9CE8F38BD17 /* OWSSignalAddressTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		C7354B4132D6E7D4CAF2F7A2B93EDCDC /* UnknownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503B35350022429A59CE275A5743CE3 /* UnknownStorage.swift */; };
 		C737AF829E05EBAC7A630CD4FED0AED9 /* YapSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DBD98978235626E041231CBBECF071 /* YapSet.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C776C4069B31CC4E82F7FB98AB3D3824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B1A4932159E1EF6D28FF5129286BA6 /* Foundation.framework */; };
@@ -1426,7 +1422,6 @@
 		C926AB61054E7324B35AE29BDE226834 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBE1D59EF083867B22E4B1E5C4587A1 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9361526FD0EB6E317004AA8430DB3F2 /* DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FE1F35C68FE903B9A44EB00C280A5C /* DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9639784FF29223CFFEFE31F3C1BA4D6 /* YapProxyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E1FEE06048619D72DE075C4C94FD32 /* YapProxyObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C96620639F980491B4F1777BD5F825FB /* ContactSortingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC5A817677B53B1FBCDF5E819DDBD80 /* ContactSortingTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C9886A3CD556E11810959337681F5CE3 /* SSKAsserts.h in Headers */ = {isa = PBXBuildFile; fileRef = 86423A970B193F93711DF95B21422AC7 /* SSKAsserts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C995C350A272B475C9D5AF323A5485AC /* NSArray+NBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39442AF546A5D765673E3373B0979B89 /* NSArray+NBAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA27A51616B430CFD0A2AC137120CE37 /* Promise+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A32237F52DE475B337F4315EFAAD1 /* Promise+Hashing.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -3412,7 +3407,6 @@
 		4418A7C1860B905DDF994CCB8726B580 /* OWSIncomingMessageFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSIncomingMessageFinder.m; sourceTree = "<group>"; };
 		4426A5EFC5ECBBB4D1027D41AB33B30F /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		442E968DD28D0E0DCA8BA319BB509B32 /* YapDatabaseAutoViewTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseAutoViewTransaction.h; path = YapDatabase/Extensions/AutoView/YapDatabaseAutoViewTransaction.h; sourceTree = "<group>"; };
-		4467B744AF79CC90DC3F95710C42E6FD /* PhoneNumberUtilTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberUtilTest.m; sourceTree = "<group>"; };
 		4471159C0B5E0E3590D0569D027D65B0 /* YapDatabaseString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseString.h; path = YapDatabase/Internal/YapDatabaseString.h; sourceTree = "<group>"; };
 		44CFAAA57BF38839C8829B7C398BC789 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		44EE0EA9A5933A4368EC059E1CD58772 /* AxolotlKit-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AxolotlKit-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
@@ -3556,7 +3550,6 @@
 		58476B3B7CB342E5FA88432299BA63AD /* YapDatabaseConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseConnection.h; path = YapDatabase/YapDatabaseConnection.h; sourceTree = "<group>"; };
 		58594443501F365C56D339343FF9890C /* OWSChunkedOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSChunkedOutputStream.h; sourceTree = "<group>"; };
 		588D9744FFB40737A89A6C9DCCCFC20A /* SignalMetadataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalMetadataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58D054DD94C94BA0DB6FD9CE8F38BD17 /* OWSSignalAddressTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OWSSignalAddressTest.swift; sourceTree = "<group>"; };
 		58D2D495D6A3704400FF7D5C293DD74D /* Message+JSONAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+JSONAdditions.swift"; path = "Sources/SwiftProtobuf/Message+JSONAdditions.swift"; sourceTree = "<group>"; };
 		5980443604FAEA232D6C201CDAFD9389 /* YapDatabasePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabasePrivate.h; path = YapDatabase/Internal/YapDatabasePrivate.h; sourceTree = "<group>"; };
 		598AA170024D2F1B8CBACDE9B2BE9FBE /* SwiftProtobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-prefix.pch"; sourceTree = "<group>"; };
@@ -3918,7 +3911,6 @@
 		8C70F870326101AF7C06076C79B29322 /* YapDatabaseActionManagerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseActionManagerConnection.m; path = YapDatabase/Extensions/ActionManager/YapDatabaseActionManagerConnection.m; sourceTree = "<group>"; };
 		8C808576F9C31E8399B22012923E740E /* SignalMetadataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalMetadataKit.debug.xcconfig; sourceTree = "<group>"; };
 		8C88D854017E660A351F2292242189D0 /* GCDWebServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.release.xcconfig; sourceTree = "<group>"; };
-		8C8DA025ECDA3FE585668E8B6C34DB8D /* OWSAnalyticsTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSAnalyticsTests.m; sourceTree = "<group>"; };
 		8CACEB832D7EB1421F302D8150EAE281 /* OWSIncompleteCallsJob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSIncompleteCallsJob.m; sourceTree = "<group>"; };
 		8CD177AE66F495569B7D6ED1D536BF71 /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
 		8D355C8416DDFDEF19C3DB17FAC2E577 /* NBPhoneNumberUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberUtil.h; path = libPhoneNumber/NBPhoneNumberUtil.h; sourceTree = "<group>"; };
@@ -4296,7 +4288,6 @@
 		BE4BC73430C9DD254B4EF0EB47A4C88F /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
 		BE56A3DAF63D0A92719D8C9E6A66A0DB /* RKCK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKCK.m; path = AxolotlKit/Classes/Ratchet/RKCK.m; sourceTree = "<group>"; };
 		BEAD08D0A0AF7714E6D8C60BAA5BC7C6 /* TSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSConstants.h; path = SignalServiceKit/src/TSConstants.h; sourceTree = "<group>"; };
-		BEC5A817677B53B1FBCDF5E819DDBD80 /* ContactSortingTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ContactSortingTest.m; sourceTree = "<group>"; };
 		BEE7AAD943513BA56DDB450F9E13E73F /* YapDatabaseTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseTransaction.m; path = YapDatabase/YapDatabaseTransaction.m; sourceTree = "<group>"; };
 		BEFE5D9ECFE5C0ED56FD0B3DD84ADF61 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
 		BF123DEAD4A87F1AB226FE4679C63D9F /* LokiP2PAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiP2PAPI.swift; sourceTree = "<group>"; };
@@ -4555,7 +4546,6 @@
 		DBECC7B88A9C222BDC7580E2BF0FF4A0 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		DBFB28786A618601711BA595A5D3A2AB /* TSGroupModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSGroupModel.m; sourceTree = "<group>"; };
 		DBFB45A352052E142822C573A3D8BFC2 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		DC342086B61EC0FB2758AC941A1B327F /* PhoneNumberTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberTest.m; sourceTree = "<group>"; };
 		DC39CBFCE6A2514660895F7E127DF64F /* YDBCKChangeQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKChangeQueue.m; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKChangeQueue.m; sourceTree = "<group>"; };
 		DC4B079721EF9F8BF2939598140E8F97 /* OWSRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSRequestFactory.m; sourceTree = "<group>"; };
 		DC505ACA4F345E123A26306026E80F22 /* SessionCipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionCipher.h; path = AxolotlKit/Classes/SessionCipher.h; sourceTree = "<group>"; };
@@ -7497,10 +7487,7 @@
 		B95EC394CDB9E36ADBC11E4A0BA13BB0 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				BEC5A817677B53B1FBCDF5E819DDBD80 /* ContactSortingTest.m */,
 				C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */,
-				DC342086B61EC0FB2758AC941A1B327F /* PhoneNumberTest.m */,
-				4467B744AF79CC90DC3F95710C42E6FD /* PhoneNumberUtilTest.m */,
 				235273DB6B4886237AF0E0B3B60CADC6 /* SignalRecipientTest.m */,
 				5F56E04A2B422C4AE211D3F9A088BB43 /* TSContactThreadTest.m */,
 				38FB42B56BF21579160A43A77AEC00CD /* TSGroupThreadTest.m */,
@@ -8103,7 +8090,6 @@
 			children = (
 				5E837E25AEFEF56A83FA6B2F77E717C1 /* DeviceNamesTest.swift */,
 				49BCF4067903181F78E449CD9F909F0E /* JobQueueTest.swift */,
-				8C8DA025ECDA3FE585668E8B6C34DB8D /* OWSAnalyticsTests.m */,
 				9277BA68391778D46D3AD6287FBFCCF5 /* TSMessageStorageTests.m */,
 			);
 			name = Util;
@@ -8119,7 +8105,6 @@
 				F778BCB049CD034E188600DD8F0F0F21 /* OWSLinkPreviewTest.swift */,
 				30540F1B2E57C8DC7725985A6DA36C55 /* OWSMessageManagerTest.m */,
 				7EDCAFF769CE686A612F1FC540C5065D /* OWSMessageSenderTest.m */,
-				58D054DD94C94BA0DB6FD9CE8F38BD17 /* OWSSignalAddressTest.swift */,
 				5F3AF4455033E2CBF9B2C6DEEB026451 /* OWSUDManagerTest.swift */,
 				EA420B4068408D281AC28E3E581198B4 /* Interactions */,
 			);
@@ -10858,12 +10843,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96620639F980491B4F1777BD5F825FB /* ContactSortingTest.m in Sources */,
 				233BFA49D9A6EA6BE1DEFC9306FF4B2A /* DeviceNamesTest.swift in Sources */,
 				4A66D3CF20A333E86AE82E3AAACCC482 /* JobQueueTest.swift in Sources */,
 				AB49E44D09720086FFA089624616EA53 /* MessageSenderJobRecordTest.swift in Sources */,
 				6DBE4B24422757F5021C04D2AE558146 /* MessageSendJobQueueTest.swift in Sources */,
-				4D2BE8B655615BBEBA7475EFEC0DCC03 /* OWSAnalyticsTests.m in Sources */,
 				5739CDE936FA0001CBA42522476F019D /* OWSDeviceProvisionerTest.m in Sources */,
 				E88A43E246E4D996B2B49FC9B19F997F /* OWSDisappearingMessageFinderTest.m in Sources */,
 				D0B7508AB8DB0C03D9FB921FDFA6AE75 /* OWSDisappearingMessagesConfigurationTest.m in Sources */,
@@ -10874,10 +10857,7 @@
 				A0E0DCD6D985CC5E8ED11A155983C6C1 /* OWSMessageManagerTest.m in Sources */,
 				B8A01B3F838179429F554B78076CCB16 /* OWSMessageSenderTest.m in Sources */,
 				466E622C39D3DF76E93DF2FFBDD93051 /* OWSProvisioningCipherTest.m in Sources */,
-				C64BE4A542BD588C2AFFC25E0A635D90 /* OWSSignalAddressTest.swift in Sources */,
 				9EF6EBB6891E0709C14ECCD2B290428E /* OWSUDManagerTest.swift in Sources */,
-				54690B35CD187FC177289D4D16C3A8F1 /* PhoneNumberTest.m in Sources */,
-				3CA4EB5B098626AA07F21DA5DAB589DB /* PhoneNumberUtilTest.m in Sources */,
 				817B1625FB9003C26857AF934B3F4F2C /* SignalRecipientTest.m in Sources */,
 				D45D728156D343DE9EFE87263C9D8F98 /* SignedPreKeyDeletionTests.m in Sources */,
 				63218397747922FC05FB8E73DCBB2591 /* SSKBaseTestObjC.m in Sources */,

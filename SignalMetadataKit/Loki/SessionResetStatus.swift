@@ -1,5 +1,7 @@
 import Foundation
 
+// TODO: Can we make this a computed property?
+
 @objc(LKSessionResetStatus)
 public enum SessionResetStatus: Int {
     /// No ongoing session reset.

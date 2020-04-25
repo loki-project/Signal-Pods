@@ -1212,7 +1212,6 @@
 		AC89B21A9FBFE1FCCDAB805BDA282B79 /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FBF34B4861CAC3D3D5B8E438F34B58 /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACAE5E3D2FAED68AA03A3C17CAA0FE8B /* TSInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8014C0255496668488E9D44A2DA1214D /* TSInfoMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		ACB2E75D686A1B9843556BFF0ED0F9D5 /* RSSFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD654A971CF886C83C2524CB58028504 /* RSSFeed.swift */; };
-		ACBDB0031F05618C9BA7EF503D584B82 /* LokiChannelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609CAFA52ABD311C2FA61EDBB46E49C /* LokiChannelInfo.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		ACC4743474820D854BC780C440201E32 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F40D5DFAFD8A18A0A5003CBFA850F0F7 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACCF5C07557761593A90B796CEB1E088 /* TSAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D94DEC645710010F0C37052A64F07B /* TSAttachment.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		ACDB0321FBDF4674F19AEE0BE541BE97 /* YapDatabaseHooksConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E530484B5899D9DDDB119A218C0EA4 /* YapDatabaseHooksConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1376,6 +1375,13 @@
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
+		C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* SessionProtocol.swift */; };
+		C3944E4324525A310071C5AB /* MultiDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4224525A310071C5AB /* MultiDeviceProtocol.swift */; };
+		C3944E4624525D550071C5AB /* FriendRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4524525D550071C5AB /* FriendRequestProtocol.swift */; };
+		C3944E4924525ED30071C5AB /* SessionManagementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4824525ED30071C5AB /* SessionManagementProtocol.swift */; };
+		C3944E4C2452603F0071C5AB /* ClosedGroupsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4B2452603F0071C5AB /* ClosedGroupsProtocol.swift */; };
+		C3944E4F245260EE0071C5AB /* SyncMessagesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */; };
+		C3944E52245261C80071C5AB /* MentionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E51245261C80071C5AB /* MentionsManager.swift */; };
 		C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D777B171FF0D9C997847CB315446352 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3F8B797243AF71F008C8F3F /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */; };
 		C3F8B798243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B795243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift */; };
@@ -1388,6 +1394,9 @@
 		C3F8B7B6243AFBED008C8F3F /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */; };
 		C3F8B7B9243AFC54008C8F3F /* OnionRequestAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B793243AF71E008C8F3F /* OnionRequestAPITests.swift */; };
 		C3F8B7BB243AFC7D008C8F3F /* Array+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B7BA243AFC7C008C8F3F /* Array+Description.swift */; };
+		C3FECFB72452777400EA9A43 /* FriendRequestProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FECFB62452777400EA9A43 /* FriendRequestProtocolTests.swift */; };
+		C3FECFB9245277A300EA9A43 /* MultiDeviceProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FECFB8245277A300EA9A43 /* MultiDeviceProtocolTests.swift */; };
+		C3FECFBB245277C800EA9A43 /* SessionManagementProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FECFBA245277C800EA9A43 /* SessionManagementProtocolTests.swift */; };
 		C410A5FEE9D6354BEAD430AE994B07B1 /* SMKUDAccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E7C433C93242A14584D5811268693 /* SMKUDAccessKey.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		C41B791F2F8A179C98E0803FCED42BF7 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACFC374BAAEC8A96D0FF89B899B1917 /* CryptoSwift.framework */; };
 		C4279DDBCF6A90E63D51B1C5F1F33A82 /* OWSIncomingMessageFinderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 287288FAB2060705924AEE97A1B8D3F3 /* OWSIncomingMessageFinderTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1515,7 +1524,7 @@
 		D4C72143B95EAB7BCF5B0CF1B671EB67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B1A4932159E1EF6D28FF5129286BA6 /* Foundation.framework */; };
 		D4D8FA1B5DF99108C60A2FAE81C62B19 /* OWSFakeNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB2E00E6B7B1937E2FFF245FB1BF37 /* OWSFakeNetworkManager.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D51321B20B5D883BC859E0DA6FFA778D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B1A4932159E1EF6D28FF5129286BA6 /* Foundation.framework */; };
-		D53D046DBED788823F382B99AA888B62 /* ECKeyPair+Loki.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Loki.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		D53D046DBED788823F382B99AA888B62 /* ECKeyPair+Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Hexadecimal.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		D5BBDCD9717B8C8019F709014F0DD80A /* YapDatabaseRTreeIndexPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CAC80FC47768519E91D2616AB27801 /* YapDatabaseRTreeIndexPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D5F2A9E665D87C2C18661ECC40B0E817 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8869C6A72D72FF23F7C0D8A9615A5B /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
 		D5F8A0DD78E21102FD7D2E111692C4C6 /* YapDatabaseCrossProcessNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A7DA969DB654FEC0503ECAA7AA3508 /* YapDatabaseCrossProcessNotification.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4328,6 +4337,14 @@
 		C360129EBCE68D0E2411AE3A14703057 /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
 		C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationTest.m; sourceTree = "<group>"; };
 		C38E9230244E9D1900FF0861 /* TTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
+		C38E9233244EB12800FF0861 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
+		C3944E41245259D80071C5AB /* Architecture Overview.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Architecture Overview.md"; sourceTree = "<group>"; };
+		C3944E4224525A310071C5AB /* MultiDeviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDeviceProtocol.swift; sourceTree = "<group>"; };
+		C3944E4524525D550071C5AB /* FriendRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestProtocol.swift; sourceTree = "<group>"; };
+		C3944E4824525ED30071C5AB /* SessionManagementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagementProtocol.swift; sourceTree = "<group>"; };
+		C3944E4B2452603F0071C5AB /* ClosedGroupsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedGroupsProtocol.swift; sourceTree = "<group>"; };
+		C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncMessagesProtocol.swift; sourceTree = "<group>"; };
+		C3944E51245261C80071C5AB /* MentionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentionsManager.swift; sourceTree = "<group>"; };
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3AB64AE7DDA61470224806613DF9AD1 /* YapDatabaseCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCryptoUtils.h; path = YapDatabase/Utilities/YapDatabaseCryptoUtils.h; sourceTree = "<group>"; };
 		C3D3E2016CB12672FE771864BB8D512B /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sc_reduce.c; path = Sources/ed25519/sc_reduce.c; sourceTree = "<group>"; };
@@ -4343,6 +4360,9 @@
 		C3F8B7A1243AF9B4008C8F3F /* LokiServiceCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LokiServiceCipher.swift; sourceTree = "<group>"; };
 		C3F8B7A2243AF9B4008C8F3F /* FallbackSessionCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallbackSessionCipher.swift; sourceTree = "<group>"; };
 		C3F8B7BA243AFC7C008C8F3F /* Array+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Description.swift"; sourceTree = "<group>"; };
+		C3FECFB62452777400EA9A43 /* FriendRequestProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestProtocolTests.swift; sourceTree = "<group>"; };
+		C3FECFB8245277A300EA9A43 /* MultiDeviceProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDeviceProtocolTests.swift; sourceTree = "<group>"; };
+		C3FECFBA245277C800EA9A43 /* SessionManagementProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagementProtocolTests.swift; sourceTree = "<group>"; };
 		C420EF51082FFB44913F3E044E992022 /* Array + Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array + Equatable.swift"; path = "Sources/FeedKit/Extensions/Array + Equatable.swift"; sourceTree = "<group>"; };
 		C43FBB87D40E04E2960D5ACD58FED36D /* fe_pow22523.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fe_pow22523.c; path = Sources/ed25519/fe_pow22523.c; sourceTree = "<group>"; };
 		C463E6BA3182E6564D857B3DF9DBCDA8 /* YapDatabaseHooks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseHooks.h; path = YapDatabase/Extensions/Hooks/YapDatabaseHooks.h; sourceTree = "<group>"; };
@@ -4363,7 +4383,6 @@
 		C5BC60478B5830922E115DE5C69646B8 /* Ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ed25519.h; path = Classes/Ed25519.h; sourceTree = "<group>"; };
 		C5DA8D5AC632B0E4EAB11C1265E35599 /* Fabric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fabric.debug.xcconfig; sourceTree = "<group>"; };
 		C5E3F5340D16161363035792159A4E11 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
-		C609CAFA52ABD311C2FA61EDBB46E49C /* LokiChannelInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiChannelInfo.swift; sourceTree = "<group>"; };
 		C61379087DF58E53B163272458B610A9 /* SignalMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalMessage.swift; sourceTree = "<group>"; };
 		C66BCE9DF52636DA81537BC9997F1D13 /* YapDatabaseCloudCoreConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreConnection.h; path = YapDatabase/Extensions/CloudCore/YapDatabaseCloudCoreConnection.h; sourceTree = "<group>"; };
 		C6A4C00D5BB15F7F275241225B52E0A6 /* JSONScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONScanner.swift; path = Sources/SwiftProtobuf/JSONScanner.swift; sourceTree = "<group>"; };
@@ -4530,7 +4549,7 @@
 		DB540BF76B2ABCEEC5DC2AA5C9E79FC6 /* DigiCertGlobalRootG2.crt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = DigiCertGlobalRootG2.crt; sourceTree = "<group>"; };
 		DB79ED3C24BA1C31C138328864FABB9B /* ge_p2_0.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ge_p2_0.c; path = Sources/ed25519/ge_p2_0.c; sourceTree = "<group>"; };
 		DB8F8FCDFD6F43C8791BECFEBBCAA921 /* Promise+retainUntilComplete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+retainUntilComplete.swift"; sourceTree = "<group>"; };
-		DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Loki.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ECKeyPair+Loki.swift"; sourceTree = "<group>"; };
+		DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Hexadecimal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ECKeyPair+Hexadecimal.swift"; sourceTree = "<group>"; };
 		DBD34B6ADA0E51515747AD3758214D3D /* SPKMockProtocolStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPKMockProtocolStore.m; path = AxolotlKit/Classes/TestUtils/SPKMockProtocolStore.m; sourceTree = "<group>"; };
 		DBE25D414A3994D71AF21F4A22C96B8C /* ProtobufMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufMap.swift; path = Sources/SwiftProtobuf/ProtobufMap.swift; sourceTree = "<group>"; };
 		DBECC7B88A9C222BDC7580E2BF0FF4A0 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MTLManipulationAdditions.m"; path = "Mantle/NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
@@ -5233,6 +5252,8 @@
 				196562386FF4093BA8D10D95EDC86FAF /* DeviceLinkingSession.swift */,
 				0440FB9366DCA5178B6C607ABCA15B24 /* DeviceLinkingSessionDelegate.swift */,
 				B9D8D7EE97236EFEACA2CB6E5C140B9D /* DeviceLinkingUtilities.swift */,
+				C3944E4224525A310071C5AB /* MultiDeviceProtocol.swift */,
+				C3FECFB8245277A300EA9A43 /* MultiDeviceProtocolTests.swift */,
 			);
 			path = "Multi Device";
 			sourceTree = "<group>";
@@ -5264,13 +5285,13 @@
 				21DABB08A59FBF338C1114FB944C87CA /* LokiFileServerProxy.swift */,
 				C136F2B9AF04E63DB49E8138EDFB466B /* LokiHTTPClient.swift */,
 				3D0436A92A178A2323D403D94116D408 /* LokiMessage.swift */,
+				CFCA2B726BF2B46BB25CDE6ACCE82D27 /* LokiMessageWrapper.swift */,
 				8DBE30F4C997FF34DAC32FE3E8FE43A7 /* LokiPoller.swift */,
-				B65DF6954001BF5832CE74BD1695CAC8 /* LokiPushNotificationManager.swift */,
 				C61379087DF58E53B163272458B610A9 /* SignalMessage.swift */,
-				C3F8B79A243AF742008C8F3F /* HTTP */,
-				09A40D0425E65B384C52BEB8F58C2382 /* Multi Device */,
-				FECBBE5467A3FC7EDB36C525CC332521 /* Public Chats */,
+				C3944E402452577A0071C5AB /* Crypto */,
 				C3F8B792243AF703008C8F3F /* Onion Requests */,
+				FECBBE5467A3FC7EDB36C525CC332521 /* Open Groups */,
+				C3944E3F245257480071C5AB /* Utilities */,
 				C3BDA7DC244D287100662159 /* Shelved */,
 			);
 			path = API;
@@ -5932,9 +5953,7 @@
 		50E5AE299F2AD4DFB2F104D548EB9784 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Loki.swift */,
 				D2975D930C7699ED9233EC497F37562F /* Mnemonic.swift */,
-				B3ADE1D8BB971F25A5C4FACC6C53F2DE /* ProofOfWork.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -6422,11 +6441,9 @@
 				7A9881B3AC64C386B256B95D3F3E9395 /* Debugging.swift */,
 				2CD1E44900B9D003C170160E40495412 /* Dictionary+Description.swift */,
 				C50D6108CE5F7919D9B6F3D568340830 /* DisplayNameUtilities.swift */,
+				DBA9A06008A48C7928E9AE76D538AF86 /* ECKeyPair+Hexadecimal.swift */,
 				3A627A10A37685BFE03807CC7FFFE81B /* GeneralUtilities.swift */,
-				2E6BE34CBA032AF9CBA12F164C51F373 /* GroupUtilities.swift */,
 				F48856CA817454531F798EBE5CF3D8E0 /* JSON.swift */,
-				247E62BBE3483EA085E2E5E3FEFA9FB7 /* LKGroupUtilities.h */,
-				BA442C528A102C864EFE110E47C6FC4E /* LKGroupUtilities.m */,
 				E6B814458829B435DE104E3A533B8974 /* LKUserDefaults.swift */,
 				3E22238F10E388A0EC3EDEF2EB2A3B83 /* Notification+Loki.swift */,
 				41D3028D9236C3BEA66988BA95E1DB12 /* NSArray+Functional.h */,
@@ -7600,6 +7617,113 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		C38E9232244EAFA300FF0861 /* Push Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B65DF6954001BF5832CE74BD1695CAC8 /* LokiPushNotificationManager.swift */,
+			);
+			path = "Push Notifications";
+			sourceTree = "<group>";
+		};
+		C3944E3E245172700071C5AB /* Message Types */ = {
+			isa = PBXGroup;
+			children = (
+				9EBBEDECDDD03B2790AFE0275C3B3CBB /* LKAddressMessage.h */,
+				3A648C023877420932A488AFF99D0A37 /* LKAddressMessage.m */,
+				11606A4BB5FBDE6F843FB3A69879BFF5 /* LKDeviceLinkMessage.h */,
+				4DF2A66C4DFBD89F5C6162DF8444371E /* LKDeviceLinkMessage.m */,
+				7B80DCD964C784C66901CCDB85A53F5D /* LKEphemeralMessage.h */,
+				B23A801652F1688027A5ADAF7C9864F0 /* LKEphemeralMessage.m */,
+				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
+				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
+				F32697AD49F9C7D39C6123D8AC178D21 /* LKSessionRequestMessage.h */,
+				5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */,
+				049FE4B60374ED8E23974B2D8376F346 /* LKSessionRestoreMessage.h */,
+				278FF2576DD3A35ED34179FA8BD87973 /* LKSessionRestoreMessage.m */,
+				AFDD34ED7D0D02522BD07794B36D006A /* LKSyncOpenGroupsMessage.h */,
+				4AE29138EA8CE25EFEC78E3E2E94FE95 /* LKSyncOpenGroupsMessage.m */,
+				F7FF22CD5C7025AC92D2385443AE4597 /* LKUnlinkDeviceMessage.h */,
+				688F5DA19B670D20E4953BC002509A64 /* LKUnlinkDeviceMessage.m */,
+			);
+			path = "Message Types";
+			sourceTree = "<group>";
+		};
+		C3944E3F245257480071C5AB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C3F8B79B243AF753008C8F3F /* HTTP.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C3944E402452577A0071C5AB /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				B3ADE1D8BB971F25A5C4FACC6C53F2DE /* ProofOfWork.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		C3944E4424525CE80071C5AB /* Friend Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */,
+				883482A393D8025660DD64DEF015F798 /* FriendRequestExpirationJob.swift */,
+				C3944E4524525D550071C5AB /* FriendRequestProtocol.swift */,
+				C3FECFB62452777400EA9A43 /* FriendRequestProtocolTests.swift */,
+			);
+			path = "Friend Requests";
+			sourceTree = "<group>";
+		};
+		C3944E4724525EB30071C5AB /* Session Management */ = {
+			isa = PBXGroup;
+			children = (
+				FCC19D53718D62856C7BB4E94FF54861 /* LokiSessionResetImplementation.swift */,
+				C3944E4824525ED30071C5AB /* SessionManagementProtocol.swift */,
+				C3FECFBA245277C800EA9A43 /* SessionManagementProtocolTests.swift */,
+				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
+			);
+			path = "Session Management";
+			sourceTree = "<group>";
+		};
+		C3944E4A2452602A0071C5AB /* Closed Groups */ = {
+			isa = PBXGroup;
+			children = (
+				C3944E4B2452603F0071C5AB /* ClosedGroupsProtocol.swift */,
+			);
+			path = "Closed Groups";
+			sourceTree = "<group>";
+		};
+		C3944E4D245260C60071C5AB /* Sync Messages */ = {
+			isa = PBXGroup;
+			children = (
+				D1B95472C3850045C2CC5A2290F6CD67 /* ContactParser.swift */,
+				BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */,
+				C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */,
+			);
+			path = "Sync Messages";
+			sourceTree = "<group>";
+		};
+		C3944E50245261B20071C5AB /* Mentions */ = {
+			isa = PBXGroup;
+			children = (
+				508A4DCCACCDF1CDFABD5E1CE7604323 /* Mention.swift */,
+				C3944E51245261C80071C5AB /* MentionsManager.swift */,
+			);
+			path = Mentions;
+			sourceTree = "<group>";
+		};
+		C3944E53245263450071C5AB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2E6BE34CBA032AF9CBA12F164C51F373 /* GroupUtilities.swift */,
+				247E62BBE3483EA085E2E5E3FEFA9FB7 /* LKGroupUtilities.h */,
+				BA442C528A102C864EFE110E47C6FC4E /* LKGroupUtilities.m */,
+				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		C3B72FB245E8BF809A609BDB33E2A43D /* InvalidKeyMessages */ = {
 			isa = PBXGroup;
 			children = (
@@ -7630,14 +7754,6 @@
 				C3F8B793243AF71E008C8F3F /* OnionRequestAPITests.swift */,
 			);
 			path = "Onion Requests";
-			sourceTree = "<group>";
-		};
-		C3F8B79A243AF742008C8F3F /* HTTP */ = {
-			isa = PBXGroup;
-			children = (
-				C3F8B79B243AF753008C8F3F /* HTTP.swift */,
-			);
-			path = HTTP;
 			sourceTree = "<group>";
 		};
 		C3F8B79D243AF994008C8F3F /* Loki */ = {
@@ -7838,10 +7954,12 @@
 		D49429E6D2683C00B4C94DDFA410B459 /* Loki */ = {
 			isa = PBXGroup;
 			children = (
+				C3944E41245259D80071C5AB /* Architecture Overview.md */,
 				0D642CACFB515DD76F2931989E522792 /* API */,
 				50E5AE299F2AD4DFB2F104D548EB9784 /* Crypto */,
 				F25FF727BF5346C6FF24D7EC4C65BE00 /* Database */,
-				E8B7EDFCAB85ADB39D6685E8FEA553D3 /* Messaging */,
+				E8B7EDFCAB85ADB39D6685E8FEA553D3 /* Protocol */,
+				C38E9232244EAFA300FF0861 /* Push Notifications */,
 				EC785F841036D029EAAAE654BE962200 /* Shelved */,
 				7A7A536D3A9D4C6645CBCCDDDDE96B9F /* Utilities */,
 			);
@@ -8139,36 +8257,21 @@
 			path = PureLayout;
 			sourceTree = "<group>";
 		};
-		E8B7EDFCAB85ADB39D6685E8FEA553D3 /* Messaging */ = {
+		E8B7EDFCAB85ADB39D6685E8FEA553D3 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				D1B95472C3850045C2CC5A2290F6CD67 /* ContactParser.swift */,
-				883482A393D8025660DD64DEF015F798 /* FriendRequestExpirationJob.swift */,
-				F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */,
-				BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */,
-				9EBBEDECDDD03B2790AFE0275C3B3CBB /* LKAddressMessage.h */,
-				3A648C023877420932A488AFF99D0A37 /* LKAddressMessage.m */,
-				11606A4BB5FBDE6F843FB3A69879BFF5 /* LKDeviceLinkMessage.h */,
-				4DF2A66C4DFBD89F5C6162DF8444371E /* LKDeviceLinkMessage.m */,
-				7B80DCD964C784C66901CCDB85A53F5D /* LKEphemeralMessage.h */,
-				B23A801652F1688027A5ADAF7C9864F0 /* LKEphemeralMessage.m */,
-				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
-				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
-				F32697AD49F9C7D39C6123D8AC178D21 /* LKSessionRequestMessage.h */,
-				5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */,
-				049FE4B60374ED8E23974B2D8376F346 /* LKSessionRestoreMessage.h */,
-				278FF2576DD3A35ED34179FA8BD87973 /* LKSessionRestoreMessage.m */,
-				AFDD34ED7D0D02522BD07794B36D006A /* LKSyncOpenGroupsMessage.h */,
-				4AE29138EA8CE25EFEC78E3E2E94FE95 /* LKSyncOpenGroupsMessage.m */,
-				F7FF22CD5C7025AC92D2385443AE4597 /* LKUnlinkDeviceMessage.h */,
-				688F5DA19B670D20E4953BC002509A64 /* LKUnlinkDeviceMessage.m */,
-				CFCA2B726BF2B46BB25CDE6ACCE82D27 /* LokiMessageWrapper.swift */,
-				508A4DCCACCDF1CDFABD5E1CE7604323 /* Mention.swift */,
-				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
-				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
+				C38E9233244EB12800FF0861 /* SessionProtocol.swift */,
 				C38E9230244E9D1900FF0861 /* TTL.swift */,
+				C3944E4A2452602A0071C5AB /* Closed Groups */,
+				C3944E4424525CE80071C5AB /* Friend Requests */,
+				C3944E50245261B20071C5AB /* Mentions */,
+				C3944E3E245172700071C5AB /* Message Types */,
+				09A40D0425E65B384C52BEB8F58C2382 /* Multi Device */,
+				C3944E4724525EB30071C5AB /* Session Management */,
+				C3944E4D245260C60071C5AB /* Sync Messages */,
+				C3944E53245263450071C5AB /* Utilities */,
 			);
-			path = Messaging;
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EA420B4068408D281AC28E3E581198B4 /* Interactions */ = {
@@ -8227,7 +8330,6 @@
 			children = (
 				E92B2E67D8CEC2B289D88C3566B08504 /* DeviceLinkIndex.swift */,
 				1A6189E2276784B2E6FA41531F6337A0 /* LokiDatabaseUtilities.swift */,
-				FCC19D53718D62856C7BB4E94FF54861 /* LokiSessionResetImplementation.swift */,
 				CE9988AE9BAF6DA07AE5F7A22AC3BCAF /* OWSPrimaryStorage+Loki.h */,
 				03AFE156FE2212B0C3087DB5D70C4283 /* OWSPrimaryStorage+Loki.m */,
 				30ADF03119E18707A31525D2E6117CDF /* OWSPrimaryStorage+Loki.swift */,
@@ -8434,10 +8536,9 @@
 			path = SignalServiceKit/src/Devices;
 			sourceTree = "<group>";
 		};
-		FECBBE5467A3FC7EDB36C525CC332521 /* Public Chats */ = {
+		FECBBE5467A3FC7EDB36C525CC332521 /* Open Groups */ = {
 			isa = PBXGroup;
 			children = (
-				C609CAFA52ABD311C2FA61EDBB46E49C /* LokiChannelInfo.swift */,
 				B870C992DEECDD881A940468AC5A45C5 /* LokiPublicChat.swift */,
 				CEE873031A6298072F03ECE103FE2E6E /* LokiPublicChatAPI.swift */,
 				1C22F519FB67E551EE0958A86DF2589B /* LokiPublicChatInfo.swift */,
@@ -8445,7 +8546,7 @@
 				BF35A8F88E72AD8C9ED364772D95BA10 /* LokiPublicChatMessage.swift */,
 				975B68019CC7EC6521358D91ED3A8DD6 /* LokiPublicChatPoller.swift */,
 			);
-			path = "Public Chats";
+			path = "Open Groups";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -10784,8 +10885,11 @@
 				316B054EA2F07AAB2B0700E5B8438059 /* SSKSwiftTests.swift in Sources */,
 				A346A68CB9DFE0449BB84802825A1A9C /* TSContactThreadTest.m in Sources */,
 				DCB47A98A19873EB2E3FDF6D7C3091B3 /* TSGroupThreadTest.m in Sources */,
+				C3FECFB72452777400EA9A43 /* FriendRequestProtocolTests.swift in Sources */,
+				C3FECFBB245277C800EA9A43 /* SessionManagementProtocolTests.swift in Sources */,
 				3F6360B2924333AE50F4FF3F5224C778 /* TSMessageStorageTests.m in Sources */,
 				C3F8B7B9243AFC54008C8F3F /* OnionRequestAPITests.swift in Sources */,
+				C3FECFB9245277A300EA9A43 /* MultiDeviceProtocolTests.swift in Sources */,
 				3023B042A898011E063912FC8F1A6312 /* TSMessageTest.m in Sources */,
 				86FF40DAB74E14300841032FF13AC555 /* TSOutgoingMessageTest.m in Sources */,
 				50138B121063DF1F4714027F67A5F8DA /* TSStorageIdentityKeyStoreTests.m in Sources */,
@@ -11131,12 +11235,13 @@
 				E0AAD79C663B427A16484288261BD4C0 /* DeviceLink.swift in Sources */,
 				58BA0272CC26EE013EE9F3C5A1363ED1 /* DeviceLinkIndex.swift in Sources */,
 				92E63BDEF37872BFE1A6EE93C95D4DFD /* DeviceLinkingSession.swift in Sources */,
+				C3944E4624525D550071C5AB /* FriendRequestProtocol.swift in Sources */,
 				42D5997434F4F5D8F58F3C62D19722A1 /* DeviceLinkingSessionDelegate.swift in Sources */,
 				0FC2C3A12E4B947C0E2A5D883B3D75F4 /* DeviceLinkingUtilities.swift in Sources */,
 				E8AABB7AC34E9F86B3DB34A4FAC0AE57 /* DeviceNames.swift in Sources */,
 				A81DA5C0F5C425B6E5C28C9AEE2B1EF2 /* Dictionary+Description.swift in Sources */,
 				38E97F9954029F3F8C220911F7E18D35 /* DisplayNameUtilities.swift in Sources */,
-				D53D046DBED788823F382B99AA888B62 /* ECKeyPair+Loki.swift in Sources */,
+				D53D046DBED788823F382B99AA888B62 /* ECKeyPair+Hexadecimal.swift in Sources */,
 				A0A131BF4C64998FDD8BE1892E3D4880 /* Factories.swift in Sources */,
 				2B0ADAE3232268E09B3B124E0BC518EB /* FakeContactsManager.swift in Sources */,
 				ACF2C5538AEB8F282902E1F7E13BDF84 /* FeatureFlags.swift in Sources */,
@@ -11164,7 +11269,6 @@
 				66CE587A8C48CF99E300898FF50D8E4C /* LokiAPI+SwarmAPI.swift in Sources */,
 				94FBDF927DDAECAB485416B226F3E18B /* LokiAPI.swift in Sources */,
 				A76C14A7763BCDAA7D21FF159E625160 /* LokiAPITarget.swift in Sources */,
-				ACBDB0031F05618C9BA7EF503D584B82 /* LokiChannelInfo.swift in Sources */,
 				1DBCA696E208B7A71C20B5E9A60DACAD /* LokiDatabaseUtilities.swift in Sources */,
 				612BA6AF46E5CC513165C14F888FEF17 /* LokiDotNetAPI.swift in Sources */,
 				AE36D8A634D80333D388D12C1995E04B /* LokiFileServerAPI.swift in Sources */,
@@ -11183,11 +11287,13 @@
 				BDFB164EF9FDFADEF17A0FDFDE22DBEF /* LokiPublicChatPoller.swift in Sources */,
 				B3B79DE7ED80C0A8BE1AE2A5C10776FB /* LokiPushNotificationManager.swift in Sources */,
 				9B25D342232F291DF1CCF35DE34F3BED /* LokiRSSFeed.swift in Sources */,
+				C3944E4324525A310071C5AB /* MultiDeviceProtocol.swift in Sources */,
 				9AFA5DDB02813D1841CD9C2026603FC1 /* LokiRSSFeedProxy.swift in Sources */,
 				ACECC5685EE161848DC5F372A460BE0E /* LokiSessionResetImplementation.swift in Sources */,
 				F3884CF75CE4E7D95639C0CA231BE196 /* LRUCache.swift in Sources */,
 				DB21BF01FA8DDE3B9C60A1C61042D961 /* Mention.swift in Sources */,
 				645723819CB9C5A9C71FA3C73371F902 /* MessageSender+Promise.swift in Sources */,
+				C3944E4F245260EE0071C5AB /* SyncMessagesProtocol.swift in Sources */,
 				C3F8B798243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift in Sources */,
 				DD5CD0857490E5E7BB2285C85EFE8A63 /* MessageSenderJobQueue.swift in Sources */,
 				78EA214F5C2896BC57E6EB32B13CD930 /* MIMETypeUtil.m in Sources */,
@@ -11217,6 +11323,7 @@
 				83C60958EFECB6105D0D06D6C2510B80 /* OWSAttachmentDownloads.m in Sources */,
 				D26FED6022EB7A95DA1CE92CB6026EB9 /* OWSBackgroundTask.m in Sources */,
 				5049037E63791D06FCA6F3B4186C983A /* OWSBackupFragment.m in Sources */,
+				C3944E4C2452603F0071C5AB /* ClosedGroupsProtocol.swift in Sources */,
 				512D6F7D9B550BBDAC266F918C14E2EF /* OWSBatchMessageProcessor.m in Sources */,
 				51C1E6B9F61A7656D01E5F6D3CDEA136 /* OWSBlockedPhoneNumbersMessage.m in Sources */,
 				661A3AEC3BFC9269C5CB7F780D5A211D /* OWSBlockingManager.m in Sources */,
@@ -11224,6 +11331,7 @@
 				A60DAF84129688C2FB1285DE989C58BE /* OWSChunkedOutputStream.m in Sources */,
 				88420C68E1926E3D1C554E05A56CE765 /* OWSContact.m in Sources */,
 				737F80DB28069218397ED1B84EFF5742 /* OWSContactDiscoveryOperation.swift in Sources */,
+				C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */,
 				4576128EBA1771FAEF6507A93A82756C /* OWSContactsOutputStream.m in Sources */,
 				DC211998574FACE44A5B241580FE516A /* OWSCountryMetadata.m in Sources */,
 				7DA76D1EBD39D2EEA6D422DC2F4017F8 /* OWSDevice.m in Sources */,
@@ -11262,6 +11370,7 @@
 				88E11BABE0005D0FCB9C859FF601F1E1 /* OWSLinkPreview.swift in Sources */,
 				8A95AAD3E5906CDB9369BE13FF6B7116 /* OWSMediaGalleryFinder.m in Sources */,
 				2E2D16D541968B9705464F91827DAD13 /* OWSMediaUtils.swift in Sources */,
+				C3944E52245261C80071C5AB /* MentionsManager.swift in Sources */,
 				9BF0596BED41715E7444061EE323FAFF /* OWSMessageDecrypter.m in Sources */,
 				C6337901555CB19620ED38B7BD88A723 /* OWSMessageHandler.m in Sources */,
 				7A3ABE765D8F0F354688B180F696E219 /* OWSMessageManager.m in Sources */,
@@ -11269,6 +11378,7 @@
 				677196BE86E86E454DF62EB183C49AE0 /* OWSMessageSend.swift in Sources */,
 				87E9264092403A197185CFCAAF5545C4 /* OWSMessageSender.m in Sources */,
 				5E6D8CF15DFB3E6339EABD19FFF68070 /* OWSMessageServiceParams.m in Sources */,
+				C3944E4924525ED30071C5AB /* SessionManagementProtocol.swift in Sources */,
 				2ACD9E02BF85A9D239B4193845122FFE /* OWSMessageUtils.m in Sources */,
 				629A14DD6B9C3D06662ADBA6C49C0A54 /* OWSMockSyncManager.swift in Sources */,
 				838581D1B6352AD9883B2B02EDBC586B /* OWSOperation.m in Sources */,

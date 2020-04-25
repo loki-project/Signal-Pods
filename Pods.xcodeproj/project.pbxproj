@@ -1379,6 +1379,7 @@
 		C3944E4C2452603F0071C5AB /* ClosedGroupsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4B2452603F0071C5AB /* ClosedGroupsProtocol.swift */; };
 		C3944E4F245260EE0071C5AB /* SyncMessagesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */; };
 		C3944E52245261C80071C5AB /* MentionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E51245261C80071C5AB /* MentionsManager.swift */; };
+		C3DF9ECC2453EE080054CDF5 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF9ECB2453EE080054CDF5 /* Storage.swift */; };
 		C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D777B171FF0D9C997847CB315446352 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3F8B797243AF71F008C8F3F /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */; };
 		C3F8B798243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B795243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift */; };
@@ -4339,6 +4340,7 @@
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C3AB64AE7DDA61470224806613DF9AD1 /* YapDatabaseCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCryptoUtils.h; path = YapDatabase/Utilities/YapDatabaseCryptoUtils.h; sourceTree = "<group>"; };
 		C3D3E2016CB12672FE771864BB8D512B /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sc_reduce.c; path = Sources/ed25519/sc_reduce.c; sourceTree = "<group>"; };
+		C3DF9ECB2453EE080054CDF5 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		C3EB3342EC041F732B077AB606B3ACCC /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
 		C3EF299F860E69D60835C56794DB9741 /* OWSDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDevice.m; sourceTree = "<group>"; };
 		C3F8B793243AF71E008C8F3F /* OnionRequestAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnionRequestAPITests.swift; sourceTree = "<group>"; };
@@ -8318,6 +8320,7 @@
 				CE9988AE9BAF6DA07AE5F7A22AC3BCAF /* OWSPrimaryStorage+Loki.h */,
 				03AFE156FE2212B0C3087DB5D70C4283 /* OWSPrimaryStorage+Loki.m */,
 				30ADF03119E18707A31525D2E6117CDF /* OWSPrimaryStorage+Loki.swift */,
+				C3DF9ECB2453EE080054CDF5 /* Storage.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -11462,6 +11465,7 @@
 				CF4AFFFBF0A0200E61E6F560124A6A32 /* TSNetworkManager.m in Sources */,
 				1F49C5F662E5BE43C3D0925C09F9A69B /* TSOutgoingMessage.m in Sources */,
 				D0B5E759179C23911AA3E6B845F5F6F0 /* TSPreKeyManager.m in Sources */,
+				C3DF9ECC2453EE080054CDF5 /* Storage.swift in Sources */,
 				556F70A57F94D0DA7C29C7E80CA569A0 /* TSQuotedMessage.m in Sources */,
 				0BAC991C4FD45791BCC6E2F34D53F436 /* TSRequest.m in Sources */,
 				CB82CD0728C793FC00E19BF962868EA3 /* TSSocketManager.m in Sources */,

@@ -7623,8 +7623,6 @@
 				4DF2A66C4DFBD89F5C6162DF8444371E /* LKDeviceLinkMessage.m */,
 				7B80DCD964C784C66901CCDB85A53F5D /* LKEphemeralMessage.h */,
 				B23A801652F1688027A5ADAF7C9864F0 /* LKEphemeralMessage.m */,
-				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
-				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
 				F32697AD49F9C7D39C6123D8AC178D21 /* LKSessionRequestMessage.h */,
 				5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */,
 				049FE4B60374ED8E23974B2D8376F346 /* LKSessionRestoreMessage.h */,
@@ -7660,6 +7658,8 @@
 				883482A393D8025660DD64DEF015F798 /* FriendRequestExpirationJob.swift */,
 				C3944E4524525D550071C5AB /* FriendRequestProtocol.swift */,
 				C3FECFB62452777400EA9A43 /* FriendRequestProtocolTests.swift */,
+				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
+				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
 			);
 			path = "Friend Requests";
 			sourceTree = "<group>";

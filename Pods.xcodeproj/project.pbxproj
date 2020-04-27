@@ -1371,6 +1371,7 @@
 		C30A39E072A181E2F40286B7FA00003D /* LKSessionRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C37094EC245796BE00935B39 /* Data+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094EB245796BE00935B39 /* Data+SecureRandom.swift */; };
 		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
 		C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* SessionProtocol.swift */; };
 		C3944E4324525A310071C5AB /* MultiDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4224525A310071C5AB /* MultiDeviceProtocol.swift */; };
@@ -4328,6 +4329,7 @@
 		C3505F75073FFEF718C729CA4616CE35 /* TSNetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSNetworkManager.h; sourceTree = "<group>"; };
 		C360129EBCE68D0E2411AE3A14703057 /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
 		C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationTest.m; sourceTree = "<group>"; };
+		C37094EB245796BE00935B39 /* Data+SecureRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+SecureRandom.swift"; sourceTree = "<group>"; };
 		C38E9230244E9D1900FF0861 /* TTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
 		C38E9233244EB12800FF0861 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
 		C3944E41245259D80071C5AB /* Architecture Overview.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Architecture Overview.md"; sourceTree = "<group>"; };
@@ -7646,6 +7648,7 @@
 		C3944E402452577A0071C5AB /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				C37094EB245796BE00935B39 /* Data+SecureRandom.swift */,
 				B3ADE1D8BB971F25A5C4FACC6C53F2DE /* ProofOfWork.swift */,
 			);
 			path = Crypto;
@@ -11364,6 +11367,7 @@
 				C3944E4924525ED30071C5AB /* SessionManagementProtocol.swift in Sources */,
 				2ACD9E02BF85A9D239B4193845122FFE /* OWSMessageUtils.m in Sources */,
 				629A14DD6B9C3D06662ADBA6C49C0A54 /* OWSMockSyncManager.swift in Sources */,
+				C37094EC245796BE00935B39 /* Data+SecureRandom.swift in Sources */,
 				838581D1B6352AD9883B2B02EDBC586B /* OWSOperation.m in Sources */,
 				69FAA741E0451205F908F95A581A1AB1 /* OWSOutgoingCallMessage.m in Sources */,
 				E4768D179C57127D24DF58CA32DD8BEA /* OWSOutgoingNullMessage.m in Sources */,

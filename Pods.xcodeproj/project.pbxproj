@@ -5245,6 +5245,7 @@
 			isa = PBXGroup;
 			children = (
 				23E42E64DA1CB45FA62140EB5E967DEB /* DeviceLink.swift */,
+				E92B2E67D8CEC2B289D88C3566B08504 /* DeviceLinkIndex.swift */,
 				196562386FF4093BA8D10D95EDC86FAF /* DeviceLinkingSession.swift */,
 				0440FB9366DCA5178B6C607ABCA15B24 /* DeviceLinkingSessionDelegate.swift */,
 				B9D8D7EE97236EFEACA2CB6E5C140B9D /* DeviceLinkingUtilities.swift */,
@@ -8321,7 +8322,6 @@
 		F25FF727BF5346C6FF24D7EC4C65BE00 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				E92B2E67D8CEC2B289D88C3566B08504 /* DeviceLinkIndex.swift */,
 				1A6189E2276784B2E6FA41531F6337A0 /* LokiDatabaseUtilities.swift */,
 				CE9988AE9BAF6DA07AE5F7A22AC3BCAF /* OWSPrimaryStorage+Loki.h */,
 				03AFE156FE2212B0C3087DB5D70C4283 /* OWSPrimaryStorage+Loki.m */,

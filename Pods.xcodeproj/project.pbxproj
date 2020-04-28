@@ -229,7 +229,7 @@
 		1B8712B00C2A4F1EC74D58FD4FC602F2 /* OWSDynamicOutgoingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 429BD9BF2DEB5FE42013F44B07CFAF7E /* OWSDynamicOutgoingMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1BC9D2F2FA90D538A80A20C7A4F5C94C /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD15B7F79ADB1A3921D2F9D3944D36D /* CustomStringConvertible.swift */; };
 		1BDFE51E808D69133AA5B2B7A98A900E /* YapDatabaseRelationshipPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 877E497BF81FA317F3297D8460289648 /* YapDatabaseRelationshipPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1BFC7DFB34EB6FF2DD621AAF5692FF71 /* GroupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		1BFC7DFB34EB6FF2DD621AAF5692FF71 /* ClosedGroupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90A8292C237CC1DEFB05049DC61233 /* ClosedGroupParser.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		1C0AB106822C88657B71FD991C712855 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC5A43CEDF04989C8FA60A3556A48FC /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C1A4D2234296F41533939829185A0EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B1A4932159E1EF6D28FF5129286BA6 /* Foundation.framework */; };
 		1C41E49D453F648D4ADC9605FFBFDD18 /* YDBCKAttachRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5B5230BF7DC2A984B7EF1AA52AB780 /* YDBCKAttachRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1372,6 +1372,7 @@
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C37094EC245796BE00935B39 /* Data+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094EB245796BE00935B39 /* Data+SecureRandom.swift */; };
+		C37094EF2457AF0F00935B39 /* SyncMessagesProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */; };
 		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
 		C38E9234244EB12800FF0861 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* SessionProtocol.swift */; };
 		C3944E4324525A310071C5AB /* MultiDeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4224525A310071C5AB /* MultiDeviceProtocol.swift */; };
@@ -4258,7 +4259,7 @@
 		BA0AC5CE0925F41B5A49D8A6A0558F7A /* Pods-SignalShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BA442C528A102C864EFE110E47C6FC4E /* LKGroupUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LKGroupUtilities.m; sourceTree = "<group>"; };
 		BA7F3266A34FEFA5C57518A41F072274 /* SignalMetadataKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SignalMetadataKit-Info.plist"; sourceTree = "<group>"; };
-		BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GroupParser.swift; sourceTree = "<group>"; };
+		BA90A8292C237CC1DEFB05049DC61233 /* ClosedGroupParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClosedGroupParser.swift; sourceTree = "<group>"; };
 		BAB2E6886D0DA4A0E7CBECFDE8DD774E /* YapDatabaseSecondaryIndexConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSecondaryIndexConnection.m; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexConnection.m; sourceTree = "<group>"; };
 		BAB65173D141EF142827CD92F1173EFF /* OWSUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSUploadOperation.m; sourceTree = "<group>"; };
 		BAE0C9629C6AB59D7BEED72DF844687C /* sqrtm1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqrtm1.h; path = Sources/ed25519/sqrtm1.h; sourceTree = "<group>"; };
@@ -4330,6 +4331,7 @@
 		C360129EBCE68D0E2411AE3A14703057 /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
 		C36F2349A931CC6E474F1E99778AFCE6 /* OWSDisappearingMessagesConfigurationTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationTest.m; sourceTree = "<group>"; };
 		C37094EB245796BE00935B39 /* Data+SecureRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+SecureRandom.swift"; sourceTree = "<group>"; };
+		C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncMessagesProtocolTests.swift; sourceTree = "<group>"; };
 		C38E9230244E9D1900FF0861 /* TTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
 		C38E9233244EB12800FF0861 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
 		C3944E41245259D80071C5AB /* Architecture Overview.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Architecture Overview.md"; sourceTree = "<group>"; };
@@ -7689,9 +7691,10 @@
 		C3944E4D245260C60071C5AB /* Sync Messages */ = {
 			isa = PBXGroup;
 			children = (
+				BA90A8292C237CC1DEFB05049DC61233 /* ClosedGroupParser.swift */,
 				D1B95472C3850045C2CC5A2290F6CD67 /* ContactParser.swift */,
-				BA90A8292C237CC1DEFB05049DC61233 /* GroupParser.swift */,
 				C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */,
+				C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */,
 			);
 			path = "Sync Messages";
 			sourceTree = "<group>";
@@ -10879,6 +10882,7 @@
 				3023B042A898011E063912FC8F1A6312 /* TSMessageTest.m in Sources */,
 				86FF40DAB74E14300841032FF13AC555 /* TSOutgoingMessageTest.m in Sources */,
 				50138B121063DF1F4714027F67A5F8DA /* TSStorageIdentityKeyStoreTests.m in Sources */,
+				C37094EF2457AF0F00935B39 /* SyncMessagesProtocolTests.swift in Sources */,
 				852F4B6E7E551A939DEE69BA978F4154 /* TSStoragePreKeyStoreTests.m in Sources */,
 				149BD03C10F82779B71E2DADA3B8DC32 /* TSThreadTest.m in Sources */,
 			);
@@ -11238,7 +11242,7 @@
 				CA8DC75E39A3CBF19A8361967C2096E7 /* FullTextSearchFinder.swift in Sources */,
 				DAC30164EF9F1FB21D5FA38EB6C511B3 /* FunctionalUtil.m in Sources */,
 				A4A1C128E4543BE52EB96E276157D793 /* GeneralUtilities.swift in Sources */,
-				1BFC7DFB34EB6FF2DD621AAF5692FF71 /* GroupParser.swift in Sources */,
+				1BFC7DFB34EB6FF2DD621AAF5692FF71 /* ClosedGroupParser.swift in Sources */,
 				123D179247C696365F2B58879B2695E8 /* GroupUtilities.swift in Sources */,
 				6AD8FBEC898F15182BD1EA3F3F7784EB /* JobQueue.swift in Sources */,
 				603C38BD6F79D081C2CC4AF07A9FBC52 /* JSON.swift in Sources */,

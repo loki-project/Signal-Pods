@@ -1370,7 +1370,7 @@
 		C2F766C421AAC0DBDB529580F6F62B55 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 744E0D1B806612187164A4496F51CD23 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C30A39E072A181E2F40286B7FA00003D /* LKSessionRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C332260F245CED1B00D4D113 /* XCTest+Eventually.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D510F4245BB47C0093AA58 /* XCTest+Eventually.swift */; };
+		C3322610245CEF2D00D4D113 /* XCTest+Eventually.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D510F4245BB47C0093AA58 /* XCTest+Eventually.swift */; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C37094EC245796BE00935B39 /* Data+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094EB245796BE00935B39 /* Data+SecureRandom.swift */; };
 		C37094EF2457AF0F00935B39 /* SyncMessagesProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */; };
@@ -10878,6 +10878,7 @@
 				A346A68CB9DFE0449BB84802825A1A9C /* TSContactThreadTest.m in Sources */,
 				DCB47A98A19873EB2E3FDF6D7C3091B3 /* TSGroupThreadTest.m in Sources */,
 				C3FECFB72452777400EA9A43 /* FriendRequestProtocolTests.swift in Sources */,
+				C3322610245CEF2D00D4D113 /* XCTest+Eventually.swift in Sources */,
 				C3FECFBB245277C800EA9A43 /* SessionManagementProtocolTests.swift in Sources */,
 				3F6360B2924333AE50F4FF3F5224C778 /* TSMessageStorageTests.m in Sources */,
 				C3F8B7B9243AFC54008C8F3F /* OnionRequestAPITests.swift in Sources */,
@@ -11367,7 +11368,6 @@
 				9BF0596BED41715E7444061EE323FAFF /* OWSMessageDecrypter.m in Sources */,
 				C6337901555CB19620ED38B7BD88A723 /* OWSMessageHandler.m in Sources */,
 				7A3ABE765D8F0F354688B180F696E219 /* OWSMessageManager.m in Sources */,
-				C332260F245CED1B00D4D113 /* XCTest+Eventually.swift in Sources */,
 				E77B5FE2C8C79A75D778050FA3AC6680 /* OWSMessageReceiver.m in Sources */,
 				677196BE86E86E454DF62EB183C49AE0 /* OWSMessageSend.swift in Sources */,
 				87E9264092403A197185CFCAAF5545C4 /* OWSMessageSender.m in Sources */,

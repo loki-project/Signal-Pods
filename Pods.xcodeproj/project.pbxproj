@@ -1370,7 +1370,7 @@
 		C2F766C421AAC0DBDB529580F6F62B55 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 744E0D1B806612187164A4496F51CD23 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C30A39E072A181E2F40286B7FA00003D /* LKSessionRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5750B2866542349618724FC38A12C3A2 /* LKSessionRequestMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3206DE9CB7FCF4534EA27AB3A4E50BF /* TSPreKeyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D44F7B26C17587C0D3BBB923152AEA /* TSPreKeyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3322610245CEF2D00D4D113 /* XCTest+Eventually.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D510F4245BB47C0093AA58 /* XCTest+Eventually.swift */; };
+		C3322610245CEF2D00D4D113 /* XCTest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D510F4245BB47C0093AA58 /* XCTest+Utilities.swift */; };
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C37094EC245796BE00935B39 /* Data+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094EB245796BE00935B39 /* Data+SecureRandom.swift */; };
 		C37094EF2457AF0F00935B39 /* SyncMessagesProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */; };
@@ -3165,7 +3165,7 @@
 		24A29E39F8C27E534093E5330410B828 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
 		24A6DAE9183CAEF5B0262BFE726C7234 /* Pods-SignalMessaging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalMessaging-dummy.m"; sourceTree = "<group>"; };
 		24B3D819BC6A718092F9C7A2D5DFE017 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		24D510F4245BB47C0093AA58 /* XCTest+Eventually.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Eventually.swift"; sourceTree = "<group>"; };
+		24D510F4245BB47C0093AA58 /* XCTest+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Utilities.swift"; sourceTree = "<group>"; };
 		252872B9BC924ECAD4CB88E8585F4758 /* TSCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSCall.h; sourceTree = "<group>"; };
 		252CFF11479EE98F2A6065565B694BFD /* BinaryDelimited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDelimited.swift; path = Sources/SwiftProtobuf/BinaryDelimited.swift; sourceTree = "<group>"; };
 		25ABC67F41222AE2F8FEAF6D2562CE46 /* Pods-LokiPushNotificationService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LokiPushNotificationService-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -6458,7 +6458,7 @@
 				6A4A32237F52DE475B337F4315EFAAD1 /* Promise+Hashing.swift */,
 				2612A3E260C692DC24F2320D3C9EAB56 /* Promise+Retrying.swift */,
 				B3B0C09CA3D02DD0FE99A01FCFAF9EC0 /* String+Trimming.swift */,
-				24D510F4245BB47C0093AA58 /* XCTest+Eventually.swift */,
+				24D510F4245BB47C0093AA58 /* XCTest+Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -10878,7 +10878,7 @@
 				A346A68CB9DFE0449BB84802825A1A9C /* TSContactThreadTest.m in Sources */,
 				DCB47A98A19873EB2E3FDF6D7C3091B3 /* TSGroupThreadTest.m in Sources */,
 				C3FECFB72452777400EA9A43 /* FriendRequestProtocolTests.swift in Sources */,
-				C3322610245CEF2D00D4D113 /* XCTest+Eventually.swift in Sources */,
+				C3322610245CEF2D00D4D113 /* XCTest+Utilities.swift in Sources */,
 				C3FECFBB245277C800EA9A43 /* SessionManagementProtocolTests.swift in Sources */,
 				3F6360B2924333AE50F4FF3F5224C778 /* TSMessageStorageTests.m in Sources */,
 				C3F8B7B9243AFC54008C8F3F /* OnionRequestAPITests.swift in Sources */,

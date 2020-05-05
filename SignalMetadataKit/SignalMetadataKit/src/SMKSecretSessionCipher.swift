@@ -168,7 +168,7 @@ public class SMKDecryptResult: NSObject {
                                           paddedPlaintext: Data,
                                           senderCertificate: SMKSenderCertificate,
                                           protocolContext: Any?,
-                                          isFriendRequest: Bool) throws -> Data {
+                                          useFallbackSessionCipher: Bool) throws -> Data {
         guard recipientId.count > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid recipientId")
         }
@@ -177,7 +177,7 @@ public class SMKDecryptResult: NSObject {
         }
         
         var encryptedMessage: CipherMessage
-        if (isFriendRequest) {
+        if (useFallbackSessionCipher) {
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
             let cipher = FallBackSessionCipher(recipientId: recipientId, privateKey: privateKey)
             encryptedMessage = LokiFriendRequestMessage.init(_throws_with: cipher.encrypt(message: paddedPlaintext)!)

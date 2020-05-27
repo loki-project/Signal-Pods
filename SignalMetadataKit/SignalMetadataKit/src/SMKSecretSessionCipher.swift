@@ -164,11 +164,11 @@ public class SMKDecryptResult: NSObject {
     // paddedPlaintext)
     @objc
     public func throwswrapped_encryptMessage(recipientId: String,
-                                          deviceId: Int32,
-                                          paddedPlaintext: Data,
-                                          senderCertificate: SMKSenderCertificate,
-                                          protocolContext: Any?,
-                                          useFallbackSessionCipher: Bool) throws -> Data {
+                                             deviceId: Int32,
+                                             paddedPlaintext: Data,
+                                             senderCertificate: SMKSenderCertificate,
+                                             protocolContext: Any?,
+                                             useFallbackSessionCipher: Bool) throws -> Data {
         guard recipientId.count > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid recipientId")
         }

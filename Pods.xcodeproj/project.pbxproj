@@ -1373,7 +1373,6 @@
 		C33FE6B3A2F610ABC283218FE41FA69D /* WhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D46C6C98ED5AA62110BB6BB47E16B /* WhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C37094EC245796BE00935B39 /* Data+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094EB245796BE00935B39 /* Data+SecureRandom.swift */; };
 		C37094EF2457AF0F00935B39 /* SyncMessagesProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */; };
-		C389D3DF245FE7AB003CE0B5 /* LokiTestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C1196245FDEE2005CB2F4 /* LokiTestUtilities.swift */; };
 		C389D3E2245FEA30003CE0B5 /* XCTest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C389D3E0245FEA2C003CE0B5 /* XCTest+Utilities.swift */; };
 		C38E9231244E9D1900FF0861 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9230244E9D1900FF0861 /* TTL.swift */; };
 		C38E9234244EB12800FF0861 /* SessionMetaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E9233244EB12800FF0861 /* SessionMetaProtocol.swift */; };
@@ -1383,6 +1382,7 @@
 		C3944E4C2452603F0071C5AB /* ClosedGroupsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4B2452603F0071C5AB /* ClosedGroupsProtocol.swift */; };
 		C3944E4F245260EE0071C5AB /* SyncMessagesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */; };
 		C3944E52245261C80071C5AB /* MentionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3944E51245261C80071C5AB /* MentionsManager.swift */; };
+		C3B1077C2488666000B697B0 /* LokiTestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C1196245FDEE2005CB2F4 /* LokiTestUtilities.swift */; };
 		C3DF9ECC2453EE080054CDF5 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF9ECB2453EE080054CDF5 /* Storage.swift */; };
 		C3F07095D53E4424393A636D557A75F7 /* SignalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D777B171FF0D9C997847CB315446352 /* SignalAccount.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C3F8B797243AF71F008C8F3F /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */; };
@@ -5256,7 +5256,6 @@
 				11606A4BB5FBDE6F843FB3A69879BFF5 /* LKDeviceLinkMessage.h */,
 				4DF2A66C4DFBD89F5C6162DF8444371E /* LKDeviceLinkMessage.m */,
 				C3944E4224525A310071C5AB /* MultiDeviceProtocol.swift */,
-				C3FECFB8245277A300EA9A43 /* MultiDeviceProtocolTests.swift */,
 				F7FF22CD5C7025AC92D2385443AE4597 /* LKUnlinkDeviceMessage.h */,
 				688F5DA19B670D20E4953BC002509A64 /* LKUnlinkDeviceMessage.m */,
 			);
@@ -6450,7 +6449,6 @@
 				3A627A10A37685BFE03807CC7FFFE81B /* GeneralUtilities.swift */,
 				F48856CA817454531F798EBE5CF3D8E0 /* JSON.swift */,
 				E6B814458829B435DE104E3A533B8974 /* LKUserDefaults.swift */,
-				241C1196245FDEE2005CB2F4 /* LokiTestUtilities.swift */,
 				3E22238F10E388A0EC3EDEF2EB2A3B83 /* Notification+Loki.swift */,
 				41D3028D9236C3BEA66988BA95E1DB12 /* NSArray+Functional.h */,
 				88AFFA8D18C392262063BB90815D1074 /* NSArray+Functional.m */,
@@ -6461,7 +6459,6 @@
 				6A4A32237F52DE475B337F4315EFAAD1 /* Promise+Hashing.swift */,
 				2612A3E260C692DC24F2320D3C9EAB56 /* Promise+Retrying.swift */,
 				B3B0C09CA3D02DD0FE99A01FCFAF9EC0 /* String+Trimming.swift */,
-				C389D3E0245FEA2C003CE0B5 /* XCTest+Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -7652,7 +7649,6 @@
 				F986FDCF574154183DB89C9FF6930A9A /* ExpiringFriendRequestFinder.swift */,
 				883482A393D8025660DD64DEF015F798 /* FriendRequestExpirationJob.swift */,
 				C3944E4524525D550071C5AB /* FriendRequestProtocol.swift */,
-				C3FECFB62452777400EA9A43 /* FriendRequestProtocolTests.swift */,
 				5CE7B363FDBCABA49E3D77793170223B /* LKFriendRequestMessage.h */,
 				2872326C4A988258C8A091DDDA364365 /* LKFriendRequestMessage.m */,
 			);
@@ -7666,7 +7662,6 @@
 				278FF2576DD3A35ED34179FA8BD87973 /* LKSessionRestoreMessage.m */,
 				FCC19D53718D62856C7BB4E94FF54861 /* LokiSessionResetImplementation.swift */,
 				C3944E4824525ED30071C5AB /* SessionManagementProtocol.swift */,
-				C3FECFBA245277C800EA9A43 /* SessionManagementProtocolTests.swift */,
 				FFA79062F1FD29B20B47CFE6E2C3B49B /* SSKProtoPrekeyBundleMessage+Loki.swift */,
 			);
 			path = "Session Management";
@@ -7690,7 +7685,6 @@
 				AFDD34ED7D0D02522BD07794B36D006A /* LKSyncOpenGroupsMessage.h */,
 				4AE29138EA8CE25EFEC78E3E2E94FE95 /* LKSyncOpenGroupsMessage.m */,
 				C3944E4E245260EE0071C5AB /* SyncMessagesProtocol.swift */,
-				C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */,
 			);
 			path = "Sync Messages";
 			sourceTree = "<group>";
@@ -7713,6 +7707,20 @@
 				D060FDFEFBDD8FDC7F550DA806F00D28 /* SSKProtoEnvelope+Loki.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C3B1077B2488664D00B697B0 /* Loki */ = {
+			isa = PBXGroup;
+			children = (
+				C3FECFB62452777400EA9A43 /* FriendRequestProtocolTests.swift */,
+				241C1196245FDEE2005CB2F4 /* LokiTestUtilities.swift */,
+				C3FECFB8245277A300EA9A43 /* MultiDeviceProtocolTests.swift */,
+				C3F8B793243AF71E008C8F3F /* OnionRequestAPITests.swift */,
+				C3FECFBA245277C800EA9A43 /* SessionManagementProtocolTests.swift */,
+				C37094ED2457AEF800935B39 /* SyncMessagesProtocolTests.swift */,
+				C389D3E0245FEA2C003CE0B5 /* XCTest+Utilities.swift */,
+			);
+			path = Loki;
 			sourceTree = "<group>";
 		};
 		C3B72FB245E8BF809A609BDB33E2A43D /* InvalidKeyMessages */ = {
@@ -7755,7 +7763,6 @@
 			children = (
 				C3F8B794243AF71F008C8F3F /* OnionRequestAPI.swift */,
 				C3F8B795243AF71F008C8F3F /* OnionRequestAPI+Encryption.swift */,
-				C3F8B793243AF71E008C8F3F /* OnionRequestAPITests.swift */,
 			);
 			path = "Onion Requests";
 			sourceTree = "<group>";
@@ -8301,6 +8308,7 @@
 				1FD6BC9489B7F6CFB15234D78D3E10E5 /* Account */,
 				B95EC394CDB9E36ADBC11E4A0BA13BB0 /* Contacts */,
 				97800C87FD17E157AC5E30AD3EDDA2BA /* Devices */,
+				C3B1077B2488664D00B697B0 /* Loki */,
 				E1392C161EDCC88A9343F218DF8D0161 /* Messages */,
 				2F60003D59DBF01392633F1080569558 /* Network */,
 				36956340A0C69711D70D8A7A188D5512 /* Security */,
@@ -10888,6 +10896,7 @@
 				3023B042A898011E063912FC8F1A6312 /* TSMessageTest.m in Sources */,
 				86FF40DAB74E14300841032FF13AC555 /* TSOutgoingMessageTest.m in Sources */,
 				50138B121063DF1F4714027F67A5F8DA /* TSStorageIdentityKeyStoreTests.m in Sources */,
+				C3B1077C2488666000B697B0 /* LokiTestUtilities.swift in Sources */,
 				C37094EF2457AF0F00935B39 /* SyncMessagesProtocolTests.swift in Sources */,
 				852F4B6E7E551A939DEE69BA978F4154 /* TSStoragePreKeyStoreTests.m in Sources */,
 				149BD03C10F82779B71E2DADA3B8DC32 /* TSThreadTest.m in Sources */,
@@ -11361,7 +11370,6 @@
 				9FF5A4B1A5FF94FA2156B6EC4054EF96 /* OWSHTTPSecurityPolicy.m in Sources */,
 				4DD0FED4408D722BA7E4D06D63E95BE8 /* OWSIdentityManager.m in Sources */,
 				BA9CBEB51D774C846711FE238A6834A2 /* OWSIncomingMessageFinder.m in Sources */,
-				C389D3DF245FE7AB003CE0B5 /* LokiTestUtilities.swift in Sources */,
 				BE76DE95BA4B4C8CE3891C385FAFA1A5 /* OWSIncomingSentMessageTranscript.m in Sources */,
 				28EA202C21295F9FA17C5A6402C0651D /* OWSIncompleteCallsJob.m in Sources */,
 				5D3CBF1241D2688F4010179F0B4E9FAC /* OWSLinkedDeviceReadReceipt.m in Sources */,

@@ -1,0 +1,21 @@
+//
+//  Copyright (c) 2017 Open Whisper Systems. All rights reserved.
+//
+
+#import "RKCK.h"
+#import <SessionCurve25519Kit/Curve25519.h>
+#import "TSDerivedSecrets.h"
+
+@implementation RKCK
+
+- (instancetype)initWithRK:(RootKey*)rootKey CK:(ChainKey*)chainKey{
+    OWSAssert(rootKey);
+    OWSAssert(chainKey);
+
+    self = [super init];
+    self.rootKey = rootKey;
+    self.chainKey   = chainKey;
+    return self;
+}
+
+@end

@@ -1,0 +1,6 @@
+framework module SessionHKDFKit {
+  umbrella header "SessionHKDFKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

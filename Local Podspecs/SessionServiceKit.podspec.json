@@ -1,0 +1,87 @@
+{
+  "name": "SessionServiceKit",
+  "version": "1.0.0",
+  "summary": "A Swift/Objective-C library for communicating with the Session messaging service.",
+  "description": "A Swift/Objective-C library for communicating with the Session messaging service.",
+  "homepage": "https://github.com/loki-project/session-ios",
+  "license": "GPLv3",
+  "authors": {
+    "Niels Andriesse": "niels@loki.network"
+  },
+  "source": {
+    "git": "https://github.com/loki-project/session-ios.git",
+    "tag": "1.0.0"
+  },
+  "social_media_url": "https://getsession.org/",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "requires_arc": true,
+  "source_files": "SignalServiceKit/src/**/*.{h,m,mm,swift}",
+  "compiler_flags": "-fcxx-modules",
+  "prefix_header_file": "SignalServiceKit/src/TSPrefix.h",
+  "xcconfig": {
+    "OTHER_CFLAGS": "$(inherited) -DSQLITE_HAS_CODEC"
+  },
+  "resources": [
+    "SignalServiceKit/Resources/Certificates/*",
+    "SignalServiceKit/src/Loki/Mnemonic/*.txt"
+  ],
+  "dependencies": {
+    "SessionCurve25519Kit": [
+      "~> 2.1.1"
+    ],
+    "CocoaLumberjack": [
+
+    ],
+    "CryptoSwift": [
+      "~> 1.0"
+    ],
+    "AFNetworking": [
+
+    ],
+    "SessionAxolotlKit": [
+      "~> 1.0.1"
+    ],
+    "Mantle": [
+
+    ],
+    "YapDatabase/SQLCipher": [
+
+    ],
+    "Starscream": [
+
+    ],
+    "libPhoneNumber-iOS": [
+
+    ],
+    "GRKOpenSSLFramework": [
+
+    ],
+    "SAMKeychain": [
+
+    ],
+    "Reachability": [
+
+    ],
+    "SwiftProtobuf": [
+      "~> 1.5.0"
+    ],
+    "SessionCoreKit": [
+      "~> 1.0.0"
+    ],
+    "SessionMetadataKit": [
+      "~> 1.0.0"
+    ],
+    "PromiseKit": [
+      "~> 6.0"
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "SignalServiceKit/tests/**/*.{h,m,swift}"
+    }
+  ]
+}

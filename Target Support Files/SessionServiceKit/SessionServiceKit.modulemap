@@ -1,0 +1,6 @@
+framework module SessionServiceKit {
+  umbrella header "SessionServiceKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

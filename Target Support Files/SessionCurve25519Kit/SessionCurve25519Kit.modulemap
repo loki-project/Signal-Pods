@@ -1,0 +1,6 @@
+framework module SessionCurve25519Kit {
+  umbrella header "SessionCurve25519Kit-umbrella.h"
+
+  export *
+  module * { export * }
+}

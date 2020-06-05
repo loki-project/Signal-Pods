@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)containsPreKey:(int)preKeyId;
 
-- (void)removePreKey:(int)preKeyId;
+- (void)removePreKey:(int)preKeyId protocolContext:(nullable id)protocolContext;
 
 @end
 

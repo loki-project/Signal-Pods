@@ -8,3 +8,5 @@
 #import <SessionCoreKit/NSObject+OWS.h>
 #import <SessionCoreKit/OWSAsserts.h>
 #import <SessionHKDFKit/HKDFKit.h>
+#import "NSData+messagePadding.h"
+#import <SessionAxolotlKit/LokiFriendRequestMessage.h>

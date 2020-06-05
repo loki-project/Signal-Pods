@@ -98,25 +98,45 @@ struct SMKProtos_SenderCertificate {
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
+//  /// @required
+//  var certificate: Data {
+//    get {return _certificate ?? SwiftProtobuf.Internal.emptyData}
+//    set {_certificate = newValue}
+//  }
+//  /// Returns true if `certificate` has been explicitly set.
+//  var hasCertificate: Bool {return self._certificate != nil}
+//  /// Clears the value of `certificate`. Subsequent reads from it will return its default value.
+//  mutating func clearCertificate() {self._certificate = nil}
+//
+//  /// @required
+//  var signature: Data {
+//    get {return _signature ?? SwiftProtobuf.Internal.emptyData}
+//    set {_signature = newValue}
+//  }
+//  /// Returns true if `signature` has been explicitly set.
+//  var hasSignature: Bool {return self._signature != nil}
+//  /// Clears the value of `signature`. Subsequent reads from it will return its default value.
+//  mutating func clearSignature() {self._signature = nil}
   /// @required
-  var certificate: Data {
-    get {return _certificate ?? SwiftProtobuf.Internal.emptyData}
-    set {_certificate = newValue}
+  var sender: String {
+    get {return _sender ?? String()}
+    set {_sender = newValue}
   }
-  /// Returns true if `certificate` has been explicitly set.
-  var hasCertificate: Bool {return self._certificate != nil}
-  /// Clears the value of `certificate`. Subsequent reads from it will return its default value.
-  mutating func clearCertificate() {self._certificate = nil}
 
-  /// @required
-  var signature: Data {
-    get {return _signature ?? SwiftProtobuf.Internal.emptyData}
-    set {_signature = newValue}
+  /// Returns true if `sender` has been explicitly set.
+  var hasSender: Bool {return self._sender != nil}
+  /// Clears the value of `sender`. Subsequent reads from it will return its default value.
+  mutating func clearSender() {self._sender = nil}
+
+  var senderDevice: UInt32 {
+    get {return _senderDevice ?? 0}
+    set {_senderDevice = newValue}
   }
-  /// Returns true if `signature` has been explicitly set.
-  var hasSignature: Bool {return self._signature != nil}
-  /// Clears the value of `signature`. Subsequent reads from it will return its default value.
-  mutating func clearSignature() {self._signature = nil}
+
+  /// Returns true if `sender` has been explicitly set.
+  var hasSenderDevice: Bool {return self._senderDevice != nil}
+  /// Clears the value of `sender`. Subsequent reads from it will return its default value.
+  mutating func clearSenderDevice() {self._senderDevice = nil}
 
   var unknownFields = SwiftProtobuf.UnknownStorage()
 
@@ -184,8 +204,11 @@ struct SMKProtos_SenderCertificate {
 
   init() {}
 
-  fileprivate var _certificate: Data? = nil
-  fileprivate var _signature: Data? = nil
+  fileprivate var _sender: String? = nil
+  fileprivate var _senderDevice: UInt32? = nil
+
+//  fileprivate var _certificate: Data? = nil
+//  fileprivate var _signature: Data? = nil
 }
 
 struct SMKProtos_UnidentifiedSenderMessage {
@@ -266,6 +289,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
       typealias RawValue = Int
       case prekeyMessage // = 1
       case message // = 2
+      case lokiFriendRequest // = 3
 
       init() {
         self = .prekeyMessage
@@ -275,6 +299,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
         switch rawValue {
         case 1: self = .prekeyMessage
         case 2: self = .message
+        case 3: self = .lokiFriendRequest
         default: return nil
         }
       }
@@ -283,6 +308,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
         switch self {
         case .prekeyMessage: return 1
         case .message: return 2
+        case .lokiFriendRequest: return 3
         }
       }
 
@@ -377,33 +403,35 @@ extension SMKProtos_ServerCertificate.Certificate: SwiftProtobuf.Message, SwiftP
 extension SMKProtos_SenderCertificate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = _protobuf_package + ".SenderCertificate"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
-    1: .same(proto: "certificate"),
-    2: .same(proto: "signature"),
+//    1: .same(proto: "certificate"),
+//    2: .same(proto: "signature"),
+    1: .same(proto: "sender"),
+    2: .same(proto: "senderDevice"),
   ]
 
   mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       switch fieldNumber {
-      case 1: try decoder.decodeSingularBytesField(value: &self._certificate)
-      case 2: try decoder.decodeSingularBytesField(value: &self._signature)
+      case 1: try decoder.decodeSingularStringField(value: &self._sender)
+      case 2: try decoder.decodeSingularUInt32Field(value: &self._senderDevice)
       default: break
       }
     }
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if let v = self._certificate {
-      try visitor.visitSingularBytesField(value: v, fieldNumber: 1)
+    if let v = self._sender {
+      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
     }
-    if let v = self._signature {
-      try visitor.visitSingularBytesField(value: v, fieldNumber: 2)
+    if let v = self._senderDevice {
+      try visitor.visitSingularUInt32Field(value: v, fieldNumber: 2)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
   func _protobuf_generated_isEqualTo(other: SMKProtos_SenderCertificate) -> Bool {
-    if self._certificate != other._certificate {return false}
-    if self._signature != other._signature {return false}
+    if self._sender != other._sender {return false}
+    if self._senderDevice != other._senderDevice {return false}
     if unknownFields != other.unknownFields {return false}
     return true
   }

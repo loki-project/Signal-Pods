@@ -7,6 +7,7 @@ import Foundation
 @objc public enum SMKMessageType: Int {
     case whisper
     case prekey
+    case lokiFriendRequest
 }
 
 // See:
@@ -36,6 +37,8 @@ import Foundation
             messageType = .prekey
         case .message:
             messageType = .whisper
+        case .lokiFriendRequest:
+            messageType = .lokiFriendRequest
         }
 
         let contentData = proto.content
@@ -52,6 +55,8 @@ import Foundation
             builderType = .message
         case .prekey:
             builderType = .prekeyMessage
+        case .lokiFriendRequest:
+            builderType = .lokiFriendRequest
         }
 
         let builder = SMKProtoUnidentifiedSenderMessageMessage.builder(type: builderType,

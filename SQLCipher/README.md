@@ -1,6 +1,13 @@
 ## SQLCipher
 
-SQLCipher extends the [SQLite](https://www.sqlite.org) database library to add security enhancements that make it more suitable for encrypted local data storage such as on-the-fly encryption, tamper evidence, and key derivation. Based on SQLite, SQLCipher closely tracks SQLite and periodically integrates stable SQLite release features.
+SQLCipher extends the [SQLite](https://www.sqlite.org) database library to add security enhancements that make it more suitable for encrypted local data storage like:
+
+- on-the-fly encryption
+- tamper detection
+- memory sanitization
+- strong key derivation
+
+SQLCipher is based on SQLite and stable upstream release features are periodically integrated. 
 
 SQLCipher is maintained by Zetetic, LLC, and additional information and documentation is available on the official [SQLCipher site](https://www.zetetic.net/sqlcipher/).
 
@@ -21,33 +28,51 @@ SQLCipher is also compatible with standard SQLite databases. When a key is not p
 
 ## Contributions
 
-The SQLCipher team welcomes contributions to the core library. All contributions including pull requests and patches should be based on the `prerelease` branch, and must be accompanied by a [contributor agreement](https://www.zetetic.net/contributions/). For large changes we strongly encourage [discussion](https://discuss.zetetic.net/c/sqlcipher) of the proposed change prior to development and submission.
+The SQLCipher team welcomes contributions to the core library. All contributions including pull requests and patches should be based on the `prerelease` branch, and must be accompanied by a [contributor agreement](https://www.zetetic.net/contributions/). We strongly encourage [discussion](https://discuss.zetetic.net/c/sqlcipher) of the proposed change prior to development and submission.
 
 ## Compiling
 
-Building SQLCipher is almost the same as compiling a regular version of 
-SQLite with two small exceptions: 
+Building SQLCipher is similar to compiling a regular version of SQLite from source a couple small exceptions:  
 
- 1. You *must* define `SQLITE_HAS_CODEC` and `SQLITE_TEMP_STORE=2` when building sqlcipher. 
- 2. If compiling against the default OpenSSL crypto provider, you will need to link libcrypto
+ 1. You *must* define `SQLITE_HAS_CODEC` and either `SQLITE_TEMP_STORE=2` or SQLITE_TEMP_STORE=3` 
+ 2. You will need to link against a support cryptograpic provider (OpenSSL, LibTomCrypt, CommonCrypto/Security.framework, or NSS)
  
-Example Static linking (replace /opt/local/lib with the path to libcrypto.a). Note in this 
+The following examples demonstrate linking against OpenSSL, which is a readily available provider on most Unix-like systems. 
+
+Example 1. Static linking (replace /opt/local/lib with the path to libcrypto.a). Note in this 
 example, `--enable-tempstore=yes` is setting `SQLITE_TEMP_STORE=2` for the build.
 
+```
 	$ ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" \
 		LDFLAGS="/opt/local/lib/libcrypto.a"
 	$ make
+```
 
-Example Dynamic linking
+Example 2. Dynamic linking
 
+```
 	$ ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" \
 		LDFLAGS="-lcrypto"
 	$ make
+```
+
+## Testing
+
+The full SQLite test suite will not complete successfully when using SQLCipher. In some cases encryption interferes with low-level tests that require access to database file data or features which are unsupported by SQLCipher. Those tests that are intended to support encryption are intended for non-SQLCipher implementations. In addition, because SQLite tests are not always isolated, if one test fails it can trigger a domino effect with other failures in later steps.
+
+As a result, the SQLCipher package includes it's own independent tests that exercise and verify the core functionality of the SQLCipher extensions. This test suite is intended to provide an abbreviated verification of SQLCipher's internal logic; it does not perform an exhaustive test of the SQLite database system as a whole or verify functionality on specific platforms. Because SQLCipher is based on stable upstream builds of SQLite, it is consider a basic assumption that the core SQLite library code is operating properly (the SQLite core is almost untouched in SQLCipher). Thus, the additional SQLCipher-specific test provide the requisite verification that the library is operating as expected with SQLCipher's security features enabled.
+
+To run SQLCipher specific tests, configure as described above and run the following to execute the tests and recieve a report of the results:
+
+```
+  $ make testfixture
+  $ ./testfixture test/sqlcipher.test
+```
 
 ## Encrypting a database
 
 To specify an encryption passphrase for the database via the SQL interface you 
-use a pragma. The passphrase you enter is passed through PBKDF2 key derivation to
+use a PRAGMA. The passphrase you enter is passed through PBKDF2 key derivation to
 obtain the encryption key for the database 
 
 	PRAGMA key = 'passphrase';
@@ -69,7 +94,7 @@ same rules as `PRAGMA key`.
 
 ## Changing a database key
 
-To change the encryption passphrase for an existing database you may use the rekey pragma
+To change the encryption passphrase for an existing database you may use the rekey PRAGMA
 after you've supplied the correct database password;
 
 	PRAGMA key = 'passphrase'; -- start with the existing database passphrase
@@ -84,6 +109,10 @@ This can be accomplished programmatically by using sqlite3_rekey;
 	sqlite3_rekey(sqlite3 *db, const void *pKey, int nKey)
 
 ## Support
+
+The primary source for complete documentation (desing, API, platforms, usage) is the SQLCipher website:
+
+https://www.zetetic.net/sqlcipher/documentation
 
 The primary avenue for support and discussions is the SQLCipher discuss site:
 
@@ -100,9 +129,9 @@ posts about SQLCipher as we do not monitor them frequently.
 If you are using SQLCipher in your own software please let us know at 
 support@zetetic.net!
 
-## License
+## Community Edition Open Source License
 
-Copyright (c) 2016, ZETETIC LLC
+Copyright (c) 2020, ZETETIC LLC
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -136,16 +165,28 @@ This repository contains the complete source code for the
 are also included.  However, many other test scripts
 and most of the documentation are managed separately.
 
-SQLite [does not use Git](https://sqlite.org/whynotgit.html).
-If you are reading this on GitHub, then you are looking at an
-unofficial mirror. See <https://sqlite.org/src> for the official
-repository.
-
-## Obtaining The Code
+## Version Control
 
 SQLite sources are managed using the
 [Fossil](https://www.fossil-scm.org/), a distributed version control system
-that was specifically designed to support SQLite development.
+that was specifically designed and written to support SQLite development.
+The [Fossil repository](https://sqlite.org/src/timeline) contains the urtext.
+
+If you are reading this on GitHub or some other Git repository or service,
+then you are looking at a mirror.  The names of check-ins and
+other artifacts in a Git mirror are different from the official
+names for those objects.  The offical names for check-ins are
+found in a footer on the check-in comment for authorized mirrors.
+The official check-in name can also be seen in the `manifest.uuid` file
+in the root of the tree.  Always use the official name, not  the
+Git-name, when communicating about an SQLite check-in.
+
+If you pulled your SQLite source code from a secondary source and want to
+verify its integrity, there are hints on how to do that in the
+[Verifying Code Authenticity](#vauth) section below.
+
+## Obtaining The Code
+
 If you do not want to use Fossil, you can download tarballs or ZIP
 archives or [SQLite archives](https://sqlite.org/cli.html#sqlar) as follows:
 
@@ -160,7 +201,7 @@ archives or [SQLite archives](https://sqlite.org/cli.html#sqlar) as follows:
      [SQLite-archive](https://www.sqlite.org/src/sqlar/sqlite.sqlar?r=release).
 
   *  For other check-ins, substitute an appropriate branch name or
-     tag or hash prefix for "release" in the URLs of the previous
+     tag or hash prefix in place of "release" in the URLs of the previous
      bullet.  Or browse the [timeline](https://www.sqlite.org/src/timeline)
      to locate the check-in desired, click on its information page link,
      then click on the "Tarball" or "ZIP Archive" links on the information
@@ -294,11 +335,8 @@ the src/parse.y file.  The conversion of "parse.y" into "parse.c" is done
 by the [lemon](./doc/lemon.html) LALR(1) parser generator.  The source code
 for lemon is at tool/lemon.c.  Lemon uses the tool/lempar.c file as a
 template for generating its parser.
-
 Lemon also generates the **parse.h** header file, at the same time it
-generates parse.c. But the parse.h header file is
-modified further (to add additional symbols) using the ./addopcodes.tcl
-Tcl script.
+generates parse.c.
 
 The **opcodes.h** header file contains macros that define the numbers
 corresponding to opcodes in the "VDBE" virtual machine.  The opcodes.h
@@ -425,10 +463,25 @@ Key files:
 There are many other source files.  Each has a succinct header comment that
 describes its purpose and role within the larger system.
 
+<a name="vauth"></a>
+## Verifying Code Authenticity
+
+The `manifest` file at the root directory of the source tree
+contains either a SHA3-256 hash (for newer files) or a SHA1 hash (for 
+older files) for every source file in the repository.
+The SHA3-256 hash of the `manifest`
+file itself is the official name of the version of the source tree that you
+have. The `manifest.uuid` file should contain the SHA3-256 hash of the
+`manifest` file. If all of the above hash comparisons are correct, then
+you can be confident that your source tree is authentic and unadulterated.
+
+The format of the `manifest` file should be mostly self-explanatory, but
+if you want details, they are available
+[here](https://fossil-scm.org/fossil/doc/trunk/www/fileformat.wiki#manifest).
 
 ## Contacts
 
-The main SQLite webpage is [http://www.sqlite.org/](http://www.sqlite.org/)
+The main SQLite website is [http://www.sqlite.org/](http://www.sqlite.org/)
 with geographically distributed backups at
 [http://www2.sqlite.org/](http://www2.sqlite.org) and
 [http://www3.sqlite.org/](http://www3.sqlite.org).

@@ -132,21 +132,30 @@ public class SMKDecryptResult: NSObject {
 
     private let kSMKSecretSessionCipherMacLength: UInt = 10
 
+    private let sessionResetImplementation: SessionResetProtocol?
     private let sessionStore: SessionStore
     private let preKeyStore: PreKeyStore
     private let signedPreKeyStore: SignedPreKeyStore
     private let identityStore: IdentityKeyStore
 
     // public SecretSessionCipher(SignalProtocolStore signalProtocolStore) {
-    @objc public init(sessionStore: SessionStore,
+    @objc public init(sessionResetImplementation: SessionResetProtocol?,
+                      sessionStore: SessionStore,
                       preKeyStore: PreKeyStore,
                       signedPreKeyStore: SignedPreKeyStore,
                       identityStore: IdentityKeyStore) throws {
-
+        self.sessionResetImplementation = sessionResetImplementation
         self.sessionStore = sessionStore
         self.preKeyStore = preKeyStore
         self.signedPreKeyStore = signedPreKeyStore
         self.identityStore = identityStore
+    }
+
+    @objc convenience public init(sessionStore: SessionStore,
+                                  preKeyStore: PreKeyStore,
+                                  signedPreKeyStore: SignedPreKeyStore,
+                                  identityStore: IdentityKeyStore) throws {
+        try self.init(sessionResetImplementation: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore)
     }
 
     // MARK: - Public
@@ -155,10 +164,11 @@ public class SMKDecryptResult: NSObject {
     // paddedPlaintext)
     @objc
     public func throwswrapped_encryptMessage(recipientId: String,
-                                          deviceId: Int32,
-                                          paddedPlaintext: Data,
-                                          senderCertificate: SMKSenderCertificate,
-                                          protocolContext: Any?) throws -> Data {
+                                             deviceId: Int32,
+                                             paddedPlaintext: Data,
+                                             senderCertificate: SMKSenderCertificate,
+                                             protocolContext: Any?,
+                                             useFallbackSessionCipher: Bool) throws -> Data {
         guard recipientId.count > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid recipientId")
         }
@@ -166,16 +176,21 @@ public class SMKDecryptResult: NSObject {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid deviceId")
         }
 
-        // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
-        let cipher = SessionCipher(sessionStore: sessionStore,
-                                   preKeyStore: preKeyStore,
-                                   signedPreKeyStore: signedPreKeyStore,
-                                   identityKeyStore: identityStore,
-                                   recipientId: recipientId,
-                                   deviceId: deviceId)
+        var encryptedMessage: CipherMessage
+        if (useFallbackSessionCipher) {
+            let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
+            let cipher = FallBackSessionCipher(recipientId: recipientId, privateKey: privateKey)
+            encryptedMessage = LokiFriendRequestMessage.init(_throws_with: cipher.encrypt(message: paddedPlaintext)!)
+        } else {
+            let cipher = SessionCipher(sessionStore: sessionStore,
+                                       preKeyStore: preKeyStore,
+                                       signedPreKeyStore: signedPreKeyStore,
+                                       identityKeyStore: identityStore,
+                                       recipientId: recipientId,
+                                       deviceId: deviceId)
 
-        // CiphertextMessage message = new SessionCipher(signalProtocolStore, destinationAddress).encrypt(paddedPlaintext);
-        let encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
+            encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
+        }
 
         guard let encryptedMessageData = encryptedMessage.serialized() else {
             throw SMKError.assertionError(description: "\(logTag) Could not serialize encrypted message.")
@@ -187,7 +202,7 @@ public class SMKDecryptResult: NSObject {
         }
 
         // ECPublicKey theirIdentity = signalProtocolStore.getIdentity(destinationAddress).getPublicKey();
-        guard let theirIdentityKeyData = identityStore.identityKey(forRecipientId: recipientId, protocolContext: protocolContext) else {
+        guard let theirIdentityKeyData = Data.data(fromHex: recipientId.substring(from: recipientId.index(recipientId.startIndex, offsetBy: 2))) else {
             throw SMKError.assertionError(description: "\(logTag) Missing their public identity key.")
         }
         // NOTE: we don't use ECPublicKey(serializedKeyData) since the
@@ -238,6 +253,8 @@ public class SMKDecryptResult: NSObject {
             messageType = .prekey
         case .whisper:
             messageType = .whisper
+        case .lokiFriendRequest:
+            messageType = .lokiFriendRequest
         default:
             throw SMKError.assertionError(description: "\(logTag) Unknown cipher message type.")
         }
@@ -354,10 +371,10 @@ public class SMKDecryptResult: NSObject {
         // }
         //
         // NOTE: Constant time comparison.
-        guard messageContent.senderCertificate.key.serialized.ows_constantTimeIsEqual(to: staticKeyBytes) else {
-            let underlyingError = SMKError.assertionError(description: "\(logTag) Sender's certificate key does not match key used in message.")
-            throw wrapAsKnownSenderError(underlyingError)
-        }
+//        guard messageContent.senderCertificate.key.serialized.ows_constantTimeIsEqual(to: staticKeyBytes) else {
+//            let underlyingError = SMKError.assertionError(description: "\(logTag) Sender's certificate key does not match key used in message.")
+//            throw wrapAsKnownSenderError(underlyingError)
+//        }
 
         let paddedMessagePlaintext: Data
         do {
@@ -533,14 +550,24 @@ public class SMKDecryptResult: NSObject {
             cipherMessage = try WhisperMessage(data: messageContent.contentData)
         case .prekey:
             cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
+        case .lokiFriendRequest:
+            let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
+            let cipher = FallBackSessionCipher(recipientId: senderRecipientId, privateKey: privateKey)
+            let plaintextData = try cipher.decrypt(message: messageContent.contentData)!
+            return plaintextData
         }
 
-        let cipher = SessionCipher(sessionStore: sessionStore,
-                                   preKeyStore: preKeyStore,
-                                   signedPreKeyStore: signedPreKeyStore,
-                                   identityKeyStore: identityStore,
-                                   recipientId: senderRecipientId,
-                                   deviceId: Int32(senderDeviceId))
+        guard let sessionResetImplementation = sessionResetImplementation else {
+            throw SMKError.assertionError(description: "\(logTag) Missing session reset protocol implementation.")
+        }
+
+        let cipher = LokiSessionCipher(sessionResetImplementation: sessionResetImplementation,
+                                       sessionStore: sessionStore,
+                                       preKeyStore: preKeyStore,
+                                       signedPreKeyStore: signedPreKeyStore,
+                                       identityKeyStore: identityStore,
+                                       recipientID: senderRecipientId,
+                                       deviceID: Int32(senderDeviceId))
 
         let plaintextData = try cipher.decrypt(cipherMessage, protocolContext: protocolContext)
         return plaintextData

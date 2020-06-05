@@ -1,6 +1,6 @@
 {
   "name": "SessionAxolotlKit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "SessionAxolotlKit is a free implementation of the Axolotl protocol in Objective-C",
   "homepage": "https://github.com/loki-project/session-ios-protocol-kit",
   "license": {
@@ -13,7 +13,7 @@
   "social_media_url": "http://getsession.org/",
   "source": {
     "git": "https://github.com/loki-project/session-ios-protocol-kit.git",
-    "tag": "1.0.1"
+    "tag": "1.0.2"
   },
   "source_files": [
     "AxolotlKit/Classes/**/*.{h,m,swift}",
@@ -27,7 +27,7 @@
   "requires_arc": true,
   "dependencies": {
     "SessionCurve25519Kit": [
-      "~> 2.1.1"
+      "~> 2.1.2"
     ],
     "SessionHKDFKit": [
       "~> 0.0.5"

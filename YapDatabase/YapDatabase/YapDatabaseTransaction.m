@@ -25,6 +25,8 @@
 #endif
 #pragma unused(ydbLogLevel)
 
+typedef BOOL (^YapBoolBlock)(void);
+const NSUInteger kDefaultBatchSize = 1000;
 
 @implementation YapDatabaseReadTransaction
 
@@ -1569,24 +1571,30 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	// SELECT DISTINCT "collection" FROM "database2";
 	
 	int const column_idx_collection = SQLITE_COLUMN_START;
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		const unsigned char *text = sqlite3_column_text(statement, column_idx_collection);
 		int textSize = sqlite3_column_bytes(statement, column_idx_collection);
 		
 		NSString *collection = [[NSString alloc] initWithBytes:text length:textSize encoding:NSUTF8StringEncoding];
 		
 		block(collection, &stop);
-		
-		if (stop || mutation.isMutated) break;
-	}
+    }];
 	
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
@@ -2708,8 +2716,8 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
-	
+    __block BOOL stop = NO;
+
 	// SELECT "rowid", "key" FROM "database2" WHERE collection = ?;
 	
 	int const column_idx_rowid    = SQLITE_COLUMN_START + 0;
@@ -2719,9 +2727,17 @@
 	YapDatabaseString _collection; MakeYapDatabaseString(&_collection, collection);
 	sqlite3_bind_text(statement, bind_idx_collection, _collection.str, _collection.length, SQLITE_STATIC);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -2730,10 +2746,8 @@
 		NSString *key = [[NSString alloc] initWithBytes:text length:textSize encoding:NSUTF8StringEncoding];
 		
 		block(rowid, key, &stop);
-		
-		if (stop || mutation.isMutated) break;
-	}
-	
+                       }];
+
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
 		YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -2765,8 +2779,8 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
-	
+    __block BOOL stop = NO;
+
 	// SELECT "rowid", "key" FROM "database2" WHERE collection = ?;
 	
 	int const column_idx_rowid    = SQLITE_COLUMN_START + 0;
@@ -2778,9 +2792,17 @@
 		YapDatabaseString _collection; MakeYapDatabaseString(&_collection, collection);
 		sqlite3_bind_text(statement, bind_idx_collection, _collection.str, _collection.length, SQLITE_STATIC);
 		
-		int status;
-		while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-		{
+        YapDatabaseConnection *connection = self.connection;
+        __block int status;
+        [self whileLoopWithBatchSize:kDefaultBatchSize
+                           condition:^{
+                               if (stop || mutation.isMutated) {
+                                   return NO;
+                               }
+                               
+                               status = sqlite3_step(statement);
+                               return (BOOL) (status == SQLITE_ROW);
+                           } loopBlock:^{
 			int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 			
 			const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -2789,10 +2811,8 @@
 			NSString *key = [[NSString alloc] initWithBytes:text length:textSize encoding:NSUTF8StringEncoding];
 			
 			block(rowid, collection, key, &stop);
-			
-			if (stop || mutation.isMutated) break;
-		}
-		
+                           }];
+
 		if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 		{
 			YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -2830,17 +2850,25 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
-	
+    __block BOOL stop = NO;
+
 	// SELECT "rowid", "collection", "key" FROM "database2";
 	
 	int const column_idx_rowid      = SQLITE_COLUMN_START + 0;
 	int const column_idx_collection = SQLITE_COLUMN_START + 1;
 	int const column_idx_key        = SQLITE_COLUMN_START + 2;
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text1 = sqlite3_column_text(statement, column_idx_collection);
@@ -2855,10 +2883,8 @@
 		key        = [[NSString alloc] initWithBytes:text2 length:textSize2 encoding:NSUTF8StringEncoding];
 		
 		block(rowid, collection, key, &stop);
-		
-		if (stop || mutation.isMutated) break;
-	}
-	
+                       }];
+
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
 		YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -2908,7 +2934,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	// SELECT "rowid", "key", "data", FROM "database2" WHERE "collection" = ?;
 	
@@ -2922,9 +2948,17 @@
 	
 	BOOL unlimitedObjectCacheLimit = (connection->objectCacheLimit == 0);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -2964,11 +2998,9 @@
 			}
 			
 			block(rowid, key, object, &stop);
-			
-			if (stop || mutation.isMutated) break;
 		}
-	}
-	
+                       }];
+
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
 		YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -3019,7 +3051,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	BOOL unlimitedObjectCacheLimit = (connection->objectCacheLimit == 0);
 	
@@ -3035,9 +3067,18 @@
 		YapDatabaseString _collection; MakeYapDatabaseString(&_collection, collection);
 		sqlite3_bind_text(statement, bind_idx_collection, _collection.str, _collection.length, SQLITE_STATIC);
 		
-		int status;
-		while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-		{
+        YapDatabaseConnection *connection = self.connection;
+        __block int status;
+        [self whileLoopWithBatchSize:kDefaultBatchSize
+                           condition:^{
+                               if (stop || mutation.isMutated) {
+                                   return NO;
+                               }
+                               
+                               status = sqlite3_step(statement);
+                               return (BOOL) (status == SQLITE_ROW);
+                           } loopBlock:^{
+
 			int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 			
 			const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -3078,11 +3119,9 @@
 				}
 				
 				block(rowid, collection, key, object, &stop);
-				
-				if (stop || mutation.isMutated) break;
 			}
-		}
-		
+        }];
+
 		if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 		{
 			YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -3145,7 +3184,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	// SELECT "rowid", "collection", "key", "data" FROM "database2" ORDER BY \"collection\" ASC;";
 	
@@ -3156,9 +3195,18 @@
 	
 	BOOL unlimitedObjectCacheLimit = (connection->objectCacheLimit == 0);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
+                           
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text1 = sqlite3_column_text(statement, column_idx_collection);
@@ -3194,10 +3242,8 @@
 			}
 			
 			block(rowid, collection, key, object, &stop);
-			
-			if (stop || mutation.isMutated) break;
 		}
-	}
+    }];
 	
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
@@ -3210,6 +3256,30 @@
 	{
 		@throw [self mutationDuringEnumerationException];
 	}
+}
+
+// Break loop cycles into batches, releasing stale objects
+// after each batch to avoid out of memory errors.
+- (void)whileLoopWithBatchSize:(NSUInteger)batchSize
+                     condition:(YapBoolBlock)conditionBlock
+                     loopBlock:(dispatch_block_t)loopBlock
+{
+    NSUInteger batchIndex = 0;
+    while (YES) {
+        if (batchIndex > 0) {
+            // This will log in DEBUG builds but not production.
+            YDBLogInfo(@"batchIndex: %lu (%lu)", (unsigned long) batchIndex, (unsigned long) (batchIndex * batchSize));
+        }
+        @autoreleasepool {
+            for (NSUInteger batchCounter = 0; batchCounter < batchSize; batchCounter++) {
+                if (!conditionBlock()) {
+                    return;
+                }
+                loopBlock();
+            }
+        }
+        batchIndex++;
+    }
 }
 
 /**
@@ -3250,8 +3320,8 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
-	
+    __block BOOL stop = NO;
+
 	// SELECT "rowid", "key", "metadata" FROM "database2" WHERE "collection" = ?;
 	
 	int const column_idx_rowid    = SQLITE_COLUMN_START + 0;
@@ -3264,9 +3334,17 @@
 	
 	BOOL unlimitedMetadataCacheLimit = (connection->metadataCacheLimit == 0);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -3317,10 +3395,8 @@
 			}
 			
 			block(rowid, key, metadata, &stop);
-			
-			if (stop || mutation.isMutated) break;
 		}
-	}
+                       }];
 	
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
@@ -3374,7 +3450,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	BOOL unlimitedMetadataCacheLimit = (connection->metadataCacheLimit == 0);
 	
@@ -3390,9 +3466,17 @@
 		YapDatabaseString _collection; MakeYapDatabaseString(&_collection, collection);
 		sqlite3_bind_text(statement, bind_idx_collection, _collection.str, _collection.length, SQLITE_STATIC);
 		
-		int status;
-		while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-		{
+        YapDatabaseConnection *connection = self.connection;
+        __block int status;
+        [self whileLoopWithBatchSize:kDefaultBatchSize
+                           condition:^{
+                               if (stop || mutation.isMutated) {
+                                   return NO;
+                               }
+                               
+                               status = sqlite3_step(statement);
+                               return (BOOL) (status == SQLITE_ROW);
+                           } loopBlock:^{
 			int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 			
 			const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -3443,11 +3527,9 @@
 				}
 				
 				block(rowid, collection, key, metadata, &stop);
-				
-				if (stop || mutation.isMutated) break;
 			}
-		}
-		
+                           }];
+
 		if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 		{
 			YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -3511,7 +3593,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	// SELECT "rowid", "collection", "key", "metadata" FROM "database2" ORDER BY "collection" ASC;
 	
@@ -3522,9 +3604,17 @@
 	
 	BOOL unlimitedMetadataCacheLimit = (connection->metadataCacheLimit == 0);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text1 = sqlite3_column_text(statement, column_idx_collection);
@@ -3581,11 +3671,9 @@
 			}
 			
 			block(rowid, collection, key, metadata, &stop);
-			
-			if (stop || mutation.isMutated) break;
 		}
-	}
-	
+                       }];
+
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
 		YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -3635,7 +3723,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	// SELECT "rowid", "key", "data", "metadata" FROM "database2" WHERE "collection" = ?;
 	
@@ -3651,9 +3739,17 @@
 	BOOL unlimitedObjectCacheLimit = (connection->objectCacheLimit == 0);
 	BOOL unlimitedMetadataCacheLimit = (connection->metadataCacheLimit == 0);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -3730,11 +3826,9 @@
 			}
 			
 			block(rowid, key, object, metadata, &stop);
-			
-			if (stop || mutation.isMutated) break;
 		}
-	}
-	
+                       }];
+
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
 		YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -3785,7 +3879,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	BOOL unlimitedObjectCacheLimit = (connection->objectCacheLimit == 0);
 	BOOL unlimitedMetadataCacheLimit = (connection->metadataCacheLimit == 0);
@@ -3803,9 +3897,17 @@
 		YapDatabaseString _collection; MakeYapDatabaseString(&_collection, collection);
 		sqlite3_bind_text(statement, bind_idx_collection, _collection.str, _collection.length, SQLITE_STATIC);
 		
-		int status;
-		while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-		{
+        YapDatabaseConnection *connection = self.connection;
+        __block int status;
+        [self whileLoopWithBatchSize:kDefaultBatchSize
+                           condition:^{
+                               if (stop || mutation.isMutated) {
+                                   return NO;
+                               }
+                               
+                               status = sqlite3_step(statement);
+                               return (BOOL) (status == SQLITE_ROW);
+                           } loopBlock:^{
 			int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 			
 			const unsigned char *text = sqlite3_column_text(statement, column_idx_key);
@@ -3883,11 +3985,9 @@
 				}
 				
 				block(rowid, collection, key, object, metadata, &stop);
-				
-				if (stop || mutation.isMutated) break;
 			}
-		}
-		
+                           }];
+
 		if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 		{
 			YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));
@@ -3950,7 +4050,7 @@
 	if (statement == NULL) return;
 	
 	YapMutationStackItem_Bool *mutation = [connection->mutationStack push]; // mutation during enumeration protection
-	BOOL stop = NO;
+	__block BOOL stop = NO;
 	
 	// SELECT "rowid", "collection", "key", "data", "metadata" FROM "database2" ORDER BY \"collection\" ASC;";
 	
@@ -3963,9 +4063,17 @@
 	BOOL unlimitedObjectCacheLimit = (connection->objectCacheLimit == 0);
 	BOOL unlimitedMetadataCacheLimit = (connection->metadataCacheLimit == 0);
 	
-	int status;
-	while ((status = sqlite3_step(statement)) == SQLITE_ROW)
-	{
+    YapDatabaseConnection *connection = self.connection;
+    __block int status;
+    [self whileLoopWithBatchSize:kDefaultBatchSize
+                       condition:^{
+                           if (stop || mutation.isMutated) {
+                               return NO;
+                           }
+                           
+                           status = sqlite3_step(statement);
+                           return (BOOL) (status == SQLITE_ROW);
+                       } loopBlock:^{
 		int64_t rowid = sqlite3_column_int64(statement, column_idx_rowid);
 		
 		const unsigned char *text1 = sqlite3_column_text(statement, column_idx_collection);
@@ -4028,11 +4136,9 @@
 			}
 			
 			block(rowid, collection, key, object, metadata, &stop);
-			
-			if (stop || mutation.isMutated) break;
 		}
-	}
-	
+                       }];
+
 	if ((status != SQLITE_DONE) && !stop && !mutation.isMutated)
 	{
 		YDBLogError(@"%@ - sqlite_step error: %d %s", THIS_METHOD, status, sqlite3_errmsg(connection->db));

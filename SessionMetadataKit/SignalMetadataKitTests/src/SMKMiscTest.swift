@@ -68,6 +68,7 @@ class SMKTest: XCTestCase {
         XCTAssertEqual(serverCertificate.signatureData, parsed.signatureData)
     }
 
+    /*
     func testUDSenderCertificate() {
         let serverCertificate = SMKServerCertificate(keyId: 123,
                                                      key: try! ECPublicKey(keyData: Randomness.generateRandomBytes(Int32(ECCKeyLength))!),
@@ -172,4 +173,5 @@ class SMKTest: XCTestCase {
         XCTAssertEqual(aliceMockClient.deviceId, Int32(decryptedMessage.senderDeviceId))
         XCTAssertEqual(plaintext, payload)
     }
+     */
 }

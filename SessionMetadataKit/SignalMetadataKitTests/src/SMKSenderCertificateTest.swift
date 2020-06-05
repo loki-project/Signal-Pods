@@ -23,6 +23,7 @@ class SMKSenderCertificateTest: XCTestCase {
     //    private final ECKeyPair trustRoot = Curve.generateKeyPair();
     let trustRoot = Curve25519.generateKeyPair()
 
+    /*
     //    public void testSignature() throws InvalidCertificateException, InvalidKeyException {
     func testSignature() {
         //        ECKeyPair serverKey = Curve.generateKeyPair();
@@ -217,4 +218,5 @@ class SMKSenderCertificateTest: XCTestCase {
                                                            signatureData: serverCertificateSignature)
         return signedServerCertificate
     }
+     */
 }

@@ -367,8 +367,8 @@ extension SMKProtoSenderCertificateCertificate.SMKProtoSenderCertificateCertific
 
     // MARK: - SMKProtoSenderCertificateBuilder
 
-    @objc public class func builder(certificate: Data, signature: Data) -> SMKProtoSenderCertificateBuilder {
-        return SMKProtoSenderCertificateBuilder(certificate: certificate, signature: signature)
+    @objc public class func builder(sender: String, senderDevice: UInt32) -> SMKProtoSenderCertificateBuilder {
+        return SMKProtoSenderCertificateBuilder(sender: sender, senderDevice: senderDevice)
     }
 
     @objc public class SMKProtoSenderCertificateBuilder: NSObject {
@@ -377,19 +377,19 @@ extension SMKProtoSenderCertificateCertificate.SMKProtoSenderCertificateCertific
 
         @objc fileprivate override init() {}
 
-        @objc fileprivate init(certificate: Data, signature: Data) {
+        @objc fileprivate init(sender: String, senderDevice: UInt32) {
             super.init()
 
-            setCertificate(certificate)
-            setSignature(signature)
+            setSender(sender)
+            setSenderDevice(senderDevice)
         }
 
-        @objc public func setCertificate(_ valueParam: Data) {
-            proto.certificate = valueParam
+        @objc public func setSender(_ valueParam: String) {
+            proto.sender = valueParam
         }
 
-        @objc public func setSignature(_ valueParam: Data) {
-            proto.signature = valueParam
+        @objc public func setSenderDevice(_ valueParam: UInt32) {
+            proto.senderDevice = valueParam
         }
 
         @objc public func build() throws -> SMKProtoSenderCertificate {
@@ -403,16 +403,16 @@ extension SMKProtoSenderCertificateCertificate.SMKProtoSenderCertificateCertific
 
     fileprivate let proto: SMKProtos_SenderCertificate
 
-    @objc public let certificate: Data
+    @objc public let sender: String
 
-    @objc public let signature: Data
+    @objc public let senderDevice: UInt32
 
     private init(proto: SMKProtos_SenderCertificate,
-                 certificate: Data,
-                 signature: Data) {
+                 sender: String,
+                 senderDevice: UInt32) {
         self.proto = proto
-        self.certificate = certificate
-        self.signature = signature
+        self.sender = sender
+        self.senderDevice = senderDevice
     }
 
     @objc
@@ -426,23 +426,23 @@ extension SMKProtoSenderCertificateCertificate.SMKProtoSenderCertificateCertific
     }
 
     fileprivate class func parseProto(_ proto: SMKProtos_SenderCertificate) throws -> SMKProtoSenderCertificate {
-        guard proto.hasCertificate else {
-            throw SMKProtoError.invalidProtobuf(description: "\(logTag) missing required field: certificate")
+        guard proto.hasSender else {
+            throw SMKProtoError.invalidProtobuf(description: "\(logTag) missing required field: sender")
         }
-        let certificate = proto.certificate
+        let sender = proto.sender
 
-        guard proto.hasSignature else {
-            throw SMKProtoError.invalidProtobuf(description: "\(logTag) missing required field: signature")
+        guard proto.hasSenderDevice else {
+            throw SMKProtoError.invalidProtobuf(description: "\(logTag) missing required field: sender device")
         }
-        let signature = proto.signature
+        let senderDevice = proto.senderDevice
 
         // MARK: - Begin Validation Logic for SMKProtoSenderCertificate -
 
         // MARK: - End Validation Logic for SMKProtoSenderCertificate -
 
         let result = SMKProtoSenderCertificate(proto: proto,
-                                               certificate: certificate,
-                                               signature: signature)
+                                               sender: sender,
+                                               senderDevice: senderDevice)
         return result
     }
 }
@@ -472,12 +472,14 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
     @objc public enum SMKProtoUnidentifiedSenderMessageMessageType: Int32 {
         case prekeyMessage = 1
         case message = 2
+        case lokiFriendRequest = 3
     }
 
     private class func SMKProtoUnidentifiedSenderMessageMessageTypeWrap(_ value: SMKProtos_UnidentifiedSenderMessage.Message.TypeEnum) -> SMKProtoUnidentifiedSenderMessageMessageType {
         switch value {
         case .prekeyMessage: return .prekeyMessage
         case .message: return .message
+        case .lokiFriendRequest: return .lokiFriendRequest
         }
     }
 
@@ -485,6 +487,7 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
         switch value {
         case .prekeyMessage: return .prekeyMessage
         case .message: return .message
+        case .lokiFriendRequest: return .lokiFriendRequest
         }
     }
 

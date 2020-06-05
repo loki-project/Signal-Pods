@@ -142,7 +142,7 @@ NS_ASSUME_NONNULL_BEGIN
     return FALSE;
 }
 
-- (void)removePreKey:(int)preKeyId
+- (void)removePreKey:(int)preKeyId protocolContext:(nullable id)protocolContext
 {
     [self.preKeyStore removeObjectForKey:[NSNumber numberWithInt:preKeyId]];
 }

@@ -57,7 +57,7 @@
 		0528D07CCCD21B7AA89E5ECFD3150F9A /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC958BA81A02F3FC6283272E4A7A0C /* BlockCipher.swift */; };
 		0553F1DE03313BBCB4B3DBFE70817C0A /* mz_os.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E691BDA6F94AAE93B2B955F205F090 /* mz_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		055C2D750E32E46CE4CD8E5B4E6AE8F6 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D368E25F77A691115E3CE22EC8F84E /* Internal.swift */; };
-		05AF74A2EBA0A400A2DC7A42C4479281 /* TTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB5E2EBC68A5E0A10157C4CC551C93 /* TTL.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		05AF74A2EBA0A400A2DC7A42C4479281 /* TTLUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB5E2EBC68A5E0A10157C4CC551C93 /* TTLUtilities.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		05C153762701610CB06CAA94EF0EE560 /* TSStorageKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 0942FF6E05B7560AE4A2540E4E79414A /* TSStorageKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E1EA507F5C976C6592728C15B929F9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB73D0B88E950418C4D6E895A9A57123 /* ReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		05ECC59847F7575F8CD2C444E6545A02 /* OWSStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE4530CDACC2987ACFB701CF9378E8 /* OWSStorage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4097,7 +4097,7 @@
 		B992F13D07AD3BA75241683F438C0A57 /* RSSFeedItemSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemSource.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItemSource.swift; sourceTree = "<group>"; };
 		B9A7F0D1BC56C92D5CFE1EBCD7B2E55F /* OWSMediaGalleryFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMediaGalleryFinder.h; sourceTree = "<group>"; };
 		B9AC33FFD0C7839AE7D9F0FB477E9C42 /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
-		B9CB5E2EBC68A5E0A10157C4CC551C93 /* TTL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TTL.swift; sourceTree = "<group>"; };
+		B9CB5E2EBC68A5E0A10157C4CC551C93 /* TTLUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TTLUtilities.swift; sourceTree = "<group>"; };
 		B9CDFCFB7A8662FA908A7052D5F42400 /* LokiServiceCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LokiServiceCipher.swift; path = SignalMetadataKit/src/Loki/LokiServiceCipher.swift; sourceTree = "<group>"; };
 		B9E77B9B3D5111632921D27F0EF60808 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAMKeychainQuery.h; path = Sources/SAMKeychainQuery.h; sourceTree = "<group>"; };
 		BA0AC5CE0925F41B5A49D8A6A0558F7A /* Pods-SignalShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -6485,7 +6485,6 @@
 			isa = PBXGroup;
 			children = (
 				92FF87CBE67D9AEF7A9FF1CDE3E32354 /* SessionMetaProtocol.swift */,
-				B9CB5E2EBC68A5E0A10157C4CC551C93 /* TTL.swift */,
 			);
 			path = Meta;
 			sourceTree = "<group>";
@@ -7267,6 +7266,7 @@
 			children = (
 				C36512B8249881C20094D452 /* EphemeralMessage.swift */,
 				C3276B9F24987A7800A302FC /* SessionRequestMessage.swift */,
+				B9CB5E2EBC68A5E0A10157C4CC551C93 /* TTLUtilities.swift */,
 			);
 			path = "Message Types";
 			sourceTree = "<group>";
@@ -11383,7 +11383,7 @@
 				6B9E55D6B1F6022D039319A3F7EF6866 /* TSSocketManager.m in Sources */,
 				BE11D710CD40936A3E075F71757B2D49 /* TSThread.m in Sources */,
 				CFBECB20CCC16DF0DCCDD5E7106947C0 /* TSYapDatabaseObject.m in Sources */,
-				05AF74A2EBA0A400A2DC7A42C4479281 /* TTL.swift in Sources */,
+				05AF74A2EBA0A400A2DC7A42C4479281 /* TTLUtilities.swift in Sources */,
 				958DC720D2A1FCCC2297DCF888516EB5 /* TypingIndicatorMessage.swift in Sources */,
 				4B5A88D7DB20697E05DC3B42FB4EB1CC /* TypingIndicators.swift in Sources */,
 				FA490EF07BD2A3637D09670187518A29 /* UIImage+OWS.m in Sources */,

@@ -1292,6 +1292,7 @@
 		C32C2FE00746B90BF1EEDC58F9375CDF /* SPK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 38138E7C6D62342D5CE4C0541C70AD28 /* SPK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C36512B9249881C20094D452 /* EphemeralMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36512B8249881C20094D452 /* EphemeralMessage.swift */; };
 		C37D54019CA2AAF17EE955023E27C6C4 /* OWSReadReceiptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C8CE9750C0C6CD56195ABB46CC80BBD /* OWSReadReceiptManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3812D622499A5C200F00FF8 /* Promise+Delaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3812D612499A5C200F00FF8 /* Promise+Delaying.swift */; };
 		C3B9FCE89801C69D081E18E22ACEE312 /* TSInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A84A5BDF909500380D5FDB243038B51 /* TSInfoMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C4575373BF7934171EC6E4D8B7A2068B /* NSArray+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = E09B2E705A5B4FA435FDC64AC92EE2D3 /* NSArray+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C45F6137AD8E4F818769CF54FEE82CE7 /* YapDatabaseAutoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 396E0C31D05D829BC333168DFB13FE36 /* YapDatabaseAutoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -4191,6 +4192,7 @@
 		C35D31B0B6FBC82E4C8F813AF160C7A6 /* Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chain.h; path = AxolotlKit/Classes/Ratchet/Chain.h; sourceTree = "<group>"; };
 		C36512B8249881C20094D452 /* EphemeralMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EphemeralMessage.swift; sourceTree = "<group>"; };
 		C36750ECCC89293AF6B7A431FFB26A17 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		C3812D612499A5C200F00FF8 /* Promise+Delaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Delaying.swift"; sourceTree = "<group>"; };
 		C3A0A265C61EAC31EBC2ADE4B1DB4539 /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C40080CCE6C7C45D76553041C856B944 /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
@@ -7943,6 +7945,7 @@
 				81ABBC12A41F78318DC21002C42B05F7 /* Promise+Hashing.swift */,
 				446ADF47B1833BCF86CDE198D8587FA5 /* Promise+Retrying.swift */,
 				C3276B9D2498547D00A302FC /* Promise+Threading.swift */,
+				C3812D612499A5C200F00FF8 /* Promise+Delaying.swift */,
 				793ECE8DF71BB17A8F3F6E2DD6F3AF79 /* String+Trimming.swift */,
 			);
 			path = Utilities;
@@ -11280,6 +11283,7 @@
 				FEC2DB6F926C66460D3BD1D0DD584FE6 /* OWSPrimaryStorage+Calling.m in Sources */,
 				59CD6CEC1D5F2D630E8959E91A6D9304 /* OWSPrimaryStorage+keyFromIntLong.m in Sources */,
 				7EBCAA26887672EEE34B20A5709740E9 /* OWSPrimaryStorage+Loki.m in Sources */,
+				C3812D622499A5C200F00FF8 /* Promise+Delaying.swift in Sources */,
 				C8C049763D802F0933850C36B998DC13 /* OWSPrimaryStorage+Loki.swift in Sources */,
 				C7977E4EE28705D7F652ABBD4FA298D9 /* OWSPrimaryStorage+PreKeyStore.m in Sources */,
 				078D6835135FD5245048ED037023CBF6 /* OWSPrimaryStorage+SessionStore.m in Sources */,

@@ -1,6 +1,6 @@
 {
   "name": "SessionCurve25519Kit",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "license": {
     "type": "GPLv3"
   },
@@ -13,7 +13,7 @@
   "description": "Curve25519 is a fast and secure curve used for key agreement. Unfortunately, it does not support signing out of the box. This pod translates the point curves to do ed25519 signing with curve25519 keys.",
   "source": {
     "git": "https://github.com/loki-project/session-ios-curve-25519-kit.git",
-    "tag": "2.1.2"
+    "tag": "2.1.3"
   },
   "source_files": [
     "Classes/*.{h,m,swift}",

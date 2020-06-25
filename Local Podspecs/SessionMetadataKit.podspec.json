@@ -1,6 +1,6 @@
 {
   "name": "SessionMetadataKit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": "A Swift & Objective-C library used by other Session libraries.",
   "description": "A Swift & Objective-C library used by other Session libraries.",
   "homepage": "https://github.com/loki-project/session-ios-metadata-kit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/loki-project/session-ios-metadata-kit.git",
-    "tag": "1.0.2"
+    "tag": "1.0.3"
   },
   "social_media_url": "https://getsession.org/",
   "platforms": {

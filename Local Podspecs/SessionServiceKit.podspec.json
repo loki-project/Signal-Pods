@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "SessionCurve25519Kit": [
-      "~> 2.1.2"
+      "~> 2.1.3"
     ],
     "CocoaLumberjack": [
 
@@ -71,7 +71,7 @@
       "~> 1.0.0"
     ],
     "SessionMetadataKit": [
-      "~> 1.0.2"
+      "~> 1.0.3"
     ],
     "PromiseKit": [
       "~> 6.0"

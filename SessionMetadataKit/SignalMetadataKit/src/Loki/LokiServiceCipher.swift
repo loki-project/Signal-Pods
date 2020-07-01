@@ -51,9 +51,15 @@ public final class LokiSessionCipher : SessionCipher {
     }
     
     private func handleSessionReset(for whisperMessage: CipherMessage, previousState: SessionState?, protocolContext: Any?) {
-        // Don't bother doing anything if we didn't have a session before
-        guard let previousState = previousState else { return }
         let sessionResetStatus = sessionResetImplementation?.getSessionResetStatus(for: recipientID, protocolContext: protocolContext) ?? SessionResetStatus.none
+        // Don't bother doing anything if we didn't have a session before
+        guard let previousState = previousState else {
+            //Notify session reset done if self is recovered from seed
+            if (sessionResetStatus == .initiated) {
+                sessionResetImplementation?.onNewSessionAdopted(for: recipientID, protocolContext: protocolContext)
+            }
+            return
+        }
         // Bail early if no session reset is in progress
         guard sessionResetStatus != .none else { return }
         let currentState = getCurrentState(protocolContext: protocolContext)
@@ -66,12 +72,14 @@ public final class LokiSessionCipher : SessionCipher {
                 // Our session reset went through successfully.
                 // We initiated a session reset and got a different session back from the user.
                 deleteAllSessions(except: currentState, protocolContext: protocolContext)
+                sessionResetImplementation?.onNewSessionAdopted(for: recipientID, protocolContext: protocolContext)
                 notifySessionAdopted()
             }
         } else if sessionResetStatus == .requestReceived {
             // Our session reset went through successfully.
             // We got a message with the same session from the other user.
             deleteAllSessions(except: previousState, protocolContext: protocolContext)
+            sessionResetImplementation?.onNewSessionAdopted(for: recipientID, protocolContext: protocolContext)
             notifySessionAdopted()
         }
     }

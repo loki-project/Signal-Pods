@@ -6,6 +6,7 @@ import Foundation
 
 @objc
 public class SecretSessionKnownSenderError: NSObject, CustomNSError {
+
     @objc
     public static let kSenderRecipientIdKey = "kSenderRecipientIdKey"
 
@@ -132,93 +133,85 @@ public class SMKDecryptResult: NSObject {
 
     private let kSMKSecretSessionCipherMacLength: UInt = 10
 
-    private let sessionResetImplementation: SessionResetProtocol?
+    private let sessionResetImplementation: SessionResetProtocol!
     private let sessionStore: SessionStore
     private let preKeyStore: PreKeyStore
     private let signedPreKeyStore: SignedPreKeyStore
     private let identityStore: IdentityKeyStore
+    private let sharedSenderKeysImplementation: SharedSenderKeysProtocol!
 
-    // public SecretSessionCipher(SignalProtocolStore signalProtocolStore) {
-    @objc public init(sessionResetImplementation: SessionResetProtocol?,
+    @objc public init(sessionResetImplementation: SessionResetProtocol!,
                       sessionStore: SessionStore,
                       preKeyStore: PreKeyStore,
                       signedPreKeyStore: SignedPreKeyStore,
-                      identityStore: IdentityKeyStore) throws {
+                      identityStore: IdentityKeyStore,
+                      sharedSenderKeysImplementation: SharedSenderKeysProtocol!) throws {
         self.sessionResetImplementation = sessionResetImplementation
         self.sessionStore = sessionStore
         self.preKeyStore = preKeyStore
         self.signedPreKeyStore = signedPreKeyStore
         self.identityStore = identityStore
+        self.sharedSenderKeysImplementation = sharedSenderKeysImplementation
     }
 
-    @objc convenience public init(sessionStore: SessionStore,
+    @objc public convenience init(sessionStore: SessionStore,
                                   preKeyStore: PreKeyStore,
                                   signedPreKeyStore: SignedPreKeyStore,
                                   identityStore: IdentityKeyStore) throws {
-        try self.init(sessionResetImplementation: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore)
+        try self.init(sessionResetImplementation: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore, sharedSenderKeysImplementation: nil)
     }
 
     // MARK: - Public
 
-    // public byte[] encrypt(SignalProtocolAddress destinationAddress, SenderCertificate senderCertificate, byte[]
-    // paddedPlaintext)
     @objc
-    public func throwswrapped_encryptMessage(recipientId: String,
-                                             deviceId: Int32,
-                                             paddedPlaintext: Data?,
-                                             closedGroupCiphertext: Data?,
+    public func throwswrapped_encryptMessage(recipientPublicKey: String,
+                                             deviceID: Int32,
+                                             paddedPlaintext: Data,
                                              senderCertificate: SMKSenderCertificate,
-                                             keyPair: ECKeyPair?,
-                                             protocolContext: Any?,
+                                             protocolContext: Any,
                                              useFallbackSessionCipher: Bool) throws -> Data {
-        var keyPair: ECKeyPair! = keyPair
-
-        guard recipientId.count > 0 else {
+        guard recipientPublicKey.count > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid recipientId")
         }
 
-        guard deviceId > 0 else {
+        guard deviceID > 0 else {
             throw SMKError.assertionError(description: "\(SMKSecretSessionCipher.logTag) invalid deviceId")
         }
 
-        // IdentityKeyPair ourIdentity = signalProtocolStore.getIdentityKeyPair();
         guard let ourIdentityKeyPair = identityStore.identityKeyPair(protocolContext) else {
             throw SMKError.assertionError(description: "\(logTag) Missing our identity key pair.")
         }
 
-        let encryptedMessageData: Data!
-        var encryptedMessage: CipherMessage!
-        if let closedGroupCiphertext = closedGroupCiphertext {
-            encryptedMessageData = closedGroupCiphertext
+        let keyPair: ECKeyPair
+        let encryptedMessage: CipherMessage
+        if useFallbackSessionCipher {
+            let cipher = FallBackSessionCipher(recipientPublicKey: recipientPublicKey, privateKey: ourIdentityKeyPair.privateKey)
+            let ivAndCiphertext = cipher.encrypt(paddedPlaintext)!
+            keyPair = ourIdentityKeyPair
+            encryptedMessage = LokiFriendRequestMessage(_throws_with: ivAndCiphertext)
+        } else if sharedSenderKeysImplementation.isClosedGroup(recipientPublicKey) {
+            let senderPublicKey = "05" + ourIdentityKeyPair.publicKey.map { String(format: "%02hhx", $0) }.joined()
+            let ciphertextAndKeyIndex = try sharedSenderKeysImplementation.encrypt(paddedPlaintext, forGroupWithPublicKey: recipientPublicKey, senderPublicKey: senderPublicKey, protocolContext: protocolContext)
+            let ivAndCiphertext = ciphertextAndKeyIndex[0] as! Data
+            let keyIndex = ciphertextAndKeyIndex[1] as! UInt
+            keyPair = sharedSenderKeysImplementation.getKeyPair(forGroupWithPublicKey: recipientPublicKey)
+            encryptedMessage = ClosedGroupCiphertextMessage(_throws_withIVAndCiphertext: ivAndCiphertext, senderPublicKey: senderPublicKey, keyIndex: UInt32(keyIndex))
         } else {
-            if (useFallbackSessionCipher) {
-                let privateKey = ourIdentityKeyPair.privateKey
-                let cipher = FallBackSessionCipher(recipientPublicKey: recipientId, privateKey: privateKey)
-                encryptedMessage = LokiFriendRequestMessage(_throws_with: cipher.encrypt(paddedPlaintext!)!)
-            } else {
-                let cipher = SessionCipher(sessionStore: sessionStore,
-                                           preKeyStore: preKeyStore,
-                                           signedPreKeyStore: signedPreKeyStore,
-                                           identityKeyStore: identityStore,
-                                           recipientId: recipientId,
-                                           deviceId: deviceId)
-
-                encryptedMessage = try cipher.encryptMessage(paddedPlaintext!, protocolContext: protocolContext)
-            }
-
-            encryptedMessageData = encryptedMessage.serialized()
+            let cipher = SessionCipher(sessionStore: sessionStore,
+                                       preKeyStore: preKeyStore,
+                                       signedPreKeyStore: signedPreKeyStore,
+                                       identityKeyStore: identityStore,
+                                       recipientId: recipientPublicKey,
+                                       deviceId: deviceID)
+            keyPair = ourIdentityKeyPair
+            encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
         }
 
-        guard encryptedMessageData != nil else {
+        guard let encryptedMessageData = encryptedMessage.serialized() else {
             throw SMKError.assertionError(description: "\(logTag) Could not serialize encrypted message.")
         }
 
-        if keyPair == nil {
-            keyPair = ourIdentityKeyPair
-        }
-
-        // ECPublicKey theirIdentity = signalProtocolStore.getIdentity(destinationAddress).getPublicKey();
-        guard let theirIdentityKeyData = Data.data(fromHex: recipientId.substring(from: recipientId.index(recipientId.startIndex, offsetBy: 2))) else {
+        guard let theirIdentityKeyData = Data.data(fromHex: recipientPublicKey.substring(from: recipientPublicKey.index(recipientPublicKey.startIndex, offsetBy: 2))) else {
             throw SMKError.assertionError(description: "\(logTag) Missing their public identity key.")
         }
 
@@ -226,11 +219,8 @@ public class SMKDecryptResult: NSObject {
         // key data should not have a type byte.
         let theirIdentityKey = try ECPublicKey(keyData: theirIdentityKeyData)
 
-        // ECKeyPair ephemeral = Curve.generateKeyPair();
         let ephemeral = Curve25519.generateKeyPair()
 
-        // byte[] ephemeralSalt = ByteUtil.combine("UnidentifiedDelivery".getBytes(), theirIdentity.serialize(),
-        // ephemeral.getPublicKey().serialize());
         guard let prefixData = kUDPrefixString.data(using: String.Encoding.utf8) else {
             throw SMKError.assertionError(description: "\(logTag) Could not encode prefix.")
         }
@@ -239,59 +229,47 @@ public class SMKDecryptResult: NSObject {
             prefixData,
             theirIdentityKey.serialized,
             try ephemeral.ecPublicKey().serialized
-            ])
+        ])
 
-        // EphemeralKeys ephemeralKeys = calculateEphemeralKeys(theirIdentity, ephemeral.getPrivateKey(), ephemeralSalt);
         let ephemeralKeys = try throwswrapped_calculateEphemeralKeys(ephemeralPublicKey: theirIdentityKey,
                                                                      ephemeralPrivateKey: ephemeral.ecPrivateKey(),
                                                                      salt: ephemeralSalt)
 
-        // byte[] staticKeyCiphertext = encrypt(ephemeralKeys.cipherKey, ephemeralKeys.macKey,
-        // ourIdentity.getPublicKey().getPublicKey().serialize());
         let staticKeyCipherData = try encrypt(cipherKey: ephemeralKeys.cipherKey,
                                               macKey: ephemeralKeys.macKey,
                                               plaintextData: keyPair.ecPublicKey().serialized)
 
-        // byte[] staticSalt = ByteUtil.combine(ephemeralKeys.chainKey, staticKeyCiphertext);
         let staticSalt = NSData.join([
             ephemeralKeys.chainKey,
             staticKeyCipherData
-            ])
+        ])
 
-        // StaticKeys staticKeys = calculateStaticKeys(theirIdentity, ourIdentity.getPrivateKey(), staticSalt);
         let staticKeys = try throwswrapped_calculateStaticKeys(staticPublicKey: theirIdentityKey,
                                                                staticPrivateKey: keyPair.ecPrivateKey(),
                                                                salt: staticSalt)
 
-        // UnidentifiedSenderMessageContent content = new UnidentifiedSenderMessageContent(message.getType(),
-        // senderCertificate, message.serialize());
-        var messageType: SMKMessageType
-        if closedGroupCiphertext != nil {
+        let messageType: SMKMessageType
+        switch encryptedMessage.cipherMessageType {
+        case .prekey:
+            messageType = .prekey
+        case .whisper:
             messageType = .whisper
-        } else {
-            switch encryptedMessage.cipherMessageType {
-            case .prekey:
-                messageType = .prekey
-            case .whisper:
-                messageType = .whisper
-            case .lokiFriendRequest:
-                messageType = .lokiFriendRequest
-            default:
-                throw SMKError.assertionError(description: "\(logTag) Unknown cipher message type.")
-            }
+        case .lokiFriendRequest:
+            messageType = .lokiFriendRequest
+        case .closedGroupCiphertext:
+            messageType = .closedGroupCiphertext
+        default:
+            throw SMKError.assertionError(description: "\(logTag) Unknown cipher message type.")
         }
 
         let messageContent = SMKUnidentifiedSenderMessageContent(messageType: messageType,
                                                                  senderCertificate: senderCertificate,
                                                                  contentData: encryptedMessageData)
 
-        // byte[] messageBytes = encrypt(staticKeys.cipherKey, staticKeys.macKey, content.getSerialized());
         let messageData = try encrypt(cipherKey: staticKeys.cipherKey,
                                       macKey: staticKeys.macKey,
                                       plaintextData: try messageContent.serialized())
 
-        // return new UnidentifiedSenderMessage(ephemeral.getPublicKey(), staticKeyCiphertext,
-        // messageBytes).getSerialized();
         let message = SMKUnidentifiedSenderMessage(ephemeralKey: try ephemeral.ecPublicKey(),
                                                    encryptedStatic: staticKeyCipherData,
                                                    encryptedMessage: messageData)
@@ -299,40 +277,31 @@ public class SMKDecryptResult: NSObject {
         return try message.serialized()
     }
 
-    // public Pair<SignalProtocolAddress, byte[]> decrypt(CertificateValidator validator, byte[] ciphertext, long
-    /// timestamp) /throws /InvalidMetadataMessageException, InvalidMetadataVersionException,
-    // ProtocolInvalidMessageException, ProtocolInvalidKeyException,
-    // ProtocolNoSessionException, ProtocolLegacyMessageException,
-    // ProtocolInvalidVersionException, ProtocolDuplicateMessageException,
-    // ProtocolInvalidKeyIdException, ProtocolUntrustedIdentityException
     @objc
     public func throwswrapped_decryptMessage(certificateValidator: SMKCertificateValidator,
+                                             senderPublicKey: String,
                                              cipherTextData: Data,
                                              timestamp: UInt64,
                                              localRecipientId: String,
                                              localDeviceId: Int32,
-                                             keyPair: ECKeyPair?,
-                                             protocolContext: Any?) throws -> SMKDecryptResult {
-        var keyPair: ECKeyPair! = keyPair
-
+                                             protocolContext: Any) throws -> SMKDecryptResult {
         guard timestamp > 0 else {
             throw SMKError.assertionError(description: "\(logTag) invalid timestamp")
         }
 
-        //        IdentityKeyPair ourIdentity    = signalProtocolStore.getIdentityKeyPair();
         guard let ourIdentityKeyPair = identityStore.identityKeyPair(protocolContext) else {
             throw SMKError.assertionError(description: "\(logTag) Missing our identity key pair.")
         }
 
-        if keyPair == nil {
+        let keyPair: ECKeyPair
+        if sharedSenderKeysImplementation.isClosedGroup(senderPublicKey) {
+            keyPair = sharedSenderKeysImplementation.getKeyPair(forGroupWithPublicKey: senderPublicKey)
+        } else {
             keyPair = ourIdentityKeyPair
         }
 
-        // UnidentifiedSenderMessage wrapper = new UnidentifiedSenderMessage(ciphertext);
         let wrapper = try SMKUnidentifiedSenderMessage.parse(dataAndPrefix: cipherTextData)
 
-        // byte[] ephemeralSalt = ByteUtil.combine("UnidentifiedDelivery".getBytes(),
-        // ourIdentity.getPublicKey().getPublicKey().serialize(), wrapper.getEphemeral().serialize());
         guard let prefixData = kUDPrefixString.data(using: String.Encoding.utf8) else {
             throw SMKError.assertionError(description: "\(logTag) Could not encode prefix.")
         }
@@ -341,39 +310,31 @@ public class SMKDecryptResult: NSObject {
             prefixData,
             try keyPair.ecPublicKey().serialized,
             wrapper.ephemeralKey.serialized
-            ])
+        ])
 
-        // EphemeralKeys ephemeralKeys = calculateEphemeralKeys(wrapper.getEphemeral(), ourIdentity.getPrivateKey(),
-        // ephemeralSalt);
         let ephemeralKeys = try throwswrapped_calculateEphemeralKeys(ephemeralPublicKey: wrapper.ephemeralKey,
                                                                      ephemeralPrivateKey: keyPair.ecPrivateKey(),
                                                                      salt: ephemeralSalt)
 
-        // byte[] staticKeyBytes = decrypt(ephemeralKeys.cipherKey, ephemeralKeys.macKey, wrapper.getEncryptedStatic());
         let staticKeyBytes = try decrypt(cipherKey: ephemeralKeys.cipherKey,
                                          macKey: ephemeralKeys.macKey,
                                          cipherTextWithMac: wrapper.encryptedStatic)
 
-        // ECPublicKey staticKey = Curve.decodePoint(staticKeyBytes, 0);
         let staticKey = try ECPublicKey(serializedKeyData: staticKeyBytes)
 
-        // byte[] staticSalt = ByteUtil.combine(ephemeralKeys.chainKey, wrapper.getEncryptedStatic());
         let staticSalt = NSData.join([
             ephemeralKeys.chainKey,
             wrapper.encryptedStatic
-            ])
+        ])
 
-        // StaticKeys staticKeys = calculateStaticKeys(staticKey, ourIdentity.getPrivateKey(), staticSalt);
         let staticKeys = try throwswrapped_calculateStaticKeys(staticPublicKey: staticKey,
                                                                staticPrivateKey: keyPair.ecPrivateKey(),
                                                                salt: staticSalt)
 
-        // byte[] messageBytes = decrypt(staticKeys.cipherKey, staticKeys.macKey, wrapper.getEncryptedMessage());
         let messageBytes = try decrypt(cipherKey: staticKeys.cipherKey,
                                        macKey: staticKeys.macKey,
                                        cipherTextWithMac: wrapper.encryptedMessage)
 
-        // content = new UnidentifiedSenderMessageContent(messageBytes);
         let messageContent = try SMKUnidentifiedSenderMessageContent.parse(data: messageBytes)
 
         let senderRecipientId = messageContent.senderCertificate.senderRecipientId
@@ -397,11 +358,11 @@ public class SMKDecryptResult: NSObject {
             throw wrapAsKnownSenderError(error)
         }
 
-        // if (!MessageDigest.isEqual(content.getSenderCertificate().getKey().serialize(), staticKeyBytes)) {
-        // throw new InvalidKeyException("Sender's certificate key does not match key used in message");
-        // }
-        //
-        // NOTE: Constant time comparison.
+//        if (!MessageDigest.isEqual(content.getSenderCertificate().getKey().serialize(), staticKeyBytes)) {
+//            throw new InvalidKeyException("Sender's certificate key does not match key used in message");
+//        }
+
+//        // NOTE: Constant time comparison.
 //        guard messageContent.senderCertificate.key.serialized.ows_constantTimeIsEqual(to: staticKeyBytes) else {
 //            let underlyingError = SMKError.assertionError(description: "\(logTag) Sender's certificate key does not match key used in message.")
 //            throw wrapAsKnownSenderError(underlyingError)
@@ -414,10 +375,6 @@ public class SMKDecryptResult: NSObject {
             throw wrapAsKnownSenderError(error)
         }
 
-        // return new Pair<>(new SignalProtocolAddress(content.getSenderCertificate().getSender(),
-        // content.getSenderCertificate().getSenderDeviceId()),
-        // decrypt(content));
-        //
         // NOTE: We use the sender properties from the sender certificate, not from this class' properties.
         guard senderDeviceId >= 0 && senderDeviceId <= INT_MAX else {
             let underlyingError = SMKError.assertionError(description: "\(logTag) Invalid senderDeviceId.")
@@ -435,14 +392,16 @@ public class SMKDecryptResult: NSObject {
     // private EphemeralKeys calculateEphemeralKeys(ECPublicKey ephemeralPublic, ECPrivateKey ephemeralPrivate, byte[] salt)
     // throws InvalidKeyException {
     private func throwswrapped_calculateEphemeralKeys(ephemeralPublicKey: ECPublicKey,
-                                                   ephemeralPrivateKey: ECPrivateKey,
-                                                   salt: Data) throws -> SMKEphemeralKeys {
+                                                      ephemeralPrivateKey: ECPrivateKey,
+                                                      salt: Data) throws -> SMKEphemeralKeys {
         guard ephemeralPublicKey.keyData.count > 0 else {
             throw SMKError.assertionError(description: "\(logTag) invalid ephemeralPublicKey")
         }
+
         guard ephemeralPrivateKey.keyData.count > 0 else {
             throw SMKError.assertionError(description: "\(logTag) invalid ephemeralPrivateKey")
         }
+
         guard salt.count > 0 else {
             throw SMKError.assertionError(description: "\(logTag) invalid salt")
         }
@@ -453,7 +412,7 @@ public class SMKDecryptResult: NSObject {
         // https://github.com/signalapp/libsignal-protocol-java/blob/master/java/src/main/java/org/whispersystems/libsignal/ecc/Curve.java#L30
         let ephemeralSecret = try Curve25519.generateSharedSecret(fromPublicKey: ephemeralPublicKey.keyData, privateKey: ephemeralPrivateKey.keyData)
 
-        // byte[]   ephemeralDerived = new HKDFv3().deriveSecrets(ephemeralSecret, salt, new byte[0], 96);
+        // byte[] ephemeralDerived = new HKDFv3().deriveSecrets(ephemeralSecret, salt, new byte[0], 96);
         let kEphemeralDerivedLength: UInt = 96
         let ephemeralDerived: Data =
             try HKDFKit.deriveKey(ephemeralSecret, info: Data(), salt: salt, outputSize: Int32(kEphemeralDerivedLength))
@@ -475,8 +434,8 @@ public class SMKDecryptResult: NSObject {
     // private StaticKeys calculateStaticKeys(ECPublicKey staticPublic, ECPrivateKey staticPrivate, byte[] salt) throws
     // InvalidKeyException {
     private func throwswrapped_calculateStaticKeys(staticPublicKey: ECPublicKey,
-                                                staticPrivateKey: ECPrivateKey,
-                                                salt: Data) throws -> SMKStaticKeys {
+                                                   staticPrivateKey: ECPrivateKey,
+                                                   salt: Data) throws -> SMKStaticKeys {
         guard staticPublicKey.keyData.count > 0 else {
             throw SMKError.assertionError(description: "\(logTag) invalid staticPublicKey")
         }
@@ -547,22 +506,15 @@ public class SMKDecryptResult: NSObject {
         let result = NSData.join([
             cipherText,
             ourMac
-            ])
+        ])
 
         return result
     }
 
     // MARK: - Decrypt
 
-    // private byte[] decrypt(UnidentifiedSenderMessageContent message)
-    // throws InvalidVersionException, InvalidMessageException, InvalidKeyException, DuplicateMessageException,
-    // InvalidKeyIdException, UntrustedIdentityException, LegacyMessageException, NoSessionException
     private func throwswrapped_decrypt(messageContent: SMKUnidentifiedSenderMessageContent,
-                                    protocolContext: Any?) throws -> Data {
-
-        // SignalProtocolAddress sender = new SignalProtocolAddress(message.getSenderCertificate().getSender(),
-        // message.getSenderCertificate().getSenderDeviceId());
-        //
+                                       protocolContext: Any) throws -> Data {
         // NOTE: We use the sender properties from the sender certificate, not from this class' properties.
         let senderRecipientId = messageContent.senderCertificate.senderRecipientId
         let senderDeviceId = messageContent.senderCertificate.senderDeviceId
@@ -570,13 +522,7 @@ public class SMKDecryptResult: NSObject {
             throw SMKError.assertionError(description: "\(logTag) Invalid senderDeviceId.")
         }
 
-        // switch (message.getType()) {
-        // case CiphertextMessage.WHISPER_TYPE: return new SessionCipher(signalProtocolStore, sender).decrypt(new
-        // SignalMessage(message.getContent())); case CiphertextMessage.PREKEY_TYPE: return new
-        // SessionCipher(signalProtocolStore, sender).decrypt(new PreKeySignalMessage(message.getContent())); default: throw
-        // new InvalidMessageException("Unknown type: " + message.getType());
-        // }
-        var cipherMessage: CipherMessage
+        let cipherMessage: CipherMessage
         switch (messageContent.messageType) {
         case .whisper:
             cipherMessage = try WhisperMessage(data: messageContent.contentData)
@@ -585,12 +531,14 @@ public class SMKDecryptResult: NSObject {
         case .lokiFriendRequest:
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
             let cipher = FallBackSessionCipher(recipientPublicKey: senderRecipientId, privateKey: privateKey)
-            let plaintextData = try cipher.decrypt(messageContent.contentData)!
-            return plaintextData
-        }
-
-        guard let sessionResetImplementation = sessionResetImplementation else {
-            throw SMKError.assertionError(description: "\(logTag) Missing session reset protocol implementation.")
+            let plaintext = try cipher.decrypt(messageContent.contentData)!
+            return plaintext
+        case .closedGroupCiphertext:
+            let closedGroupCiphertextMessage = try ClosedGroupCiphertextMessage(_throws_with: messageContent.contentData)
+            let groupPublicKey = senderRecipientId
+            let plaintext = try sharedSenderKeysImplementation.decrypt(closedGroupCiphertextMessage.ivAndCiphertext, forGroupWithPublicKey: groupPublicKey,
+                senderPublicKey: closedGroupCiphertextMessage.senderPublicKey, keyIndex: UInt(closedGroupCiphertextMessage.keyIndex), protocolContext: protocolContext)
+            return plaintext
         }
 
         let cipher = LokiSessionCipher(sessionResetImplementation: sessionResetImplementation,
@@ -638,6 +586,7 @@ public class SMKDecryptResult: NSObject {
         guard ourFullMac.count >= kSMKSecretSessionCipherMacLength else {
             throw SMKError.assertionError(description: "\(logTag) HmacSHA256 has unexpected length.")
         }
+
         let ourMac = ourFullMac[0..<kSMKSecretSessionCipherMacLength]
 
         // if (!MessageDigest.isEqual(ourMac, theirMac)) {

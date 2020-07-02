@@ -39,8 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
         NSMutableData *serialized = [NSMutableData dataWithBytes:&versionByte length:1];
 
         SPKProtoTSProtoWhisperMessageBuilder *messageBuilder = [SPKProtoTSProtoWhisperMessage builderWithRatchetKey:senderRatchetKey
-                                                                                                                        counter:counter
-                                                                                                                     ciphertext:cipherText];
+                                                                                                            counter:counter
+                                                                                                         ciphertext:cipherText];
         [messageBuilder setPreviousCounter:previousCounter];
         NSError *error;
         NSData *_Nullable messageData = [messageBuilder buildSerializedDataAndReturnError:&error];

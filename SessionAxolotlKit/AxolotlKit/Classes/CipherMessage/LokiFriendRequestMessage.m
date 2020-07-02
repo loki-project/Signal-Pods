@@ -2,14 +2,16 @@
 
 @implementation LokiFriendRequestMessage
 
-- (instancetype)init_throws_withData:(NSData *)serialized {
+- (instancetype)init_throws_withData:(NSData *)serialized
+{
     if (self = [super init]) {
         _serialized = serialized;
     }
     return self;
 }
 
-- (CipherMessageType)cipherMessageType {
+- (CipherMessageType)cipherMessageType
+{
     return CipherMessageType_LokiFriendRequest;
 }
 

@@ -20,6 +20,15 @@ public enum SPKProtoError: Error {
         return SPKProtoTSProtoWhisperMessageBuilder(ratchetKey: ratchetKey, counter: counter, ciphertext: ciphertext)
     }
 
+    // asBuilder() constructs a builder that reflects the proto's contents.
+    @objc public func asBuilder() -> SPKProtoTSProtoWhisperMessageBuilder {
+        let builder = SPKProtoTSProtoWhisperMessageBuilder(ratchetKey: ratchetKey, counter: counter, ciphertext: ciphertext)
+        if hasPreviousCounter {
+            builder.setPreviousCounter(previousCounter)
+        }
+        return builder
+    }
+
     @objc public class SPKProtoTSProtoWhisperMessageBuilder: NSObject {
 
         private var proto = SPKProtos_TSProtoWhisperMessage()
@@ -120,6 +129,10 @@ public enum SPKProtoError: Error {
                                                    ciphertext: ciphertext)
         return result
     }
+
+    @objc public override var debugDescription: String {
+        return "\(proto)"
+    }
 }
 
 #if DEBUG
@@ -146,6 +159,18 @@ extension SPKProtoTSProtoWhisperMessage.SPKProtoTSProtoWhisperMessageBuilder {
 
     @objc public class func builder(signedPreKeyID: UInt32, baseKey: Data, identityKey: Data, message: Data) -> SPKProtoTSProtoPreKeyWhisperMessageBuilder {
         return SPKProtoTSProtoPreKeyWhisperMessageBuilder(signedPreKeyID: signedPreKeyID, baseKey: baseKey, identityKey: identityKey, message: message)
+    }
+
+    // asBuilder() constructs a builder that reflects the proto's contents.
+    @objc public func asBuilder() -> SPKProtoTSProtoPreKeyWhisperMessageBuilder {
+        let builder = SPKProtoTSProtoPreKeyWhisperMessageBuilder(signedPreKeyID: signedPreKeyID, baseKey: baseKey, identityKey: identityKey, message: message)
+        if hasRegistrationID {
+            builder.setRegistrationID(registrationID)
+        }
+        if hasPreKeyID {
+            builder.setPreKeyID(preKeyID)
+        }
+        return builder
     }
 
     @objc public class SPKProtoTSProtoPreKeyWhisperMessageBuilder: NSObject {
@@ -274,6 +299,10 @@ extension SPKProtoTSProtoWhisperMessage.SPKProtoTSProtoWhisperMessageBuilder {
                                                          message: message)
         return result
     }
+
+    @objc public override var debugDescription: String {
+        return "\(proto)"
+    }
 }
 
 #if DEBUG
@@ -300,6 +329,27 @@ extension SPKProtoTSProtoPreKeyWhisperMessage.SPKProtoTSProtoPreKeyWhisperMessag
 
     @objc public class func builder() -> SPKProtoTSProtoKeyExchangeMessageBuilder {
         return SPKProtoTSProtoKeyExchangeMessageBuilder()
+    }
+
+    // asBuilder() constructs a builder that reflects the proto's contents.
+    @objc public func asBuilder() -> SPKProtoTSProtoKeyExchangeMessageBuilder {
+        let builder = SPKProtoTSProtoKeyExchangeMessageBuilder()
+        if hasID {
+            builder.setId(id)
+        }
+        if let _value = baseKey {
+            builder.setBaseKey(_value)
+        }
+        if let _value = ratchetKey {
+            builder.setRatchetKey(_value)
+        }
+        if let _value = identityKey {
+            builder.setIdentityKey(_value)
+        }
+        if let _value = baseKeySignature {
+            builder.setBaseKeySignature(_value)
+        }
+        return builder
     }
 
     @objc public class SPKProtoTSProtoKeyExchangeMessageBuilder: NSObject {
@@ -408,6 +458,10 @@ extension SPKProtoTSProtoPreKeyWhisperMessage.SPKProtoTSProtoPreKeyWhisperMessag
         let result = SPKProtoTSProtoKeyExchangeMessage(proto: proto)
         return result
     }
+
+    @objc public override var debugDescription: String {
+        return "\(proto)"
+    }
 }
 
 #if DEBUG
@@ -434,6 +488,21 @@ extension SPKProtoTSProtoKeyExchangeMessage.SPKProtoTSProtoKeyExchangeMessageBui
 
     @objc public class func builder() -> SPKProtoTSProtoSenderKeyMessageBuilder {
         return SPKProtoTSProtoSenderKeyMessageBuilder()
+    }
+
+    // asBuilder() constructs a builder that reflects the proto's contents.
+    @objc public func asBuilder() -> SPKProtoTSProtoSenderKeyMessageBuilder {
+        let builder = SPKProtoTSProtoSenderKeyMessageBuilder()
+        if hasID {
+            builder.setId(id)
+        }
+        if hasIteration {
+            builder.setIteration(iteration)
+        }
+        if let _value = ciphertext {
+            builder.setCiphertext(_value)
+        }
+        return builder
     }
 
     @objc public class SPKProtoTSProtoSenderKeyMessageBuilder: NSObject {
@@ -511,6 +580,10 @@ extension SPKProtoTSProtoKeyExchangeMessage.SPKProtoTSProtoKeyExchangeMessageBui
         let result = SPKProtoTSProtoSenderKeyMessage(proto: proto)
         return result
     }
+
+    @objc public override var debugDescription: String {
+        return "\(proto)"
+    }
 }
 
 #if DEBUG
@@ -537,6 +610,24 @@ extension SPKProtoTSProtoSenderKeyMessage.SPKProtoTSProtoSenderKeyMessageBuilder
 
     @objc public class func builder() -> SPKProtoTSProtoSenderKeyDistributionMessageBuilder {
         return SPKProtoTSProtoSenderKeyDistributionMessageBuilder()
+    }
+
+    // asBuilder() constructs a builder that reflects the proto's contents.
+    @objc public func asBuilder() -> SPKProtoTSProtoSenderKeyDistributionMessageBuilder {
+        let builder = SPKProtoTSProtoSenderKeyDistributionMessageBuilder()
+        if hasID {
+            builder.setId(id)
+        }
+        if hasIteration {
+            builder.setIteration(iteration)
+        }
+        if let _value = chainKey {
+            builder.setChainKey(_value)
+        }
+        if let _value = signingKey {
+            builder.setSigningKey(_value)
+        }
+        return builder
     }
 
     @objc public class SPKProtoTSProtoSenderKeyDistributionMessageBuilder: NSObject {
@@ -628,6 +719,10 @@ extension SPKProtoTSProtoSenderKeyMessage.SPKProtoTSProtoSenderKeyMessageBuilder
         let result = SPKProtoTSProtoSenderKeyDistributionMessage(proto: proto)
         return result
     }
+
+    @objc public override var debugDescription: String {
+        return "\(proto)"
+    }
 }
 
 #if DEBUG
@@ -640,6 +735,133 @@ extension SPKProtoTSProtoSenderKeyDistributionMessage {
 
 extension SPKProtoTSProtoSenderKeyDistributionMessage.SPKProtoTSProtoSenderKeyDistributionMessageBuilder {
     @objc public func buildIgnoringErrors() -> SPKProtoTSProtoSenderKeyDistributionMessage? {
+        return try! self.build()
+    }
+}
+
+#endif
+
+// MARK: - SPKProtoClosedGroupCiphertextMessage
+
+@objc public class SPKProtoClosedGroupCiphertextMessage: NSObject {
+
+    // MARK: - SPKProtoClosedGroupCiphertextMessageBuilder
+
+    @objc public class func builder(ciphertext: Data, senderPublicKey: String, keyIndex: UInt32) -> SPKProtoClosedGroupCiphertextMessageBuilder {
+        return SPKProtoClosedGroupCiphertextMessageBuilder(ciphertext: ciphertext, senderPublicKey: senderPublicKey, keyIndex: keyIndex)
+    }
+
+    // asBuilder() constructs a builder that reflects the proto's contents.
+    @objc public func asBuilder() -> SPKProtoClosedGroupCiphertextMessageBuilder {
+        let builder = SPKProtoClosedGroupCiphertextMessageBuilder(ciphertext: ciphertext, senderPublicKey: senderPublicKey, keyIndex: keyIndex)
+        return builder
+    }
+
+    @objc public class SPKProtoClosedGroupCiphertextMessageBuilder: NSObject {
+
+        private var proto = SPKProtos_ClosedGroupCiphertextMessage()
+
+        @objc fileprivate override init() {}
+
+        @objc fileprivate init(ciphertext: Data, senderPublicKey: String, keyIndex: UInt32) {
+            super.init()
+
+            setCiphertext(ciphertext)
+            setSenderPublicKey(senderPublicKey)
+            setKeyIndex(keyIndex)
+        }
+
+        @objc public func setCiphertext(_ valueParam: Data) {
+            proto.ciphertext = valueParam
+        }
+
+        @objc public func setSenderPublicKey(_ valueParam: String) {
+            proto.senderPublicKey = valueParam
+        }
+
+        @objc public func setKeyIndex(_ valueParam: UInt32) {
+            proto.keyIndex = valueParam
+        }
+
+        @objc public func build() throws -> SPKProtoClosedGroupCiphertextMessage {
+            return try SPKProtoClosedGroupCiphertextMessage.parseProto(proto)
+        }
+
+        @objc public func buildSerializedData() throws -> Data {
+            return try SPKProtoClosedGroupCiphertextMessage.parseProto(proto).serializedData()
+        }
+    }
+
+    fileprivate let proto: SPKProtos_ClosedGroupCiphertextMessage
+
+    @objc public let ciphertext: Data
+
+    @objc public let senderPublicKey: String
+
+    @objc public let keyIndex: UInt32
+
+    private init(proto: SPKProtos_ClosedGroupCiphertextMessage,
+                 ciphertext: Data,
+                 senderPublicKey: String,
+                 keyIndex: UInt32) {
+        self.proto = proto
+        self.ciphertext = ciphertext
+        self.senderPublicKey = senderPublicKey
+        self.keyIndex = keyIndex
+    }
+
+    @objc
+    public func serializedData() throws -> Data {
+        return try self.proto.serializedData()
+    }
+
+    @objc public class func parseData(_ serializedData: Data) throws -> SPKProtoClosedGroupCiphertextMessage {
+        let proto = try SPKProtos_ClosedGroupCiphertextMessage(serializedData: serializedData)
+        return try parseProto(proto)
+    }
+
+    fileprivate class func parseProto(_ proto: SPKProtos_ClosedGroupCiphertextMessage) throws -> SPKProtoClosedGroupCiphertextMessage {
+        guard proto.hasCiphertext else {
+            throw SPKProtoError.invalidProtobuf(description: "\(logTag) missing required field: ciphertext")
+        }
+        let ciphertext = proto.ciphertext
+
+        guard proto.hasSenderPublicKey else {
+            throw SPKProtoError.invalidProtobuf(description: "\(logTag) missing required field: senderPublicKey")
+        }
+        let senderPublicKey = proto.senderPublicKey
+
+        guard proto.hasKeyIndex else {
+            throw SPKProtoError.invalidProtobuf(description: "\(logTag) missing required field: keyIndex")
+        }
+        let keyIndex = proto.keyIndex
+
+        // MARK: - Begin Validation Logic for SPKProtoClosedGroupCiphertextMessage -
+
+        // MARK: - End Validation Logic for SPKProtoClosedGroupCiphertextMessage -
+
+        let result = SPKProtoClosedGroupCiphertextMessage(proto: proto,
+                                                          ciphertext: ciphertext,
+                                                          senderPublicKey: senderPublicKey,
+                                                          keyIndex: keyIndex)
+        return result
+    }
+
+    @objc public override var debugDescription: String {
+        return "\(proto)"
+    }
+}
+
+#if DEBUG
+
+extension SPKProtoClosedGroupCiphertextMessage {
+    @objc public func serializedDataIgnoringErrors() -> Data? {
+        return try! self.serializedData()
+    }
+}
+
+extension SPKProtoClosedGroupCiphertextMessage.SPKProtoClosedGroupCiphertextMessageBuilder {
+    @objc public func buildIgnoringErrors() -> SPKProtoClosedGroupCiphertextMessage? {
         return try! self.build()
     }
 }

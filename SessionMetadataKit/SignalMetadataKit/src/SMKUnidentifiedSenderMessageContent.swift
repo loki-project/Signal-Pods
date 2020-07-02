@@ -8,6 +8,7 @@ import Foundation
     case whisper
     case prekey
     case lokiFriendRequest
+    case closedGroupCiphertext
 }
 
 // See:
@@ -39,6 +40,8 @@ import Foundation
             messageType = .whisper
         case .lokiFriendRequest:
             messageType = .lokiFriendRequest
+        case .closedGroupCiphertext:
+            messageType = .closedGroupCiphertext
         }
 
         let contentData = proto.content
@@ -57,6 +60,8 @@ import Foundation
             builderType = .prekeyMessage
         case .lokiFriendRequest:
             builderType = .lokiFriendRequest
+        case .closedGroupCiphertext:
+            builderType = .closedGroupCiphertext
         }
 
         let builder = SMKProtoUnidentifiedSenderMessageMessage.builder(type: builderType,

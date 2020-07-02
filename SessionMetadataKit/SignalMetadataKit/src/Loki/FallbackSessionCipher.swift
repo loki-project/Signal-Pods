@@ -8,7 +8,7 @@ import SessionCurve25519Kit
     private let privateKey: Data?
     private let ivSize: Int32 = 16
 
-    private lazy var recipientPubKey: Data = {
+    private lazy var recipientPublicKeyAsData: Data = {
         var recipientPublicKey = self.recipientPublicKey
         if recipientPublicKey.count == 66 && recipientPublicKey.hasPrefix("05") {
             let index = recipientPublicKey.index(recipientPublicKey.startIndex, offsetBy: 2)
@@ -19,7 +19,7 @@ import SessionCurve25519Kit
 
     private lazy var symmetricKey: Data? = {
         guard let privateKey = privateKey else { return nil }
-        return try? Curve25519.generateSharedSecret(fromPublicKey: recipientPubKey, privateKey: privateKey)
+        return try? Curve25519.generateSharedSecret(fromPublicKey: recipientPublicKeyAsData, privateKey: privateKey)
     }()
     
     @objc public init(recipientPublicKey: String, privateKey: Data?) {

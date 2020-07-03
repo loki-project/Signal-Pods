@@ -370,7 +370,7 @@ public class SMKDecryptResult: NSObject {
 
         let paddedMessagePlaintext: Data
         do {
-            paddedMessagePlaintext = try throwswrapped_decrypt(messageContent: messageContent, protocolContext: protocolContext)
+            paddedMessagePlaintext = try throwswrapped_decrypt(messageContent: messageContent, senderPublicKey: senderPublicKey, protocolContext: protocolContext)
         } catch {
             throw wrapAsKnownSenderError(error)
         }
@@ -514,6 +514,7 @@ public class SMKDecryptResult: NSObject {
     // MARK: - Decrypt
 
     private func throwswrapped_decrypt(messageContent: SMKUnidentifiedSenderMessageContent,
+                                       senderPublicKey: String,
                                        protocolContext: Any) throws -> Data {
         // NOTE: We use the sender properties from the sender certificate, not from this class' properties.
         let senderRecipientId = messageContent.senderCertificate.senderRecipientId
@@ -535,8 +536,7 @@ public class SMKDecryptResult: NSObject {
             return plaintext
         case .closedGroupCiphertext:
             let closedGroupCiphertextMessage = try ClosedGroupCiphertextMessage(_throws_with: messageContent.contentData)
-            let groupPublicKey = senderRecipientId
-            let plaintext = try sharedSenderKeysImplementation.decrypt(closedGroupCiphertextMessage.ivAndCiphertext, forGroupWithPublicKey: groupPublicKey,
+            let plaintext = try sharedSenderKeysImplementation.decrypt(closedGroupCiphertextMessage.ivAndCiphertext, forGroupWithPublicKey: senderPublicKey,
                 senderPublicKey: closedGroupCiphertextMessage.senderPublicKey, keyIndex: UInt(closedGroupCiphertextMessage.keyIndex), protocolContext: protocolContext)
             return plaintext
         }

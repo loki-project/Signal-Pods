@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 {
     if (self = [super init]) {
         NSError *error;
-        SPKProtoClosedGroupCiphertextMessage *_Nullable ciphertextMessage = [SPKProtoTSProtoWhisperMessage parseData:serialized error:&error];
+        SPKProtoClosedGroupCiphertextMessage *_Nullable ciphertextMessage = [SPKProtoClosedGroupCiphertextMessage parseData:serialized error:&error];
         if (ciphertextMessage == nil || error != nil) {
             OWSFailDebug(@"Couldn't parse proto due to error: %@.", error);
             OWSRaiseException(InvalidMessageException, @"Couldn't parse proto.");

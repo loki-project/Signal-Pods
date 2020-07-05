@@ -1321,6 +1321,7 @@
 		C2F684DCDB00C444AED92DA40B0D6C9A /* AES-CBC.h in Headers */ = {isa = PBXBuildFile; fileRef = B2457295BF9E2D0FE5C2CE8BBAE23A6F /* AES-CBC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C347D1D68193E16FF9703156744D6035 /* OWSUnknownContactBlockOfferMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B68268164B2F8B37815B2072D4037 /* OWSUnknownContactBlockOfferMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C377C2C412E0FB762806F729B6FD0857 /* OWSMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB00057AFB5FF9ECED5B77B79C2CCCF /* OWSMessageReceiver.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C3A3CF0E24B296F100D74BB3 /* ClosedGroupSenderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A3CF0D24B296F100D74BB3 /* ClosedGroupSenderKey.swift */; };
 		C410A473ADF1E7AE87E34F9C9A6451AD /* YapDatabaseAutoViewConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E9A50BEB5318F939BDCDA8F380F73A /* YapDatabaseAutoViewConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C48A8E1D9A5BE11F128721B384D43EF7 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327C933F295DC08161A2A5B7B538B4C4 /* Operators.swift */; };
 		C4CC0AB3DC747EC9B4CE90B3026FA91C /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2635387AE8019111F5475F27E02579B0 /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -4221,6 +4222,7 @@
 		C36FC5210D0920D7AC0A9D93B0AD05CF /* YapDatabaseCloudCoreTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudCoreTransaction.m; path = YapDatabase/Extensions/CloudCore/YapDatabaseCloudCoreTransaction.m; sourceTree = "<group>"; };
 		C37804FDED9D9AF56FB2BF46DB22B293 /* YYImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYImage.debug.xcconfig; sourceTree = "<group>"; };
 		C39C7AC2DE042D34D08E190A326732C2 /* YapDatabaseCloudKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudKit.m; path = YapDatabase/Extensions/CloudKit/YapDatabaseCloudKit.m; sourceTree = "<group>"; };
+		C3A3CF0D24B296F100D74BB3 /* ClosedGroupSenderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedGroupSenderKey.swift; sourceTree = "<group>"; };
 		C3A62FAA966971D38965857AB851C870 /* YapDatabaseCloudCorePipeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCorePipeline.h; path = YapDatabase/Extensions/CloudCore/Utilities/Execution/YapDatabaseCloudCorePipeline.h; sourceTree = "<group>"; };
 		C3A8957F2250179493A63B07C4DEB12C /* Pods-SignalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C41A8BA8101BDB8074A1EC26291038E9 /* SessionCoreKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SessionCoreKit.debug.xcconfig; sourceTree = "<group>"; };
@@ -7088,6 +7090,7 @@
 			children = (
 				8186DD4D3A6CF0FBACB44C1775EBA6C2 /* ClosedGroupPoller.swift */,
 				DAAE24848EE53D37E10C3249FAE6D965 /* ClosedGroupRatchet.swift */,
+				C3A3CF0D24B296F100D74BB3 /* ClosedGroupSenderKey.swift */,
 				33CD13CA120F1AD2E670A8BFD4B27B4C /* ClosedGroupsProtocol.swift */,
 				3183CA4121C6BF62BD95692B98907F92 /* ClosedGroupUpdateMessage.swift */,
 				F463FCDA4F846231507EAF4ECC6C9FAB /* SharedSenderKeysImplementation.swift */,
@@ -10845,6 +10848,7 @@
 				3FB9FBB7D5AABC7DF5058650E0E5E935 /* BuildConfiguration.swift in Sources */,
 				002215EB77C624CF61C36218C48AA4BF /* ByteParser.m in Sources */,
 				8CCDA4CB2A11BB5208B441C609B0F6B5 /* CDSQuote.m in Sources */,
+				C3A3CF0E24B296F100D74BB3 /* ClosedGroupSenderKey.swift in Sources */,
 				DF09A67FA1174771812D5A04D443E0C1 /* CDSSigningCertificate.m in Sources */,
 				E4A158D16DD0AA2966651C17624DCDFD /* ClosedGroupParser.swift in Sources */,
 				144577A14EB5D2FF3704E360360D166B /* ClosedGroupPoller.swift in Sources */,

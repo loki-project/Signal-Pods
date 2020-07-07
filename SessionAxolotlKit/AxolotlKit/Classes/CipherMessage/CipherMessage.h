@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSUInteger, CipherMessageType) {
     CipherMessageType_Prekey = 0,
     CipherMessageType_Whisper,
-    CipherMessageType_LokiFriendRequest = 3
+    CipherMessageType_LokiFriendRequest = 3,
+    CipherMessageType_ClosedGroupCiphertext = 4
 };
 
 @protocol CipherMessage <NSObject>

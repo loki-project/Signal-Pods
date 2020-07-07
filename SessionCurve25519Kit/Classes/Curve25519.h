@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (atomic, readonly) NSData *privateKey;
 
 - (instancetype)init NS_UNAVAILABLE;
+- (nullable id)initWithPublicKey:(NSData *)publicKey privateKey:(NSData *)privateKey;
 
 @end
 

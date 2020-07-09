@@ -6,7 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation ClosedGroupCiphertextMessage
 
-- (instancetype)init_throws_withIVAndCiphertext:(NSData *)ivAndCiphertext senderPublicKey:(NSString *)senderPublicKey keyIndex:(uint32_t)keyIndex
+- (instancetype)init_throws_withIVAndCiphertext:(NSData *)ivAndCiphertext senderPublicKey:(NSData *)senderPublicKey keyIndex:(uint32_t)keyIndex
 {
     if (self = [super init]) {
         _ivAndCiphertext = ivAndCiphertext;

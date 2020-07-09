@@ -41,7 +41,7 @@
 
     ],
     "SessionAxolotlKit": [
-      "~> 1.0.5"
+      "~> 1.0.6"
     ],
     "Mantle": [
 
@@ -71,7 +71,7 @@
       "~> 1.0.0"
     ],
     "SessionMetadataKit": [
-      "~> 1.0.5"
+      "~> 1.0.6"
     ],
     "PromiseKit": [
       "~> 6.0"

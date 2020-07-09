@@ -321,8 +321,8 @@ struct SPKProtos_ClosedGroupCiphertextMessage {
   mutating func clearCiphertext() {self._ciphertext = nil}
 
   /// @required
-  var senderPublicKey: String {
-    get {return _senderPublicKey ?? String()}
+  var senderPublicKey: Data {
+    get {return _senderPublicKey ?? SwiftProtobuf.Internal.emptyData}
     set {_senderPublicKey = newValue}
   }
   /// Returns true if `senderPublicKey` has been explicitly set.
@@ -345,7 +345,7 @@ struct SPKProtos_ClosedGroupCiphertextMessage {
   init() {}
 
   fileprivate var _ciphertext: Data? = nil
-  fileprivate var _senderPublicKey: String? = nil
+  fileprivate var _senderPublicKey: Data? = nil
   fileprivate var _keyIndex: UInt32? = nil
 }
 
@@ -612,7 +612,7 @@ extension SPKProtos_ClosedGroupCiphertextMessage: SwiftProtobuf.Message, SwiftPr
     while let fieldNumber = try decoder.nextFieldNumber() {
       switch fieldNumber {
       case 1: try decoder.decodeSingularBytesField(value: &self._ciphertext)
-      case 2: try decoder.decodeSingularStringField(value: &self._senderPublicKey)
+      case 2: try decoder.decodeSingularBytesField(value: &self._senderPublicKey)
       case 3: try decoder.decodeSingularUInt32Field(value: &self._keyIndex)
       default: break
       }
@@ -624,7 +624,7 @@ extension SPKProtos_ClosedGroupCiphertextMessage: SwiftProtobuf.Message, SwiftPr
       try visitor.visitSingularBytesField(value: v, fieldNumber: 1)
     }
     if let v = self._senderPublicKey {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 2)
+      try visitor.visitSingularBytesField(value: v, fieldNumber: 2)
     }
     if let v = self._keyIndex {
       try visitor.visitSingularUInt32Field(value: v, fieldNumber: 3)

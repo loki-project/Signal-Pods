@@ -747,7 +747,7 @@ extension SPKProtoTSProtoSenderKeyDistributionMessage.SPKProtoTSProtoSenderKeyDi
 
     // MARK: - SPKProtoClosedGroupCiphertextMessageBuilder
 
-    @objc public class func builder(ciphertext: Data, senderPublicKey: String, keyIndex: UInt32) -> SPKProtoClosedGroupCiphertextMessageBuilder {
+    @objc public class func builder(ciphertext: Data, senderPublicKey: Data, keyIndex: UInt32) -> SPKProtoClosedGroupCiphertextMessageBuilder {
         return SPKProtoClosedGroupCiphertextMessageBuilder(ciphertext: ciphertext, senderPublicKey: senderPublicKey, keyIndex: keyIndex)
     }
 
@@ -763,7 +763,7 @@ extension SPKProtoTSProtoSenderKeyDistributionMessage.SPKProtoTSProtoSenderKeyDi
 
         @objc fileprivate override init() {}
 
-        @objc fileprivate init(ciphertext: Data, senderPublicKey: String, keyIndex: UInt32) {
+        @objc fileprivate init(ciphertext: Data, senderPublicKey: Data, keyIndex: UInt32) {
             super.init()
 
             setCiphertext(ciphertext)
@@ -775,7 +775,7 @@ extension SPKProtoTSProtoSenderKeyDistributionMessage.SPKProtoTSProtoSenderKeyDi
             proto.ciphertext = valueParam
         }
 
-        @objc public func setSenderPublicKey(_ valueParam: String) {
+        @objc public func setSenderPublicKey(_ valueParam: Data) {
             proto.senderPublicKey = valueParam
         }
 
@@ -796,13 +796,13 @@ extension SPKProtoTSProtoSenderKeyDistributionMessage.SPKProtoTSProtoSenderKeyDi
 
     @objc public let ciphertext: Data
 
-    @objc public let senderPublicKey: String
+    @objc public let senderPublicKey: Data
 
     @objc public let keyIndex: UInt32
 
     private init(proto: SPKProtos_ClosedGroupCiphertextMessage,
                  ciphertext: Data,
-                 senderPublicKey: String,
+                 senderPublicKey: Data,
                  keyIndex: UInt32) {
         self.proto = proto
         self.ciphertext = ciphertext

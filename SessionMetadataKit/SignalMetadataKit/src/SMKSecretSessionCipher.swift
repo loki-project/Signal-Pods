@@ -195,7 +195,7 @@ public class SMKDecryptResult: NSObject {
             let ivAndCiphertext = ciphertextAndKeyIndex[0] as! Data
             let keyIndex = ciphertextAndKeyIndex[1] as! UInt
             keyPair = sharedSenderKeysImplementation.getKeyPair(forGroupWithPublicKey: recipientPublicKey)
-            encryptedMessage = ClosedGroupCiphertextMessage(_throws_withIVAndCiphertext: ivAndCiphertext, senderPublicKey: senderPublicKey, keyIndex: UInt32(keyIndex))
+            encryptedMessage = ClosedGroupCiphertextMessage(_throws_withIVAndCiphertext: ivAndCiphertext, senderPublicKey: Data(hex: senderPublicKey), keyIndex: UInt32(keyIndex))
         } else {
             let cipher = SessionCipher(sessionStore: sessionStore,
                                        preKeyStore: preKeyStore,
@@ -537,7 +537,7 @@ public class SMKDecryptResult: NSObject {
         case .closedGroupCiphertext:
             let closedGroupCiphertextMessage = try ClosedGroupCiphertextMessage(_throws_with: messageContent.contentData)
             let plaintext = try sharedSenderKeysImplementation.decrypt(closedGroupCiphertextMessage.ivAndCiphertext, forGroupWithPublicKey: senderPublicKey,
-                senderPublicKey: closedGroupCiphertextMessage.senderPublicKey, keyIndex: UInt(closedGroupCiphertextMessage.keyIndex), protocolContext: protocolContext)
+                senderPublicKey: closedGroupCiphertextMessage.senderPublicKey.toHexString(), keyIndex: UInt(closedGroupCiphertextMessage.keyIndex), protocolContext: protocolContext)
             return plaintext
         }
 

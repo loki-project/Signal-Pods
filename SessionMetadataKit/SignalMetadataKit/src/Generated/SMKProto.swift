@@ -512,7 +512,7 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
     @objc public enum SMKProtoUnidentifiedSenderMessageMessageType: Int32 {
         case prekeyMessage = 1
         case message = 2
-        case lokiFriendRequest = 3
+        case fallbackMessage = 3
         case closedGroupCiphertext = 4
     }
 
@@ -520,7 +520,7 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
         switch value {
         case .prekeyMessage: return .prekeyMessage
         case .message: return .message
-        case .lokiFriendRequest: return .lokiFriendRequest
+        case .fallbackMessage: return .fallbackMessage
         case .closedGroupCiphertext: return .closedGroupCiphertext
         }
     }
@@ -529,7 +529,7 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
         switch value {
         case .prekeyMessage: return .prekeyMessage
         case .message: return .message
-        case .lokiFriendRequest: return .lokiFriendRequest
+        case .fallbackMessage: return .fallbackMessage
         case .closedGroupCiphertext: return .closedGroupCiphertext
         }
     }

@@ -188,7 +188,7 @@ public class SMKDecryptResult: NSObject {
             let cipher = FallBackSessionCipher(recipientPublicKey: recipientPublicKey, privateKey: ourIdentityKeyPair.privateKey)
             let ivAndCiphertext = cipher.encrypt(paddedPlaintext)!
             keyPair = ourIdentityKeyPair
-            encryptedMessage = LokiFriendRequestMessage(_throws_with: ivAndCiphertext)
+            encryptedMessage = FallbackMessage(_throws_with: ivAndCiphertext)
         } else if sharedSenderKeysImplementation.isClosedGroup(recipientPublicKey) {
             let senderPublicKey = "05" + ourIdentityKeyPair.publicKey.map { String(format: "%02hhx", $0) }.joined()
             let ciphertextAndKeyIndex = try sharedSenderKeysImplementation.encrypt(paddedPlaintext, forGroupWithPublicKey: recipientPublicKey, senderPublicKey: senderPublicKey, protocolContext: protocolContext)
@@ -254,8 +254,8 @@ public class SMKDecryptResult: NSObject {
             messageType = .prekey
         case .whisper:
             messageType = .whisper
-        case .lokiFriendRequest:
-            messageType = .lokiFriendRequest
+        case .fallback:
+            messageType = .fallback
         case .closedGroupCiphertext:
             messageType = .closedGroupCiphertext
         default:
@@ -529,7 +529,7 @@ public class SMKDecryptResult: NSObject {
             cipherMessage = try WhisperMessage(data: messageContent.contentData)
         case .prekey:
             cipherMessage = try PreKeyWhisperMessage(data: messageContent.contentData)
-        case .lokiFriendRequest:
+        case .fallback:
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
             let cipher = FallBackSessionCipher(recipientPublicKey: senderRecipientId, privateKey: privateKey)
             let plaintext = try cipher.decrypt(messageContent.contentData)!

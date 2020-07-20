@@ -7,7 +7,7 @@ import Foundation
 @objc public enum SMKMessageType: Int {
     case whisper
     case prekey
-    case lokiFriendRequest
+    case fallback
     case closedGroupCiphertext
 }
 
@@ -38,8 +38,8 @@ import Foundation
             messageType = .prekey
         case .message:
             messageType = .whisper
-        case .lokiFriendRequest:
-            messageType = .lokiFriendRequest
+        case .fallbackMessage:
+            messageType = .fallback
         case .closedGroupCiphertext:
             messageType = .closedGroupCiphertext
         }
@@ -58,8 +58,8 @@ import Foundation
             builderType = .message
         case .prekey:
             builderType = .prekeyMessage
-        case .lokiFriendRequest:
-            builderType = .lokiFriendRequest
+        case .fallback:
+            builderType = .fallbackMessage
         case .closedGroupCiphertext:
             builderType = .closedGroupCiphertext
         }

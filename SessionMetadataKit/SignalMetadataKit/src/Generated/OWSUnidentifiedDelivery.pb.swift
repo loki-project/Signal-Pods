@@ -271,7 +271,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
       typealias RawValue = Int
       case prekeyMessage // = 1
       case message // = 2
-      case lokiFriendRequest // = 3
+      case fallbackMessage // = 3
       case closedGroupCiphertext // = 4
 
       init() {
@@ -282,7 +282,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
         switch rawValue {
         case 1: self = .prekeyMessage
         case 2: self = .message
-        case 3: self = .lokiFriendRequest
+        case 3: self = .fallbackMessage
         case 4: self = .closedGroupCiphertext
         default: return nil
         }
@@ -292,7 +292,7 @@ struct SMKProtos_UnidentifiedSenderMessage {
         switch self {
         case .prekeyMessage: return 1
         case .message: return 2
-        case .lokiFriendRequest: return 3
+        case .fallbackMessage: return 3
         case .closedGroupCiphertext: return 4
         }
       }
@@ -569,7 +569,7 @@ extension SMKProtos_UnidentifiedSenderMessage.Message.TypeEnum: SwiftProtobuf._P
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "PREKEY_MESSAGE"),
     2: .same(proto: "MESSAGE"),
-    3: .same(proto: "LOKI_FRIEND_REQUEST"),
+    3: .same(proto: "FALLBACK_MESSAGE"),
     4: .same(proto: "CLOSED_GROUP_CIPHERTEXT"),
   ]
 }

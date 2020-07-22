@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LokiFriendRequestMessage : NSObject<CipherMessage>
+@interface FallbackMessage : NSObject<CipherMessage>
 
 @property (nonatomic, readonly) NSData *serialized;
 

@@ -9,4 +9,4 @@
 #import <SessionCoreKit/OWSAsserts.h>
 #import <SessionHKDFKit/HKDFKit.h>
 #import "NSData+messagePadding.h"
-#import <SessionAxolotlKit/LokiFriendRequestMessage.h>
+#import <SessionAxolotlKit/FallbackMessage.h>

@@ -1,6 +1,6 @@
-#import "LokiFriendRequestMessage.h"
+#import "FallbackMessage.h"
 
-@implementation LokiFriendRequestMessage
+@implementation FallbackMessage
 
 - (instancetype)init_throws_withData:(NSData *)serialized
 {
@@ -12,7 +12,7 @@
 
 - (CipherMessageType)cipherMessageType
 {
-    return CipherMessageType_LokiFriendRequest;
+    return CipherMessageType_Fallback;
 }
 
 @end

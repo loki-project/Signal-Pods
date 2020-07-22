@@ -13,7 +13,7 @@
 #import "AxolotlExceptions.h"
 #import "CipherMessage.h"
 #import "ClosedGroupCiphertextMessage.h"
-#import "LokiFriendRequestMessage.h"
+#import "FallbackMessage.h"
 #import "PreKeyWhisperMessage.h"
 #import "WhisperMessage.h"
 #import "Constants.h"

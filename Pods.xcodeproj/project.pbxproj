@@ -47,6 +47,7 @@
 		03CACBFABF84AFCC192B62C6E8127B2E /* SessionCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9558B88279A52A465F99B5FE6A06A479 /* SessionCoreKit.framework */; };
 		03CFC679CBF4C120DA79E9640F53980C /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A985AC380B4E33D3AA98FBC424C15 /* Cryptor.swift */; };
 		041C55AE245438AF06C24B903DDAE6C8 /* SMKSecretSessionCipherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249B8657FE70F60FFEDD79B546EEF52 /* SMKSecretSessionCipherTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		047F59EE08891178E1CA378621C81367 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6285A2262EFB8F92B39976DD1FBCD968 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04900B7EADF3DE648C5C13446914E33E /* RSSFeedCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6DCA2B19ED7ED541EDF0B98E69C07 /* RSSFeedCategory.swift */; };
 		04BE635FAF0FC368F8CEFC6CABEDC2B3 /* OWSIncompleteCallsJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B175BFAC88D3E89F87A2245F0EC01B /* OWSIncompleteCallsJob.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		04D33A818263D0055E547450494B34F8 /* OWSDisappearingMessagesFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 818999C0FF800F6AA7855DBB204CFC6E /* OWSDisappearingMessagesFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,7 +82,7 @@
 		0A064259E45B41D69CB33F92F7CF8FE6 /* Promise+Retrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A653C05AA27F2F0977481067F7350 /* Promise+Retrying.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		0A08BD582BF71CE60D38BD5F2F50966E /* YapDatabaseCloudCorePipelineDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D94A7CC5BBF0C6B3DEC083676CA1F38 /* YapDatabaseCloudCorePipelineDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A5261EC3D865C2BCF9ACA8F144B8673 /* OWSSignalService.h in Headers */ = {isa = PBXBuildFile; fileRef = D37F9FA6FF12E42AD1BFBE45BE89FDDD /* OWSSignalService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A606E9A0632B0F7019AE97C8CEB3AD8 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C3BAA7258D1561F8D0F399F4FB274A /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0A606E9A0632B0F7019AE97C8CEB3AD8 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 252508B4DF92E7156AF326EFFAE9BB34 /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0A64D1931DCCE997E97225FA918BD331 /* OWSDeviceProvisionerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 920B1F452C0DAD8F46EB3DC58EC32BCA /* OWSDeviceProvisionerTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0A6C4BF064C19A91EE0B005CB59FD76E /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F37609A4714505FF1E253BBC77A3EDB /* Contact.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0A71E4E57036BF4249A74EE24083FB81 /* OWSVerificationStateSyncMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A255E4606E640C3D848A5B93412816C9 /* OWSVerificationStateSyncMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -167,7 +168,7 @@
 		14B65B7FE94EDC5F19390D87EAE2BEA7 /* YapDatabaseSearchResultsViewPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C760CC607B42D7E74CF4B48C80C9D9C /* YapDatabaseSearchResultsViewPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		14BF8B5939E2C22DC4E59C5756C4B00F /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = 600F265C989E3B1163DE732C9DF5BAFE /* mz_zip_rw.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		159FFFBEBB300AB5A09DE3C2BFC76247 /* ContentNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DF5C92C34E252870200ACE399170A /* ContentNamespace.swift */; };
-		15A211ECAB3A7BFF84041C60D3BA52E4 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3783F591C5D4785DAD74D508A5704DF8 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		15A211ECAB3A7BFF84041C60D3BA52E4 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 935C30F60D4D4470E06EA7365C96422D /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		15A3A171584DE151BAFED62AF35045F8 /* Array + Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19D2913F16FE9E233D5BAAE2DCF4DB0 /* Array + Equatable.swift */; };
 		15F1AD3A93DFA72DAF84F0D89734C848 /* mz_zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46466CDD23C6933C764A50AF93E080 /* mz_zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15F1C39E8519E45F53AFC009DC34853F /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBC5CFAD30F018E42B261A3C493BF22 /* SQLCipher.framework */; };
@@ -177,7 +178,7 @@
 		16BF46D764D327E7A6729A48372E8E25 /* OWSCallMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3F5DF23C5FA6BF11E8906B30C16D10 /* OWSCallMessageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16C09474BD8CF3509B473F84289CCA6A /* SwiftSingletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B47EA4C442DD7DA6B3A24C6A2C4562 /* SwiftSingletons.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		16D81939D6785D23BA96EDDC04273821 /* TSInvalidIdentityKeyReceivingErrorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 96303F26FCC7E9EB51D7AAAF5C8E722D /* TSInvalidIdentityKeyReceivingErrorMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16E5CE4A58D5AA2C3574E22794A6638D /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = D589920045CE6B4F8CC4462F289D8811 /* DDLoggerNames.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		16E5CE4A58D5AA2C3574E22794A6638D /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5B450FD0E3F17B8C53A085BAFBF16 /* DDLoggerNames.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1749021E34E803FE51F21296B7F9967A /* OWSAttachmentDownloads.m in Sources */ = {isa = PBXBuildFile; fileRef = C22490819CA236B3A0969B1F64D4DC83 /* OWSAttachmentDownloads.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		174AFD0A0FB8B00392484FF314DB3471 /* zeroize.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2061ABF089728E17896DD7AA07FEB9 /* zeroize.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		177875098CDDB501157A4937E2BE85F4 /* YDBCKAttachRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 663C18BFA6158C53FFC5AE1B5168A26B /* YDBCKAttachRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -188,6 +189,7 @@
 		180824A8E7C2721DA2608F8B1B6FEFC0 /* ge_precomp_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 432AFF6A55D89CBE16A232180D07F000 /* ge_precomp_0.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		18139846ED5FAE4DE6932CCD8618E2CE /* SessionHKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99957E345BD085796BF6E3A275861503 /* SessionHKDFKit.framework */; };
 		1837120E9158883D826D7A00293CF226 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 4799A046DB55C0248A0BF07DF1712D4D /* mz_compat.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1837BAF4AE5155FE69278F090D3D92E1 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8DDF354E9CF5D46481DBFBB4424999 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183B7499CD51991076F503FFFE11A61C /* Threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE75F6A4867F303980B363062F1728A /* Threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183CB59AFACFEF8F521A94F0F9817382 /* OWSOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8019889DB670BBBBE2B2E7548EE765E6 /* OWSOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183F6574136F1D2FA3C48DDC6893DECE /* MessageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40ACC056E1867549D42251412D44929 /* MessageExtension.swift */; };
@@ -359,6 +361,7 @@
 		3225438DD7A0DDD867F0E51BB2C91493 /* GeneralUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A50A554170B4264BB9241F254AE0 /* GeneralUtilities.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		3229CB97C7F83B22E4AC43CA187F1934 /* BinaryDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5984582C14D8B9CC6A37BCF8F5F84E0E /* BinaryDecodingError.swift */; };
 		3267F7D1921B92E0635A18E58F148586 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C303C5F36B0B631973305BA90EC63 /* String+FoundationExtension.swift */; };
+		326E590E46EF35FB82A1EC68BD83DE36 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 082936118AA03C291C99EBDFDBAC43F1 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32ADD2FE889735A2F61437DDEAD7C158 /* YapDatabase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 118308E1E4FBA1A16DEA275508D47BD1 /* YapDatabase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32BF1C220541D9D2C038C8A6B9E07375 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 872939F820CCE3FA9B05CDDAB24C020B /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32DBC02D1C6B74877E7413D92243825D /* TSStorageIdentityKeyStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5707F5D51C3D3227716E6ABB90C28 /* TSStorageIdentityKeyStoreTests.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -397,7 +400,6 @@
 		382194491742EEDB22AAE369E2FEE5B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF06FBE14AC7719DA0861F4C3063DDDB /* SystemConfiguration.framework */; };
 		383DBA8AE5D1DB85A5D3430A509C8F9D /* TSAttachmentPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9456CB7A62BD7DE61A5FB7DC8CE86B92 /* TSAttachmentPointer.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		385623649277E62197984A64D07CE49A /* NSData+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8385CC02343A14CEDC2A83E67437FE /* NSData+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		385655B908CB8CA38A8F98E3BE2D3ABA /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F56D6BA35B5B08A4C9317203B306B4F /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3856742B200171387ED0FEAB466C2DD2 /* OWSIncompleteCallsJob.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8671BFF817F5DB23A4FA87FDA31B56 /* OWSIncompleteCallsJob.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38936387F827969D41CCC3E356780334 /* AtomFeedEntryAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C180D50E5144392942727BA67A52BE /* AtomFeedEntryAuthor.swift */; };
 		389ACA28149188EC5B514271233049A8 /* FeedKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 967F44A8681880C633924149A3EE992A /* FeedKit-dummy.m */; };
@@ -415,6 +417,7 @@
 		399F62A15227CD90FA36E3DC5054E4C1 /* TSGroupThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFFE535027CF94B2578EE4D0D5B4FD4 /* TSGroupThreadTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		39F2F37E25459EE58EA741FC0F9C750D /* MTLModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C35D3C5FF28AE7C3B6A290E0A5D848 /* MTLModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A02A6F83CC8E26B3BD3EAAD0E074696 /* SessionHKDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99957E345BD085796BF6E3A275861503 /* SessionHKDFKit.framework */; };
+		3A0CA5E115F11D825094A9F6DFAD5C4F /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C9AF689E898AF1EBE98BDC7F8A4BFE50 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A0E7293C48C828557F7D9DD37DEA555 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B139690EE1516988195C437B57D2B838 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
 		3A1A6EA05600018360967EAE749BA6EF /* SessionMetadataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17933A7DE62B3E1696919A22969B8C8F /* SessionMetadataKit.framework */; };
 		3A2B75DB281439A27C0246F815A20A49 /* MediaCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABC273482A7FD641D1634F11CCD47A /* MediaCredit.swift */; };
@@ -478,9 +481,8 @@
 		427656F280F9C65C487362370621A063 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 016A55A26F12ECD22FFA5017243250C3 /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		42990CFDCADE4DF2639B2D81B30A9AB5 /* Pods-SignalMessaging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4745AF8B4A35BD0E63D3311D0A5E91 /* Pods-SignalMessaging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42FE4A3FD968221897956A5DE1BE192A /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8F85BB95B2D6DFD2CE2D9EE3E87EAA /* SAMKeychain.framework */; };
-		4322D1FE607ED0C9D12D20CCBD2E3B2B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3CDA3573A40BDD2025F2EAFC8D2FF /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4322D1FE607ED0C9D12D20CCBD2E3B2B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A72B4712133DBB5FD5D1EB02B38A247 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		434DDB28F48DF1C2131F806F855F01FF /* OWSReceiptsForSenderMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 058576A240C5152FF6451A9B1FBA794D /* OWSReceiptsForSenderMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		436460CE89BE9BB9AF3832F8D13F58D3 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = FECE7501789C32F7414120B0CF2987AF /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4374218D306F7DCA93C126EE568FCE14 /* SSKKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED0CB194E7A042B5527AFA208DE40C /* SSKKeychainStorage.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		437D7F571B3FF951DF103DEFD113C34A /* YDBCKChangeRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 19199C33E6435CC0B64375CBA5BEE052 /* YDBCKChangeRecord.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		437F7D0BF0BFE0473ABE98B0F3FFE9C2 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B440D1F705187663FEA333613A492507 /* NSURLSession+Promise.swift */; };
@@ -538,7 +540,7 @@
 		4C70E6A38B94D21B9088C412A04E442C /* TSMessageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17925FC6DB44B11B125B6E4F64573BD4 /* TSMessageTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4C8C552749FCCEB524F3532EEDA28271 /* DiffieHellman.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D51AB1BE408676926CCE8BAF9920AE /* DiffieHellman.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		4C8C6043FD33A477DB27FFE8D836D9FA /* SSKIncrementingIdFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA779AEDF79316DFC2DDC6A63EFD69C /* SSKIncrementingIdFinder.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
-		4CC79D9FB478344F75C9731D63614B3F /* DDFileLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 752CC7117516BC7D344855C8E55689F3 /* DDFileLogger+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4CC79D9FB478344F75C9731D63614B3F /* DDFileLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D9558975969C2E7BC5DC1B35A8C070F5 /* DDFileLogger+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4CE4F903CA72439E40EEFC8E06BB81F1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AE071C0A1B240C482C93EFA322C7ED /* CryptoSwift.framework */; };
 		4CEB5E8A94FF87EB359A9C9C0DB8F3B7 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B5217E0D37B6F461ADF1D5FC8EC5E229 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4CEBC9DB6C654292702558820F798D76 /* NSTimer+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = E17707189851F87085F5292E942B121A /* NSTimer+OWS.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -585,7 +587,7 @@
 		54B1DC0B6D56537AC5AEE92E30436C59 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992B04519493BD267BFEFA0E79F619CC /* AssetsLibrary.framework */; };
 		5529FB490EDB54095E4132ECEE741359 /* OWSLogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2B2F9C8A7C23B4DFE11B64A0B11970 /* OWSLogs.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		55C12EE57439263A963D9CBB71DD3BA4 /* SMKSecretSessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0199A2D64916159B112F06D4ECFB8 /* SMKSecretSessionCipher.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
-		55C87861A6C4E9B9F9B180B4A7D1C10B /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 77FDC5DDF7543555328B2F6EA4F7F53F /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55EB23239C5CA2738260387B2D10F766 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E7DFA42E240C6171FDEEF13BA75D23 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		560B062D8656E1672155317B650633F1 /* TSSocketManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A69431E6C069259944F74853799F21 /* TSSocketManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5649D1C86A66302D382AD23DDD901C72 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7121C17ED1938E4FA3ACC0202447AB5 /* UIView+Promise.swift */; };
 		5652179C16BD7BE7291997EF7D379E45 /* YapDatabaseConnectionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C9BD43A5B0511B357990B65DB18310 /* YapDatabaseConnectionProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -597,7 +599,6 @@
 		5761872465629747192B2A48156854A5 /* YapDatabaseViewRangeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = D72865FD935E4404FA3687ED0E18A0D4 /* YapDatabaseViewRangeOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57785C0CAAADC51491B1826B8E7C5E28 /* YDBCKChangeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA1F766111A2FA9C6EA502C203EE2D /* YDBCKChangeRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		57CFC7C784DDD2910F1A1EDE0C8B87CE /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = FDF05D99E39AA2C46491AC8DA521B2C8 /* mz_strm_buf.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		57D71F0D36922B183877D7F698E0B6B2 /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E60916493F4B32CE6271576836158F /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57EC61145DCEC938864B9D485E1831FD /* struct.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB664E0A06227D0B5AD38AFEDE9EEF5A /* struct.pb.swift */; };
 		5827D829D197A6FA9FF1332A2456AF62 /* YapActionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF94CC3D9ECE0119845D7BDD033378D /* YapActionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		588EC6C7502C7E2C9B8066E59F77441B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93845E4A2BA26F1CEDF91CEC8649FB /* Foundation.framework */; };
@@ -607,12 +608,14 @@
 		58E9B5BA6915EACE7EF4B68570470D0F /* MediaTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B0388D1C35C49310763BC0EE584F6 /* MediaTag.swift */; };
 		58EB53DF0E41C3AED3304014F0B156E1 /* BinaryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6855E15F24549AD9FF337AC5DFE233 /* BinaryDecodingOptions.swift */; };
 		58FC2B28A34B600FA4F9A4C96C2303E2 /* YapDatabaseTransaction+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417251635A9C2D4AAFFF95125BE5DFB /* YapDatabaseTransaction+OWS.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5913BA7EF2433099B6028D21ABA0CA10 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C48913EE0564047EA2F3B315DF48F3 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5926202ADC2E7915B0D8E71ED4D2760B /* YapDatabaseCloudKitOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E28B639FB9E373935AE9B231D1DC2 /* YapDatabaseCloudKitOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		59D959211925960E8621DE7AD816441D /* MessageSenderJobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135CCC72B6E1AEECD31222E5A449B0A6 /* MessageSenderJobQueue.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		59F0DABD4B48AC0D275A05D6466AC2C8 /* RSSFeedTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E5634B368EFA40001600A17C3089F /* RSSFeedTextInput.swift */; };
 		5A19330DDE053859FAF36A4D89E28E88 /* OWSPrimaryStorage+keyFromIntLong.h in Headers */ = {isa = PBXBuildFile; fileRef = C27B69635449E0F3A708C53C4DB2A612 /* OWSPrimaryStorage+keyFromIntLong.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A57ADC6F2BEC1FAAE3D85652A6FF828 /* YapDatabaseCloudCorePipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A62FAA966971D38965857AB851C870 /* YapDatabaseCloudCorePipeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A5B48BFD73893F157F9D3C172EEF04D /* AtomFeedSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5509F7039A8516361F0FE2C8CAA4A45A /* AtomFeedSubtitle.swift */; };
+		5A67FC7CE48FF5634E7067293171FAA8 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BB5C57119B50551AB55ACBD34D40A6 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A86F7A98BB7160A14F403A5F57B0F34 /* YapDatabasePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 852D52EF19CFECF987D7AB56310DE7DD /* YapDatabasePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5AE6EAE8B4E1990FA48B1611A88DFE1F /* TSAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6BD91F71430557EB610B4060907565 /* TSAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AF0811CB71BBE11203DBE14A4783016 /* YapDatabaseString.h in Headers */ = {isa = PBXBuildFile; fileRef = B66072DB60952017F3311C8628DA0986 /* YapDatabaseString.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -629,7 +632,6 @@
 		5C5E413981504273D1DC9B692AE3E45F /* OWSFingerprintTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E02AC0CD24324EDA91676CFB7EA1E9 /* OWSFingerprintTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5C8C8B3DF1A01B97DD1E1DDD94A4073D /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5ACE3292B4516B3C55DC6B36C31F53 /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5CD21A6C7E718CA6D493A5B8850AB036 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCADE2F1F0CFAB3AA741D541940D63A1 /* MobileCoreServices.framework */; };
-		5CD66BDFD2D10FBFCFC18FC2BAB56B47 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB5E5758EAA512AE8A9A06D30765A38 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CDF1A80EC1AB728945C371DCF67464A /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B42ABF7E30B9B1BA490BE066A291A /* NVActivityIndicatorAnimationBallBeat.swift */; };
 		5CE13D1669756D9FE4D1EF81BB46D00F /* GTSR1.crt in Resources */ = {isa = PBXBuildFile; fileRef = 17472380F942CFF0534FB54D3435A55F /* GTSR1.crt */; };
 		5D6F024F9A2B4FFF10F6560671292F90 /* CDSQuote.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D16DF32713A6F606A0E9D5BBE961BD /* CDSQuote.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -664,7 +666,7 @@
 		604C97BD1796C0A2A84AE4F9A2A69613 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC8BFDF29AEC58E4E56BCDE6B9C42B3 /* BlockMode.swift */; };
 		6051825840A748E516455C58B619AB47 /* YapDatabaseSecondaryIndexOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E49F4A515CD6668644C8E3B3AAB8DE8 /* YapDatabaseSecondaryIndexOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6075D9EA0F507C6978A015CD86080579 /* YapDatabaseRTreeIndexSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9DF5D9D3950E4ADAE38A173CEE755 /* YapDatabaseRTreeIndexSetup.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		607BF15067D9C978BE7A3E7663982CF1 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AA2F2A8D0742C8958470BEFAA2A86A /* DDFileLogger+Buffering.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		607BF15067D9C978BE7A3E7663982CF1 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = A9333488D207435F33E18244774F0C37 /* DDFileLogger+Buffering.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		608F8E9819B393209AD35AA5585DC1FC /* AtomFeedEntrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19437A3B18DFFF0D087149C5F64C8201 /* AtomFeedEntrySummary.swift */; };
 		60A71DE011575ECABFDB3041F4F52319 /* YapDatabaseHooksTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 270D7A3CB191B271BFCFD0C78D012832 /* YapDatabaseHooksTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60FEA79D5431D9FD78F9B5A3CA152AF3 /* OWSFailedAttachmentDownloadsJob.h in Headers */ = {isa = PBXBuildFile; fileRef = 2483E2EC51C2CA2F97A0944C7A9C1A5E /* OWSFailedAttachmentDownloadsJob.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -738,6 +740,7 @@
 		6B55F0CFE588412A828829A7724F01F4 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F38B120AE51926B3B586155C2553444 /* Collection+Extension.swift */; };
 		6B7F3EB21079D046D6DDBDA4BC0E1F0F /* SignalRecipient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7968A5EA488BDAB67A515D7672BED196 /* SignalRecipient.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6B8E0ED4C127EEE34DDD537D216B3A97 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045F410F9E8F9FF20C355EF1CC298085 /* Security.framework */; };
+		6B96CE08BFC64966703B5DCF45227D2B /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = C50C7DFE2EC0EBF5038D3936FCB8A114 /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BE1E1ECC3D7BB761BD2012CFF581476 /* WebSocketProto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8681D50B90BDFD8C4DE5A19D02DF4 /* WebSocketProto.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		6BE5107A4D99E92AB0DBA9EF5FCD7A50 /* CustomJSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF131F8EE617B08F0482B5C737635D6 /* CustomJSONCodable.swift */; };
 		6C03FA23C6659BB355B17D0E1CC29DE8 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B87961846A0808AFC473BD3695B0CB /* NVActivityIndicatorShape.swift */; };
@@ -747,7 +750,6 @@
 		6C7058254CBA8DA0D0CD9F9917F1F3DA /* Pods-SignalMessaging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A6DAE9183CAEF5B0262BFE726C7234 /* Pods-SignalMessaging-dummy.m */; };
 		6C94F2F225CDAFF828E90D31D3B4AD47 /* SSKMessageSenderJobRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 34983F229F02FD853F2C41A46926B93F /* SSKMessageSenderJobRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CA65E382D02083FF2414C0818EDC12C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953F6664D0A779AAE11F84FF15D81B5C /* ImageIO.framework */; };
-		6CAE4731256FFF2D1091ACF93EDA15FB /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = EDBB159756EE4F6B4DF378C8C69D47BA /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CCC156542360B11C1EAED9B60E33316 /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D826B77D236184C96B56FEAB3E29F05 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CEAD0F02D17D2946369627DF417A4FD /* SFSRootCAG2.crt in Resources */ = {isa = PBXBuildFile; fileRef = 56E479287A36B4C4CDA81D884B4AEF99 /* SFSRootCAG2.crt */; };
 		6D0E7740D463BE695BD52D64F70A7AB5 /* SMKServerCertificateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5086F4EE693997B78BD8A6225C4ECFE /* SMKServerCertificateTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -780,13 +782,13 @@
 		7099FAFC51F0B910E0252EA00CA9CBDF /* NSObject+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 74129B1E3F3E1E88F4F6B17EFC906098 /* NSObject+OWS.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		70BFD27877866909D15305AEBCFAAEF7 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DFD80B817EF3D91FB54F3B5E24D58D /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7117C9175672A4AFC6052D6BDD6FBA19 /* SessionServiceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3FE58BF2D97935304070E4C8C16462 /* SessionServiceKit-dummy.m */; };
-		7134CC5DD16C4FF43F33DE80BFE43A05 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DE4E2093BF3E7C61AEEF48D5C01231 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7134CC5DD16C4FF43F33DE80BFE43A05 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBE7B78340A1A00616E22B63DF71D6 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		713E5724AD925A48436A135DDB5C9896 /* YapDatabaseHooksTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D2300E4D0530397EE0D46B22BDE49A /* YapDatabaseHooksTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		71656AF3F1FFF0EBBF5F0B9591284C91 /* SessionCurve25519Kit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 689070FE4EDFC54C7426B48599331FCF /* SessionCurve25519Kit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71BBED5C574EC9D69FA6AC6002E46DF1 /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68589781CDD01329038338E4A82DECDC /* firstly.swift */; };
 		71C2C16BCC8EDD288F4C381145BD8D15 /* RSSFeedItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56566042F342E72A05792ECA40376D00 /* RSSFeedItemCategory.swift */; };
 		71C3F25218358F69DC80F657B5D1ADD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F3BFB05D9E55E5B258C5EA643BF09A /* CoreGraphics.framework */; };
-		71E7F342271640DEF136C0CE03AD928C /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB4F78A69403C64BD5A5818B6EF3A95 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71E7F342271640DEF136C0CE03AD928C /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 828156E1A3734B11C1C729C5F02A428C /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72044C860AAC48AEF716889257184AEA /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DCC5A363ABF3E0FD1FE268BF526865 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72513796169E72F0FF9E839871B0D259 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9414A900B21E3A7C90F5E33BCEBB890B /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		725C0FBBD466698BF382F676C84FEA70 /* ge_p3_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 0308E80053DE8F1A3D68530219070D59 /* ge_p3_0.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -796,6 +798,7 @@
 		72E78F5F80318FBFF0984792DDF54722 /* NBPhoneMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4330F0B42DFE52F62FB6141B051D6640 /* NBPhoneMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		732803BCC8E45808B8A5B7196C03359A /* ge_add.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A92BD0C0E82C7382C2515EC85D7C68C /* ge_add.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		73C0CBBC18302B1F2CA7ADEE0F82054B /* Promise+retainUntilComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A8C7571EE5943DAF6F0B2BB7F9E8E9 /* Promise+retainUntilComplete.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		73EE48F8DA05D0C4197B6493D0B57BC9 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6FEAEA056E6DC514AA5CD7CB8B0DAC /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73F9C672D9EF498AC9B91736C92D0270 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF6FFBAF19E832F7343D87E0551F58 /* JSONEncoder.swift */; };
 		7422A4376914A3131C6EA2AA8FDBE23D /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4A7DEF65C38AFEF9D549CE21E83CB3 /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7461C5899D1EBD6375EFEAF6E1766E20 /* SimpleExtensionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E24077826B662AB81F8333BAD46D5AA /* SimpleExtensionMap.swift */; };
@@ -881,7 +884,6 @@
 		82344C7864F6AFCB6DF2625D1E4794FD /* OWSContactDiscoveryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D3F183A8EA203FFB12035F99E9551 /* OWSContactDiscoveryOperation.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		82AEBCB8A0C31EE8708E34DB4492A64E /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C36DFC9958F3BFCAA09A12836CCE6D /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		82BE26E64400E95761984EE240450FF5 /* YDBCKChangeQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C8C08E4EC6C598715ADB8015FC469D /* YDBCKChangeQueue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		82D88726BE722B6A7A6F1186DD50FCEE /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 519E57BB8AEB8C4DBB0C5BA76CAC551E /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82E526B18130E5AE8738DCD36BCB9735 /* Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5718ED4CAE9BC9CEAD09AC956B6BFE9 /* Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83554733F0C226070F94F360794983B0 /* SignalIOS.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93143BCB3EB1723BD880C2317558651 /* SignalIOS.pb.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		836B16855557AC67C017F974399C40C3 /* YapProxyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D077743B7831075745B6DE37DF0DFA79 /* YapProxyObject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -920,7 +922,7 @@
 		889FDA1DE0365AE0FEB43982663F442E /* Google_Protobuf_Duration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26252B632B81B7B337661E91CB2E7850 /* Google_Protobuf_Duration+Extensions.swift */; };
 		88C5402A9EE41A2B807751A5667D33A0 /* MediaPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DE316956286E9D041C5C4C65A1BEC /* MediaPrice.swift */; };
 		88CC6749F1BC91F4D3A320703BF2EF23 /* AtomFeedEntryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467265EF323ED966337AEC2D8DD36E27 /* AtomFeedEntryContent.swift */; };
-		88E3FC4E5AC5A8009089CA6A332FE016 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC00A4287CB182502C7660A952E5C10 /* DDLog.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		88E3FC4E5AC5A8009089CA6A332FE016 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2F7E6091896C235FE8953F5D535526 /* DDLog.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		897387AA1DC941A59A6C24EDA22ED5C0 /* Cryptography.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D56804F57A47A570FAF43F2E22025F6 /* Cryptography.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8974C7BAB835849F8AEAEFAAA3079E2D /* SessionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A70ED6AFAB80D9855B13A622D533D /* SessionBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		89756DA507C74B36A7E65EA9EC5C6C8C /* YYImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AEB571FAF4A3518EBDDF9435D9159 /* YYImage-dummy.m */; };
@@ -991,7 +993,7 @@
 		93DE76E1DA2AAF07C387BDB523410DB1 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E7DD61CC155E326D85C66A676CE6C9 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93E8383FD0E8CCB0FEDC6BEE190FF91C /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 57EA4575778108D1AF57229C33604833 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93E9CF61FB34E665F082D07FA0327273 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A823101606941E4302B1407F06CBCE2 /* TSMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		942401647E1E7BAE7D41F9CE0ADCA659 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3432051BCD2238AFF4FED197D57F51DA /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9417A8831BF82B4101B2FEB10AD6A8D3 /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C23C5BA298DBEF69F2598C9C140539 /* CLIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9431C16B5301DBC9F3BA0D1B20DA8460 /* JSONFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74182871517D38E400F11F9B729CD5B7 /* JSONFeedItem.swift */; };
 		945448E6D5DBEBE4D9392BE5E81DE030 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F3928E98011127D52017CB50C546 /* CocoaLumberjack-dummy.m */; };
 		9459D5062A7FA2EF2224D5B64F78977C /* YapDatabaseViewPageMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B0863E086C27D0737E414CC549F7E5D /* YapDatabaseViewPageMetadata.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1010,6 +1012,7 @@
 		95BA6871F1CCF2EFDD073B86B9BC0198 /* YapDatabaseRTreeIndexOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB86F92BC08B62BB291F07DC9DC48D4 /* YapDatabaseRTreeIndexOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		95C0BD3084DEDD5CFE423CD6297EB652 /* CipherModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD9650C635CAAE7D5CEE5CE3DAA9AA0 /* CipherModeWorker.swift */; };
 		95CC541196B70F3806676DE88611363F /* Pods-LokiPushNotificationService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5F1D648208B815F808B83D961AD270 /* Pods-LokiPushNotificationService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95D11BBD39A3CBDB6FB8C7745D523747 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7D89701007903AA0AA73115C8DC763 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9629C3DA9DA5A56F67EA4A2723E0EB40 /* YapDatabaseCloudCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7408BAEFCB04B23D40AA64A6D55D55A7 /* YapDatabaseCloudCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9647B21B571781716CD07313C40AB26E /* OWSCountryMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F60B4BA4763C1B0331CC2D0F9226BF1 /* OWSCountryMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9652593D8D15501B4E1AAEFCB3542860 /* Promise+Delaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50AD78A3E3E066C95EC472327F703E /* Promise+Delaying.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -1100,7 +1103,6 @@
 		A3E2E9CBAB7B33758F2FFF7B9F98675D /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 23C8189DE83DBB78E45A43A073835543 /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A42AC3B1913D1D7BC308C4A3A3A07C2A /* ge_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 4242EE14B0D0DFA92AFD97CF0896A670 /* ge_frombytes.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A42D4C61E56C819515D5CC71642FDD84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED13894CDBF447443DD07A7F3977F56 /* UIKit.framework */; };
-		A44C6A81B6AAD31B73B2599D3F1EA8F8 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F30C95A5D6AA2509BF91579198C1A0 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A544C93AF1DAA5CFF1EA56D666CF9A08 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 326C734897B5E3E4C5D37A6E5FD09950 /* GCDWebServerFileResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A54714E93CD3503052BF814B6B70C7E5 /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46600C6F53AD9A4CB2B1B4C7074CC8 /* ECPublicKey.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		A550D105443E50FCFB80442C6D83FCFB /* FunctionalUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 222178B561446BA1DEF78AB7EB4BCEC9 /* FunctionalUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1133,7 +1135,6 @@
 		A90F9426932B20FB00964EBF1387073D /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6814F0BB02838AECB9308D752765D0 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A9188C05C34817C3824E1242ED7EE259 /* TSAttachmentStream.h in Headers */ = {isa = PBXBuildFile; fileRef = FC38CFD817308341B3B028123D2D3324 /* TSAttachmentStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9385009BF85AFD506166610BE34BDFE /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0AC3D17DEB867587C2FA1AF5E37D08 /* StreamEncryptor.swift */; };
-		A94B177F24D2DA1813501E5ED4046A2C /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E318C92565294C596A3C05EE6B0AD652 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9ADB6883191590F16095643A4F12F8C /* NSString+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2527FD072620BAD7071A465C9E7FDA /* NSString+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9BC4D4661A662CF3F77B7FC2853E665 /* TSDerivedSecrets.m in Sources */ = {isa = PBXBuildFile; fileRef = EE09D7C36E28A8C4D46AE389F09CD8D2 /* TSDerivedSecrets.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A9CF997FABBA3084F0A6D257DD988FC1 /* Provisioning.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0AC1277AAA46E1D6E3BDEBB9C09F3 /* Provisioning.pb.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -1222,12 +1223,12 @@
 		B3D1D52F5232031FB158F0112498542B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93845E4A2BA26F1CEDF91CEC8649FB /* Foundation.framework */; };
 		B40119736B218B0798B47BE68E1EEB16 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = EA29D23716D4CD449A11B2196CD8C902 /* mz_strm_pkcrypt.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B43058D7235DF7CC71DEEEF921C25CC6 /* ge_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = AA38415A419A8E75ABE444B649F56B3E /* ge_tobytes.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B43C41A8A504E1F6571076222D149328 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF554707EF81A139DFD2EF5A35A715 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B43C41A8A504E1F6571076222D149328 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 731ABBA36F2205B9F9CD5BFD92A25E5F /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B43F63ABAD10C1BBB92CB701B6FC0125 /* ECCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1A8295E658632E4EE732BA8165A8 /* ECCTests.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B453ABD28B5183946196CE5754E2B8F8 /* yap_vfs_shim.m in Sources */ = {isa = PBXBuildFile; fileRef = 18458F4D9D41546EC5B058766324360B /* yap_vfs_shim.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B464BB12A7958F2E6C0F29FCA058CF5A /* YapDatabaseLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF84E1FC51D7D4253930C589ED60BF9 /* YapDatabaseLogging.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B46CD8BD7F8115458F11461B5506FE03 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 114874EA5F698DDC64D85639945B37B7 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B490B309B1456F758FB7E59F86EC9907 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9BADFC7FBF4AC87CAF846E6F41B9E /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B46CD8BD7F8115458F11461B5506FE03 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A020BFF8E9B1CF8C95130428698D1849 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B490B309B1456F758FB7E59F86EC9907 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 58018BFEA53F1C3ADF7BC978FA4C41E7 /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B4A6B1120EF00C0CD3348904BF29DD21 /* PreKeyWhisperMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C625407440B7191A7630DE1687BA3534 /* PreKeyWhisperMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B4EA36BABA4A766D298878843B87A7EF /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1400535FA468F770F8D4D1EC733131 /* PBKDF2.swift */; };
 		B509EAAB36F90EED9130BE343F32DB90 /* YapDatabaseCrossProcessNotificationTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 270E8731CFA49833B88D8DF215C88AE0 /* YapDatabaseCrossProcessNotificationTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1238,6 +1239,7 @@
 		B5E793D9B35426E1013D44058025B77F /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15912D89E1023DB6F74B706CE476090 /* CocoaLumberjack.framework */; };
 		B5FE36E57A7D1A0429B3B451C5CF7C97 /* TSOutgoingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F754AA956D0646FBF822E22A04CC3810 /* TSOutgoingMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B60E41BFC04C2D511F923ADE5DCE1052 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6E2C59CF43172086907948591ABB5C /* JSON.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		B623F4CBDAD056886AF62CA2130EAF99 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A891A6CE80936C9757B4E72222E67B5 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B62AE0D100F49D6AD339B2ADEBC8A38A /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B09214DC1DC837597839776B99E5F /* YYSpriteSheetImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B639D81F9D6B71036CEFF771E1C65539 /* OWSSyncConfigurationMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = B34B9F2DAEE7DAB269E36D9667D9118B /* OWSSyncConfigurationMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6BAC57AC5A02CBB7E4A1DD5AD802D76 /* FeedKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 787FAC01B191FB39BDE22C09C52FB0E2 /* FeedKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1307,11 +1309,12 @@
 		C1204C053DE74555D972033073A6BEE1 /* OWSDynamicOutgoingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE204ADFA2A27F10E804017045DDABE /* OWSDynamicOutgoingMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C13FA69CE9D21BAF6370DE9AF767B6CA /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = CE571A384087315285307CC1F2E7A93B /* open.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C145AD7F8758EDD8398104290D838D69 /* CCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3273F128EBEF121D4FCB25D32F3A0 /* CCM.swift */; };
+		C1530759604E274C68AA641D772EA6BA /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C5E80F4717C67700B53C50D2A722FA /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1BC7956DAAEC81EB935923D2C82240F /* NSArray+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C75CD7235576251FB5071A1AC0CF5FD /* NSArray+Functional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1D6727CA5E53374AE6DA024CD8AB60F /* FallbackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 61958F1AA31E219DE28B8761007ECAE8 /* FallbackMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C2008FF12D56F9F95B5646002F0E91B9 /* YapDatabaseHooksPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD72088B137D331B3B8C066161D575C /* YapDatabaseHooksPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C201D65687F5AF96A197333309F8435F /* GTSR2.crt in Resources */ = {isa = PBXBuildFile; fileRef = 2D9E58A2097CBAB970A2BFC57F5B7434 /* GTSR2.crt */; };
-		C21FE1B0D790B61E358833883D2352B0 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5740CB400752ECB7D8F6720FEA8035 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21FE1B0D790B61E358833883D2352B0 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3F9D694CF9E6FAF754E55F1860814D /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C226FAD9AB4CFE574B86E3B646C185F5 /* YapDatabaseFullTextSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3DF286FBF946FD73F9506AFA15EF8 /* YapDatabaseFullTextSearch.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C2788EC8DBB1F9AF0C38AE38FBD56779 /* fe_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = 88DDDE5821CA771D0B99A326BD899F6E /* fe_sub.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C32DCE059C3B17EFAB040AE53AB59110 /* NSArray+NBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93465693D4309351FBF0DDA434227CCB /* NSArray+NBAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1396,7 +1399,6 @@
 		D0B9DB701A7BC51CE92BD8A273DF5620 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1A74B4B15E4FF5E9A0D66A1D9B94B9 /* JSONDecoder.swift */; };
 		D0D5F48B3638EDDFE3D381212032C8BE /* fe_sq2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F006F69F82464ADE81642CEB5D6A4BF /* fe_sq2.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D0DD22A15A4A2E5401F9DAA78890F097 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716AD7C576F8669934AD29C710AC6DC2 /* Authenticator.swift */; };
-		D0E5780F47252082BA759A2A8DE960D0 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4755F8B6EB0B9EF736003F8D79471711 /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0FB5E40C703E4FF191EDEA5A5462EDA /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAF7BA7D8ABD8A07BEB43AF4BD2070 /* Poly1305.swift */; };
 		D145AA93DA51D48A8DEB16C37925FF31 /* MessageSenderJobRecordTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08817C451E6AEF941C9FE6DE75708CF5 /* MessageSenderJobRecordTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		D14B04403180E4F6A70B5774467B4626 /* LokiMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78309F70A762EEA0DA7B99457CB75B05 /* LokiMessage.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -1417,6 +1419,7 @@
 		D33CE30DFF780D734C914A24565B205A /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662D98BDB3E098CFF44122DCF3088AF /* ReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		D340FF49014EEB40B4AAB3CF65F98E04 /* ECKeyPair+Hexadecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5C9C423988BB3C56143EA489FA3DB /* ECKeyPair+Hexadecimal.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		D34DEB7D7E3067E91DCAF2639CD80F09 /* JSONFeedAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B016C373EA0EA1B7CFC390AD898F173 /* JSONFeedAuthor.swift */; };
+		D3652DBD2DEFFA0CC8ABB7A2CC317DCA /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CF553409F30C34C985BD705A0FC3D56 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D38855BA82E14FF545BD36AFCB5556F8 /* OWSOutgoingReceiptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 897FFA96EAA2D13B0FD55806DE011B2E /* OWSOutgoingReceiptManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3D74F6FF6F7BB8CF935752FC6B511A1 /* OWSEndSessionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8304804E1F23FE01082EADB69A59D59 /* OWSEndSessionMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D3E2E8A03B66A729E1FDFA0A2BB93C2F /* NSObject+Casting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F199D857303E6D2FAA138792CC17B /* NSObject+Casting.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1481,7 +1484,6 @@
 		DC16E552E92229450887346D98606D22 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39620E74B74D890884D066BA83E3356D /* AES.swift */; };
 		DC18B71BC74EF9ED064F4D3312EEAD56 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCC5660BDDC19D0124DB51C95D5C509 /* Debugging.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		DC3708CCB15A92A45FDB94FF35BC8D5B /* TSInfoMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2C1262306F5DED4315D78F60CDC5A2 /* TSInfoMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC4B72ECD1F7AC90DC866FAA4ED4FC82 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5D80575A28FB01C65A393DFCD43B78 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC736E2E2256431F0026F9E4A77754B5 /* Data+SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BD50FC33E21562288404586E6F0E3 /* Data+SecureRandom.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		DC9E86F749472541B448906B307557E7 /* YapDatabaseCloudCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CFFFE78AB68B45B8E5BA41FF6C1142 /* YapDatabaseCloudCore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DCA3C99DFC26C9160E157B6102703984 /* MediaStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C3C9F10673D70BAD2D9DDCCADE859 /* MediaStarRating.swift */; };
@@ -1517,7 +1519,7 @@
 		E2137E8A604150D0F39225E0AA50B5DE /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334CF67674F04BF201EA1DD203B5364 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
 		E235F5104360BAFCF9E3099A295B0F50 /* YapDatabaseViewMappingsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F244822683D33121C45F68E3774D615C /* YapDatabaseViewMappingsPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E23937BA9B311667098662C581A68289 /* MTLJSONAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4FF6BD1D416373EEB6189CE9AE8355 /* MTLJSONAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E24A2449904F296790D12E80DCFA8879 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 36745C4EE99EB34991D66916B2EC9164 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E24A2449904F296790D12E80DCFA8879 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E1D3885D7037EDEB46447CE5BC6773 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E25FB4D08B28A691E7992828FFB9B438 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A905CD1EE7029E1818591A53F99026 /* NVActivityIndicatorAnimationOrbit.swift */; };
 		E295C9ACCDCC6DA30C055B3471A6F631 /* PreKeyBundleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA96CD9796FF4593561024A69DD1322 /* PreKeyBundleTests.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E324AC9BC4AA5B3F6BE234B3EBE39C9F /* TextFormatDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55127B848C0FF37295358FBCFFC6540C /* TextFormatDecodingError.swift */; };
@@ -1548,11 +1550,11 @@
 		E9010FD014BD10BF7A2BB06D2CC0E3C1 /* libPhoneNumber-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FFB23AC20677C98074F573269544A3 /* libPhoneNumber-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E90A4C5C75DDB00DD971B0B65C95496A /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BFADE19898039DF632F7450095F65 /* GCM.swift */; };
 		E911C500A3751799C8497EC5C214E404 /* UnknownStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1D2173F07445B9B79084D3BE5DE39E /* UnknownStorage.swift */; };
+		E91FF3C960B8ECB2D3E4714FFA770486 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D8BC9659B8CF20322688716C7E502EA7 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E934C54957ADC8DB05F891CF9F02E100 /* ContactDiscoveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D2BAF36194B374F438141692BF519 /* ContactDiscoveryService.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E94B13F0B350F25B146DE476F7748BA3 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE591689BCF16427790C1453DA7618C0 /* NVActivityIndicatorViewable.swift */; };
 		E9617B10176C58250C7E6AB7958BBD38 /* ge_p1p1_to_p3.c in Sources */ = {isa = PBXBuildFile; fileRef = E04B24CA9E70B937D957BD30EA97C8DF /* ge_p1p1_to_p3.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E99C318789CB06AE574E4251F58657CF /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F53A2052B37C979F5E29DDA0866EE1 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA19CABE9B77F855D1B3AA9C9F2D2090 /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D56BD60DD2E6369C6359B940D95B69 /* CLIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA3B7DC7CD49551F576B10D874806422 /* ProtoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DE199C453E5535BF64E0392D89EA5B9E /* ProtoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA453D1A2A321C2A2A7380158BA5DFBD /* LokiPushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA120902D1FD1F738BAF4CCBE7C2C2 /* LokiPushNotificationManager.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		EA50D535A6034F1E23CCB9752EE57E2F /* BinaryDelimited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B834EFB02ECD4E48D5CAF29C30648A5 /* BinaryDelimited.swift */; };
@@ -1569,7 +1571,6 @@
 		EC1ECEA0FC81CA9A35146B4F998D21FC /* SessionCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9558B88279A52A465F99B5FE6A06A479 /* SessionCoreKit.framework */; };
 		EC1F725BDDCCBD9764F1BF4F69B886CD /* YapDatabaseViewChangePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = FCE4CF9B353FF442360455D2479560F3 /* YapDatabaseViewChangePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EC71119080211FAB78FBE2512514487A /* SMKUDAccessKeyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548E138BCD222E7E08E778310A86A4E /* SMKUDAccessKeyTest.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
-		EC910A49F34F713D387616E183D6E8BE /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA98D9F2C2FF2F153241CA2FCDA52D5 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC996D46FA6146DC08E8E15F89EF039C /* NSNotificationCenter+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1B89C632EEE1D19E33CFB6C35AFB5E /* NSNotificationCenter+OWS.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EC9EF1955FA70F70BF5E00D4AA1D6E37 /* String + toDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161BA263A6DE52710C9AF7A52ACB512 /* String + toDate.swift */; };
 		ECCBA284ECA80002579A6F4E000675D2 /* NSTimer+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = B22BF595AF708CC0E90812A04E8B1A5A /* NSTimer+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1580,7 +1581,7 @@
 		EDF19A66B167879A9D0BA4A73FCCE9A6 /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 644B9FF6835091C44036D97F018A355E /* mz_crypt.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EE16C558333AD9150C6ABA2B0E17F458 /* SSKPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B9B72E3404E6D22D926B1896D1EFB4 /* SSKPreferences.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		EE21118AFDFC5FFD7C81F5A77B1F8F35 /* YapDatabaseManualView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9685B300D3A2010DDCC35533F12F3 /* YapDatabaseManualView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EE25A73A7949BB930F9AAA3442C6D595 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B4640958D6E1FE4757C71A9D3DB71628 /* DDOSLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EE25A73A7949BB930F9AAA3442C6D595 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E6B8911121B8A4A6105C19FA5D054B /* DDOSLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EE59CC4358B9BF781F9E4477392F8383 /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C571ADD6BA41C3287BEE87A9657D70AD /* Guarantee.swift */; };
 		EEF3170F7481301F6A13B2FB1ACE7345 /* Pods-LokiPushNotificationService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE54494C0C981CF7DFE9E731E42B0B1 /* Pods-LokiPushNotificationService-dummy.m */; };
 		EEF99BAE3923F37F45805E70FC98159B /* OWSFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CDF3090BECD02732184EE343553DD /* OWSFileSystem.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1599,7 +1600,7 @@
 		F18DAAAC0451D938697A3659138621C7 /* OWSDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9EDFC3A747B0385F37ADC62BA302D4 /* OWSDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1AB6F6729BB242D35DD6F34E2C1F28D /* AnyMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929F6EE453331EC7741D0C0B6089F49 /* AnyMessageStorage.swift */; };
 		F1B0836AADBBE8C4956B5F3029F97DB5 /* SMK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 799052817ADBB0A616D6AF252C4A29C0 /* SMK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F24B42C87C26FC98CD53BFA9AFA8073B /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD89646722B730DAFDD803550EE69FF /* CLIColor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F24B42C87C26FC98CD53BFA9AFA8073B /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 58212B990E3D8DB4FE91765D7E65A194 /* CLIColor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F24BFE91ED620E9A976F185C3E03023B /* NSDictionary+YapDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D9B8E02FDAD1D3FF468010A56588D5C /* NSDictionary+YapDatabase.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F26818FFF57E2E84593D521B4F1D49B9 /* YapDatabaseAtomic.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDE7F703B4F5B09E7B7C8209B713E98 /* YapDatabaseAtomic.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F26B4E499299C875526711B8E818C90C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93845E4A2BA26F1CEDF91CEC8649FB /* Foundation.framework */; };
@@ -1629,6 +1630,7 @@
 		F659EF96A425BA8824E800BBF6FE4360 /* TSOutgoingMessageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F32D3D84C5B21D902A7C2AC8DAA492F /* TSOutgoingMessageTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F660F4D245853BB213D00BE7A4E0E9B6 /* YapDatabaseSearchResultsViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A09B9810DF657312269A27435A657A /* YapDatabaseSearchResultsViewOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F680FD9C67CBBF0EF0F55E567967B2FF /* ProfileManagerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A4F0DA508282C800A468F83D517708 /* ProfileManagerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6AA0AC90B3155790C23A39D19BD2C64 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5CE9DF6D45FEBB10C659407588102C /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6BF7F9014CD88D86B69BB08CC99AAAD /* String+SSK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC55CDE375A4F2D5AA87811D8B07D3B /* String+SSK.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		F6CACAA4BAC0977ECCCC980F32287F6C /* Poller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349C6FA36C612FEA3604E04CFF1DDFE /* Poller.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		F6D2CD8F3920D2A7A790D8FE34A2BDED /* SignalServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ED5D762CBF1154E56A51833DACE84E /* SignalServiceClient.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -1658,7 +1660,6 @@
 		F9D09FAE2A62D7D09C1C26A0A4171BD6 /* OWSDisappearingConfigurationUpdateInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF9A0F1BCEDAE3AB8AE45F6353209BC /* OWSDisappearingConfigurationUpdateInfoMessage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F9D23A5994AF2A2F69311B02BEA492CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C93845E4A2BA26F1CEDF91CEC8649FB /* Foundation.framework */; };
 		F9D2B18510B0F2FD2892C2601547A4F5 /* YapDatabaseSecondaryIndexOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA74B31A61284142EA68ED49E54B19 /* YapDatabaseSecondaryIndexOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F9E9BD0B5AB81226E9D4676BECC415AC /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B0EDC61D709A4DC36E9E51EC56D119 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9EC10F525540FC9963018E562D385F9 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = 65BB42FD91EB111A94AB6045CE3AA2CD /* compare.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F9F15A5C28177BD34E70ECF987E6D1FB /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA727B405B3A33C98968BE2136DFFD61 /* SwiftProtobuf.framework */; };
 		FA111945FD3BEF1703E2F091935FCCBE /* WhisperMessageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 25998B7965D333660E717565777866A5 /* WhisperMessageSerialization.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -1683,7 +1684,6 @@
 		FC8AFA8C499D5BDC7FCDE1F237CD3C83 /* YapDatabaseStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = DF2F682FA7F4F0A0F160BFC722375798 /* YapDatabaseStatement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FD0F451322F256EBAB98F55DD64DAF9F /* YapDatabaseHooksConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D18F1C3EEEE304B1EA1761809B4ECA9B /* YapDatabaseHooksConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD2BD632FB7073A89C132ABA6542ADAE /* OWSProvisioningCipherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EC0DBE36879D712FAB14A44C7A4E4C /* OWSProvisioningCipherTest.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FD3B1F879B728422098593D1E04CDDA3 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 12447B5F2B0697B5DCAD96C627F5C1BE /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD61A57CB594178BD2909AE676FCFF76 /* OWSDisappearingConfigurationUpdateInfoMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 250FA28C30C1ED8697BD3D0675CF8B78 /* OWSDisappearingConfigurationUpdateInfoMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD685FE0931C5800765420251945C682 /* OWSStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC101E21E346DFB75E96E5C089F99B6 /* OWSStorage.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FD728D8FE7D92B85E6230CEFE02FC3BC /* LokiDatabaseUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09053A1E881236B8E0F2F8F0D87CEC0 /* LokiDatabaseUtilities.swift */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
@@ -2837,6 +2837,7 @@
 		07BCCDB720C5CA5A5AA7B4CF35CDB771 /* SessionServiceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionServiceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C9DCDDC7155F24CC204CA8473F3D5E /* Pods_SignalShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalShareExtension.framework; path = "Pods-SignalShareExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E9A50BEB5318F939BDCDA8F380F73A /* YapDatabaseAutoViewConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseAutoViewConnection.h; path = YapDatabase/Extensions/AutoView/YapDatabaseAutoViewConnection.h; sourceTree = "<group>"; };
+		082936118AA03C291C99EBDFDBAC43F1 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
 		0842E48785972073071DF3CA53AEAF34 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYImage/YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		0879495B9239A016B8A97A79AD8A3AB6 /* YapDatabaseCloudCorePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCorePrivate.h; path = YapDatabase/Extensions/CloudCore/Internal/YapDatabaseCloudCorePrivate.h; sourceTree = "<group>"; };
 		088084A3F2D9887DE225453DA779FCBE /* SignalServiceProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalServiceProfile.swift; sourceTree = "<group>"; };
@@ -2852,6 +2853,7 @@
 		0A18214BB5CF75E3306E0E9414391440 /* OWSReadReceiptManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSReadReceiptManager.m; sourceTree = "<group>"; };
 		0A3B5B7F1F687F0C8622CBADA7CEE1B4 /* TSAccountManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSAccountManager.m; sourceTree = "<group>"; };
 		0A65BE3E4E34126135699C21C1D0A616 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		0A72B4712133DBB5FD5D1EB02B38A247 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
 		0A82CC73AEB781357D89CC4D55ED93A2 /* Ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ed25519.h; path = Classes/Ed25519.h; sourceTree = "<group>"; };
 		0A8EC53067D3E4A803F5EB4AD030CA3A /* SessionHKDFKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SessionHKDFKit.debug.xcconfig; sourceTree = "<group>"; };
 		0AD68DB5CEC6486B7F35B950CC3BD583 /* YapDatabaseFullTextSearchConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFullTextSearchConnection.m; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchConnection.m; sourceTree = "<group>"; };
@@ -2864,6 +2866,7 @@
 		0B2A04771298E369BC9BD32E4CADEA76 /* NSObject+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+OWS.h"; path = "SignalCoreKit/src/NSObject+OWS.h"; sourceTree = "<group>"; };
 		0B62D61217A90EEB841CB2C6A41CB44E /* DeviceNamesTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceNamesTest.swift; sourceTree = "<group>"; };
 		0B6854C329B74A5F6E629BD8CF560E4A /* YapDatabaseViewPage.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = YapDatabaseViewPage.mm; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewPage.mm; sourceTree = "<group>"; };
+		0B7D89701007903AA0AA73115C8DC763 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDASLLogger.h; sourceTree = "<group>"; };
 		0B834EFB02ECD4E48D5CAF29C30648A5 /* BinaryDelimited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDelimited.swift; path = Sources/SwiftProtobuf/BinaryDelimited.swift; sourceTree = "<group>"; };
 		0B8B09214DC1DC837597839776B99E5F /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSpriteSheetImage.m; path = YYImage/YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		0B9688E5E00C796CD83F691DA37DB333 /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEAD.swift; path = Sources/CryptoSwift/AEAD/AEAD.swift; sourceTree = "<group>"; };
@@ -2905,7 +2908,6 @@
 		10E8F2C42157596225E0A5B8C77BD575 /* SessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionState.h; path = AxolotlKit/Classes/Sessions/SessionState.h; sourceTree = "<group>"; };
 		10FA235640D07318F2BBC378F527950F /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLTransformerErrorHandling.h; path = Mantle/MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
 		1103878593F7BBA74C38EB359A9FE8AF /* PublicChatPoller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PublicChatPoller.swift; sourceTree = "<group>"; };
-		114874EA5F698DDC64D85639945B37B7 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Sources/CocoaLumberjack/DDASLLogger.m; sourceTree = "<group>"; };
 		118308E1E4FBA1A16DEA275508D47BD1 /* YapDatabase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapDatabase-umbrella.h"; sourceTree = "<group>"; };
 		11ABF9A7A15D3F22CA926F1157C25BB7 /* SessionBuilderTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SessionBuilderTests.m; path = AxolotlKitTests/SessionBuilderTests.m; sourceTree = "<group>"; };
 		11AD49CFFF0578951D45373ADBEB72C4 /* SessionState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SessionState.m; path = AxolotlKit/Classes/Sessions/SessionState.m; sourceTree = "<group>"; };
@@ -2913,7 +2915,6 @@
 		11ED5D762CBF1154E56A51833DACE84E /* SignalServiceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalServiceClient.swift; sourceTree = "<group>"; };
 		12063F6216D2C178F895D0E6077FD676 /* SQLCipher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.release.xcconfig; sourceTree = "<group>"; };
 		120B6A87E9DDCA72A24D0ED619095A9C /* OWSMessageUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMessageUtils.h; sourceTree = "<group>"; };
-		12447B5F2B0697B5DCAD96C627F5C1BE /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Sources/CocoaLumberjack/include/DDAssertMacros.h; sourceTree = "<group>"; };
 		125AE298766EF835BB286505C22F3F89 /* OWSMessageServiceParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSMessageServiceParams.m; sourceTree = "<group>"; };
 		125B120C428D639CDDA3AD1C1DC4E5E0 /* Google_Protobuf_Value+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Value+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Value+Extensions.swift"; sourceTree = "<group>"; };
 		129AE0F52823F6B5DA5C2BAA4AB596A8 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
@@ -2968,7 +2969,6 @@
 		18A0A08C3A2FC503E881A170C9405664 /* MathUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathUtils.swift; path = Sources/SwiftProtobuf/MathUtils.swift; sourceTree = "<group>"; };
 		18C36325839628B878265673428519DC /* YapDatabaseRTreeIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseRTreeIndex.h; path = YapDatabase/Extensions/RTreeIndex/YapDatabaseRTreeIndex.h; sourceTree = "<group>"; };
 		18CC6D0EE22DE4CC99F1696EE81D5D17 /* OWSGroupsOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSGroupsOutputStream.h; sourceTree = "<group>"; };
-		18E9BADFC7FBF4AC87CAF846E6F41B9E /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Sources/CocoaLumberjack/DDASLLogCapture.m; sourceTree = "<group>"; };
 		18EEF3C82B625815D23CC785728D0A49 /* SessionAxolotlKit-Unit-Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SessionAxolotlKit-Unit-Tests-Info.plist"; sourceTree = "<group>"; };
 		190C0880547A41F1D73E5789EF0A43D6 /* SMKSessionCipherTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMKSessionCipherTest.swift; path = SignalMetadataKitTests/src/SMKSessionCipherTest.swift; sourceTree = "<group>"; };
 		19199C33E6435CC0B64375CBA5BEE052 /* YDBCKChangeRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKChangeRecord.h; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKChangeRecord.h; sourceTree = "<group>"; };
@@ -2984,6 +2984,7 @@
 		1B2A2EC660876AC5FFFD40C656EE8CB8 /* YapDatabaseSecondaryIndexHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexHandler.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexHandler.h; sourceTree = "<group>"; };
 		1B8538AF5A0EA88BA195A16411165D3D /* Date + codingStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date + codingStrategy.swift"; path = "Sources/FeedKit/Extensions/Date + codingStrategy.swift"; sourceTree = "<group>"; };
 		1BA3791960A65E68390FB53EEB9ED11F /* SessionStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionStore.h; path = AxolotlKit/Classes/State/SessionStore.h; sourceTree = "<group>"; };
+		1BBBE7B78340A1A00616E22B63DF71D6 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Sources/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
 		1BC0BA735B98308C8785B1066CFB229F /* HKDFKitTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HKDFKitTests.m; path = HKDFKit/HKDFKitTests/HKDFKitTests.m; sourceTree = "<group>"; };
 		1BD55CCA10E2EF0ADD5E0885A51D5C2E /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
 		1BE1D12C0D4EBE913B85E147F7896388 /* AtomFeed + mapAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AtomFeed + mapAttributes.swift"; path = "Sources/FeedKit/Models/Atom/AtomFeed + mapAttributes.swift"; sourceTree = "<group>"; };
@@ -3030,6 +3031,7 @@
 		21691905C7CDB5AE32E38E7400884E05 /* Pods-Signal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Signal-dummy.m"; sourceTree = "<group>"; };
 		216CF97905D68785B94C49E760961D87 /* NSSet+Functional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Functional.m"; sourceTree = "<group>"; };
 		2180F07FC830E29129F309FF430C87CB /* OWSUploadOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSUploadOperation.h; sourceTree = "<group>"; };
+		21BB5C57119B50551AB55ACBD34D40A6 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDMultiFormatter.h; sourceTree = "<group>"; };
 		21D6272B50CD2DC3C18505C4CAD84B0A /* OWSMessageSend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OWSMessageSend.swift; sourceTree = "<group>"; };
 		221C31B7332DFFEB4138D879DA7D2D73 /* ge_p3_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_tobytes.c; path = Sources/ed25519/ge_p3_tobytes.c; sourceTree = "<group>"; };
 		221EB3CBE2A18FD90F557B85AED47C5B /* YapDatabaseCrossProcessNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCrossProcessNotification.h; path = YapDatabase/Extensions/CrossProcessNotification/YapDatabaseCrossProcessNotification.h; sourceTree = "<group>"; };
@@ -3058,6 +3060,7 @@
 		24F2D3F163D7C4640304B7B1E9705B07 /* YapDatabaseRelationshipTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRelationshipTransaction.m; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipTransaction.m; sourceTree = "<group>"; };
 		24F6ACC3F8682F2C9151C4C18E1B97F1 /* OWSDisappearingMessagesConfigurationMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfigurationMessage.m; sourceTree = "<group>"; };
 		250FA28C30C1ED8697BD3D0675CF8B78 /* OWSDisappearingConfigurationUpdateInfoMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSDisappearingConfigurationUpdateInfoMessage.h; sourceTree = "<group>"; };
+		252508B4DF92E7156AF326EFFAE9BB34 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		252F70E46A95B8280A59D30AE04DB388 /* OWSDisappearingMessagesJob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSDisappearingMessagesJob.h; sourceTree = "<group>"; };
 		256192204C873E86F6294F1141069EA3 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Source/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
 		25998B7965D333660E717565777866A5 /* WhisperMessageSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WhisperMessageSerialization.m; path = AxolotlKitTests/WhisperMessageSerialization.m; sourceTree = "<group>"; };
@@ -3085,6 +3088,7 @@
 		274DE6BCF69B5F8F2080451A335FC6E7 /* YapDatabaseExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseExtension.h; path = YapDatabase/Extensions/Protocol/YapDatabaseExtension.h; sourceTree = "<group>"; };
 		275789089700D4798ED544752FAED09C /* ClosedGroupRatchet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClosedGroupRatchet.swift; sourceTree = "<group>"; };
 		27B6B6A9DDAA896FFFC6BD2201F74AE2 /* SQLCipher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.debug.xcconfig; sourceTree = "<group>"; };
+		27C5E80F4717C67700B53C50D2A722FA /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		27DEAA3D37B91E56EF8D35645CB6B717 /* Google_Protobuf_Wrappers+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Wrappers+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Wrappers+Extensions.swift"; sourceTree = "<group>"; };
 		280DE2AE7F232314811D58BC91433DA8 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
 		2848B827B768623D4DC62EE9AC737266 /* ClosedGroupParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ClosedGroupParser.swift; sourceTree = "<group>"; };
@@ -3117,7 +3121,6 @@
 		2C9B985C260C5A7B7AE131611925CB72 /* YDBCKRecordTableInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKRecordTableInfo.h; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKRecordTableInfo.h; sourceTree = "<group>"; };
 		2CC99C3A27D8B9CBDA506DCC3A376633 /* TSInvalidIdentityKeyErrorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSInvalidIdentityKeyErrorMessage.h; sourceTree = "<group>"; };
 		2CCC5228EECCC0307E3E3CFA2F376650 /* YapDatabaseViewTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewTypes.m; path = YapDatabase/Extensions/AutoView/YapDatabaseViewTypes.m; sourceTree = "<group>"; };
-		2CF3CDA3573A40BDD2025F2EAFC8D2FF /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
 		2CFD0CF0FBC6EC94E0B09ACEE1C10505 /* Reachability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.release.xcconfig; sourceTree = "<group>"; };
 		2D1400535FA468F770F8D4D1EC733131 /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
 		2D6D533F2F3BCD2730780660AC8E6CE9 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
@@ -3127,7 +3130,6 @@
 		2DE1C40713B2E11619A4B02F39D62C9E /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		2E1FF2E242BB04FEAEBA0BCD3755D446 /* SessionCoreKit.unit-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SessionCoreKit.unit-tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E91BF3F88F252ABE5C252497307A463 /* RSSFeedItemEnclosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemEnclosure.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItemEnclosure.swift; sourceTree = "<group>"; };
-		2EB4F78A69403C64BD5A5818B6EF3A95 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = "Sources/CocoaLumberjack/Supporting Files/DDLegacyMacros.h"; sourceTree = "<group>"; };
 		2EB5E65F9F1978745612D37DDFFC4920 /* TSGroupThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSGroupThread.m; sourceTree = "<group>"; };
 		2EF02ED0F7762D3F1F52A0048E1E8114 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
 		2EFEE647D9C9FDFA0DA019D1DC2CEBA6 /* sign.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sign.c; path = Sources/ed25519/sign.c; sourceTree = "<group>"; };
@@ -3143,7 +3145,6 @@
 		30A5766C6D50F722CF9C515AB5F6461A /* Pods-SignalMessaging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalMessaging.modulemap"; sourceTree = "<group>"; };
 		30A905CD1EE7029E1818591A53F99026 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
 		30AA37719DDC2C80EE2577B9B0001E44 /* FieldTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTypes.swift; path = Sources/SwiftProtobuf/FieldTypes.swift; sourceTree = "<group>"; };
-		30DE4E2093BF3E7C61AEEF48D5C01231 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Sources/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
 		3118AE136732DB4DAF8491885ED86CE0 /* Pods-SignalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		313467668FECE8173BA64F596B94A83F /* SessionAxolotlKit-Unit-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SessionAxolotlKit-Unit-Tests-frameworks.sh"; sourceTree = "<group>"; };
 		314C5603774CB434D079672BFDAA3203 /* TSIncomingMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSIncomingMessage.h; sourceTree = "<group>"; };
@@ -3172,7 +3173,6 @@
 		33E1672E7ED63BDD5F6ACC7F7B571362 /* DateSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateSpec.swift; path = Sources/FeedKit/Dates/DateSpec.swift; sourceTree = "<group>"; };
 		33E6F194D83F5C31EE922B7E268F430F /* YapRowidSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = YapRowidSet.mm; path = YapDatabase/Internal/YapRowidSet.mm; sourceTree = "<group>"; };
 		34080A350FC8D80522BDD098093FD3D9 /* YapDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabase.h; path = YapDatabase/YapDatabase.h; sourceTree = "<group>"; };
-		3432051BCD2238AFF4FED197D57F51DA /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Sources/CocoaLumberjack/include/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		343E8A6521B8C102787D1A00B8DCD697 /* OWSAddToProfileWhitelistOfferMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSAddToProfileWhitelistOfferMessage.h; sourceTree = "<group>"; };
 		3483F66422457B277128C8161CD72E16 /* SessionHKDFKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SessionHKDFKit-Info.plist"; sourceTree = "<group>"; };
 		34983F229F02FD853F2C41A46926B93F /* SSKMessageSenderJobRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SSKMessageSenderJobRecord.h; sourceTree = "<group>"; };
@@ -3188,7 +3188,6 @@
 		35F1E6955C41AD7E986529B0A231ABF8 /* YapDatabaseSecondaryIndexSetup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSecondaryIndexSetup.m; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexSetup.m; sourceTree = "<group>"; };
 		361D342606168CF6E7464CA3B441CCD5 /* MediaHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaHash.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaHash.swift; sourceTree = "<group>"; };
 		361E3A3CAF1502BB445AAB0DC7214CDC /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
-		36745C4EE99EB34991D66916B2EC9164 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Sources/CocoaLumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		3679C650B66A2C0F89CB316E6D7E1110 /* TSMessageStorageTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSMessageStorageTests.m; sourceTree = "<group>"; };
 		367D060074AB712B136642950FAB91F8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		36BF7818F54232C315AC4516FD60D9B5 /* OWSRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSRequestFactory.m; sourceTree = "<group>"; };
@@ -3198,10 +3197,8 @@
 		373CAF9CB413608B327CF55581139670 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		375E32802D5664ED32EB1B51042F8B75 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
 		377AE5851A7A1028CE1C5319C5E46008 /* SessionCurve25519Kit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionCurve25519Kit.h; path = Classes/SessionCurve25519Kit.h; sourceTree = "<group>"; };
-		3783F591C5D4785DAD74D508A5704DF8 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Sources/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
 		37911031CCF11DE7CE187201A36B1CFF /* OWSFingerprint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSFingerprint.h; sourceTree = "<group>"; };
 		3798CE9020A6F76065505DB41CD8C39C /* SessionHKDFKit-Unit-Tests-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SessionHKDFKit-Unit-Tests-prefix.pch"; sourceTree = "<group>"; };
-		37C3BAA7258D1561F8D0F399F4FB274A /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		37CA78C4A85CBB36D42D0A8BF10126B2 /* BinaryEncodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryEncodingError.swift; path = Sources/SwiftProtobuf/BinaryEncodingError.swift; sourceTree = "<group>"; };
 		37CB74AF2B92464B1895C8F669FB849F /* SessionCoreKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SessionCoreKit-Info.plist"; sourceTree = "<group>"; };
 		37D9E705E4A7591B93B5EF675EF3E722 /* Data+OWS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+OWS.swift"; path = "SignalCoreKit/src/Data+OWS.swift"; sourceTree = "<group>"; };
@@ -3216,7 +3213,6 @@
 		397FAFD5562514A64D6C6D064D0A765D /* SyncMessagesProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SyncMessagesProtocol.swift; sourceTree = "<group>"; };
 		39867C96CF23BC38F6714A180A80C9EB /* TSRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSRequest.m; sourceTree = "<group>"; };
 		39946AE0461F15DFE2C8E1DFCBF220C9 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		39AA2F2A8D0742C8958470BEFAA2A86A /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Sources/CocoaLumberjack/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
 		39CBF78A5598018D72F9C9E3C94F5C7E /* Curve25519KitSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve25519KitSwiftTests.swift; path = BuildTests/BuildTestsTests/Curve25519KitSwiftTests.swift; sourceTree = "<group>"; };
 		39D9B1BCA7B06EAACDDB323370E16D6D /* OWSOutgoingCallMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSOutgoingCallMessage.m; sourceTree = "<group>"; };
 		3A0CCA63246C89109DAF298A3BBD9980 /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = SSZipArchive/minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
@@ -3225,6 +3221,7 @@
 		3AC618F3F79ABBF54668616D47224F4F /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
 		3AE7A93FFA4272C8B42F89E6027C5AA6 /* ISO78164Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO78164Padding.swift; path = Sources/CryptoSwift/ISO78164Padding.swift; sourceTree = "<group>"; };
 		3B11E8B42F6E3B864AB1C3ECEDC994A4 /* TextFormatEncodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncodingOptions.swift; path = Sources/SwiftProtobuf/TextFormatEncodingOptions.swift; sourceTree = "<group>"; };
+		3B3F9D694CF9E6FAF754E55F1860814D /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = "Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h"; sourceTree = "<group>"; };
 		3B75C6EA11532E1A25611809B1A2FF35 /* OWSEndSessionMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSEndSessionMessage.h; sourceTree = "<group>"; };
 		3B88CB2A3FC31CC58E7AFE38F9F6ED2A /* YapDatabaseCloudCoreOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreOptions.h; path = YapDatabase/Extensions/CloudCore/YapDatabaseCloudCoreOptions.h; sourceTree = "<group>"; };
 		3BB073A220A40B5A9E65CF882C44F482 /* MIMETypeUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MIMETypeUtil.m; sourceTree = "<group>"; };
@@ -3255,8 +3252,8 @@
 		3EE75F6A4867F303980B363062F1728A /* Threading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Threading.h; path = SignalCoreKit/src/Threading.h; sourceTree = "<group>"; };
 		3EF4DEE025886970BC38E761CBCBC124 /* YapDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManager.m; path = YapDatabase/Internal/YapDatabaseManager.m; sourceTree = "<group>"; };
 		3F44577E19A3E63020FEFD914A84F621 /* YapDatabaseManualViewTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManualViewTransaction.m; path = YapDatabase/Extensions/ManualView/YapDatabaseManualViewTransaction.m; sourceTree = "<group>"; };
-		3F5D80575A28FB01C65A393DFCD43B78 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Sources/CocoaLumberjack/include/DDLogMacros.h; sourceTree = "<group>"; };
 		3FAA497ED97D51CB7DCC38D9A535B228 /* YapDatabaseCloudCoreOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreOperation.h; path = YapDatabase/Extensions/CloudCore/Utilities/Operations/YapDatabaseCloudCoreOperation.h; sourceTree = "<group>"; };
+		3FC5B450FD0E3F17B8C53A085BAFBF16 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Sources/CocoaLumberjack/DDLoggerNames.m; sourceTree = "<group>"; };
 		3FD3372FB4220EC7400E70DB4DB6E82A /* NBPhoneNumberDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDefines.h; path = libPhoneNumber/NBPhoneNumberDefines.h; sourceTree = "<group>"; };
 		3FFE6151F7F8B643D1D44AB8B39B4E10 /* OWSDeviceProvisioner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSDeviceProvisioner.h; sourceTree = "<group>"; };
 		400FF55D0451E7A8F33A3D0D3E11C1B9 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3287,6 +3284,7 @@
 		43775BDB78D8248EE55E31AADA92364A /* MediaCommunity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaCommunity.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaCommunity.swift; sourceTree = "<group>"; };
 		439BFBE70BAF79ACB24857D7F04FBB48 /* OWSUnidentifiedDelivery.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OWSUnidentifiedDelivery.pb.swift; path = SignalMetadataKit/src/Generated/OWSUnidentifiedDelivery.pb.swift; sourceTree = "<group>"; };
 		43B3ED23E37C8C5606136A65263AA8FE /* TSQuotedMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSQuotedMessage.m; sourceTree = "<group>"; };
+		43C23C5BA298DBEF69F2598C9C140539 /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/CLIColor.h; sourceTree = "<group>"; };
 		43E91E312E8FCC6B7AD68060A1ED721C /* YapDatabaseSecondaryIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSecondaryIndex.m; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndex.m; sourceTree = "<group>"; };
 		442365A8720D46698EE03A7F596FB0FD /* libPhoneNumber-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "libPhoneNumber-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		446C07DA6D1E4F51DA687F2561BD29D6 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
@@ -3309,7 +3307,6 @@
 		46EBF278519DAB8F24FB61B25E44BCB0 /* OWSSyncManagerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSSyncManagerProtocol.h; sourceTree = "<group>"; };
 		47083BDB7E7EBD0F7425F9D464E4CE29 /* SMKObjCTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SMKObjCTest.m; path = SignalMetadataKitTests/src/SMKObjCTest.m; sourceTree = "<group>"; };
 		472CD2735402FEFCE5634A238DF05B5C /* NSArray+Functional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
-		4755F8B6EB0B9EF736003F8D79471711 /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Sources/CocoaLumberjack/include/DDLoggerNames.h; sourceTree = "<group>"; };
 		477E8A88BD467445FC9BF2851BC5D213 /* TSPreKeyManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSPreKeyManager.m; sourceTree = "<group>"; };
 		4798D50D6BEEDEE24D8019370DB6931B /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		4799A046DB55C0248A0BF07DF1712D4D /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
@@ -3368,6 +3365,7 @@
 		4F3925602E179FE00CE1F2156D13D71D /* RFC3339DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RFC3339DateFormatter.swift; path = Sources/FeedKit/Dates/RFC3339DateFormatter.swift; sourceTree = "<group>"; };
 		4F48915463942C43B37082B5F78D0166 /* OWSMediaGalleryFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSMediaGalleryFinder.m; sourceTree = "<group>"; };
 		4F4F199D857303E6D2FAA138792CC17B /* NSObject+Casting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Casting.m"; sourceTree = "<group>"; };
+		4F5CE9DF6D45FEBB10C659407588102C /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h; sourceTree = "<group>"; };
 		4F82B2FC17D3F6163E270B7994E5F057 /* Pods_SignalMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalMessaging.framework; path = "Pods-SignalMessaging.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC66B70C12D6AE6D5F1DB351035D90 /* HTTP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		4FCE215388800021C64757569B35BBFB /* YapDatabaseCloudCoreGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudCoreGraph.m; path = YapDatabase/Extensions/CloudCore/Utilities/Execution/YapDatabaseCloudCoreGraph.m; sourceTree = "<group>"; };
@@ -3388,7 +3386,6 @@
 		515B45A71B4225AA0B3F47339FAD2EF3 /* Reachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Reachability.modulemap; sourceTree = "<group>"; };
 		51799199AA54227372832A754B0D7F4A /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = Mantle/extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		517ACD2AEA02F259C77B038E60A0AB49 /* ContactDiscoveryService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ContactDiscoveryService.h; sourceTree = "<group>"; };
-		519E57BB8AEB8C4DBB0C5BA76CAC551E /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Sources/CocoaLumberjack/include/DDLog.h; sourceTree = "<group>"; };
 		51C8F99CB98B821DAC122F8EE3E771E7 /* HKDFKitSwiftTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HKDFKitSwiftTests.swift; path = HKDFKit/HKDFKitTests/HKDFKitSwiftTests.swift; sourceTree = "<group>"; };
 		51C9EFFC8CD4B3EB812AB60DCB9D27D2 /* SSKEnvironment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKEnvironment.m; path = SignalServiceKit/src/SSKEnvironment.m; sourceTree = "<group>"; };
 		5235E056CF0D657972BE4199C586621F /* NSData+keyVersionByte.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+keyVersionByte.m"; path = "AxolotlKit/Classes/Utility/NSData+keyVersionByte.m"; sourceTree = "<group>"; };
@@ -3438,7 +3435,9 @@
 		57EA4575778108D1AF57229C33604833 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
 		57F638CE0B3A22230898A6E897B7BC76 /* OWSDevicesService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDevicesService.m; sourceTree = "<group>"; };
 		57F9852D2B27DA69FC1820BEEA32EE68 /* YapDatabaseFullTextSearchSnippetOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseFullTextSearchSnippetOptions.h; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchSnippetOptions.h; sourceTree = "<group>"; };
+		58018BFEA53F1C3ADF7BC978FA4C41E7 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Sources/CocoaLumberjack/DDASLLogCapture.m; sourceTree = "<group>"; };
 		58134F9B2183B2B3ED4312F12FC70A66 /* OWSDeviceProvisioner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDeviceProvisioner.m; sourceTree = "<group>"; };
+		58212B990E3D8DB4FE91765D7E65A194 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Sources/CocoaLumberjack/CLI/CLIColor.m; sourceTree = "<group>"; };
 		58302DE74205DC1F8E0E6FB61E193A30 /* MediaDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaDescription.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaDescription.swift; sourceTree = "<group>"; };
 		5837CFB33F3038427A3B41188C368EB8 /* SessionMetadataKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SessionMetadataKit.debug.xcconfig; sourceTree = "<group>"; };
 		585B4257BA8FA86A0698483DD50832D0 /* YDBCKAttachRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKAttachRequest.m; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKAttachRequest.m; sourceTree = "<group>"; };
@@ -3475,6 +3474,7 @@
 		5C7078B30B49B98FA2FCB4ADC5CE46B2 /* Pods-SignalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalTests.modulemap"; sourceTree = "<group>"; };
 		5CAA810F312C7EC84CF61BCEAAEBDC17 /* YapDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseManager.h; path = YapDatabase/Internal/YapDatabaseManager.h; sourceTree = "<group>"; };
 		5CD9650C635CAAE7D5CEE5CE3DAA9AA0 /* CipherModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherModeWorker.swift; path = Sources/CryptoSwift/BlockMode/CipherModeWorker.swift; sourceTree = "<group>"; };
+		5CF553409F30C34C985BD705A0FC3D56 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLogMacros.h; sourceTree = "<group>"; };
 		5D4A7DEF65C38AFEF9D549CE21E83CB3 /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
 		5D5EDDEC49BA5884E7348C074C1A8CA4 /* SyndicationUpdatePeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyndicationUpdatePeriod.swift; path = Sources/FeedKit/Models/Namespaces/Syndication/SyndicationUpdatePeriod.swift; sourceTree = "<group>"; };
 		5D6B35F1E5F95D7FB28AF65CB67CFDDF /* YapDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabase.m; path = YapDatabase/YapDatabase.m; sourceTree = "<group>"; };
@@ -3507,7 +3507,6 @@
 		6154BEED44DA3F767A1915298130BA48 /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
 		6179C466427BEFB4B3A547FBC1607E37 /* OWSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSError.h; sourceTree = "<group>"; };
 		61958F1AA31E219DE28B8761007ECAE8 /* FallbackMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FallbackMessage.m; path = AxolotlKit/Classes/CipherMessage/FallbackMessage.m; sourceTree = "<group>"; };
-		61B0EDC61D709A4DC36E9E51EC56D119 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Sources/CocoaLumberjack/include/DDASLLogger.h; sourceTree = "<group>"; };
 		61BEBDA774E770BEF843401E29D87CAD /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
 		61D64E086ABF2B0E0CCD16AE05E3AE3B /* OWSDisappearingMessagesJob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesJob.m; sourceTree = "<group>"; };
 		61D916D8B489B28CD36431C594203356 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
@@ -3519,6 +3518,7 @@
 		623A7035D938044971C4DB9143949BB6 /* YapProxyObjectPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapProxyObjectPrivate.h; path = YapDatabase/Internal/YapProxyObjectPrivate.h; sourceTree = "<group>"; };
 		6261DA54E551BA6E777332DA4E422310 /* YapDatabaseActionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseActionManager.h; path = YapDatabase/Extensions/ActionManager/YapDatabaseActionManager.h; sourceTree = "<group>"; };
 		626C1E5947A4FD7DB51E1FB794A4A3F2 /* SessionCurve25519Kit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SessionCurve25519Kit.modulemap; sourceTree = "<group>"; };
+		6285A2262EFB8F92B39976DD1FBCD968 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDOSLogger.h; sourceTree = "<group>"; };
 		629864392018BD971D5D8480E3DA30DD /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		62CBE126CB1AC050E4D2CB42154F8B5F /* SSKWebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSKWebSocket.swift; sourceTree = "<group>"; };
 		62D7BEF0E5F67BC29D1AC0CEC66F43C3 /* OWSMessageDecrypter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSMessageDecrypter.m; sourceTree = "<group>"; };
@@ -3565,6 +3565,7 @@
 		68704850430425C3DEB7F1021360FA3B /* TSStorageKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSStorageKeys.h; sourceTree = "<group>"; };
 		689070FE4EDFC54C7426B48599331FCF /* SessionCurve25519Kit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SessionCurve25519Kit-umbrella.h"; sourceTree = "<group>"; };
 		68B6C36D99621DA6182887C2DBEB7BD1 /* YapSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapSet.h; path = YapDatabase/Utilities/YapSet.h; sourceTree = "<group>"; };
+		68E7DFA42E240C6171FDEEF13BA75D23 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDASLLogCapture.h; sourceTree = "<group>"; };
 		68EDBE9CA623FEE6B80621D3AAA5DD59 /* YapDatabaseViewRangeOptionsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewRangeOptionsPrivate.h; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewRangeOptionsPrivate.h; sourceTree = "<group>"; };
 		695DDACE1EDFBA8FAE6454C60A689D0B /* TSAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSAttachment.m; sourceTree = "<group>"; };
 		696370841965E94DB88FB1A6C4D73813 /* DeviceLinkingSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceLinkingSession.swift; sourceTree = "<group>"; };
@@ -3583,6 +3584,7 @@
 		6BF3081A1B6B033C8E8E2A1A8C3DB9C0 /* LKSyncOpenGroupsMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LKSyncOpenGroupsMessage.h; sourceTree = "<group>"; };
 		6C23CAA33FC9E471D84F9C684E1BF69A /* TSContactThreadTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSContactThreadTest.m; sourceTree = "<group>"; };
 		6C2DD3EA30BFEE4746CF92334377FDD0 /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
+		6C2F7E6091896C235FE8953F5D535526 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Sources/CocoaLumberjack/DDLog.m; sourceTree = "<group>"; };
 		6C75EB19CEF61448EA77FEABD2EE80DD /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		6C8647DFD5BB2998090E274AF7A31DD6 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		6CBB734F3948021140369DCE6FD3282E /* Pods-SignalTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalTests-Info.plist"; sourceTree = "<group>"; };
@@ -3614,7 +3616,6 @@
 		6F82E76F53AD31A05C57DA241E351E7F /* iTunesSubCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iTunesSubCategory.swift; path = Sources/FeedKit/Models/Namespaces/iTunes/iTunesSubCategory.swift; sourceTree = "<group>"; };
 		6F978425F2FAF9FBA54F4ECA4ABB4536 /* mz_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = SSZipArchive/minizip/mz_compat.h; sourceTree = "<group>"; };
 		6F9F5D8AE9DFD894A3A927203119CB0F /* YDBCKRecordInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKRecordInfo.m; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKRecordInfo.m; sourceTree = "<group>"; };
-		6FC00A4287CB182502C7660A952E5C10 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Sources/CocoaLumberjack/DDLog.m; sourceTree = "<group>"; };
 		6FC4FBC27C9E8D635D279443DDABC7C9 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
 		6FD1E03320BC8B2909F7F2B33733F6D6 /* SSKBaseTestSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSKBaseTestSwift.swift; path = SignalServiceKit/tests/SSKBaseTestSwift.swift; sourceTree = "<group>"; };
 		7016FBAF7E33A47EA33A137C8177AC04 /* FileServerAPI+Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileServerAPI+Deprecated.swift"; sourceTree = "<group>"; };
@@ -3642,6 +3643,7 @@
 		7300A150E4423CB4303061E981E0216A /* YapDatabaseCrossProcessNotificationTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCrossProcessNotificationTransaction.m; path = YapDatabase/Extensions/CrossProcessNotification/YapDatabaseCrossProcessNotificationTransaction.m; sourceTree = "<group>"; };
 		730B3E0697C235A2526E987EA6C0B36E /* NBPhoneNumberUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberUtil.m; path = libPhoneNumber/NBPhoneNumberUtil.m; sourceTree = "<group>"; };
 		731005F6499A4E10D1AD65B19FF9773B /* OWSDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDispatch.m; sourceTree = "<group>"; };
+		731ABBA36F2205B9F9CD5BFD92A25E5F /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		7368BAA497062367B68BCE41EDE67DCD /* ContactsUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ContactsUpdater.h; sourceTree = "<group>"; };
 		73A1D267E6DE602A008124D317CC98F9 /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
 		73B47EA4C442DD7DA6B3A24C6A2C4562 /* SwiftSingletons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftSingletons.swift; sourceTree = "<group>"; };
@@ -3660,7 +3662,6 @@
 		75026E29D6469A14ECBE048F17002F2D /* OWSSignalService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSSignalService.m; sourceTree = "<group>"; };
 		751542C709E631DAA020A0DA1FE4ACBE /* Curve25519.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Curve25519.m; path = Classes/Curve25519.m; sourceTree = "<group>"; };
 		7521D45786889419FDFD66973D5CD485 /* AliceAxolotlParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AliceAxolotlParameters.h; path = AxolotlKit/Classes/Ratchet/AliceAxolotlParameters.h; sourceTree = "<group>"; };
-		752CC7117516BC7D344855C8E55689F3 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Internal.h"; path = "Sources/CocoaLumberjack/DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		75B85789C373087391B891B8C6A93C54 /* OWSVerificationStateSyncMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSVerificationStateSyncMessage.h; sourceTree = "<group>"; };
 		75DFD80B817EF3D91FB54F3B5E24D58D /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
 		75E61C7C4EA224115EB0DB063975493C /* NSData+OWS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+OWS.m"; path = "SignalCoreKit/src/NSData+OWS.m"; sourceTree = "<group>"; };
@@ -3676,7 +3677,6 @@
 		77A09B9810DF657312269A27435A657A /* YapDatabaseSearchResultsViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSearchResultsViewOptions.h; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchResultsViewOptions.h; sourceTree = "<group>"; };
 		77D0F9062B6780D465756E759AF0E978 /* OWSDisappearingMessageFinderTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessageFinderTest.m; sourceTree = "<group>"; };
 		77D65520534E1B0C1D1AC97D39CCC564 /* TSPrefix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSPrefix.h; path = SignalServiceKit/src/TSPrefix.h; sourceTree = "<group>"; };
-		77FDC5DDF7543555328B2F6EA4F7F53F /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Sources/CocoaLumberjack/include/DDFileLogger.h; sourceTree = "<group>"; };
 		78309F70A762EEA0DA7B99457CB75B05 /* LokiMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiMessage.swift; sourceTree = "<group>"; };
 		7831A51ABF8E294C1B8FB0538FE9A6E0 /* YapDatabaseViewTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewTypes.h; path = YapDatabase/Extensions/AutoView/YapDatabaseViewTypes.h; sourceTree = "<group>"; };
 		78558F7CD125DABA3BBFCE7401B169A8 /* AppReadiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppReadiness.m; sourceTree = "<group>"; };
@@ -3687,13 +3687,11 @@
 		799052817ADBB0A616D6AF252C4A29C0 /* SMK-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SMK-Bridging-Header.h"; path = "SignalMetadataKit/src/SMK-Bridging-Header.h"; sourceTree = "<group>"; };
 		79DAF08E859BCBB6E8728103F0CA03B5 /* OWSDisappearingMessagesConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingMessagesConfiguration.m; sourceTree = "<group>"; };
 		79E02AC0CD24324EDA91676CFB7EA1E9 /* OWSFingerprintTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSFingerprintTest.m; sourceTree = "<group>"; };
-		7A5740CB400752ECB7D8F6720FEA8035 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = "Sources/CocoaLumberjack/Supporting Files/CocoaLumberjack.h"; sourceTree = "<group>"; };
 		7A5B9FA17258D2A5BFEA71985AE35E28 /* SMKProto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMKProto.swift; path = SignalMetadataKit/src/Generated/SMKProto.swift; sourceTree = "<group>"; };
 		7AAFB00A93D41AD798E290C593ED99AD /* crypto_sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_sign.h; path = Sources/ed25519/nacl_includes/crypto_sign.h; sourceTree = "<group>"; };
 		7AB5E1DAFA086FE599264F467F8B2DAA /* YapDatabaseActionManagerTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseActionManagerTransaction.m; path = YapDatabase/Extensions/ActionManager/YapDatabaseActionManagerTransaction.m; sourceTree = "<group>"; };
 		7AB856BBAD005DC136FFAEB4FC2DBC34 /* fe_isnegative.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_isnegative.c; path = Sources/ed25519/fe_isnegative.c; sourceTree = "<group>"; };
 		7B80390EDDFFD344F17FDD094AD2DE79 /* String + toBool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String + toBool.swift"; path = "Sources/FeedKit/Extensions/String + toBool.swift"; sourceTree = "<group>"; };
-		7BB5E5758EAA512AE8A9A06D30765A38 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Sources/CocoaLumberjack/include/DDLog+LOGV.h"; sourceTree = "<group>"; };
 		7BB9A88DE6F5651C955103779F689829 /* SessionServiceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SessionServiceKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7BCD3FEEDEF12D940B255FCF3C954344 /* SendingChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SendingChain.h; path = AxolotlKit/Classes/Ratchet/SendingChain.h; sourceTree = "<group>"; };
 		7BF6C861EA32A8AA4780B8606A334843 /* NBPhoneMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneMetaData.m; path = libPhoneNumber/NBPhoneMetaData.m; sourceTree = "<group>"; };
@@ -3743,6 +3741,7 @@
 		8203BC31D3F56E862B911053175ECA87 /* OWSCountryMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSCountryMetadata.m; sourceTree = "<group>"; };
 		8229FF7EE276B99D0269102123E7122A /* YapDatabaseFullTextSearchSnippetOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFullTextSearchSnippetOptions.m; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchSnippetOptions.m; sourceTree = "<group>"; };
 		826D3F183A8EA203FFB12035F99E9551 /* OWSContactDiscoveryOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OWSContactDiscoveryOperation.swift; sourceTree = "<group>"; };
+		828156E1A3734B11C1C729C5F02A428C /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = "Sources/CocoaLumberjack/Supporting Files/DDLegacyMacros.h"; sourceTree = "<group>"; };
 		8293000FB7B610855BD49DDF729A077A /* MediaRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaRating.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaRating.swift; sourceTree = "<group>"; };
 		82A6B08BBB852B48FF6A2C30F77B9F46 /* SessionServiceKit-Unit-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SessionServiceKit-Unit-Tests-resources.sh"; sourceTree = "<group>"; };
 		82BA120902D1FD1F738BAF4CCBE7C2C2 /* LokiPushNotificationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LokiPushNotificationManager.swift; sourceTree = "<group>"; };
@@ -3794,17 +3793,16 @@
 		899498D1CCF6234CAEEAF0EBD9F72D0B /* ECKeyPair+ECKeyPairTesting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ECKeyPair+ECKeyPairTesting.m"; path = "AxolotlKitTests/Util/ECKeyPair+ECKeyPairTesting.m"; sourceTree = "<group>"; };
 		89B4F8737EAA348A9E1BFBD661DE0B87 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		89BA7B235E4E2037463058F4D801EF1B /* YapDatabaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseView.h; path = YapDatabase/Extensions/View/YapDatabaseView.h; sourceTree = "<group>"; };
-		89D56BD60DD2E6369C6359B940D95B69 /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Sources/CocoaLumberjack/include/CLIColor.h; sourceTree = "<group>"; };
 		8A18CBEC173B13393E75CD29FC76D91E /* YapBidirectionalCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapBidirectionalCache.m; path = YapDatabase/Utilities/YapBidirectionalCache.m; sourceTree = "<group>"; };
 		8A2FC00B6CCF4C82C09494CAB2F817B8 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
 		8A6855E15F24549AD9FF337AC5DFE233 /* BinaryDecodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDecodingOptions.swift; path = Sources/SwiftProtobuf/BinaryDecodingOptions.swift; sourceTree = "<group>"; };
 		8A7AF07C658A3E0438DFDFCF0B967B2F /* LKUnlinkDeviceMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LKUnlinkDeviceMessage.m; sourceTree = "<group>"; };
+		8A891A6CE80936C9757B4E72222E67B5 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		8A92BD0C0E82C7382C2515EC85D7C68C /* ge_add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_add.c; path = Sources/ed25519/ge_add.c; sourceTree = "<group>"; };
 		8AC440FE769E21A4F16268F0F81A3A21 /* curve_sigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curve_sigs.h; path = Sources/ed25519/additions/curve_sigs.h; sourceTree = "<group>"; };
 		8AFC98C660D58A23D1191D96739AD9EC /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
 		8B752AEFEFB564485864301906C439F7 /* Pods-SignalMessaging-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalMessaging-acknowledgements.plist"; sourceTree = "<group>"; };
 		8BD4EEC9A0EAE7FB672CE2D826C386DB /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
-		8BFF554707EF81A139DFD2EF5A35A715 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		8C0DB77BF8F5D0A8E3A0C246D5AD76B0 /* ProtobuffsTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProtobuffsTests.m; path = AxolotlKitTests/ProtobuffsTests.m; sourceTree = "<group>"; };
 		8C1D2173F07445B9B79084D3BE5DE39E /* UnknownStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnknownStorage.swift; path = Sources/SwiftProtobuf/UnknownStorage.swift; sourceTree = "<group>"; };
 		8C4D7EFF65D90C4B2CE63217BA3C6540 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
@@ -3827,7 +3825,6 @@
 		8EC8681D50B90BDFD8C4DE5A19D02DF4 /* WebSocketProto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebSocketProto.swift; sourceTree = "<group>"; };
 		8F32D3D84C5B21D902A7C2AC8DAA492F /* TSOutgoingMessageTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TSOutgoingMessageTest.m; sourceTree = "<group>"; };
 		8F37609A4714505FF1E253BBC77A3EDB /* Contact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		8F56D6BA35B5B08A4C9317203B306B4F /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Sources/CocoaLumberjack/include/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
 		8FB5C86BD780A59BDE3CE646F8EA4677 /* OWSFakeCallMessageHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSFakeCallMessageHandler.h; sourceTree = "<group>"; };
 		8FC101E21E346DFB75E96E5C089F99B6 /* OWSStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSStorage.m; sourceTree = "<group>"; };
 		8FCBA352ADED88A2CC1A9A58FF63C02A /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
@@ -3863,6 +3860,7 @@
 		93258517AA89DE4806E8617637AEC14F /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
 		93465693D4309351FBF0DDA434227CCB /* NSArray+NBAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+NBAdditions.m"; path = "libPhoneNumber/NSArray+NBAdditions.m"; sourceTree = "<group>"; };
 		9353C75A23500DEF6273B1F19C451022 /* SMKError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMKError.swift; path = SignalMetadataKit/src/SMKError.swift; sourceTree = "<group>"; };
+		935C30F60D4D4470E06EA7365C96422D /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Sources/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
 		935C71119E75C9C548CE2F353C6C10C6 /* Array+Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Description.swift"; sourceTree = "<group>"; };
 		938B1F85D2E25D8C4AD050D0293BC897 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
 		9397B1CAC00265CDCD6F684AF19627F6 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
@@ -3957,6 +3955,7 @@
 		9FDB892F8FAE686652886D43B1FB264E /* NSError+MTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+MTLModelException.h"; path = "Mantle/NSError+MTLModelException.h"; sourceTree = "<group>"; };
 		9FEA386B5B92788ABE63CB0AC7EF53D0 /* TypingIndicatorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TypingIndicatorMessage.swift; sourceTree = "<group>"; };
 		A00BD4815BDAE453A40EC1E0D1735466 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorPresenter.swift; path = Source/NVActivityIndicatorView/Presenter/NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		A020BFF8E9B1CF8C95130428698D1849 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Sources/CocoaLumberjack/DDASLLogger.m; sourceTree = "<group>"; };
 		A04615EA460D79CDACE9B8722D75FF9B /* YapDatabaseSearchResultsViewTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSearchResultsViewTransaction.h; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchResultsViewTransaction.h; sourceTree = "<group>"; };
 		A05A580EC46989B7D3D2B4077D8B0207 /* FeedParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedParser.swift; path = Sources/FeedKit/Parser/FeedParser.swift; sourceTree = "<group>"; };
 		A068EB225D40C87C83C8C3FA16BA8BFD /* AtomFeedLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedLink.swift; path = Sources/FeedKit/Models/Atom/AtomFeedLink.swift; sourceTree = "<group>"; };
@@ -3992,7 +3991,6 @@
 		A57B61F6CDB0B4FD996ABF41714E2A46 /* ReverseDispatchQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReverseDispatchQueue.swift; sourceTree = "<group>"; };
 		A5D0AE99436E186A0315225B0763A337 /* YapDatabaseViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewOptions.h; path = YapDatabase/Extensions/View/YapDatabaseViewOptions.h; sourceTree = "<group>"; };
 		A5D8FBA6C90201CBC281F584DA26AA4B /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
-		A5F30C95A5D6AA2509BF91579198C1A0 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Sources/CocoaLumberjack/include/DDTTYLogger.h; sourceTree = "<group>"; };
 		A61D3A07CD9BA9EB403C4B331DED6785 /* SSKBaseTestObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKBaseTestObjC.h; path = SignalServiceKit/tests/SSKBaseTestObjC.h; sourceTree = "<group>"; };
 		A620E0833EC1D4D49E4E744A8DF5699C /* SessionMetadataKit-Unit-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "SessionMetadataKit-Unit-Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A637203BB438795401E6B9CEB69DB24C /* base2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base2.h; path = Sources/ed25519/base2.h; sourceTree = "<group>"; };
@@ -4005,6 +4003,7 @@
 		A75FA986E493F7426F2C3BEF984D65E2 /* RSSFeedSkipHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedSkipHour.swift; path = Sources/FeedKit/Models/RSS/RSSFeedSkipHour.swift; sourceTree = "<group>"; };
 		A7836BD3A441B2463F992A1498117C11 /* String+Trimming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Trimming.swift"; sourceTree = "<group>"; };
 		A7ABA877B85C393F79999B6693E21BC6 /* OWSLogs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OWSLogs.h; path = SignalCoreKit/src/OWSLogs.h; sourceTree = "<group>"; };
+		A7E6B8911121B8A4A6105C19FA5D054B /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		A7E796218EC295A77F904C77F42DCD6A /* NSString+SSK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+SSK.h"; sourceTree = "<group>"; };
 		A7F81062997A7F4E4ACC201AAE2E0EA1 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
 		A827282D9901178FE577B0C61A6F625C /* YapCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapCache.m; path = YapDatabase/Utilities/YapCache.m; sourceTree = "<group>"; };
@@ -4013,10 +4012,12 @@
 		A88BBB7C350CDB7BE26D649310561CAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A89444305DCFDAFD71BC173112B50ADC /* Mention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
 		A8C476EB0B275BF2E7577BBCCA61C987 /* SessionResetStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionResetStatus.swift; path = SignalMetadataKit/src/Loki/SessionResetStatus.swift; sourceTree = "<group>"; };
+		A8C48913EE0564047EA2F3B315DF48F3 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
 		A8CD0F7EFDD66D2397CBB5F989B621C2 /* OWSMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMath.h; sourceTree = "<group>"; };
 		A8E1119649E393955877F0C3319C0A96 /* ContactsUpdater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ContactsUpdater.m; sourceTree = "<group>"; };
 		A8E341E2CC4546201117430071026C50 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
 		A8E792D6C07ACF04E6C95158CDB597D5 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		A9333488D207435F33E18244774F0C37 /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Sources/CocoaLumberjack/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
 		A9394BB6CE78007E2C6DBE4A73FBB6D6 /* YapReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapReachability.m; path = YapDatabase/Extensions/ActionManager/Utilities/YapReachability.m; sourceTree = "<group>"; };
 		A9DD74D785C44362F0C9CFD6B6598584 /* OWSRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSRequestBuilder.m; sourceTree = "<group>"; };
 		A9FA9E61CAB16900D7A0F97C826F0546 /* ContactParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactParser.swift; sourceTree = "<group>"; };
@@ -4089,7 +4090,6 @@
 		B3F034657188A322E9776BDF65E0C339 /* TestAppContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TestAppContext.h; sourceTree = "<group>"; };
 		B43EE40D55B0D6E77662D1C13A79A054 /* FakeContactsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FakeContactsManager.swift; sourceTree = "<group>"; };
 		B440D1F705187663FEA333613A492507 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
-		B4640958D6E1FE4757C71A9D3DB71628 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		B46ACB158BDA8155F8EFB82994B7F77B /* YapDatabaseSecondaryIndexConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexConnection.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexConnection.h; sourceTree = "<group>"; };
 		B497CF8BC986B08A93D667D2E202D292 /* OWSAnalyticsEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSAnalyticsEvents.h; sourceTree = "<group>"; };
 		B4B30AC38637952098963924C6CE90C3 /* YapWhitelistBlacklist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapWhitelistBlacklist.h; path = YapDatabase/Utilities/YapWhitelistBlacklist.h; sourceTree = "<group>"; };
@@ -4189,6 +4189,7 @@
 		C299963E6CFF4ECA0C07E376BBEC1E74 /* RSSFeedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedImage.swift; path = Sources/FeedKit/Models/RSS/RSSFeedImage.swift; sourceTree = "<group>"; };
 		C2A352E72995F24119585C777EF1C56A /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
 		C2A9685B300D3A2010DDCC35533F12F3 /* YapDatabaseManualView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManualView.m; path = YapDatabase/Extensions/ManualView/YapDatabaseManualView.m; sourceTree = "<group>"; };
+		C2E1D3885D7037EDEB46447CE5BC6773 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Sources/CocoaLumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		C2EC0DBE36879D712FAB14A44C7A4E4C /* OWSProvisioningCipherTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSProvisioningCipherTest.m; sourceTree = "<group>"; };
 		C30286FF598CB7C7219882F7DE8D7983 /* SMKServerCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMKServerCertificate.swift; path = SignalMetadataKit/src/SMKServerCertificate.swift; sourceTree = "<group>"; };
 		C352B77FF8F0EFDA863CDC5DFE3C3363 /* NBRegExMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBRegExMatcher.h; path = libPhoneNumber/Internal/NBRegExMatcher.h; sourceTree = "<group>"; };
@@ -4206,6 +4207,7 @@
 		C461AA4058E8A4AEBF1D097511BA7F14 /* SessionAxolotlKit-Unit-Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SessionAxolotlKit-Unit-Tests"; path = "SessionAxolotlKit-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C466EEE5CFC764F3E39D66B82D98CE47 /* Pods-SignalShareExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalShareExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		C495B885E81DFC2754B3D638288BC448 /* NSDate+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+OWS.h"; path = "SignalCoreKit/src/NSDate+OWS.h"; sourceTree = "<group>"; };
+		C50C7DFE2EC0EBF5038D3936FCB8A114 /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
 		C5375340898C2B9FD943C6AE682D880C /* YapDatabaseManualView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseManualView.h; path = YapDatabase/Extensions/ManualView/YapDatabaseManualView.h; sourceTree = "<group>"; };
 		C55591F8782C93A78B4480F535A1ED3A /* libPhoneNumber-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "libPhoneNumber-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C571ADD6BA41C3287BEE87A9657D70AD /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
@@ -4243,6 +4245,7 @@
 		C9386DAF4278C8D66EB74AF7E7D141BF /* NBNumberFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBNumberFormat.h; path = libPhoneNumber/NBNumberFormat.h; sourceTree = "<group>"; };
 		C95A557D2B1F506E31B95BBF776DDFBA /* PublicChat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PublicChat.swift; sourceTree = "<group>"; };
 		C964E8E81DEE1AD87DA72CF24AEBE500 /* NSError+MessageSending.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+MessageSending.m"; sourceTree = "<group>"; };
+		C9AF689E898AF1EBE98BDC7F8A4BFE50 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h; sourceTree = "<group>"; };
 		C9C90392BF439C415EB425D5B39CE368 /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
 		C9C98F1648C2A427AB12A711A085F786 /* WhisperMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WhisperMessage.h; path = AxolotlKit/Classes/CipherMessage/WhisperMessage.h; sourceTree = "<group>"; };
 		C9F1ABA4462281C9D506381A12C51DB7 /* YYImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYImage-prefix.pch"; sourceTree = "<group>"; };
@@ -4335,7 +4338,6 @@
 		D5086F4EE693997B78BD8A6225C4ECFE /* SMKServerCertificateTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMKServerCertificateTest.swift; path = SignalMetadataKitTests/src/SMKServerCertificateTest.swift; sourceTree = "<group>"; };
 		D56CBF76650FD5F9F5F3F46C10012F0D /* YapDatabaseSearchResultsViewTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSearchResultsViewTransaction.m; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchResultsViewTransaction.m; sourceTree = "<group>"; };
 		D5718ED4CAE9BC9CEAD09AC956B6BFE9 /* Mantle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-umbrella.h"; sourceTree = "<group>"; };
-		D589920045CE6B4F8CC4462F289D8811 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Sources/CocoaLumberjack/DDLoggerNames.m; sourceTree = "<group>"; };
 		D5A0A2BCB4D6D4F28E6C783FDDFC7E4B /* YapDatabaseSecondaryIndexTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexTransaction.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexTransaction.h; sourceTree = "<group>"; };
 		D5A2256F95D4671941ED668B0F42DFF2 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
 		D5DC83AF30D5C8ED54A4AEC63B8831A1 /* YapDatabaseConnectionPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseConnectionPool.m; path = YapDatabase/Extensions/ConnectionPool/YapDatabaseConnectionPool.m; sourceTree = "<group>"; };
@@ -4354,10 +4356,12 @@
 		D837EC0D99C27F3D1379774D854E085C /* AppContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppContext.m; sourceTree = "<group>"; };
 		D898EEB07A717921A29A63C13F885675 /* YapActionItemPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapActionItemPrivate.h; path = YapDatabase/Extensions/ActionManager/Internal/YapActionItemPrivate.h; sourceTree = "<group>"; };
 		D8B06B3449E0EBAC0FE6E0EA08E027E8 /* PublicChatManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PublicChatManager.swift; sourceTree = "<group>"; };
+		D8BC9659B8CF20322688716C7E502EA7 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDAssertMacros.h; sourceTree = "<group>"; };
 		D8D2A43AC77B59C1B473C8484A8C8816 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		D8DF8719D073D629B32C8C7124BA085B /* OWSAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSAnalytics.h; sourceTree = "<group>"; };
 		D933F22B350B71FACC672F77507CEED8 /* YapDatabaseViewChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewChange.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewChange.h; sourceTree = "<group>"; };
 		D9505BBA241D28D9F7DFBDDC863903E4 /* SessionHKDFKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SessionHKDFKit-dummy.m"; sourceTree = "<group>"; };
+		D9558975969C2E7BC5DC1B35A8C070F5 /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Internal.h"; path = "Sources/CocoaLumberjack/DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		D95BFADE19898039DF632F7450095F65 /* GCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCM.swift; path = Sources/CryptoSwift/BlockMode/GCM.swift; sourceTree = "<group>"; };
 		D99C47B8262FA1DF595C1EF4BE9F5831 /* FeedKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeedKit.debug.xcconfig; sourceTree = "<group>"; };
 		D9C4167D0E6AB56D2BCE9C9741F3D8B0 /* OWSPrimaryStorage+Calling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OWSPrimaryStorage+Calling.m"; sourceTree = "<group>"; };
@@ -4375,7 +4379,9 @@
 		DB46817676670F40C7D380112ED84947 /* OWSPrimaryStorage+SessionStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OWSPrimaryStorage+SessionStore.h"; sourceTree = "<group>"; };
 		DB5FB3E82F2484675B26983D37C25325 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
 		DB61035C4BAC543B9FFEA3D164D2B077 /* SignalAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalAccount.m; sourceTree = "<group>"; };
+		DB6FEAEA056E6DC514AA5CD7CB8B0DAC /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDFileLogger.h; sourceTree = "<group>"; };
 		DB7BBA94A846FF9E8C6E841D358FB781 /* OWSReadReceiptsForLinkedDevicesMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSReadReceiptsForLinkedDevicesMessage.h; sourceTree = "<group>"; };
+		DB8DDF354E9CF5D46481DBFBB4424999 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog+LOGV.h"; sourceTree = "<group>"; };
 		DB9725DFD0F07A4E413984F311BB6863 /* fe_add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_add.c; path = Sources/ed25519/fe_add.c; sourceTree = "<group>"; };
 		DB9FD8B630BCA4623401155008A13DD9 /* SignedPrekeyRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SignedPrekeyRecord.h; path = AxolotlKit/Classes/Prekeys/SignedPrekeyRecord.h; sourceTree = "<group>"; };
 		DBC2527C97F4A38B83373BA95A8F592E /* PhoneNumberUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PhoneNumberUtil.h; sourceTree = "<group>"; };
@@ -4428,7 +4434,6 @@
 		E2DC1E4334B0E67FBCCEDF9A684EE922 /* PreKeyBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreKeyBundle.h; path = AxolotlKit/Classes/Prekeys/PreKeyBundle.h; sourceTree = "<group>"; };
 		E2DF4652A2FA8DE5A1ED09FE3E05C505 /* OWSMessageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSMessageManager.h; sourceTree = "<group>"; };
 		E2F1FBCB588AA8E2DB4A73179E2F9E2E /* Pods-SignalShareExtension.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalShareExtension.app store release.xcconfig"; sourceTree = "<group>"; };
-		E318C92565294C596A3C05EE6B0AD652 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Sources/CocoaLumberjack/include/DDOSLogger.h; sourceTree = "<group>"; };
 		E3191370D8965641BFF42EEF6D645C72 /* YapDatabaseCloudKitConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudKitConnection.m; path = YapDatabase/Extensions/CloudKit/YapDatabaseCloudKitConnection.m; sourceTree = "<group>"; };
 		E31A21D76937FD18439313769014880E /* Mantle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.debug.xcconfig; sourceTree = "<group>"; };
 		E31B6B984476CADF6626671EDDD2E5BB /* BobAxolotlParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BobAxolotlParameters.m; path = AxolotlKit/Classes/Ratchet/BobAxolotlParameters.m; sourceTree = "<group>"; };
@@ -4442,7 +4447,6 @@
 		E45C5DFC1B9B073195B811BBD40CAC72 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MTLManipulationAdditions.h"; path = "Mantle/NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		E47AB9DDA6D0E50FEFB6F1C0E43CCF86 /* SessionCoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SessionCoreKit.modulemap; sourceTree = "<group>"; };
 		E480765119519BDCDB7E6996A2CE336D /* SessionCipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SessionCipher.h; path = AxolotlKit/Classes/SessionCipher.h; sourceTree = "<group>"; };
-		E4E60916493F4B32CE6271576836158F /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Sources/CocoaLumberjack/include/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
 		E4E7B3DD46ABB0DBBB56BD5AE90E4911 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51929CF4ED70ED36C683DB57D448AA2 /* AppVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppVersion.m; sourceTree = "<group>"; };
 		E5400DBA035ABA35615314BFBE9C4944 /* type.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = type.pb.swift; path = Sources/SwiftProtobuf/type.pb.swift; sourceTree = "<group>"; };
@@ -4499,7 +4503,6 @@
 		ED533BF99043DE0B07076E5290604A64 /* ge_msub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_msub.h; path = Sources/ed25519/ge_msub.h; sourceTree = "<group>"; };
 		ED64B576E992F4DD4509A0548E0F4794 /* SessionHKDFKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SessionHKDFKit.release.xcconfig; sourceTree = "<group>"; };
 		EDA3273F128EBEF121D4FCB25D32F3A0 /* CCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCM.swift; path = Sources/CryptoSwift/BlockMode/CCM.swift; sourceTree = "<group>"; };
-		EDBB159756EE4F6B4DF378C8C69D47BA /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Sources/CocoaLumberjack/include/DDMultiFormatter.h; sourceTree = "<group>"; };
 		EDBCE5192D2FE31B96162A7F70879FB6 /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
 		EE035175762D5CA68FDA0C45DE2929B4 /* TextFormatEncodingVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncodingVisitor.swift; path = Sources/SwiftProtobuf/TextFormatEncodingVisitor.swift; sourceTree = "<group>"; };
 		EE09D7C36E28A8C4D46AE389F09CD8D2 /* TSDerivedSecrets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSDerivedSecrets.m; path = AxolotlKit/Classes/Ratchet/TSDerivedSecrets.m; sourceTree = "<group>"; };
@@ -4590,7 +4593,6 @@
 		FB48D2ABDA7978F0196BB34CFF76B5C4 /* YapDatabaseExtensionConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseExtensionConnection.m; path = YapDatabase/Extensions/Protocol/YapDatabaseExtensionConnection.m; sourceTree = "<group>"; };
 		FB6814F0BB02838AECB9308D752765D0 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		FBAF965312478037759ECFC536657B54 /* ge_p1p1_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p1p1_to_p2.c; path = Sources/ed25519/ge_p1p1_to_p2.c; sourceTree = "<group>"; };
-		FBD89646722B730DAFDD803550EE69FF /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Sources/CocoaLumberjack/CLI/CLIColor.m; sourceTree = "<group>"; };
 		FBE483EC545832F070C6A1B14BE5B649 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
 		FBF9A0F1BCEDAE3AB8AE45F6353209BC /* OWSDisappearingConfigurationUpdateInfoMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OWSDisappearingConfigurationUpdateInfoMessage.m; sourceTree = "<group>"; };
 		FC1B231DB7B4A016FC0707F18A9E9CE9 /* UIImage+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+OWS.h"; sourceTree = "<group>"; };
@@ -4607,8 +4609,6 @@
 		FE45F9B30EB88132EB151AD646CCD44C /* TSAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TSAttachment.h; sourceTree = "<group>"; };
 		FE53FEECEB267D30D33D517814F645B2 /* MediaPeerLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaPeerLink.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaPeerLink.swift; sourceTree = "<group>"; };
 		FE9B07E1C33D48D3361991B0158ECBDC /* OWSRecipientIdentity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSRecipientIdentity.h; sourceTree = "<group>"; };
-		FEA98D9F2C2FF2F153241CA2FCDA52D5 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Sources/CocoaLumberjack/include/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		FECE7501789C32F7414120B0CF2987AF /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Sources/CocoaLumberjack/include/DDASLLogCapture.h; sourceTree = "<group>"; };
 		FEDCE1645CE0338F9B1AA1F31324896A /* OWSDeviceProvisioningService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OWSDeviceProvisioningService.h; sourceTree = "<group>"; };
 		FEEBFEDC419840BE6F5F4A6E8A6D1D7D /* iTunesImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iTunesImage.swift; path = Sources/FeedKit/Models/Namespaces/iTunes/iTunesImage.swift; sourceTree = "<group>"; };
 		FF82AB52BFA6ECAAD11DF7FD80B9974F /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYImage/YYImageCoder.h; sourceTree = "<group>"; };
@@ -5114,45 +5114,6 @@
 			);
 			name = Generated;
 			path = Generated;
-			sourceTree = "<group>";
-		};
-		11642CD2AD3ABD03604BDFE980E90D90 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				89D56BD60DD2E6369C6359B940D95B69 /* CLIColor.h */,
-				FBD89646722B730DAFDD803550EE69FF /* CLIColor.m */,
-				7A5740CB400752ECB7D8F6720FEA8035 /* CocoaLumberjack.h */,
-				3432051BCD2238AFF4FED197D57F51DA /* DDAbstractDatabaseLogger.h */,
-				36745C4EE99EB34991D66916B2EC9164 /* DDAbstractDatabaseLogger.m */,
-				FECE7501789C32F7414120B0CF2987AF /* DDASLLogCapture.h */,
-				18E9BADFC7FBF4AC87CAF846E6F41B9E /* DDASLLogCapture.m */,
-				61B0EDC61D709A4DC36E9E51EC56D119 /* DDASLLogger.h */,
-				114874EA5F698DDC64D85639945B37B7 /* DDASLLogger.m */,
-				12447B5F2B0697B5DCAD96C627F5C1BE /* DDAssertMacros.h */,
-				8F56D6BA35B5B08A4C9317203B306B4F /* DDContextFilterLogFormatter.h */,
-				37C3BAA7258D1561F8D0F399F4FB274A /* DDContextFilterLogFormatter.m */,
-				FEA98D9F2C2FF2F153241CA2FCDA52D5 /* DDDispatchQueueLogFormatter.h */,
-				8BFF554707EF81A139DFD2EF5A35A715 /* DDDispatchQueueLogFormatter.m */,
-				77FDC5DDF7543555328B2F6EA4F7F53F /* DDFileLogger.h */,
-				3783F591C5D4785DAD74D508A5704DF8 /* DDFileLogger.m */,
-				E4E60916493F4B32CE6271576836158F /* DDFileLogger+Buffering.h */,
-				39AA2F2A8D0742C8958470BEFAA2A86A /* DDFileLogger+Buffering.m */,
-				752CC7117516BC7D344855C8E55689F3 /* DDFileLogger+Internal.h */,
-				2EB4F78A69403C64BD5A5818B6EF3A95 /* DDLegacyMacros.h */,
-				519E57BB8AEB8C4DBB0C5BA76CAC551E /* DDLog.h */,
-				6FC00A4287CB182502C7660A952E5C10 /* DDLog.m */,
-				7BB5E5758EAA512AE8A9A06D30765A38 /* DDLog+LOGV.h */,
-				4755F8B6EB0B9EF736003F8D79471711 /* DDLoggerNames.h */,
-				D589920045CE6B4F8CC4462F289D8811 /* DDLoggerNames.m */,
-				3F5D80575A28FB01C65A393DFCD43B78 /* DDLogMacros.h */,
-				EDBB159756EE4F6B4DF378C8C69D47BA /* DDMultiFormatter.h */,
-				2CF3CDA3573A40BDD2025F2EAFC8D2FF /* DDMultiFormatter.m */,
-				E318C92565294C596A3C05EE6B0AD652 /* DDOSLogger.h */,
-				B4640958D6E1FE4757C71A9D3DB71628 /* DDOSLogger.m */,
-				A5F30C95A5D6AA2509BF91579198C1A0 /* DDTTYLogger.h */,
-				30DE4E2093BF3E7C61AEEF48D5C01231 /* DDTTYLogger.m */,
-			);
-			name = Core;
 			sourceTree = "<group>";
 		};
 		11AC1D28A366EAF08B77E9E5C5AABD8E /* SQLCipher */ = {
@@ -5828,6 +5789,45 @@
 			);
 			name = SessionHKDFKit;
 			path = SessionHKDFKit;
+			sourceTree = "<group>";
+		};
+		3C06D33C6AEB68FAB4C40DF9F583B48A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				43C23C5BA298DBEF69F2598C9C140539 /* CLIColor.h */,
+				58212B990E3D8DB4FE91765D7E65A194 /* CLIColor.m */,
+				3B3F9D694CF9E6FAF754E55F1860814D /* CocoaLumberjack.h */,
+				27C5E80F4717C67700B53C50D2A722FA /* DDAbstractDatabaseLogger.h */,
+				C2E1D3885D7037EDEB46447CE5BC6773 /* DDAbstractDatabaseLogger.m */,
+				68E7DFA42E240C6171FDEEF13BA75D23 /* DDASLLogCapture.h */,
+				58018BFEA53F1C3ADF7BC978FA4C41E7 /* DDASLLogCapture.m */,
+				0B7D89701007903AA0AA73115C8DC763 /* DDASLLogger.h */,
+				A020BFF8E9B1CF8C95130428698D1849 /* DDASLLogger.m */,
+				D8BC9659B8CF20322688716C7E502EA7 /* DDAssertMacros.h */,
+				A8C48913EE0564047EA2F3B315DF48F3 /* DDContextFilterLogFormatter.h */,
+				252508B4DF92E7156AF326EFFAE9BB34 /* DDContextFilterLogFormatter.m */,
+				8A891A6CE80936C9757B4E72222E67B5 /* DDDispatchQueueLogFormatter.h */,
+				731ABBA36F2205B9F9CD5BFD92A25E5F /* DDDispatchQueueLogFormatter.m */,
+				DB6FEAEA056E6DC514AA5CD7CB8B0DAC /* DDFileLogger.h */,
+				935C30F60D4D4470E06EA7365C96422D /* DDFileLogger.m */,
+				C50C7DFE2EC0EBF5038D3936FCB8A114 /* DDFileLogger+Buffering.h */,
+				A9333488D207435F33E18244774F0C37 /* DDFileLogger+Buffering.m */,
+				D9558975969C2E7BC5DC1B35A8C070F5 /* DDFileLogger+Internal.h */,
+				828156E1A3734B11C1C729C5F02A428C /* DDLegacyMacros.h */,
+				C9AF689E898AF1EBE98BDC7F8A4BFE50 /* DDLog.h */,
+				6C2F7E6091896C235FE8953F5D535526 /* DDLog.m */,
+				DB8DDF354E9CF5D46481DBFBB4424999 /* DDLog+LOGV.h */,
+				4F5CE9DF6D45FEBB10C659407588102C /* DDLoggerNames.h */,
+				3FC5B450FD0E3F17B8C53A085BAFBF16 /* DDLoggerNames.m */,
+				5CF553409F30C34C985BD705A0FC3D56 /* DDLogMacros.h */,
+				21BB5C57119B50551AB55ACBD34D40A6 /* DDMultiFormatter.h */,
+				0A72B4712133DBB5FD5D1EB02B38A247 /* DDMultiFormatter.m */,
+				6285A2262EFB8F92B39976DD1FBCD968 /* DDOSLogger.h */,
+				A7E6B8911121B8A4A6105C19FA5D054B /* DDOSLogger.m */,
+				082936118AA03C291C99EBDFDBAC43F1 /* DDTTYLogger.h */,
+				1BBBE7B78340A1A00616E22B63DF71D6 /* DDTTYLogger.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		3CE7C7D43E8A3AC4465F81D074B7CC65 /* ManualView */ = {
@@ -6541,7 +6541,7 @@
 		6E103E260781D755BF5BBAC12425020C /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
-				11642CD2AD3ABD03604BDFE980E90D90 /* Core */,
+				3C06D33C6AEB68FAB4C40DF9F583B48A /* Core */,
 				E418B103E36566570E24535DA37D7C5C /* Support Files */,
 			);
 			name = CocoaLumberjack;
@@ -8357,26 +8357,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA19CABE9B77F855D1B3AA9C9F2D2090 /* CLIColor.h in Headers */,
+				9417A8831BF82B4101B2FEB10AD6A8D3 /* CLIColor.h in Headers */,
 				6A85E5A738BFAB21E7A31C7432B1D64B /* CocoaLumberjack-umbrella.h in Headers */,
 				C21FE1B0D790B61E358833883D2352B0 /* CocoaLumberjack.h in Headers */,
-				942401647E1E7BAE7D41F9CE0ADCA659 /* DDAbstractDatabaseLogger.h in Headers */,
-				436460CE89BE9BB9AF3832F8D13F58D3 /* DDASLLogCapture.h in Headers */,
-				F9E9BD0B5AB81226E9D4676BECC415AC /* DDASLLogger.h in Headers */,
-				FD3B1F879B728422098593D1E04CDDA3 /* DDAssertMacros.h in Headers */,
-				385655B908CB8CA38A8F98E3BE2D3ABA /* DDContextFilterLogFormatter.h in Headers */,
-				EC910A49F34F713D387616E183D6E8BE /* DDDispatchQueueLogFormatter.h in Headers */,
-				57D71F0D36922B183877D7F698E0B6B2 /* DDFileLogger+Buffering.h in Headers */,
+				C1530759604E274C68AA641D772EA6BA /* DDAbstractDatabaseLogger.h in Headers */,
+				55EB23239C5CA2738260387B2D10F766 /* DDASLLogCapture.h in Headers */,
+				95D11BBD39A3CBDB6FB8C7745D523747 /* DDASLLogger.h in Headers */,
+				E91FF3C960B8ECB2D3E4714FFA770486 /* DDAssertMacros.h in Headers */,
+				5913BA7EF2433099B6028D21ABA0CA10 /* DDContextFilterLogFormatter.h in Headers */,
+				B623F4CBDAD056886AF62CA2130EAF99 /* DDDispatchQueueLogFormatter.h in Headers */,
+				6B96CE08BFC64966703B5DCF45227D2B /* DDFileLogger+Buffering.h in Headers */,
 				4CC79D9FB478344F75C9731D63614B3F /* DDFileLogger+Internal.h in Headers */,
-				55C87861A6C4E9B9F9B180B4A7D1C10B /* DDFileLogger.h in Headers */,
+				73EE48F8DA05D0C4197B6493D0B57BC9 /* DDFileLogger.h in Headers */,
 				71E7F342271640DEF136C0CE03AD928C /* DDLegacyMacros.h in Headers */,
-				5CD66BDFD2D10FBFCFC18FC2BAB56B47 /* DDLog+LOGV.h in Headers */,
-				82D88726BE722B6A7A6F1186DD50FCEE /* DDLog.h in Headers */,
-				D0E5780F47252082BA759A2A8DE960D0 /* DDLoggerNames.h in Headers */,
-				DC4B72ECD1F7AC90DC866FAA4ED4FC82 /* DDLogMacros.h in Headers */,
-				6CAE4731256FFF2D1091ACF93EDA15FB /* DDMultiFormatter.h in Headers */,
-				A94B177F24D2DA1813501E5ED4046A2C /* DDOSLogger.h in Headers */,
-				A44C6A81B6AAD31B73B2599D3F1EA8F8 /* DDTTYLogger.h in Headers */,
+				1837BAF4AE5155FE69278F090D3D92E1 /* DDLog+LOGV.h in Headers */,
+				3A0CA5E115F11D825094A9F6DFAD5C4F /* DDLog.h in Headers */,
+				F6AA0AC90B3155790C23A39D19BD2C64 /* DDLoggerNames.h in Headers */,
+				D3652DBD2DEFFA0CC8ABB7A2CC317DCA /* DDLogMacros.h in Headers */,
+				5A67FC7CE48FF5634E7067293171FAA8 /* DDMultiFormatter.h in Headers */,
+				047F59EE08891178E1CA378621C81367 /* DDOSLogger.h in Headers */,
+				326E590E46EF35FB82A1EC68BD83DE36 /* DDTTYLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -71,7 +71,7 @@
       "~> 1.0.0"
     ],
     "SessionMetadataKit": [
-      "~> 1.0.7"
+      "~> 1.0.8"
     ],
     "PromiseKit": [
       "~> 6.0"

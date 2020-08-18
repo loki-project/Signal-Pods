@@ -66,17 +66,18 @@ public final class LokiSessionCipher : SessionCipher {
                 // Our session reset went through successfully.
                 // We initiated a session reset and got a different session back from the user.
                 deleteAllSessions(except: currentState, protocolContext: protocolContext)
-                notifySessionAdopted()
+                notifySessionAdopted(protocolContext)
             }
         } else if sessionResetStatus == .requestReceived {
             // Our session reset went through successfully.
             // We got a message with the same session from the other user.
             deleteAllSessions(except: previousState, protocolContext: protocolContext)
-            notifySessionAdopted()
+            notifySessionAdopted(protocolContext)
         }
     }
     
-    private func notifySessionAdopted() {
+    private func notifySessionAdopted(_ protocolContext: Any?) {
+        self.sessionResetImplementation?.onNewSessionAdopted(for: recipientID, protocolContext: protocolContext)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: LokiSessionCipher.newSessionAdoptedNotification), object: nil, userInfo: [ LokiSessionCipher.contactKey : recipientID ])
     }
     

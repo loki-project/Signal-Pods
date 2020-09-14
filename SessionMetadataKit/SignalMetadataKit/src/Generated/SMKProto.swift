@@ -513,7 +513,6 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
         case prekeyMessage = 1
         case message = 2
         case fallbackMessage = 3
-        case closedGroupCiphertext = 4
     }
 
     private class func SMKProtoUnidentifiedSenderMessageMessageTypeWrap(_ value: SMKProtos_UnidentifiedSenderMessage.Message.TypeEnum) -> SMKProtoUnidentifiedSenderMessageMessageType {
@@ -521,7 +520,6 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
         case .prekeyMessage: return .prekeyMessage
         case .message: return .message
         case .fallbackMessage: return .fallbackMessage
-        case .closedGroupCiphertext: return .closedGroupCiphertext
         }
     }
 
@@ -530,7 +528,6 @@ extension SMKProtoSenderCertificate.SMKProtoSenderCertificateBuilder {
         case .prekeyMessage: return .prekeyMessage
         case .message: return .message
         case .fallbackMessage: return .fallbackMessage
-        case .closedGroupCiphertext: return .closedGroupCiphertext
         }
     }
 

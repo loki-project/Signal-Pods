@@ -138,27 +138,24 @@ public class SMKDecryptResult: NSObject {
     private let preKeyStore: PreKeyStore
     private let signedPreKeyStore: SignedPreKeyStore
     private let identityStore: IdentityKeyStore
-    private let sharedSenderKeysImplementation: SharedSenderKeysProtocol!
 
     @objc public init(sessionResetImplementation: SessionResetProtocol!,
                       sessionStore: SessionStore,
                       preKeyStore: PreKeyStore,
                       signedPreKeyStore: SignedPreKeyStore,
-                      identityStore: IdentityKeyStore,
-                      sharedSenderKeysImplementation: SharedSenderKeysProtocol!) throws {
+                      identityStore: IdentityKeyStore) throws {
         self.sessionResetImplementation = sessionResetImplementation
         self.sessionStore = sessionStore
         self.preKeyStore = preKeyStore
         self.signedPreKeyStore = signedPreKeyStore
         self.identityStore = identityStore
-        self.sharedSenderKeysImplementation = sharedSenderKeysImplementation
     }
 
     @objc public convenience init(sessionStore: SessionStore,
                                   preKeyStore: PreKeyStore,
                                   signedPreKeyStore: SignedPreKeyStore,
                                   identityStore: IdentityKeyStore) throws {
-        try self.init(sessionResetImplementation: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore, sharedSenderKeysImplementation: nil)
+        try self.init(sessionResetImplementation: nil, sessionStore: sessionStore, preKeyStore: preKeyStore, signedPreKeyStore: signedPreKeyStore, identityStore: identityStore)
     }
 
     // MARK: - Public
@@ -182,20 +179,11 @@ public class SMKDecryptResult: NSObject {
             throw SMKError.assertionError(description: "\(logTag) Missing our identity key pair.")
         }
 
-        let keyPair: ECKeyPair
         let encryptedMessage: CipherMessage
         if useFallbackSessionCipher {
             let cipher = FallBackSessionCipher(recipientPublicKey: recipientPublicKey, privateKey: ourIdentityKeyPair.privateKey)
             let ivAndCiphertext = cipher.encrypt(paddedPlaintext)!
-            keyPair = ourIdentityKeyPair
             encryptedMessage = FallbackMessage(_throws_with: ivAndCiphertext)
-        } else if sharedSenderKeysImplementation.isClosedGroup(recipientPublicKey) {
-            let senderPublicKey = "05" + ourIdentityKeyPair.publicKey.map { String(format: "%02hhx", $0) }.joined()
-            let ciphertextAndKeyIndex = try sharedSenderKeysImplementation.encrypt(paddedPlaintext, forGroupWithPublicKey: recipientPublicKey, senderPublicKey: senderPublicKey, protocolContext: protocolContext)
-            let ivAndCiphertext = ciphertextAndKeyIndex[0] as! Data
-            let keyIndex = ciphertextAndKeyIndex[1] as! UInt
-            keyPair = sharedSenderKeysImplementation.getKeyPair(forGroupWithPublicKey: recipientPublicKey)
-            encryptedMessage = ClosedGroupCiphertextMessage(_throws_withIVAndCiphertext: ivAndCiphertext, senderPublicKey: Data(hex: senderPublicKey), keyIndex: UInt32(keyIndex))
         } else {
             let cipher = SessionCipher(sessionStore: sessionStore,
                                        preKeyStore: preKeyStore,
@@ -203,7 +191,6 @@ public class SMKDecryptResult: NSObject {
                                        identityKeyStore: identityStore,
                                        recipientId: recipientPublicKey,
                                        deviceId: deviceID)
-            keyPair = ourIdentityKeyPair
             encryptedMessage = try cipher.encryptMessage(paddedPlaintext, protocolContext: protocolContext)
         }
 
@@ -237,7 +224,7 @@ public class SMKDecryptResult: NSObject {
 
         let staticKeyCipherData = try encrypt(cipherKey: ephemeralKeys.cipherKey,
                                               macKey: ephemeralKeys.macKey,
-                                              plaintextData: keyPair.ecPublicKey().serialized)
+                                              plaintextData: ourIdentityKeyPair.ecPublicKey().serialized)
 
         let staticSalt = NSData.join([
             ephemeralKeys.chainKey,
@@ -245,7 +232,7 @@ public class SMKDecryptResult: NSObject {
         ])
 
         let staticKeys = try throwswrapped_calculateStaticKeys(staticPublicKey: theirIdentityKey,
-                                                               staticPrivateKey: keyPair.ecPrivateKey(),
+                                                               staticPrivateKey: ourIdentityKeyPair.ecPrivateKey(),
                                                                salt: staticSalt)
 
         let messageType: SMKMessageType
@@ -256,8 +243,6 @@ public class SMKDecryptResult: NSObject {
             messageType = .whisper
         case .fallback:
             messageType = .fallback
-        case .closedGroupCiphertext:
-            messageType = .closedGroupCiphertext
         default:
             throw SMKError.assertionError(description: "\(logTag) Unknown cipher message type.")
         }
@@ -279,7 +264,6 @@ public class SMKDecryptResult: NSObject {
 
     @objc
     public func throwswrapped_decryptMessage(certificateValidator: SMKCertificateValidator,
-                                             senderPublicKey: String,
                                              cipherTextData: Data,
                                              timestamp: UInt64,
                                              localRecipientId: String,
@@ -293,13 +277,6 @@ public class SMKDecryptResult: NSObject {
             throw SMKError.assertionError(description: "\(logTag) Missing our identity key pair.")
         }
 
-        let keyPair: ECKeyPair
-        if sharedSenderKeysImplementation.isClosedGroup(senderPublicKey) {
-            keyPair = sharedSenderKeysImplementation.getKeyPair(forGroupWithPublicKey: senderPublicKey)
-        } else {
-            keyPair = ourIdentityKeyPair
-        }
-
         let wrapper = try SMKUnidentifiedSenderMessage.parse(dataAndPrefix: cipherTextData)
 
         guard let prefixData = kUDPrefixString.data(using: String.Encoding.utf8) else {
@@ -308,12 +285,12 @@ public class SMKDecryptResult: NSObject {
 
         let ephemeralSalt = NSData.join([
             prefixData,
-            try keyPair.ecPublicKey().serialized,
+            try ourIdentityKeyPair.ecPublicKey().serialized,
             wrapper.ephemeralKey.serialized
         ])
 
         let ephemeralKeys = try throwswrapped_calculateEphemeralKeys(ephemeralPublicKey: wrapper.ephemeralKey,
-                                                                     ephemeralPrivateKey: keyPair.ecPrivateKey(),
+                                                                     ephemeralPrivateKey: ourIdentityKeyPair.ecPrivateKey(),
                                                                      salt: ephemeralSalt)
 
         let staticKeyBytes = try decrypt(cipherKey: ephemeralKeys.cipherKey,
@@ -328,7 +305,7 @@ public class SMKDecryptResult: NSObject {
         ])
 
         let staticKeys = try throwswrapped_calculateStaticKeys(staticPublicKey: staticKey,
-                                                               staticPrivateKey: keyPair.ecPrivateKey(),
+                                                               staticPrivateKey: ourIdentityKeyPair.ecPrivateKey(),
                                                                salt: staticSalt)
 
         let messageBytes = try decrypt(cipherKey: staticKeys.cipherKey,
@@ -370,7 +347,7 @@ public class SMKDecryptResult: NSObject {
 
         let paddedMessagePlaintext: Data
         do {
-            paddedMessagePlaintext = try throwswrapped_decrypt(messageContent: messageContent, senderPublicKey: senderPublicKey, protocolContext: protocolContext)
+            paddedMessagePlaintext = try throwswrapped_decrypt(messageContent: messageContent, protocolContext: protocolContext)
         } catch {
             throw wrapAsKnownSenderError(error)
         }
@@ -514,7 +491,6 @@ public class SMKDecryptResult: NSObject {
     // MARK: - Decrypt
 
     private func throwswrapped_decrypt(messageContent: SMKUnidentifiedSenderMessageContent,
-                                       senderPublicKey: String,
                                        protocolContext: Any) throws -> Data {
         // NOTE: We use the sender properties from the sender certificate, not from this class' properties.
         let senderRecipientId = messageContent.senderCertificate.senderRecipientId
@@ -533,11 +509,6 @@ public class SMKDecryptResult: NSObject {
             let privateKey = identityStore.identityKeyPair(protocolContext)?.privateKey
             let cipher = FallBackSessionCipher(recipientPublicKey: senderRecipientId, privateKey: privateKey)
             let plaintext = try cipher.decrypt(messageContent.contentData)!
-            return plaintext
-        case .closedGroupCiphertext:
-            let closedGroupCiphertextMessage = try ClosedGroupCiphertextMessage(_throws_with: messageContent.contentData)
-            let plaintext = try sharedSenderKeysImplementation.decrypt(closedGroupCiphertextMessage.ivAndCiphertext, forGroupWithPublicKey: senderPublicKey,
-                senderPublicKey: closedGroupCiphertextMessage.senderPublicKey.toHexString(), keyIndex: UInt(closedGroupCiphertextMessage.keyIndex), protocolContext: protocolContext)
             return plaintext
         }
 

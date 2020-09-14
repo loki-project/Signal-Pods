@@ -272,7 +272,6 @@ struct SMKProtos_UnidentifiedSenderMessage {
       case prekeyMessage // = 1
       case message // = 2
       case fallbackMessage // = 3
-      case closedGroupCiphertext // = 4
 
       init() {
         self = .prekeyMessage
@@ -283,7 +282,6 @@ struct SMKProtos_UnidentifiedSenderMessage {
         case 1: self = .prekeyMessage
         case 2: self = .message
         case 3: self = .fallbackMessage
-        case 4: self = .closedGroupCiphertext
         default: return nil
         }
       }
@@ -293,7 +291,6 @@ struct SMKProtos_UnidentifiedSenderMessage {
         case .prekeyMessage: return 1
         case .message: return 2
         case .fallbackMessage: return 3
-        case .closedGroupCiphertext: return 4
         }
       }
 
@@ -570,6 +567,5 @@ extension SMKProtos_UnidentifiedSenderMessage.Message.TypeEnum: SwiftProtobuf._P
     1: .same(proto: "PREKEY_MESSAGE"),
     2: .same(proto: "MESSAGE"),
     3: .same(proto: "FALLBACK_MESSAGE"),
-    4: .same(proto: "CLOSED_GROUP_CIPHERTEXT"),
   ]
 }

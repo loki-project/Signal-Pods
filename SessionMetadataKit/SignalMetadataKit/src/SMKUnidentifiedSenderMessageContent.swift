@@ -8,7 +8,6 @@ import Foundation
     case whisper
     case prekey
     case fallback
-    case closedGroupCiphertext
 }
 
 // See:
@@ -40,8 +39,6 @@ import Foundation
             messageType = .whisper
         case .fallbackMessage:
             messageType = .fallback
-        case .closedGroupCiphertext:
-            messageType = .closedGroupCiphertext
         }
 
         let contentData = proto.content
@@ -60,8 +57,6 @@ import Foundation
             builderType = .prekeyMessage
         case .fallback:
             builderType = .fallbackMessage
-        case .closedGroupCiphertext:
-            builderType = .closedGroupCiphertext
         }
 
         let builder = SMKProtoUnidentifiedSenderMessageMessage.builder(type: builderType,

@@ -214,9 +214,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SessionMetadataKit/SessionMetadataKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SessionServiceKit/SessionServiceKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftCSV/SwiftCSV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"
 fi
 if [[ "$CONFIGURATION" == "App Store Release" ]]; then
@@ -237,9 +239,11 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SessionMetadataKit/SessionMetadataKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SessionServiceKit/SessionServiceKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftCSV/SwiftCSV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

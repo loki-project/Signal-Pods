@@ -28,6 +28,9 @@
     "SignalServiceKit/src/Loki/Mnemonic/*.txt"
   ],
   "dependencies": {
+    "Amplitude": [
+      "~> 5.1.0"
+    ],
     "SessionCurve25519Kit": [
       "~> 2.1.3"
     ],

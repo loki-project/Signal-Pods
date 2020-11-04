@@ -113,6 +113,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/japanese.txt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/portuguese.txt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/spanish.txt"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/api.amplitude.com.der"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/ComodoRsaCA.der"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/ComodoRsaDomainValidationCA.der"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
 if [[ "$CONFIGURATION" == "App Store Release" ]]; then
@@ -132,6 +136,10 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/japanese.txt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/portuguese.txt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/src/Loki/Mnemonic/spanish.txt"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/api.amplitude.com.der"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/ComodoRsaCA.der"
+  install_resource "${PODS_ROOT}/Amplitude/Sources/Amplitude/ComodoRsaDomainValidationCA.der"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
 

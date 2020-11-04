@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Amplitude (5.1.0)
   - CocoaLumberjack (3.6.2):
     - CocoaLumberjack/Core (= 3.6.2)
   - CocoaLumberjack/Core (3.6.2)
@@ -87,6 +88,7 @@ PODS:
     - SwiftProtobuf (~> 1.5.0)
   - SessionServiceKit (1.0.0):
     - AFNetworking
+    - Amplitude (~> 5.1.0)
     - CocoaLumberjack
     - CryptoSwift (~> 1.3)
     - GRKOpenSSLFramework
@@ -104,6 +106,7 @@ PODS:
     - YapDatabase/SQLCipher
   - SessionServiceKit/Tests (1.0.0):
     - AFNetworking
+    - Amplitude (~> 5.1.0)
     - CocoaLumberjack
     - CryptoSwift (~> 1.3)
     - GRKOpenSSLFramework
@@ -199,6 +202,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - Amplitude (~> 5.1.0)
   - CryptoSwift (~> 1.3)
   - FeedKit (~> 8.1)
   - GRKOpenSSLFramework (from `https://github.com/signalapp/GRKOpenSSLFramework`)
@@ -230,6 +234,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Amplitude
     - CocoaLumberjack
     - CryptoSwift
     - FeedKit
@@ -307,6 +312,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Amplitude: 1d3d18f82ba9852011aa7b9a741eac616d78fa82
   CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   CryptoSwift: 093499be1a94b0cae36e6c26b70870668cb56060
   FeedKit: 3418eed25f0b493b205b4de1b8511ac21d413fa9
@@ -323,7 +329,7 @@ SPEC CHECKSUMS:
   SessionCurve25519Kit: 9bb9afe199e4bc23578a4b15932ad2c57bd047b1
   SessionHKDFKit: b0f4e669411703ab925aba07491c5611564d1419
   SessionMetadataKit: d37afdc47d20c7046faa139a92e68fa99f76c95b
-  SessionServiceKit: b12afb3975b33a9579802111f948838861d914bb
+  SessionServiceKit: 7fb07c75433bc255296f1e6dbd3afcdb0b73a36c
   Sodium: 63c0ca312a932e6da481689537d4b35568841bdc
   SQLCipher: e434ed542b24f38ea7b36468a13f9765e1b5c072
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
@@ -333,6 +339,6 @@ SPEC CHECKSUMS:
   YYImage: 6db68da66f20d9f169ceb94dfb9947c3867b9665
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 8b58cc2d282fa528aa81b128b643596a9059c270
+PODFILE CHECKSUM: 19642bfd49a4a7d55d7830dabb525c3042e98a14
 
 COCOAPODS: 1.10.0.rc.1

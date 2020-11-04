@@ -176,6 +176,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Amplitude/Amplitude.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework"
@@ -204,6 +205,7 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Amplitude/Amplitude.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework"

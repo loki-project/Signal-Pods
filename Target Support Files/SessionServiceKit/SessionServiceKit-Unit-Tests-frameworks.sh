@@ -176,6 +176,7 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SessionServiceKit/SessionServiceKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Amplitude/Amplitude.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SessionCurve25519Kit/SessionCurve25519Kit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SessionCoreKit/SessionCoreKit.framework"
@@ -197,6 +198,7 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SessionServiceKit/SessionServiceKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Amplitude/Amplitude.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SessionCurve25519Kit/SessionCurve25519Kit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SessionCoreKit/SessionCoreKit.framework"

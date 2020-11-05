@@ -202,6 +202,7 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Curve25519Kit/Curve25519Kit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HKDFKit/HKDFKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
@@ -231,6 +232,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Curve25519Kit/Curve25519Kit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HKDFKit/HKDFKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

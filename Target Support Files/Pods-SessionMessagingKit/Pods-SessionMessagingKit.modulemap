@@ -1,0 +1,6 @@
+framework module Pods_SessionMessagingKit {
+  umbrella header "Pods-SessionMessagingKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

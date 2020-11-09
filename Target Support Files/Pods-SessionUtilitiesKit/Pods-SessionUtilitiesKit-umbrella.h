@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SessionUtilitiesVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SessionUtilitiesVersionString[];
+FOUNDATION_EXPORT double Pods_SessionUtilitiesKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SessionUtilitiesKitVersionString[];
 

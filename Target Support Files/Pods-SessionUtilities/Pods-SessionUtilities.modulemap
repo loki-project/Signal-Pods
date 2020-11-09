@@ -1,6 +1,0 @@
-framework module Pods_SessionUtilities {
-  umbrella header "Pods-SessionUtilities-umbrella.h"
-
-  export *
-  module * { export * }
-}

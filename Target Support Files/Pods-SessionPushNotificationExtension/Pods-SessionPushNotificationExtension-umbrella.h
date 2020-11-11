@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_LokiPushNotificationServiceVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_LokiPushNotificationServiceVersionString[];
+FOUNDATION_EXPORT double Pods_SessionPushNotificationExtensionVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SessionPushNotificationExtensionVersionString[];
 

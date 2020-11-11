@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SignalShareExtensionVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SignalShareExtensionVersionString[];
+FOUNDATION_EXPORT double Pods_SessionShareExtensionVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SessionShareExtensionVersionString[];
 

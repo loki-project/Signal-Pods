@@ -1,0 +1,6 @@
+framework module Pods_SessionShareExtension {
+  umbrella header "Pods-SessionShareExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

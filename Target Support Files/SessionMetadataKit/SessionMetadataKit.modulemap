@@ -1,6 +1,0 @@
-framework module SessionMetadataKit {
-  umbrella header "SessionMetadataKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

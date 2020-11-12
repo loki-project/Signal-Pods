@@ -223,6 +223,7 @@ extension RSSFeed {
         .rssChannelItemItunesExplicit,
         .rssChannelItemItunesIsClosedCaptioned,
         .rssChannelItemItunesOrder,
+        .rssChannelItemItunesTitle,
         .rssChannelItemItunesSubtitle,
         .rssChannelItemItunesSummary,
         .rssChannelItemItunesKeywords:
@@ -248,8 +249,10 @@ extension RSSFeed {
         .rssChannelItemMediaContent,
         .rssChannelItemMediaContentTitle,
         .rssChannelItemMediaContentDescription,
+        .rssChannelItemMediaContentKeywords,
         .rssChannelItemMediaContentPlayer,
         .rssChannelItemMediaContentThumbnail,
+        .rssChannelItemMediaContentCategory,
         .rssChannelItemMediaCommunity,
         .rssChannelItemMediaCommunityMediaStarRating,
         .rssChannelItemMediaCommunityMediaStatistics,
@@ -310,6 +313,18 @@ extension RSSFeed {
                 
                 if  self.items?.last?.media?.mediaContents?.last?.mediaDescription == nil {
                     self.items?.last?.media?.mediaContents?.last?.mediaDescription = MediaDescription(attributes: attributes)
+                }
+                
+            case .rssChannelItemMediaContentKeywords:
+                
+                if  self.items?.last?.media?.mediaContents?.last?.mediaKeywords == nil {
+                    self.items?.last?.media?.mediaContents?.last?.mediaKeywords = []
+                }
+                
+            case .rssChannelItemMediaContentCategory:
+                
+                if  self.items?.last?.media?.mediaContents?.last?.mediaCategory == nil {
+                    self.items?.last?.media?.mediaContents?.last?.mediaCategory = MediaCategory(attributes: attributes)
                 }
                 
             case .rssChannelItemMediaContentPlayer:
@@ -553,6 +568,11 @@ extension RSSFeed {
             
             if  self.items?.last?.dublinCore == nil {
                 self.items?.last?.dublinCore = DublinCoreNamespace()
+            }
+            
+        case .rdfItemContentEncoded:
+            if  self.items?.last?.content == nil {
+                self.items?.last?.content = ContentNamespace()
             }
             
         default: break
